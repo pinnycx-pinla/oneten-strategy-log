@@ -1,5 +1,4 @@
 node_modules/
-.DS_Store
-server.log
 dist/
+.DS_Store
 venv_bg/

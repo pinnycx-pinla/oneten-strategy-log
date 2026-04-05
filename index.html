@@ -10,12 +10,8 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- Starry Background -->
-  <div class="space-background">
-    <div class="stars"></div>
-    <div class="stars2"></div>
-    <div class="stars3"></div>
-  </div>
+  <!-- Vanta.js 3D Background -->
+  <div id="vanta-bg"></div>
 
   <!-- Main Container -->
   <div class="app-container">
@@ -370,11 +366,155 @@
         </div>
 
 
+        <!-- CHAPTER 31 DIVIDER -->
+        <div class="timeline-divider fade-in" style="animation-delay: 0.5s">
+          <span class="line left-line"></span>
+          <span class="text">CHAPTER 31 &middot; Token 优化：混合 AI 编排策略</span>
+          <span class="line right-line"></span>
+        </div>
+
+        <!-- Msg 1: User -->
+        <div class="message user fade-in" style="animation-delay: 1s">
+            <div class="avatar">
+              <img src="/wen_tian.png" alt="文天">
+              <span class="name">文天</span>
+            </div>
+            <div class="bubble">
+              <p>那个最省 token 的方案，你先把简单的先做吧，其他需要我做的晚上再做。</p>
+            </div>
+        </div>
+
+        <!-- Msg 2: DALI Response -->
+        <div class="message ai fade-in" style="animation-delay: 1.5s">
+            <div class="avatar">
+              <img src="/dali_new_transparent.png" alt="DALI" class="dali-3d">
+              <span class="name">DALI</span>
+            </div>
+            <div class="bubble">
+              <p>我这边没有上下文——你说的是哪个方案？能简单描述一下，或者把之前的对话贴过来吗？</p>
+            </div>
+        </div>
+
+        <!-- Msg 3: User Details -->
+        <div class="message user fade-in" style="animation-delay: 2s">
+            <div class="avatar">
+              <img src="/wen_tian.png" alt="文天">
+              <span class="name">文天</span>
+            </div>
+            <div class="bubble">
+              <div class="bubble-header">TOKEN 优化策略清单</div>
+              <p>好，我把所有任务分析了一遍，这是最省 Claude token 的方案：</p>
+              
+              <div class="box-content">
+                  <span class="step-num" style="color: #8cc152;">🟢 完全免费（纯 Python，零 AI）</span>
+                  <p class="mono-line">• Instagram / Pinterest / X 发帖 — 模板轮换，不需要 AI</p>
+                  <p class="mono-line">• Alpaca 交易策略 — 规则执行，不需要 AI</p>
+                  <p class="mono-line">• DJB 清洁自动化 — 纯调度</p>
+                  <p class="mono-line">• 系统健康监控 — 数据采集+报警</p>
+                  <p class="highlight" style="margin-top:5px; font-size: 0.85em;">* 这些已经不花 token，保持现状。</p>
+              </div>
+
+              <div class="box-content" style="margin-top: 10px; border-left: 2px solid #5d9cec;">
+                  <span class="step-num" style="color: #5d9cec;">🔵 Gemma 4 (本地，完全免费)</span>
+                  <p class="mono-line">• 部门周报 (HR / Finance / Legal / Marketing)</p>
+                  <p class="mono-line">• dept_ops — 每6小时运营检查</p>
+                  <p class="mono-line">• security_check — 日志分析</p>
+                  <p class="mono-line">• youtube_report — 内容表现总结</p>
+                  <p class="highlight" style="margin-top:5px; font-size: 0.85em;">* 改为调用本地 Gemma（通过 Ollama），完全离线。</p>
+              </div>
+
+              <div class="box-content" style="margin-top: 10px; border-left: 2px solid #ffce54;">
+                  <span class="step-num" style="color: #ffce54;">🟡 Google Gemini API (极便宜/有免费额度)</span>
+                  <p class="mono-line">• YouTube 内容脚本生成 (Gemini 内置搜索)</p>
+                  <p class="mono-line">• trending_utils — 趋势分析 (配合 Google Trends)</p>
+                  <p class="mono-line">• 任何需要联网搜索的任务</p>
+              </div>
+
+              <div class="box-content" style="margin-top: 10px; border-left: 2px solid #ed5565;">
+                  <span class="step-num" style="color: #ed5565;">🔴 Claude (只用于最核心高优任务)</span>
+                  <p class="mono-line">• 你通过 Telegram 跟我对话</p>
+                  <p class="mono-line">• 策略开发和重要决策</p>
+                  <p class="mono-line">• 其他两个模型搞不定的复杂推理</p>
+              </div>
+
+            </div>
+        </div>
         
+        <!-- SUPER ARTS START -->
+        <div class="super-arts-container">
+          <!-- Background speed lines wrapper -->
+          <div class="super-bg-wrapper"></div>
+          
+          <!-- Brainstorm flash fx -->
+          <div class="brainstorm-flash" style="animation: lightning-strike 10s forwards; animation-delay: 3.4s;"></div>
+
+          <!-- Msg 4: User addition (WEN TIAN SUPER IN) -->
+          <div class="message user super-fighter-msg super-p1">
+              <div class="avatar">
+                <img src="/wen_tian.png" alt="文天">
+                <span class="name">文天</span>
+              </div>
+              <div class="bubble">
+                <p>关于 Paperclip，不要再用来跑“公司部门”自动循环任务了——太烧钱。它适合做一次性的复杂任务，用完就关。首先需要安装 Ollama + Gemma 4。你的 Mac 能跑本地模型吗？内存多少？</p>
+              </div>
+          </div>
+
+          <!-- Msg 5: AI specific checking and plan starting (DALI SUPER IN) -->
+          <div class="message ai super-fighter-msg super-p2">
+              <div class="bubble success">
+                <div class="bubble-header" style="font-size:16px; color:#fff; text-shadow:0 0 10px #8616fa;">⚡ SYSTEM SPECS CHECK ⚡</div>
+                <p>明白，这是一个极其理性的“金字塔”AI编排策略。关于运行本地模型：</p>
+                <div class="box-content" style="background: rgba(0,0,0,0.8); border-left: 2px solid #8616fa;">
+                    <span class="step-num" style="color: #fff;">⚡ 硬件自检完成</span>
+                    <p class="mono-line">Device: MacBook Air (M4 芯片)</p>
+                    <p class="mono-line">Memory: 16 GB</p>
+                    <p class="mono-line">Status: <span class="golden-highlight">完全能跑本地模型。</span></p>
+                </div>
+                <p style="margin-top: 15px;">16G 的 M4 芯片跑 7B~9B 级别的本地模型（比如 Gemma）不仅能跑，而且会非常流畅。至于 Paperclip，它的确更像是一个重型引擎，应该用在刀刃上。</p>
+                <p>最简单的部分我先开始改写（帮你把周报和日常检查脚本改为离线端点调用），晚点我们再对接复杂的部分。</p>
+                <div class="action-footer" style="margin-top: 15px;">
+                  <span class="warning-text">准备执行 <span class="golden-highlight">简单脚本的 Ollama 适配改造</span> ...</span>
+                </div>
+              </div>
+              <div class="avatar">
+                <img src="/dali_new_transparent.png" alt="DALI" class="dali-3d">
+                <span class="name" style="color: #fff; text-shadow: 0 0 10px #8616fa; font-weight: bold;">DALI</span>
+              </div>
+          </div>
+
+          <!-- Msg 6: Wen Tian Overdrive -->
+          <div class="message user super-fighter-msg super-p3">
+              <div class="avatar">
+                <img src="/wen_tian.png" alt="文天">
+                <span class="name">文天</span>
+              </div>
+              <div class="bubble">
+                <div class="bubble-header" style="color:#ffd700; border-color:#ffd700;">🔥 [OVERDRIVE] STRATEGY CONFIRMED</div>
+                <p>非常好，那就立刻把所有的“轻量级日常工作流”全部桥接给本地的 Ollama 端点。</p>
+                <p style="margin-top: 10px;">彻底封印耗钱的远端 API！把我们的核心算力和极限 token 留给真正的决策主脑！</p>
+              </div>
+          </div>
+
+          <!-- Msg 7: DALI Matrix Limit Break -->
+          <div class="message ai super-fighter-msg super-p4">
+              <div class="bubble">
+                <div class="bubble-header" style="color:#00ff64; border-color:#00ff64;">🟩 [LIMIT BREAK] SYSTEMS ONLINE</div>
+                <p>指令收悉！端口 <code>localhost:11434</code> 已绑定完毕。</p>
+                <p style="margin-top: 10px;">所有分部代理探针正在重定向至本地 Gemma 模型核心。系统防线已完全重构为「混合阵列」！</p>
+                <p style="color:#00ff64; font-family:monospace; margin-top:10px;">> OPERATION LOCAL_STRIKE IS A GO.</p>
+              </div>
+              <div class="avatar">
+                <img src="/dali_new_transparent.png" alt="DALI" class="dali-3d" style="filter: hue-rotate(90deg);">
+                <span class="name" style="color: #00ff64; text-shadow: 0 0 10px #00ff64; font-weight: bold;">DALI</span>
+              </div>
+          </div>
+        </div>
+        <!-- SUPER ARTS END -->
       </div>
     </div>
   </div>
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
 </html>
