@@ -180,7 +180,7 @@ body {
   object-fit: cover;
 }
 
-.avatar-wrap:nth-child(3) img {
+.avatar-wrap:nth-child(3) img:not(.dali-3d) {
   display: none; /* Old path fallback */
 }
 
