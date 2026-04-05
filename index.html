@@ -10,8 +10,14 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- Vanta.js 3D Background -->
+  <!-- Vanta.js 3D Background (kept for switcher) -->
   <div id="vanta-bg"></div>
+  <!-- Nebula Slow Motion Background -->
+  <div id="nebula-bg"></div>
+  <!-- Cosmic Nebula Background -->
+  <div id="cosmic-bg"></div>
+  <!-- Milky Way Background -->
+  <div id="galaxy-bg"></div>
 
   <!-- Main Container -->
   <div class="app-container">
@@ -69,8 +75,12 @@
     <div class="frameless-chat" id="chat-content"></div>
   </div>
 
+  <!-- Theme Switcher Button -->
+  <button id="btn-theme">◈ 风格 A</button>
   <!-- Effect Switcher Button -->
   <button id="fx-btn">✦ 切换特效</button>
+  <!-- Font Size Toggle -->
+  <button id="btn-fontsize" title="字体大小">A</button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script type="module" src="/main.js"></script>

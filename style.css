@@ -134,6 +134,8 @@ body {
 }
 
 .app-container {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,6 +338,7 @@ body {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
+  gap: 32px;
   z-index: 20;
   margin-top: 40px;
   padding: 0 20px;
@@ -619,16 +622,7 @@ body.day-theme .bubble-neon { border-color: var(--accent) !important; animation:
   90%,92% { transform: translateX(-3px); opacity: 0.8; }
 }
 
-/* FX 2: ANGULAR — cyberpunk angled clip-path corners */
-.bubble-cyber {
-  border-radius: 0 !important;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-  border: 1px solid rgba(0, 240, 255, 0.4) !important;
-  background: rgba(0, 20, 30, 0.85) !important;
-}
-.bubble-cyber::before {
-  clip-path: inherit;
-}
+/* FX 2: ANGULAR — removed */
 
 /* FX 3: SCANLINES — CRT screen effect overlay */
 .bubble-scanline {
@@ -843,8 +837,115 @@ body.day-theme .bubble-neon { border-color: var(--accent) !important; animation:
   100% { opacity: 1; transform: translateY(0); }
 }
 
+/* ── Font size toggle ────────────────────────────────────────────────── */
+:root { --font-scale: 1; }
+.bubble { font-size: calc(15px * var(--font-scale)); }
+.bubble p, .bubble .mono-line { font-size: calc(14px * var(--font-scale)); }
+.bubble-header { font-size: calc(11px * var(--font-scale)); }
+
+#btn-fontsize {
+  position: fixed;
+  bottom: 70px;
+  right: 24px;
+  z-index: 999;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  color: var(--cyan);
+  font-family: 'Inter', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn-fontsize:hover { background: rgba(0, 240, 255, 0.18); }
+
+/* ── Mobile overhaul ─────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .message { max-width: 90%; }
+
+  /* Header */
+  .desktop-header { padding: 20px 16px 0; margin-top: 1rem; }
+  .title-section { margin-bottom: 1.5rem; }
+  .main-title {
+    font-size: clamp(16px, 4.5vw, 26px);
+    letter-spacing: 2px;
+    word-break: keep-all;   /* prevent splitting Chinese characters */
+    overflow-wrap: normal;
+    white-space: normal;
+    line-height: 1.3;
+  }
+  .subtitle { font-size: 11px; letter-spacing: 0.05em; }
+  .connection-graphic { height: 70px; max-width: 100%; margin-bottom: 0.5rem; }
+  .avatar-wrap { width: 56px; height: 56px; }
+  .avatar-wrap img { width: 48px; height: 48px; }
+  .dali-3d { width: 56px !important; }
+  .glow-ring { width: 68px; height: 68px; }
+
+  /* Nav — push below header to avoid overlap */
+  .page-nav { margin-top: 8px; padding: 8px 12px 12px; }
+
+  /* Nav */
+  .page-nav { padding: 0 12px 16px; gap: 8px; }
+  .nav-btn { font-size: 11px; padding: 6px 12px; }
+  #page-date { font-size: 11px; }
+
+  /* Chat track — tighter gaps */
+  .chat-track { gap: 20px; }
+  .frameless-chat { padding: 0 12px 40px; }
+
+  /* Messages — full width, landscape constraint */
+  .message {
+    max-width: 96%;
+    gap: 10px;
+    width: 100%;
+  }
+  .message.user,
+  .message.ai { align-self: stretch; }
+
+  /* Avatars in messages — smaller on mobile */
+  .message .avatar img { width: 38px; height: 38px; }
+  .message.ai .avatar img { width: 44px; height: 44px; }
+  .message .avatar .name { font-size: 10px; }
+  .message.ai .dali-3d { width: 44px !important; }
+
+  /* Bubbles — landscape rectangle feel */
+  .bubble {
+    padding: 14px 16px;
+    border-radius: 12px;
+    min-height: 0;
+    /* prevent bubbles growing too tall */
+    line-height: 1.55;
+  }
+  .bubble p { margin-bottom: 6px; }
+  .box-content { padding: 10px 12px; margin-top: 10px; }
+  .step-num { font-size: 11px; margin-bottom: 6px; }
+  .mono-line { font-size: 12px; margin-bottom: 4px; }
+  .bubble-header { margin-bottom: 8px; }
+
+  /* Split bubbles */
+  .bubble-split {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+  .bubble-split .bubble {
+    width: 100%;
+    flex: unset;
+  }
+
+  /* Timeline divider */
+  .timeline-divider .text { font-size: 10px; letter-spacing: 0.05em; }
+
+  /* FX button */
+  #fx-btn { bottom: 16px; right: 16px; font-size: 11px; padding: 7px 13px; }
+  #btn-fontsize { bottom: 62px; right: 16px; width: 34px; height: 34px; font-size: 12px; }
 }
 
 /* SUPER ARTS BATTLE DIALOGUE */
@@ -1021,3 +1122,459 @@ body.day-theme .bubble-neon { border-color: var(--accent) !important; animation:
 .p2-dialogue .text-box { border-color:#0088ff; }
 
 @media (max-width: 768px) { .message { max-width: 90%; } }
+
+/* ═══════════════════════════════════════════════════════════
+   THEME A — 3D TILT  (purple/gold, floating geometry)
+═══════════════════════════════════════════════════════════ */
+body.theme-tilt .bubble {
+  background: rgba(30, 10, 60, 0.7);
+  border: 1px solid rgba(160, 80, 255, 0.5);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease, box-shadow 0.2s;
+  will-change: transform;
+  box-shadow: 0 8px 32px rgba(100, 0, 255, 0.25);
+  overflow: visible;
+}
+body.theme-tilt .bubble::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(180,100,255,0.3), transparent 60%);
+  pointer-events: none;
+}
+body.theme-tilt .bubble-header {
+  color: #c084fc;
+  text-shadow: 0 0 10px #c084fc;
+}
+body.theme-tilt .message.ai .bubble {
+  background: rgba(20, 5, 50, 0.8);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   THEME B — NEON GLOW  (glassmorphism + flowing aurora)
+═══════════════════════════════════════════════════════════ */
+body.theme-neon .bubble {
+  background: rgba(8, 12, 28, 0.6);
+  border: 1.5px solid transparent;
+  border-radius: 18px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(100, 120, 255, 0.2), 0 4px 40px rgba(80, 100, 255, 0.15);
+  animation: neon-border-cycle 6s linear infinite;
+}
+body.theme-neon .bubble::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1.5px;
+  background: linear-gradient(120deg, #6366f1, #a855f7, #06b6d4, #6366f1);
+  background-size: 300% 300%;
+  animation: neon-grad 4s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+body.theme-neon .bubble::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+  animation: neon-shimmer 3s infinite;
+  pointer-events: none;
+}
+@keyframes neon-grad {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+@keyframes neon-shimmer {
+  0%   { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   THEME C — 3D PANELS  (dark neumorphism, perspective)
+═══════════════════════════════════════════════════════════ */
+body.theme-panels .frameless-chat {
+  perspective: 900px;
+}
+body.theme-panels .bubble {
+  background: #0d0f14;
+  border: none;
+  border-radius: 14px;
+  box-shadow:
+    6px 6px 16px rgba(0,0,0,0.7),
+    -3px -3px 10px rgba(255,255,255,0.03),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+body.theme-panels .bubble:hover {
+  transform: translateZ(12px) rotateX(-1deg);
+  box-shadow:
+    10px 10px 24px rgba(0,0,0,0.8),
+    -4px -4px 14px rgba(255,255,255,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+}
+body.theme-panels .message.user .bubble {
+  background: #0a0c10;
+}
+body.theme-panels .bubble-header {
+  color: rgba(200,200,220,0.9);
+  letter-spacing: 0.06em;
+  font-size: 0.75em;
+}
+
+/* Theme switcher button */
+#btn-theme {
+  position: fixed;
+  bottom: 64px;
+  right: 24px;
+  z-index: 999;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.2s;
+}
+#btn-theme:hover { background: rgba(255,255,255,0.12); }
+
+/* ═══════════════════════════════════════════════════════════
+   LIQUID GLASS — base layer (applies to all three themes)
+═══════════════════════════════════════════════════════════ */
+body.theme-tilt .bubble,
+body.theme-neon .bubble,
+body.theme-panels .bubble {
+  /* Liquid glass base */
+  backdrop-filter: blur(18px) saturate(180%) brightness(1.05);
+  -webkit-backdrop-filter: blur(18px) saturate(180%) brightness(1.05);
+}
+
+/* Refraction highlight — top-left catch light */
+body.theme-tilt .bubble::after,
+body.theme-neon .bubble::after,
+body.theme-panels .bubble::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  border-radius: inherit;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.07) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Liquid edge shimmer — moves like light through glass */
+body.theme-tilt .bubble,
+body.theme-neon .bubble,
+body.theme-panels .bubble {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Inner liquid distortion ring */
+body.theme-tilt .bubble::before,
+body.theme-panels .bubble::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(255,255,255,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Organic liquid border for all themes */
+body.theme-tilt .bubble,
+body.theme-neon .bubble,
+body.theme-panels .bubble {
+  border-radius: 20px 20px 20px 4px;
+}
+body.theme-tilt .message.user .bubble,
+body.theme-neon .message.user .bubble,
+body.theme-panels .message.user .bubble {
+  border-radius: 20px 20px 4px 20px;
+}
+
+/* Liquid hover — surface tension ripple */
+body.theme-tilt .bubble:hover,
+body.theme-neon .bubble:hover,
+body.theme-panels .bubble:hover {
+  backdrop-filter: blur(24px) saturate(220%) brightness(1.1);
+  -webkit-backdrop-filter: blur(24px) saturate(220%) brightness(1.1);
+  transition: backdrop-filter 0.4s ease, box-shadow 0.3s ease;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   NEBULA BACKGROUND — slow motion space clouds
+═══════════════════════════════════════════════════════════ */
+#nebula-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: #03040a;
+}
+#nebula-bg .cloud {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0;
+  animation: nebula-drift linear infinite;
+  mix-blend-mode: screen;
+}
+@keyframes nebula-drift {
+  0%   { opacity: 0;    transform: translate(0, 0) scale(1); }
+  20%  { opacity: 0.35; }
+  80%  { opacity: 0.25; }
+  100% { opacity: 0;    transform: translate(var(--tx), var(--ty)) scale(var(--ts)); }
+}
+
+/* ── THEME B DEFAULT: all bubbles get FX4 neon-pulse ─────────────────── */
+body.theme-neon .bubble {
+  border: 1px solid var(--cyan) !important;
+  animation: neon-pulse 2.5s ease-in-out infinite !important;
+}
+body.theme-neon .message.user .bubble {
+  border-color: rgba(168, 85, 247, 0.8) !important;
+  animation: neon-pulse-purple 2.5s ease-in-out infinite !important;
+}
+@keyframes neon-pulse-purple {
+  0%,100% { box-shadow: 0 0 8px rgba(168,85,247,0.3), inset 0 0 8px rgba(168,85,247,0.05); }
+  50%      { box-shadow: 0 0 22px rgba(168,85,247,0.7), inset 0 0 15px rgba(168,85,247,0.1); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BRIGHT GLASS — high-luminosity bubble style
+═══════════════════════════════════════════════════════════ */
+.bubble-bright {
+  background: linear-gradient(135deg,
+    rgba(40, 100, 255, 0.75) 0%,
+    rgba(20, 60, 200, 0.65) 100%
+  ) !important;
+  border: 1px solid rgba(120, 180, 255, 0.7) !important;
+  box-shadow:
+    0 0 30px rgba(60, 130, 255, 0.7),
+    0 0 60px rgba(40, 100, 255, 0.35),
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -1px 0 rgba(0,0,80,0.2) !important;
+  backdrop-filter: blur(20px) brightness(1.4) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) brightness(1.4) saturate(200%) !important;
+  color: rgba(255,255,255,0.95) !important;
+  text-shadow: 0 0 12px rgba(150,200,255,0.6);
+  animation: bright-pulse 3s ease-in-out infinite !important;
+}
+.bubble-bright .bubble-header {
+  color: rgba(200,230,255,0.95) !important;
+  text-shadow: 0 0 8px rgba(120,180,255,0.8) !important;
+}
+.bubble-bright::before {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 80%, rgba(100,160,255,0.15) 0%, transparent 40%) !important;
+}
+@keyframes bright-pulse {
+  0%,100% {
+    box-shadow: 0 0 25px rgba(60,130,255,0.6), 0 0 55px rgba(40,100,255,0.3), inset 0 1px 0 rgba(255,255,255,0.3);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(60,130,255,0.9), 0 0 90px rgba(40,100,255,0.5), inset 0 1px 0 rgba(255,255,255,0.4);
+  }
+}
+
+/* Bright style for user bubbles (purple-tinted) */
+.message.user .bubble-bright {
+  background: linear-gradient(135deg,
+    rgba(120, 40, 255, 0.75) 0%,
+    rgba(80, 20, 200, 0.65) 100%
+  ) !important;
+  border-color: rgba(180, 120, 255, 0.7) !important;
+  box-shadow:
+    0 0 30px rgba(140,60,255,0.7),
+    0 0 60px rgba(100,40,255,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.3) !important;
+  animation: bright-pulse-purple 3s ease-in-out infinite !important;
+}
+@keyframes bright-pulse-purple {
+  0%,100% { box-shadow: 0 0 25px rgba(140,60,255,0.6), 0 0 55px rgba(100,40,255,0.3), inset 0 1px 0 rgba(255,255,255,0.3); }
+  50%      { box-shadow: 0 0 45px rgba(140,60,255,0.9), 0 0 90px rgba(100,40,255,0.5), inset 0 1px 0 rgba(255,255,255,0.4); }
+}
+
+/* ── THEME D — BRIGHT GLASS (apply to all bubbles) ───────────────────── */
+body.theme-bright .bubble {
+  background: linear-gradient(135deg, rgba(30,80,220,0.72), rgba(15,50,180,0.62)) !important;
+  border: 1px solid rgba(100,160,255,0.65) !important;
+  box-shadow: 0 0 30px rgba(50,120,255,0.6), 0 0 60px rgba(30,90,255,0.3), inset 0 1px 0 rgba(255,255,255,0.28) !important;
+  backdrop-filter: blur(20px) brightness(1.35) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) brightness(1.35) saturate(180%) !important;
+  color: rgba(255,255,255,0.95) !important;
+  animation: bright-pulse 3s ease-in-out infinite !important;
+}
+body.theme-bright .message.user .bubble {
+  background: linear-gradient(135deg, rgba(110,30,220,0.72), rgba(70,15,180,0.62)) !important;
+  border-color: rgba(170,100,255,0.65) !important;
+  animation: bright-pulse-purple 3s ease-in-out infinite !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   COSMIC NEBULA — canvas-rendered butterfly nebula
+═══════════════════════════════════════════════════════════ */
+#cosmic-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: none;
+  pointer-events: none;
+  background: #020408;
+  overflow: hidden;
+}
+#cosmic-bg::before {
+  content: '';
+  position: absolute;
+  inset: -30%;
+  background:
+    radial-gradient(ellipse 55% 40% at 25% 45%, rgba(0,200,210,0.55) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 72% 52%, rgba(0,180,230,0.50) 0%, transparent 58%),
+    radial-gradient(ellipse 30% 45% at 50% 48%, rgba(160,80,200,0.45) 0%, transparent 55%),
+    radial-gradient(ellipse 20% 25% at 50% 47%, rgba(255,200,240,0.35) 0%, transparent 50%),
+    radial-gradient(ellipse 70% 30% at 50% 60%, rgba(0,210,180,0.28) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 25% at 50% 35%, rgba(20,120,200,0.32) 0%, transparent 55%);
+  filter: blur(30px);
+  animation: cosmic-morph 25s ease-in-out infinite alternate;
+}
+#cosmic-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 10% 15%, rgba(200,220,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 25% 40%, rgba(180,210,255,0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 40% 8%, rgba(220,230,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 25%, rgba(200,220,255,0.6) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 70% 55%, rgba(210,225,255,0.85) 0%, transparent 100%),
+    radial-gradient(1px 1px at 82% 12%, rgba(190,215,255,0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 92% 70%, rgba(220,230,255,0.75) 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 75%, rgba(200,215,255,0.65) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 35% 88%, rgba(210,225,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 92%, rgba(195,215,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 78% 85%, rgba(205,220,255,0.6) 0%, transparent 100%),
+    radial-gradient(2px 2px at 48% 62%, rgba(220,235,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 5% 50%, rgba(200,220,255,0.65) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 88% 38%, rgba(215,228,255,0.75) 0%, transparent 100%);
+  animation: star-twinkle 4s ease-in-out infinite alternate;
+}
+@keyframes cosmic-morph {
+  0%   { transform: scale(1)    rotate(0deg)   translate(0,0); }
+  25%  { transform: scale(1.05) rotate(1.5deg) translate(2%,1%); }
+  50%  { transform: scale(0.97) rotate(-1deg)  translate(-1%,2%); }
+  75%  { transform: scale(1.03) rotate(2deg)   translate(1%,-1%); }
+  100% { transform: scale(1.06) rotate(-0.5deg) translate(-2%,1%); }
+}
+@keyframes star-twinkle {
+  0%   { opacity: 0.7; }
+  50%  { opacity: 1.0; }
+  100% { opacity: 0.75; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MILKY WAY — diagonal galaxy band, slow motion
+═══════════════════════════════════════════════════════════ */
+#galaxy-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: none;
+  pointer-events: none;
+  background: #010206;
+  overflow: hidden;
+}
+/* Galaxy core band — sharp diagonal */
+#galaxy-bg::before {
+  content: '';
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(ellipse 6%  90% at 51% 50%, rgba(255,248,220,0.55) 0%, transparent 55%),
+    radial-gradient(ellipse 12% 90% at 51% 50%, rgba(240,220,160,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 22% 92% at 50% 50%, rgba(200,180,120,0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 95% at 50% 50%, rgba(120,130,200,0.28) 0%, transparent 70%),
+    radial-gradient(ellipse 65% 100% at 50% 50%, rgba(50,60,160,0.20) 0%, transparent 75%),
+    radial-gradient(ellipse 5%  75% at 48% 50%, rgba(0,0,0,0.60) 0%, transparent 50%),
+    radial-gradient(ellipse 3%  60% at 53% 50%, rgba(0,0,0,0.45) 0%, transparent 45%),
+    radial-gradient(ellipse 18% 35% at 28% 32%, rgba(100,50,200,0.28) 0%, transparent 50%),
+    radial-gradient(ellipse 15% 30% at 72% 68%, rgba(60,30,180,0.24) 0%, transparent 48%),
+    radial-gradient(ellipse 8%  18% at 38% 42%, rgba(160,200,255,0.40) 0%, transparent 45%),
+    radial-gradient(ellipse 6%  14% at 63% 57%, rgba(180,215,255,0.35) 0%, transparent 42%),
+    radial-gradient(ellipse 4%  10% at 45% 48%, rgba(255,240,200,0.30) 0%, transparent 40%),
+    radial-gradient(ellipse 4%  10% at 56% 52%, rgba(255,240,200,0.25) 0%, transparent 38%);
+  transform: rotate(-28deg);
+  filter: blur(2px);
+  animation: galaxy-drift 40s ease-in-out infinite alternate;
+}
+/* Dense star field */
+#galaxy-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 3%  7%,  rgba(255,255,255,1.0) 0%, transparent 100%),
+    radial-gradient(1px 1px at 7%  22%, rgba(200,220,255,0.9) 0%, transparent 100%),
+    radial-gradient(2px 2px at 11% 5%,  rgba(255,255,230,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 38%, rgba(220,235,255,1.0) 0%, transparent 100%),
+    radial-gradient(1px 1px at 18% 15%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 22% 52%, rgba(200,215,255,0.8) 0%, transparent 100%),
+    radial-gradient(2px 2px at 25% 28%, rgba(255,250,220,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 29% 72%, rgba(210,225,255,0.85) 0%, transparent 100%),
+    radial-gradient(1px 1px at 32% 12%, rgba(255,255,255,1.0) 0%, transparent 100%),
+    radial-gradient(1px 1px at 36% 45%, rgba(200,220,255,0.75) 0%, transparent 100%),
+    radial-gradient(2px 2px at 39% 85%, rgba(220,235,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 42% 20%, rgba(255,255,240,0.85) 0%, transparent 100%),
+    radial-gradient(1px 1px at 46% 60%, rgba(200,215,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 49% 33%, rgba(255,250,230,0.9) 0%, transparent 100%),
+    radial-gradient(2px 2px at 52% 78%, rgba(210,225,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 56% 10%, rgba(255,255,255,1.0) 0%, transparent 100%),
+    radial-gradient(1px 1px at 59% 48%, rgba(200,220,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 63% 25%, rgba(220,235,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 67% 65%, rgba(255,255,240,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 18%, rgba(200,215,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 73% 55%, rgba(255,250,230,0.85) 0%, transparent 100%),
+    radial-gradient(1px 1px at 76% 88%, rgba(210,225,255,0.75) 0%, transparent 100%),
+    radial-gradient(2px 2px at 80% 32%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(1px 1px at 83% 70%, rgba(200,220,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 87% 8%,  rgba(220,235,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 42%, rgba(255,255,240,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 93% 80%, rgba(200,215,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 96% 20%, rgba(255,250,230,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 14% 90%, rgba(210,225,255,0.75) 0%, transparent 100%),
+    radial-gradient(1px 1px at 44% 95%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 68% 93%, rgba(200,220,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 97%, rgba(220,235,255,0.7) 0%, transparent 100%);
+  animation: star-twinkle 5s ease-in-out infinite alternate;
+}
+@keyframes galaxy-drift {
+  0%   { transform: rotate(-28deg) scale(1)    translate(0, 0); }
+  30%  { transform: rotate(-26deg) scale(1.04) translate(1%, 0.5%); }
+  60%  { transform: rotate(-30deg) scale(0.97) translate(-0.5%, 1%); }
+  100% { transform: rotate(-27deg) scale(1.05) translate(0.5%, -0.5%); }
+}

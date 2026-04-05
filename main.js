@@ -59,14 +59,25 @@ function renderMessage(msg, delay = 0, index = 0) {
   if (msg.footer) bubbleInner += `<p style="margin-top:10px;font-size:0.9em;opacity:0.8">${msg.footer}</p>`;
 
   const typeClass = msg.type === 'success' ? ' success' : msg.type === 'danger' ? ' danger' : '';
-  // Mixed FX: glitch on AI headers, angular on user, scanline on success, neon on danger
   let autoFx = '';
-  if (msg.fx) { autoFx = ` bubble-${msg.fx}`; }
+  if (msg.fx && msg.fx !== 'cyber') { autoFx = ` bubble-${msg.fx}`; }
   else if (!isUser && msg.header) autoFx = ' bubble-glitch';
-  else if (isUser) autoFx = ' bubble-cyber';
   else if (msg.type === 'success') autoFx = ' bubble-scanline';
   else if (msg.type === 'danger') autoFx = ' bubble-neon';
-  const bubble = `<div class="bubble${typeClass}${autoFx}">${bubbleInner}</div>`;
+
+  // Support split bubbles: array of {header, content} parts
+  let bubble;
+  if (msg.parts && msg.parts.length > 0) {
+    const splitBubbles = msg.parts.map(part => {
+      let inner = '';
+      if (part.header) inner += `<div class="bubble-header" data-text="${part.header}">${part.header}</div>`;
+      if (part.content) inner += `<p>${part.content}</p>`;
+      return `<div class="bubble${typeClass}${autoFx}">${inner}</div>`;
+    }).join('');
+    bubble = `<div class="bubble-split">${splitBubbles}</div>`;
+  } else {
+    bubble = `<div class="bubble${typeClass}${autoFx}">${bubbleInner}</div>`;
+  }
 
   div.innerHTML = isUser
     ? `${avatar}${bubble}`
@@ -142,6 +153,37 @@ document.getElementById('btn-next').addEventListener('click', () => {
   if (currentPage < LOG_DAYS.length - 1) goTo(currentPage + 1);
 });
 
+// ── Nebula Background (CSS cloud divs) ───────────────────────────────────
+(function buildNebula() {
+  const container = document.getElementById('nebula-bg');
+  const clouds = [
+    { color: '#3b0e6e', w: 700, h: 500, top: '10%', left: '5%',  dur: 28, tx: '8vw',  ty: '-5vh', ts: 1.2 },
+    { color: '#0e1e6e', w: 600, h: 600, top: '40%', left: '60%', dur: 35, tx: '-6vw', ty: '8vh',  ts: 1.15 },
+    { color: '#6e0e3b', w: 500, h: 400, top: '65%', left: '20%', dur: 42, tx: '5vw',  ty: '-10vh',ts: 1.3 },
+    { color: '#0e4a6e', w: 800, h: 400, top: '5%',  left: '45%', dur: 50, tx: '-4vw', ty: '6vh',  ts: 1.1 },
+    { color: '#2e6e0e', w: 400, h: 500, top: '55%', left: '75%', dur: 38, tx: '3vw',  ty: '-8vh', ts: 1.25 },
+  ];
+  clouds.forEach((c, i) => {
+    const el = document.createElement('div');
+    el.className = 'cloud';
+    el.style.cssText = `width:${c.w}px;height:${c.h}px;top:${c.top};left:${c.left};background:${c.color};animation-duration:${c.dur}s;animation-delay:${-i*5}s;--tx:${c.tx};--ty:${c.ty};--ts:${c.ts};`;
+    container.appendChild(el);
+  });
+})();
+
+
+// BG modes: 'nebula' | 'cosmic' | 'galaxy' | 'vanta'
+let bgMode = 'nebula';
+const bgIds = ['nebula-bg', 'cosmic-bg', 'galaxy-bg', 'vanta-bg'];
+function showBg(mode) {
+  bgMode = mode;
+  bgIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = id.startsWith(mode) ? 'block' : 'none';
+  });
+}
+showBg('nebula');  // default
+
 // ── Vanta.js 3D Background ────────────────────────────────────────────────
 const EFFECTS = ['NET', 'DOTS', 'BIRDS'];
 const EFFECT_LABELS = { NET: '粒子网络', DOTS: '量子矩阵', BIRDS: '数据流' };
@@ -178,11 +220,33 @@ effectScripts.forEach(fx => {
   document.head.appendChild(s);
 });
 
+const BG_CYCLE = ['nebula', 'cosmic', 'galaxy', 'vanta-NET', 'vanta-DOTS', 'vanta-BIRDS'];
+const BG_LABELS = { nebula: '✦ 星云', cosmic: '✦ 星云·蝴蝶', galaxy: '✦ 银河', 'vanta-NET': '✦ 粒子网络', 'vanta-DOTS': '✦ 量子矩阵', 'vanta-BIRDS': '✦ 数据流' };
+let bgIdx = 0;
+
 document.getElementById('fx-btn').addEventListener('click', () => {
-  currentEffectIndex = (currentEffectIndex + 1) % EFFECTS.length;
-  const name = EFFECTS[currentEffectIndex];
-  startEffect(name);
-  document.getElementById('fx-btn').textContent = `✦ ${EFFECT_LABELS[name]}`;
+  bgIdx = (bgIdx + 1) % BG_CYCLE.length;
+  const mode = BG_CYCLE[bgIdx];
+  document.getElementById('fx-btn').textContent = BG_LABELS[mode];
+  if (mode === 'nebula' || mode === 'cosmic' || mode === 'galaxy') {
+    if (vantaEffect) { vantaEffect.destroy(); vantaEffect = null; }
+    showBg(mode);
+  } else {
+    showBg('vanta');
+    const name = mode.replace('vanta-', '');
+    currentEffectIndex = EFFECTS.indexOf(name);
+    if (loaded >= effectScripts.length) startEffect(name);
+  }
+});
+
+// ── Font Size Toggle ──────────────────────────────────────────────────────
+const FONT_SCALES = [1, 1.15, 0.87];
+const FONT_LABELS = ['A', 'A+', 'a'];
+let fontIdx = 0;
+document.getElementById('btn-fontsize').addEventListener('click', () => {
+  fontIdx = (fontIdx + 1) % FONT_SCALES.length;
+  document.documentElement.style.setProperty('--font-scale', FONT_SCALES[fontIdx]);
+  document.getElementById('btn-fontsize').textContent = FONT_LABELS[fontIdx];
 });
 
 // ── Language Selector ─────────────────────────────────────────────────────
@@ -237,5 +301,42 @@ function renderCustomPage(day) {
   });
 }
 
+// ── Card Theme Switcher (A / B / C) ──────────────────────────────────────
+const THEMES = [null, 'theme-tilt', 'theme-neon', 'theme-panels', 'theme-bright'];
+const THEME_LABELS = ['◈ 默认', '◈ 风格 A · 3D倾斜', '◈ 风格 B · 霓虹玻璃', '◈ 风格 C · 暗面板', '◈ 风格 D · 高亮玻璃'];
+let themeIdx = 2; // default: theme-neon
+
+function applyTheme(idx) {
+  THEMES.forEach(t => t && document.body.classList.remove(t));
+  if (THEMES[idx]) document.body.classList.add(THEMES[idx]);
+  document.getElementById('btn-theme').textContent = THEME_LABELS[idx];
+}
+
+document.getElementById('btn-theme').addEventListener('click', () => {
+  themeIdx = (themeIdx + 1) % THEMES.length;
+  applyTheme(themeIdx);
+});
+
+// ── 3D Tilt on Theme A ────────────────────────────────────────────────────
+document.addEventListener('mousemove', e => {
+  if (!document.body.classList.contains('theme-tilt')) return;
+  document.querySelectorAll('.bubble').forEach(bubble => {
+    const rect = bubble.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top  + rect.height / 2;
+    const dx = (e.clientX - cx) / rect.width;
+    const dy = (e.clientY - cy) / rect.height;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < 0.9) {
+      bubble.style.transform = `perspective(600px) rotateY(${dx * 14}deg) rotateX(${-dy * 10}deg) translateZ(6px)`;
+      bubble.style.boxShadow = `${-dx * 20}px ${-dy * 20}px 40px rgba(140,60,255,0.35)`;
+    } else {
+      bubble.style.transform = '';
+      bubble.style.boxShadow = '';
+    }
+  });
+});
+
 // ── Init ──────────────────────────────────────────────────────────────────
+applyTheme(themeIdx);
 renderPage(currentPage);
