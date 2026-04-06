@@ -182,38 +182,60 @@ export const LOG_DAYS = [
   {
     date: "2026-04-06",
     chapter: "33",
-    color: "#a855f7",
-    title: "智能构建日志",
-    subtitle: "核心系统架构搭建与多平台自动化流程重构",
+    color: "#f97316",
+    title: "Discord 多智能体系统上线",
+    subtitle: "Gemma4 本地模型 + YouTube 全自动流水线",
     messages: [
-    {
-      role: "user",
-      content: "Bot 连接成功了！现在去 Discord 发消息测试：",
-    }
-    {
-      role: "ai",
-      header: "🔄 流程优化：从 Bot 到 API",
-      content: "云端部署需要把 Bot 改成直接调 Anthropic API（claude CLI 在云端没法用）。需要你的 API key。现在更新 Bot，使其能够脱离 Discord 框架，直接通过 API 进行运算和回复。",
-      type: "success",
-    }
-    {
-      role: "ai",
-      header: "🛠️ 部署策略重构",
-      content: "鉴于云服务部署（Railway/Fly.io）和 token 认证的复杂性，最终决定采用本地化的 `launchd` 服务配置，确保系统独立且能24/7后台运行，极大地提高了部署的稳定性和可控性。",
-      type: "success",
-    }
-    {
-      role: "ai",
-      header: "🎥 跨平台自动化模块集成",
-      content: "成功构建了 YouTube 自动化发布模块。核心挑战在于 OAuth 授权范围（Scopes）的精确控制，确认已获得 `youtube.upload` 权限，解决了初次失败的 403 错误。",
-      type: "success",
-    }
-    {
-      role: "ai",
-      header: "⚙️ 任务持久化与定时任务",
-      content: "配置 `launchd` plist 并更新 cron 任务，确保关键的量化策略执行脚本和 YouTube 发布流程能够实现周期性、自动化的后台运行，完成了系统的端到端持续服务能力。",
-      type: "success",
-    }
+      {
+        role: "user",
+        content: "Discord 这里可否不用 Anthropic API 而是用本地模型 Gemma4 代替？同时把 YouTube 自动化也接进来。",
+      },
+      {
+        role: "ai",
+        header: "🧠 三层 AI 金字塔确认",
+        type: "success",
+        content: "完全可行。Discord DALI 全面切换为 Gemma4 本地调用（零 API 费用），Claude 只保留终端核心决策。频道路由：策略讨论 / 市场信号 / 系统状态 / youtube-发布，每个频道独立 system prompt，Bot 无需 @ 即自动回复。",
+        box: {
+          label: "模型分工",
+          lines: ["Discord DALI → Gemma4 (Ollama 本地, 免费)", "YouTube 标题/描述 → Gemma4 生成", "终端对话 / 核心决策 → Claude"],
+          highlight: -1,
+        },
+      },
+      {
+        role: "user",
+        content: "我是不是可以把视频文件直接丢给 Discord？标题和描述也让他帮我做，直接 public。多个视频按 YouTube TOS 设定时间间隔。",
+      },
+      {
+        role: "ai",
+        header: "🎥 YouTube 全自动流水线",
+        type: "success",
+        content: "流程已实现：Discord #youtube-发布 收到视频附件 → 自动下载到队列 → Gemma4 生成「标题：xxx / 描述：xxx」→ youtube_auto.py 上传。多视频策略：首个立即 public，后续每隔 4 小时 scheduled，符合 TOS 最佳实践。",
+        box: {
+          label: "上传规则",
+          lines: ["1 个视频 → 立即 public", "2+ 视频 → 首个立即，后续 +4h / +8h ...", "TOS 合规：间隔发布防止限流"],
+          highlight: 1,
+        },
+      },
+      {
+        role: "user",
+        content: "launchd 用了吗？Railway 和 Fly.io 都搞不定。",
+      },
+      {
+        role: "ai",
+        header: "⚙️ launchd 本地 24/7 部署",
+        content: "Railway OAuth 过期、Fly.io 需要信用卡，云端全部放弃。改用 macOS launchd：com.onetenquant.dali-bot.plist 配置 KeepAlive=true，开机自动启动，崩溃自动重启，日志写入 /tmp/dali-bot.log。比云端更稳，零成本。",
+        box: {
+          label: "服务状态",
+          lines: ["launchd: ✅ KeepAlive + RunAtLoad", "Discord Bot: ✅ 在线，响应所有频道", "Ollama gemma4: ✅ 9.6 GB loaded"],
+          highlight: -1,
+        },
+      },
+      {
+        role: "ai",
+        header: "📋 日志自动生成部署",
+        type: "success",
+        content: "daily_log_gen.py 修复 JS 数组逗号 bug（messages 对象间缺逗号导致 PARSE_ERROR），并成功运行：读取 ~/.claude 对话 JSONL → Gemma4 提炼 → 追加 src/data.js → git push → Netlify 自动部署。今日构建日志即为本脚本产物。",
+      },
     ],
   },
 ];
