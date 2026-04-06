@@ -236,6 +236,29 @@ export const LOG_DAYS = [
         type: "success",
         content: "daily_log_gen.py 修复 JS 数组逗号 bug（messages 对象间缺逗号导致 PARSE_ERROR），并成功运行：读取 ~/.claude 对话 JSONL → Gemma4 提炼 → 追加 src/data.js → git push → Netlify 自动部署。今日构建日志即为本脚本产物。",
       },
+      {
+        role: "user",
+        content: "层级关系是什么？谁的权限更大？Discord DALI 是你的 sub agent 还是完全独立的？他也在终端跑吗？",
+      },
+      {
+        role: "ai",
+        header: "🏗️ 系统层级架构",
+        content: "两个独立进程，不存在从属关系。Claude Code（终端）权限最高：读写所有文件、执行命令、改代码、部署，你通过 Telegram 直接控制，是真正的大脑 + 执行者。Discord DALI Bot 是 launchd 守护的 Python 脚本，调用本地 Gemma4，只能做脚本里写好的事——收消息、生成回复、触发上传，无终端权限。Claude Code 可以控制 DALI（改脚本、重启），DALI 不知道 Claude Code 存在。",
+        box: {
+          label: "权限对比",
+          lines: ["Claude Code → 文件系统 + 终端 + 部署（最高）", "Discord DALI → Discord 消息 + Gemma4 调用（受限）", "关系：Claude Code 单向控制 DALI，反向不成立"],
+          highlight: 2,
+        },
+      },
+      {
+        role: "user",
+        content: "那他消耗谁的 token？",
+      },
+      {
+        role: "ai",
+        header: "💰 Token 计费隔离",
+        content: "Discord DALI 现已切换 Gemma4 本地运行，零 token 消耗。之前用 Anthropic API 时走的是单独的 discord-dali API key，与 Claude Code 的计费完全隔离、互不影响。要控制用量，可限制哪些频道触发回复——现在设置是专属频道内所有消息都响应。",
+      },
     ],
   },
 ];
