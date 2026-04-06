@@ -179,4 +179,41 @@ export const LOG_DAYS = [
       },
     ],
   },
+  {
+    date: "2026-04-06",
+    chapter: "33",
+    color: "#a855f7",
+    title: "智能构建日志",
+    subtitle: "核心系统架构搭建与多平台自动化流程重构",
+    messages: [
+    {
+      role: "user",
+      content: "Bot 连接成功了！现在去 Discord 发消息测试：",
+    }
+    {
+      role: "ai",
+      header: "🔄 流程优化：从 Bot 到 API",
+      content: "云端部署需要把 Bot 改成直接调 Anthropic API（claude CLI 在云端没法用）。需要你的 API key。现在更新 Bot，使其能够脱离 Discord 框架，直接通过 API 进行运算和回复。",
+      type: "success",
+    }
+    {
+      role: "ai",
+      header: "🛠️ 部署策略重构",
+      content: "鉴于云服务部署（Railway/Fly.io）和 token 认证的复杂性，最终决定采用本地化的 `launchd` 服务配置，确保系统独立且能24/7后台运行，极大地提高了部署的稳定性和可控性。",
+      type: "success",
+    }
+    {
+      role: "ai",
+      header: "🎥 跨平台自动化模块集成",
+      content: "成功构建了 YouTube 自动化发布模块。核心挑战在于 OAuth 授权范围（Scopes）的精确控制，确认已获得 `youtube.upload` 权限，解决了初次失败的 403 错误。",
+      type: "success",
+    }
+    {
+      role: "ai",
+      header: "⚙️ 任务持久化与定时任务",
+      content: "配置 `launchd` plist 并更新 cron 任务，确保关键的量化策略执行脚本和 YouTube 发布流程能够实现周期性、自动化的后台运行，完成了系统的端到端持续服务能力。",
+      type: "success",
+    }
+    ],
+  },
 ];
