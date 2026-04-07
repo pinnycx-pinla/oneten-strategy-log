@@ -261,4 +261,37 @@ export const LOG_DAYS = [
       },
     ],
   },
+  {
+    date: "2026-04-06",
+    chapter: "33",
+    color: "#a855f7",
+    title: "系统核心能力跑通",
+    subtitle: "完成了从本地调试到云部署，再到多API集成的全流程构建。",
+    messages: [
+    {
+      role: "ai",
+      header: "✅ Bot功能上线",
+      content: "Bot 重启后已收到消息，确认功能在线。修正了 `on_ready` 未触发的 Python 输出缓冲问题，重启加 `-u` 参数解决。",
+      type: "success",
+    },
+    {
+      role: "ai",
+      header: "☁️ 云环境API升级",
+      content: "云端部署要求 Bot 切换到直接调用 Anthropic API，而非本地的 claude CLI。已更新配置并实现云就绪的结构。",
+      type: "success",
+    },
+    {
+      role: "ai",
+      header: "🏠 部署方案锁定",
+      content: "放弃了复杂的云服务（如 Railway/Fly.io），决定使用 Mac 本地的 `launchd` 方案，实现24/7持久运行，降低了部署难度。",
+      type: "success",
+    },
+    {
+      role: "ai",
+      header: "🎬 第三方API集成",
+      content: "完成了 YouTube 自动发布流程的 OAuth 授权。明确了所需的 `youtube.upload` 权限，并更新了 `launchd` plist 实现定时脚本自动运行。",
+      type: "success",
+    },
+    ],
+  },
 ];
