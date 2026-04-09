@@ -563,5 +563,53 @@ export const LOG_DAYS = [
         content: '我现在花少量 token 写一份详细 spec，你拿去喂 Gemma 先写出 DebtEngine + 基础 UI，周六回来我帮你接 Plaid 和串联整个 app。',
       }
     ],
+  },
+  {
+    date: '2026-04-09',
+    chapter: '43',
+    color: '#a855f7',
+    title: '构建日志 2026-04-09 12:35',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'Shadow Debt Superhero app 截图确认，FUSION 模式 5% 选中，界面正常运行。问：银行有没有办法每天自动扣 $10 还信用卡？',
+        content_en: 'Shadow Debt Superhero app confirmed running — FUSION mode 5% selected. Asked: can the bank auto-deduct $10/day to pay credit card?',
+        content_ko: 'Shadow Debt Superhero 앱 확인 — FUSION 모드 5% 선택, 정상 작동 중. 은행에서 매일 $10 자동 카드 결제 가능한지 질문.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: 'app 本身是虚拟额度工具，不动真实账户。银行原生支持按月/周自动还款，不支持按天。日级别需要 Open Banking / Plaid 接口。',
+        content_en: 'App is virtual-limit only, doesn\'t touch real accounts. Banks support monthly/weekly autopay natively, not daily. Daily-level requires Open Banking / Plaid.',
+        content_ko: '앱은 가상 한도 도구로 실제 계좌를 건드리지 않음. 은행은 월/주 단위 자동납부 지원, 일 단위는 미지원. 일 단위는 Open Banking/Plaid 필요.',
+      },
+      {
+        role: 'user',
+        content: '想做的是：让用户每天被扣 $10，月底攒够还信用卡，减轻一次性还款压力。有没有第三方可以托管这笔钱？',
+        content_en: 'Goal is to have users auto-deducted $10/day, accumulate by month-end to pay credit card — reducing lump-sum pressure. Can a third party hold the money?',
+        content_ko: '사용자가 매일 $10씩 빠져나가 월말에 신용카드 결제 — 일시불 부담 경감. 제3자가 돈을 보관할 수 있는지?',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '技术上可以用 Plaid + Dwolla/Stripe ACH 每天发起扣款。但真正"代收托管"需要 Money Transmitter License，合规成本高。最快落地是：不托管钱，只做提醒 + 进度跟踪，配合银行 weekly 自动还款。',
+        content_en: 'Technically Plaid + Dwolla/Stripe ACH can initiate daily deductions. But actually holding user funds requires a Money Transmitter License — high compliance cost. Fastest path: no custody, just reminders + progress tracking with bank weekly autopay.',
+        content_ko: '기술적으로 Plaid + Dwolla/Stripe ACH로 매일 출금 가능. 하지만 자금 보관은 송금업 면허 필요 — 규제 비용 높음. 가장 빠른 구현: 자금 보관 없이 알림 + 진행률 추적, 은행 주간 자동납부 연계.',
+      },
+      {
+        role: 'user',
+        content: '用 Plaid 的话，用户能在 app 内直接还信用卡给信用卡公司，不跳转到信用卡 app 吗？',
+        content_en: 'With Plaid, can users pay the credit card company directly inside the app without jumping to the card app?',
+        content_ko: 'Plaid로 앱 안에서 카드사에 직접 결제 가능한지 (카드 앱 이동 없이)?',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '不能。Plaid 在美国没有付款发起功能（只有欧洲有）。信用卡公司不对外暴露收款 API，所以无法在 app 内直接推钱给 Chase/Citi 等。Plaid + ACH 可以从用户银行扣钱，但最后一步还是绕不开信用卡 app。现阶段最现实的是：Plaid 只读（查余额/交易）+ 每日提醒用户手动还款。',
+        content_en: 'No. Plaid has no payment initiation in the US (EU only). Credit card companies don\'t expose payment APIs. Plaid + ACH can pull from user\'s bank but can\'t push to credit card issuers. Most realistic now: Plaid read-only (balance/transactions) + daily reminder to pay manually.',
+        content_ko: '불가. 미국 Plaid는 결제 개시 기능 없음 (유럽만). 카드사는 결제 API 미공개. Plaid + ACH는 은행 계좌에서 출금 가능하나 카드사로 직접 송금 불가. 현재 최선: Plaid 읽기 전용 (잔액/거래) + 매일 수동 납부 알림.',
+      }
+    ],
   }
 ];
