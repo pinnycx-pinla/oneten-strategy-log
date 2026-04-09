@@ -390,4 +390,84 @@ export const LOG_DAYS = [
       },
     ],
   },
+  {
+    date: '2026-04-08',
+    chapter: '35',
+    color: '#3b82f6',
+    title: '构建日志 2026-04-08 21:39',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: '对话内容提取',
+        content: '**用户：** 说啥呀?',
+      },
+      {
+        role: 'ai',
+        header: 'Grok',
+        content: '你说啊',
+      },
+      {
+        role: 'user',
+        content: '你说，哪两个?',
+      },
+      {
+        role: 'ai',
+        header: 'Grok',
+        content: '好，两个问题。',
+      },
+      {
+        role: 'user',
+        content: '阿ppa那个交易平台在做期权交易，用API在用这个呢Cloud Code做策略，用API在用这自动化交易去做，量化交易工具去去做对吧? 然后我想说就是现在就是把那个交易记录都调出来，然后我想看哪个策略能够怎么样，然后现在就是说看到上面只有那个TradesViz这个工具这个网上站它提供全篇的vog量什什么的，对吧?',
+      },
+      {
+        role: 'user',
+        content: '你说对了，TradesViz对期权策略盘确实很强，尤其是Greeks分析、期权流、模拟器这些功能，市面上少有能比的。它直接支持Alpaca白自动导入，用API能上后台每天自动同步交易记录。',
+      },
+      {
+        role: 'user',
+        content: '你说，哪两个?',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '36',
+    color: '#00f0ff',
+    title: '构建日志 2026-04-08 21:39',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: '对话内容提取',
+        content: '**用户：** 说啥呀?',
+      },
+      {
+        role: 'ai',
+        header: 'Grok',
+        content: '你说啊',
+      },
+      {
+        role: 'user',
+        content: '你说，哪两个?',
+      },
+      {
+        role: 'ai',
+        header: 'Grok',
+        content: '好，两个问题。',
+      },
+      {
+        role: 'user',
+        content: '阿ppa那个交易平台在做期权交易，用API在用这个呢Cloud Code做策略，用API在用这自动化交易去做，量化交易工具去去做对吧? 然后我想说就是现在就是把那个交易记录都调出来，然后我想看哪个策略能够怎么样，然后现在就是说看到上面只有那个TradesViz这个工具这个网上站它提供全篇的vog量什什么的，对吧?',
+      },
+      {
+        role: 'user',
+        content: '你说对了，TradesViz对期权策略盘确实很强，尤其是Greeks分析、期权流、模拟器这些功能，市面上少有能比的。它直接支持Alpaca白自动导入，用API能上后台每天自动同步交易记录。',
+      },
+      {
+        role: 'user',
+        content: '你说，哪两个?',
+      }
+    ],
+  }
 ];
