@@ -525,46 +525,6 @@ export const LOG_DAYS = [
     ],
   },
   {
-    date: '2026-04-08',
-    chapter: '40',
-    color: '#ef4444',
-    title: '构建日志 2026-04-08 23:59',
-    subtitle: 'Build Log via #build-log',
-    messages: [
-      {
-        role: 'user',
-        content: 'a',
-      }
-    ],
-  },
-  {
-    date: '2026-04-09',
-    chapter: '41',
-    color: '#3b82f6',
-    title: '构建日志 2026-04-09 02:20',
-    subtitle: 'Build Log via #build-log',
-    messages: [
-      {
-        role: 'user',
-        content: '![Screenshot_2026-04-09_at_2.20.08_AM.png](build_log_assets/Screenshot_2026-04-09_at_2.20.08_AM.png)',
-      }
-    ],
-  },
-  {
-    date: '2026-04-09',
-    chapter: '42',
-    color: '#00f0ff',
-    title: '构建日志 2026-04-09 02:24',
-    subtitle: 'Build Log via #build-log',
-    messages: [
-      {
-        role: 'ai',
-        header: '所以方案是',
-        content: '我现在花少量 token 写一份详细 spec，你拿去喂 Gemma 先写出 DebtEngine + 基础 UI，周六回来我帮你接 Plaid 和串联整个 app。',
-      }
-    ],
-  },
-  {
     date: '2026-04-09',
     chapter: '43',
     color: '#a855f7',
