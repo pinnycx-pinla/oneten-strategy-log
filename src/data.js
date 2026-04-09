@@ -469,5 +469,81 @@ export const LOG_DAYS = [
         content: '你说，哪两个?',
       }
     ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '37',
+    color: '#a855f7',
+    title: '构建日志 2026-04-08 22:30',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '现在 Unreal Engine 还有用吗？我是说 AI 视频工具这么发达，有没有在 UE 上做 3D 建模？',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '这是一个非常深刻且处于行业前沿的问题。到 2026 年，AI 视频工具（如 Veo 3.1、Kling 等）确实能生成极具震撼的视觉效果，甚至致使像 Sora 2 这样的一代霸主因运营成本和版权问题在今年 3 月正式停服。',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '简单直接的回答是：不仅有必要，而且 Unreal Engine (UE) 依然是专业创作的“定海神针”。AI 负责的是“生成”，而 UE 负责的是“掌控”。',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '以下是万能点位，在 2026 年，你依然需要 UE 以及手动建模的几个核心逻辑：',
+      },
+      {
+        role: 'ai',
+        header: 'AI 视频',
+        content: '现在的 AI 视频本质上是“抽卡”。即使提示词 (Prompt) 再精准，你也很难让 AI 连续生成 10 个镜头，并保证镜头的人物长相、衣服褶皱、光影位置完全一致。',
+      },
+      {
+        role: 'ai',
+        header: 'UE 建模',
+        content: '在 UE 中，模型是资产，灯光是参数。你建好一个 3D 模型，无论镜头怎么切，它的几何结构、纹理、缩放状态都是 100% 确定的。对于需要多镜头的、长篇叙事的作品，UE 的确定性无可替代。',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '38',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-08 22:30',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '现在 Unreal Engine 还有用吗？我是说 AI 视频工具这么发达，有没有在 UE 上做 3D 建模？',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '这是一个非常深刻且处于行业前沿的问题。到 2026 年，AI 视频工具（如 Veo 3.1、Kling 等）确实能生成极具震撼的视觉效果，甚至致使像 Sora 2 这样的一代霸主因运营成本和版权问题在今年 3 月正式停服。',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '简单直接的回答是：不仅有必要，而且 Unreal Engine (UE) 依然是专业创作的“定海神针”。AI 负责的是“生成”，而 UE 负责的是“掌控”。',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '以下是万能点位，在 2026 年，你依然需要 UE 以及手动建模的几个核心逻辑：',
+      },
+      {
+        role: 'ai',
+        header: 'AI 视频',
+        content: '现在的 AI 视频本质上是“抽卡”。即使提示词 (Prompt) 再精准，你也很难让 AI 连续生成 10 个镜头，并保证镜头的人物长相、衣服褶皱、光影位置完全一致。',
+      },
+      {
+        role: 'ai',
+        header: 'UE 建模',
+        content: '在 UE 中，模型是资产，灯光是参数。你建好一个 3D 模型，无论镜头怎么切，它的几何结构、纹理、缩放状态都是 100% 确定的。对于需要多镜头的、长篇叙事的作品，UE 的确定性无可替代。',
+      }
+    ],
   }
 ];
