@@ -571,5 +571,97 @@ export const LOG_DAYS = [
         content_ko: '불가. 미국 Plaid는 결제 개시 기능 없음 (유럽만). 카드사는 결제 API 미공개. Plaid + ACH는 은행 계좌에서 출금 가능하나 카드사로 직접 송금 불가. 현재 최선: Plaid 읽기 전용 (잔액/거래) + 매일 수동 납부 알림.',
       }
     ],
+  },
+  {
+    date: '2026-04-09',
+    chapter: '44',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-09 13:34',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '好的，下次你给我图片后，告诉我“用第九格”或者直接说表情名，我来判断。',
+        content_en: 'Okay, so next time you give me an image, just tell me to use "slot nine" or just the expression name, and I can handle the judgment call.',
+        content_ko: '오케이, 다음번에 너 이미지 줄 때 "9번 슬롯 써"라고 하거나 그냥 감정 이름만 알려줘. 내가 판단할게.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '把这个流程修改成一个模版，名字叫“藤真”。它放在 `./claufe/fujimasa.py`。以后如果需要用它，就告诉我：“用藤真做”，然后提供图片、台词和表情格子信息。',
+        content_en: 'We need to wrap this entire flow into a template. Let\'s call it "Fujimasa." It should live in `./claufe/fujimasa.py`. Going forward, whenever you need to use it, just prompt with "Use Fujimasa," along with the image, dialogue, and the expression slot.',
+        content_ko: '이 프로세스 자체를 템플릿으로 만들어야 해. 이름은 \'후지마사\'로 하자. 위치는 `./claufe/fujimasa.py`야. 앞으로 이걸 쓸 때는 그냥 "후지마사 써줘"라고 하고, 이미지랑 대사, 그리고 표정 슬롯 정보를 같이 줘.',
+      },
+      {
+        role: 'ai',
+        header: '0',
+        content: '中村',
+        content_en: 'Nakamura',
+        content_ko: '나카무라',
+      },
+      {
+        role: 'ai',
+        header: '1',
+        content: '沉思',
+        content_en: 'Pondering',
+        content_ko: '생각에 잠긴',
+      },
+      {
+        role: 'ai',
+        header: '2',
+        content: '坚定',
+        content_en: 'Determined',
+        content_ko: '단호한',
+      },
+      {
+        role: 'ai',
+        header: '3',
+        content: '惊讶',
+        content_en: 'Surprised',
+        content_ko: '놀란',
+      },
+      {
+        role: 'ai',
+        header: '4',
+        content: '悲伤',
+        content_en: 'Sad',
+        content_ko: '슬픈',
+      },
+      {
+        role: 'ai',
+        header: '5',
+        content: '微笑',
+        content_en: 'Smile',
+        content_ko: '웃는',
+      },
+      {
+        role: 'ai',
+        header: '6',
+        content: '调brass',
+        content_en: 'Brass tone',
+        content_ko: '브라스 톤',
+      },
+      {
+        role: 'ai',
+        header: '7',
+        content: '激昂',
+        content_en: 'Exalted',
+        content_ko: '격앙된',
+      },
+      {
+        role: 'ai',
+        header: '8',
+        content: '蔫丢',
+        content_en: 'Droopy',
+        content_ko: '시무룩한',
+      },
+      {
+        role: 'ai',
+        header: '举例',
+        content: '`--grid 2 = DETERMINATION (冷静)`，`--grid 5 = GENTLE SMILE`。',
+        content_en: '`--grid 2 = DETERMINATION (Calm)`, `--grid 5 = GENTLE SMILE`.',
+        content_ko: '`--grid 2 = DETERMINATION (침착)`, `--grid 5 = GENTLE SMILE`.',
+      }
+    ],
   }
 ];
