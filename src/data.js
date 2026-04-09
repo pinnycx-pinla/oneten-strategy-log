@@ -457,7 +457,7 @@ export const LOG_DAYS = [
         role: 'user',
         content: '刚才那条 Grok 对话截图已经 push 了，Netlify 正在 build，稍等几分钟就能在网站看到了。',
         content_en: 'I’ve pushed that Grok conversation screenshot already; Netlify is building it now, so it should be live on the site in a few minutes.',
-        content_ko: '방금 Grok 대화 스크린샷을 푸시했어요. 지금 Netlify가 빌드 중이니 몇 분만 기다리면 사이트에서 확인 가능할 거예요.',
+        content_ko: '방금 Grok 대화 스크린샷 푸시했어. Netlify 빌드 중이니까 몇 분만 기다려, 곧 사이트에서 볼 수 있어.',
       },
       {
         role: 'user',
@@ -469,13 +469,13 @@ export const LOG_DAYS = [
         role: 'user',
         content: '好的，确保每个日 6am 自动部署的日志也正常进行，这个 dc 頻道是用來记录我随手想到的事情，它会参与到网页版构建日志里，不会和 6 点的自动化流程冲突，chapter 号码自然排序就好。',
         content_en: 'Regarding the daily 6 AM deployments, please ensure everything runs smoothly. This DC channel is just for my spontaneous notes; they\'ll feed into the web build log and won\'t conflict with the automated 6 AM process. Simple natural incrementing chapter numbering is fine.',
-        content_ko: '네, 매일 오전 6시 자동 배포 로그도 정상적으로 진행되는지 확인해 주세요. 이 DC 채널은 제가 임의로 생각나는 걸 기록하는 곳이라 웹 빌드 로그에 참여할 거고, 6시 자동화 과정이랑 충돌하지 않을 거예요. 챕터 번호는 자연 순서로 지정하면 됩니다.',
+        content_ko: '매일 6시 자동 배포 로그도 잘 돌아가는지 확인해줘. 이 DC 채널은 내가 생각날 때 기록하는 곳이라 웹 빌드 로그에 들어가고, 6시 자동화랑 충돌 안 해. 챕터 번호는 자연 순서로 하면 돼.',
       },
       {
         role: 'user',
         content: '这两套系统目前是完全不互相干扰的：',
         content_en: 'Good news—the two systems are configured so they won\'t interfere with each other:',
-        content_ko: '좋아요. 두 시스템은 서로 간섭하지 않도록 설정했어요:',
+        content_ko: '좋아. 두 시스템은 서로 안 건드리게 설정했어:',
       },
       {
         role: 'user',
@@ -499,14 +499,14 @@ export const LOG_DAYS = [
         role: 'user',
         content: '提醒一下：两个脚本在 commit 前都会先执行 git pull --rebase，chapter 号也会从当前 data.js 的最大值 +1 自然递增，不会出错的。',
         content_en: 'Quick heads up: Both scripts will run `git pull --rebase` before committing. The chapter numbers will automatically increment from the current max value in data.js, so no errors are expected.',
-        content_ko: '참고로, 두 스크립트 모두 커밋 전에 `git pull --rebase`를 먼저 실행하고, 챕터 번호는 현재 data.js의 최대값에서 +1로 자연 증가하기 때문에 오류는 없을 거예요.',
+        content_ko: '참고로, 두 스크립트 다 커밋 전에 `git pull --rebase` 먼저 실행하고, 챕터 번호는 data.js 최대값 +1로 자동 증가하니까 충돌 없어.',
       },
       {
         role: 'ai',
         header: 'DALI',
         content: '收到，辛苦了。我会留意新部署的网站和日后部署的日志更新。',
         content_en: 'Understood. I’ll keep an eye on the site updates and the scheduled log generations.',
-        content_ko: '알겠습니다. 빌드된 사이트와 추후 배포되는 로그 업데이트에 유의할게요.',
+        content_ko: '알았어. 빌드된 사이트랑 앞으로 배포될 로그 업데이트 챙길게.',
       }
     ],
   },
@@ -521,7 +521,7 @@ export const LOG_DAYS = [
         role: 'user',
         content: '刚才那条 Grok 对话截图已经 push 了，Netlify 正在 build，稍等几分钟就能在网站看到了。',
         content_en: 'I’ve pushed that Grok conversation screenshot already; Netlify is building it now, so it should be live on the site in a few minutes.',
-        content_ko: '방금 Grok 대화 스크린샷을 푸시했어요. 지금 Netlify가 빌드 중이니 몇 분만 기다리면 사이트에서 확인 가능할 거예요.',
+        content_ko: '방금 Grok 대화 스크린샷 푸시했어. Netlify 빌드 중이니까 몇 분만 기다려, 곧 사이트에서 볼 수 있어.',
       },
       {
         role: 'user',
@@ -533,13 +533,13 @@ export const LOG_DAYS = [
         role: 'user',
         content: '好的，确保每个日 6am 自动部署的日志也正常进行，这个 dc 頻道是用來记录我随手想到的事情，它会参与到网页版构建日志里，不会和 6 点的自动化流程冲突，chapter 号码自然排序就好。',
         content_en: 'Regarding the daily 6 AM deployments, please ensure everything runs smoothly. This DC channel is just for my spontaneous notes; they\'ll feed into the web build log and won\'t conflict with the automated 6 AM process. Simple natural incrementing chapter numbering is fine.',
-        content_ko: '네, 매일 오전 6시 자동 배포 로그도 정상적으로 진행되는지 확인해 주세요. 이 DC 채널은 제가 임의로 생각나는 걸 기록하는 곳이라 웹 빌드 로그에 참여할 거고, 6시 자동화 과정이랑 충돌하지 않을 거예요. 챕터 번호는 자연 순서로 지정하면 됩니다.',
+        content_ko: '매일 6시 자동 배포 로그도 잘 돌아가는지 확인해줘. 이 DC 채널은 내가 생각날 때 기록하는 곳이라 웹 빌드 로그에 들어가고, 6시 자동화랑 충돌 안 해. 챕터 번호는 자연 순서로 하면 돼.',
       },
       {
         role: 'user',
         content: '这两套系统目前是完全不互相干扰的：',
         content_en: 'Good news—the two systems are configured so they won\'t interfere with each other:',
-        content_ko: '좋아요. 두 시스템은 서로 간섭하지 않도록 설정했어요:',
+        content_ko: '좋아. 두 시스템은 서로 안 건드리게 설정했어:',
       },
       {
         role: 'user',
@@ -563,14 +563,96 @@ export const LOG_DAYS = [
         role: 'user',
         content: '提醒一下：两个脚本在 commit 前都会先执行 git pull --rebase，chapter 号也会从当前 data.js 的最大值 +1 自然递增，不会出错的。',
         content_en: 'Quick heads up: Both scripts will run `git pull --rebase` before committing. The chapter numbers will automatically increment from the current max value in data.js, so no errors are expected.',
-        content_ko: '참고로, 두 스크립트 모두 커밋 전에 `git pull --rebase`를 먼저 실행하고, 챕터 번호는 현재 data.js의 최대값에서 +1로 자연 증가하기 때문에 오류는 없을 거예요.',
+        content_ko: '참고로, 두 스크립트 다 커밋 전에 `git pull --rebase` 먼저 실행하고, 챕터 번호는 data.js 최대값 +1로 자동 증가하니까 충돌 없어.',
       },
       {
         role: 'ai',
         header: 'DALI',
         content: '收到，辛苦了。我会留意新部署的网站和日后部署的日志更新。',
         content_en: 'Understood. I’ll keep an eye on the site updates and the scheduled log generations.',
-        content_ko: '알겠습니다. 빌드된 사이트와 추후 배포되는 로그 업데이트에 유의할게요.',
+        content_ko: '알았어. 빌드된 사이트랑 앞으로 배포될 로그 업데이트 챙길게.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '39',
+    color: '#10b981',
+    title: '构建日志 2026-04-08 23:35',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '能否拆解一个具体的案例，比如汽车广告或短片？',
+        content_en: 'Can we break down a specific case study, like a car commercial or a short film?',
+        content_ko: '자동차 광고나 단편 같은 특정 케이스를 한번 뜯어볼 수 있을까?',
+      },
+      {
+        role: 'user',
+        content: '或者，如何结合UE 5.7的特性与AI来应用？',
+        content_en: 'Alternatively, how can we best combine UE 5.7\'s native features with AI capabilities?',
+        content_ko: '아니면 UE 5.7 기능이랑 AI를 어떻게 결합하는 게 좋을지 알려줄래?',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '随时告诉我，我可以给你更详细的步骤或推荐最新的教程。',
+        content_en: 'Just let me know what you\'re thinking, and I can drill down into detailed steps or recommend the latest learning materials.',
+        content_ko: '언제든 말해줘. 그럼 더 자세한 단계나 최신 튜토리얼 추천해 줄게.',
+      },
+      {
+        role: 'user',
+        content: '那目前除了AI和UE组合之外，还有哪些可用的替代方案或组合，用于制作视频或游戏呢？',
+        content_en: 'So, beyond the AI + UE stack, are there any other viable alternatives or combinations out there for creating video content or games?',
+        content_ko: '그럼 지금 AI랑 UE 말고, 영상이나 게임 만들 때 쓸 만한 다른 대안이나 조합 같은 건 없어?',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '是的，以UE 5.7为主的虚幻引擎（Unreal Engine）在专业实时渲染、虚拟制作（Virtual Production）和高保真电影级画面方面仍然是“王者”，但它绝不是唯一选择。行业内已经有很多清晰的替代方案和不同组合，尤其是在易用性、成本控制、轻量级项目或者特定领域上。',
+        content_en: 'Absolutely. Unreal Engine (focusing on 5.7) remains the undisputed heavyweight champion for high-fidelity cinematic work, VP, and real-time rendering. But it is far from the only path. The industry has clear alternative workflows and combinations depending on whether your priority is ease of use, budget, lightweight scope, or a niche technical requirement.',
+        content_ko: '응. UE (UE 5.7 기준)가 프로급 실시간 렌더링이나 버추얼 프로덕션 같은 건 여전히 최고긴 해. 근데 그게 유일한 답은 아니거든. 산업 전반에 보면 사용 편의성이나 비용, 아니면 간단한 프로젝트라든지 특정 분야에 따라 확실한 대체재나 조합들이 많아졌어.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '40',
+    color: '#ef4444',
+    title: '构建日志 2026-04-08 23:35',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '能否拆解一个具体的案例，比如汽车广告或短片？',
+        content_en: 'Can we break down a specific case study, like a car commercial or a short film?',
+        content_ko: '자동차 광고나 단편 같은 특정 케이스를 한번 뜯어볼 수 있을까?',
+      },
+      {
+        role: 'user',
+        content: '或者，如何结合UE 5.7的特性与AI来应用？',
+        content_en: 'Alternatively, how can we best combine UE 5.7\'s native features with AI capabilities?',
+        content_ko: '아니면 UE 5.7 기능이랑 AI를 어떻게 결합하는 게 좋을지 알려줄래?',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '随时告诉我，我可以给你更详细的步骤或推荐最新的教程。',
+        content_en: 'Just let me know what you\'re thinking, and I can drill down into detailed steps or recommend the latest learning materials.',
+        content_ko: '언제든 말해줘. 그럼 더 자세한 단계나 최신 튜토리얼 추천해 줄게.',
+      },
+      {
+        role: 'user',
+        content: '那目前除了AI和UE组合之外，还有哪些可用的替代方案或组合，用于制作视频或游戏呢？',
+        content_en: 'So, beyond the AI + UE stack, are there any other viable alternatives or combinations out there for creating video content or games?',
+        content_ko: '그럼 지금 AI랑 UE 말고, 영상이나 게임 만들 때 쓸 만한 다른 대안이나 조합 같은 건 없어?',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '是的，以UE 5.7为主的虚幻引擎（Unreal Engine）在专业实时渲染、虚拟制作（Virtual Production）和高保真电影级画面方面仍然是“王者”，但它绝不是唯一选择。行业内已经有很多清晰的替代方案和不同组合，尤其是在易用性、成本控制、轻量级项目或者特定领域上。',
+        content_en: 'Absolutely. Unreal Engine (focusing on 5.7) remains the undisputed heavyweight champion for high-fidelity cinematic work, VP, and real-time rendering. But it is far from the only path. The industry has clear alternative workflows and combinations depending on whether your priority is ease of use, budget, lightweight scope, or a niche technical requirement.',
+        content_ko: '응. UE (UE 5.7 기준)가 프로급 실시간 렌더링이나 버추얼 프로덕션 같은 건 여전히 최고긴 해. 근데 그게 유일한 답은 아니거든. 산업 전반에 보면 사용 편의성이나 비용, 아니면 간단한 프로젝트라든지 특정 분야에 따라 확실한 대체재나 조합들이 많아졌어.',
       }
     ],
   }
