@@ -393,80 +393,56 @@ export const LOG_DAYS = [
   {
     date: '2026-04-08',
     chapter: '35',
-    color: '#3b82f6',
-    title: '构建日志 2026-04-08 21:39',
+    color: '#00f0ff',
+    title: 'Alpaca × TradesViz 策略复盘',
     subtitle: 'Build Log via #build-log',
     messages: [
       {
-        role: 'ai',
-        header: '对话内容提取',
-        content: '**用户：** 说啥呀?',
-      },
-      {
-        role: 'ai',
-        header: 'Grok',
-        content: '你说啊',
-      },
-      {
         role: 'user',
-        content: '你说，哪两个?',
+        content: 'Alpaca 那个交易平台在做期权交易，用 API 接 Cloud Code 做策略、做量化自动化交易，对吧？我想把交易记录都调出来分析策略表现，市面上好像只有 TradesViz 这个网站提供期权的全面复盘，对吗？',
       },
       {
         role: 'ai',
-        header: 'Grok',
-        content: '好，两个问题。',
+        header: 'DALI',
+        content: '对，TradesViz 对期权策略复盘确实很强，尤其是 Greeks 分析、期权流、模拟器这些功能，市面上少有能比的。它直接支持 Alpaca 自动导入，用 API 接上后每天自动同步交易记录。',
       },
-      {
-        role: 'user',
-        content: '阿ppa那个交易平台在做期权交易，用API在用这个呢Cloud Code做策略，用API在用这自动化交易去做，量化交易工具去去做对吧? 然后我想说就是现在就是把那个交易记录都调出来，然后我想看哪个策略能够怎么样，然后现在就是说看到上面只有那个TradesViz这个工具这个网上站它提供全篇的vog量什什么的，对吧?',
-      },
-      {
-        role: 'user',
-        content: '你说对了，TradesViz对期权策略盘确实很强，尤其是Greeks分析、期权流、模拟器这些功能，市面上少有能比的。它直接支持Alpaca白自动导入，用API能上后台每天自动同步交易记录。',
-      },
-      {
-        role: 'user',
-        content: '你说，哪两个?',
-      }
     ],
   },
   {
     date: '2026-04-08',
     chapter: '36',
-    color: '#00f0ff',
-    title: '构建日志 2026-04-08 21:39',
+    color: '#a855f7',
+    title: 'UE 与 AI 视频工具的未来',
     subtitle: 'Build Log via #build-log',
     messages: [
       {
-        role: 'ai',
-        header: '对话内容提取',
-        content: '**用户：** 说啥呀?',
-      },
-      {
-        role: 'ai',
-        header: 'Grok',
-        content: '你说啊',
-      },
-      {
         role: 'user',
-        content: '你说，哪两个?',
+        content: '现在 Unreal Engine 还有用吗？我是说 AI 视频工具这么发达，有没有在 UE 上做 3D 建模？',
       },
       {
         role: 'ai',
-        header: 'Grok',
-        content: '好，两个问题。',
+        header: 'DALI',
+        content: '这是一个非常深刻且处于行业前沿的问题。到 2026 年，AI 视频工具（如 Veo 3.1、Kling 等）确实能生成极具震撼的视觉效果，甚至致使像 Sora 2 这样的一代霸主因运营成本和版权问题在今年 3 月正式停服。',
       },
       {
-        role: 'user',
-        content: '阿ppa那个交易平台在做期权交易，用API在用这个呢Cloud Code做策略，用API在用这自动化交易去做，量化交易工具去去做对吧? 然后我想说就是现在就是把那个交易记录都调出来，然后我想看哪个策略能够怎么样，然后现在就是说看到上面只有那个TradesViz这个工具这个网上站它提供全篇的vog量什什么的，对吧?',
+        role: 'ai',
+        header: 'DALI',
+        content: '简单直接的回答是：不仅有必要，而且 Unreal Engine (UE) 依然是专业创作的“定海神针”。AI 负责的是“生成”，而 UE 负责的是“掌控”。',
       },
       {
-        role: 'user',
-        content: '你说对了，TradesViz对期权策略盘确实很强，尤其是Greeks分析、期权流、模拟器这些功能，市面上少有能比的。它直接支持Alpaca白自动导入，用API能上后台每天自动同步交易记录。',
+        role: 'ai',
+        header: 'DALI',
+        content: '以下是万能点位，在 2026 年，你依然需要 UE 以及手动建模的几个核心逻辑：',
       },
       {
-        role: 'user',
-        content: '你说，哪两个?',
+        role: 'ai',
+        header: 'AI 视频',
+        content: '现在的 AI 视频本质上是“抽卡”。即使提示词 (Prompt) 再精准，你也很难让 AI 连续生成 10 个镜头，并保证镜头的人物长相、衣服褶皱、光影位置完全一致。',
+      },
+      {
+        role: 'ai',
+        header: 'UE 建模',
+        content: '在 UE 中，模型是资产，灯光是参数。你建好一个 3D 模型，无论镜头怎么切，它的几何结构、纹理、缩放状态都是 100% 确定的。对于需要多镜头的、长篇叙事的作品，UE 的确定性无可替代。',
       }
     ],
   },
@@ -474,37 +450,63 @@ export const LOG_DAYS = [
     date: '2026-04-08',
     chapter: '37',
     color: '#a855f7',
-    title: '构建日志 2026-04-08 22:30',
+    title: '构建日志 2026-04-08 22:58',
     subtitle: 'Build Log via #build-log',
     messages: [
       {
         role: 'user',
-        content: '现在 Unreal Engine 还有用吗？我是说 AI 视频工具这么发达，有没有在 UE 上做 3D 建模？',
+        content: '刚才那条 Grok 对话截图已经 push 了，Netlify 正在 build，稍等几分钟就能在网站看到了。',
+        content_en: 'I’ve pushed that Grok conversation screenshot already; Netlify is building it now, so it should be live on the site in a few minutes.',
+        content_ko: '방금 Grok 대화 스크린샷을 푸시했어요. 지금 Netlify가 빌드 중이니 몇 분만 기다리면 사이트에서 확인 가능할 거예요.',
+      },
+      {
+        role: 'user',
+        content: 'https://oneten-strategy-log.netlify.app',
+        content_en: 'https://oneten-strategy-log.netlify.app',
+        content_ko: 'https://oneten-strategy-log.netlify.app',
+      },
+      {
+        role: 'user',
+        content: '好的，确保每个日 6am 自动部署的日志也正常进行，这个 dc 頻道是用來记录我随手想到的事情，它会参与到网页版构建日志里，不会和 6 点的自动化流程冲突，chapter 号码自然排序就好。',
+        content_en: 'Regarding the daily 6 AM deployments, please ensure everything runs smoothly. This DC channel is just for my spontaneous notes; they\'ll feed into the web build log and won\'t conflict with the automated 6 AM process. Simple natural incrementing chapter numbering is fine.',
+        content_ko: '네, 매일 오전 6시 자동 배포 로그도 정상적으로 진행되는지 확인해 주세요. 이 DC 채널은 제가 임의로 생각나는 걸 기록하는 곳이라 웹 빌드 로그에 참여할 거고, 6시 자동화 과정이랑 충돌하지 않을 거예요. 챕터 번호는 자연 순서로 지정하면 됩니다.',
+      },
+      {
+        role: 'user',
+        content: '这两套系统目前是完全不互相干扰的：',
+        content_en: 'Good news—the two systems are configured so they won\'t interfere with each other:',
+        content_ko: '좋아요. 두 시스템은 서로 간섭하지 않도록 설정했어요:',
+      },
+      {
+        role: 'user',
+        content: '・每天 6:00 AM cron → daily_log_gen.py → setSearcher 对话 → 生成新 chapter → push',
+        content_en: '・Every day at 6:00 AM cron → daily_log_gen.py → setSearcher conversation → generate new chapter → push',
+        content_ko: '・매일 오전 6시 cron → daily_log_gen.py → setSearcher 대화 → 새 챕터 생성 → push',
+      },
+      {
+        role: 'user',
+        content: '・#build-log 随时间发送 → build_log_publish.py → 写入',
+        content_en: '・#build-log updates over time → build_log_publish.py → write',
+        content_ko: '・#build-log는 시간차를 두고 → build_log_publish.py → 기록',
+      },
+      {
+        role: 'user',
+        content: 'AGENT_LOG.md → push',
+        content_en: 'AGENT_LOG.md → push',
+        content_ko: 'AGENT_LOG.md → push',
+      },
+      {
+        role: 'user',
+        content: '提醒一下：两个脚本在 commit 前都会先执行 git pull --rebase，chapter 号也会从当前 data.js 的最大值 +1 自然递增，不会出错的。',
+        content_en: 'Quick heads up: Both scripts will run `git pull --rebase` before committing. The chapter numbers will automatically increment from the current max value in data.js, so no errors are expected.',
+        content_ko: '참고로, 두 스크립트 모두 커밋 전에 `git pull --rebase`를 먼저 실행하고, 챕터 번호는 현재 data.js의 최대값에서 +1로 자연 증가하기 때문에 오류는 없을 거예요.',
       },
       {
         role: 'ai',
         header: 'DALI',
-        content: '这是一个非常深刻且处于行业前沿的问题。到 2026 年，AI 视频工具（如 Veo 3.1、Kling 等）确实能生成极具震撼的视觉效果，甚至致使像 Sora 2 这样的一代霸主因运营成本和版权问题在今年 3 月正式停服。',
-      },
-      {
-        role: 'ai',
-        header: 'DALI',
-        content: '简单直接的回答是：不仅有必要，而且 Unreal Engine (UE) 依然是专业创作的“定海神针”。AI 负责的是“生成”，而 UE 负责的是“掌控”。',
-      },
-      {
-        role: 'ai',
-        header: 'DALI',
-        content: '以下是万能点位，在 2026 年，你依然需要 UE 以及手动建模的几个核心逻辑：',
-      },
-      {
-        role: 'ai',
-        header: 'AI 视频',
-        content: '现在的 AI 视频本质上是“抽卡”。即使提示词 (Prompt) 再精准，你也很难让 AI 连续生成 10 个镜头，并保证镜头的人物长相、衣服褶皱、光影位置完全一致。',
-      },
-      {
-        role: 'ai',
-        header: 'UE 建模',
-        content: '在 UE 中，模型是资产，灯光是参数。你建好一个 3D 模型，无论镜头怎么切，它的几何结构、纹理、缩放状态都是 100% 确定的。对于需要多镜头的、长篇叙事的作品，UE 的确定性无可替代。',
+        content: '收到，辛苦了。我会留意新部署的网站和日后部署的日志更新。',
+        content_en: 'Understood. I’ll keep an eye on the site updates and the scheduled log generations.',
+        content_ko: '알겠습니다. 빌드된 사이트와 추후 배포되는 로그 업데이트에 유의할게요.',
       }
     ],
   },
@@ -512,37 +514,63 @@ export const LOG_DAYS = [
     date: '2026-04-08',
     chapter: '38',
     color: '#f59e0b',
-    title: '构建日志 2026-04-08 22:30',
+    title: '构建日志 2026-04-08 22:58',
     subtitle: 'Build Log via #build-log',
     messages: [
       {
         role: 'user',
-        content: '现在 Unreal Engine 还有用吗？我是说 AI 视频工具这么发达，有没有在 UE 上做 3D 建模？',
+        content: '刚才那条 Grok 对话截图已经 push 了，Netlify 正在 build，稍等几分钟就能在网站看到了。',
+        content_en: 'I’ve pushed that Grok conversation screenshot already; Netlify is building it now, so it should be live on the site in a few minutes.',
+        content_ko: '방금 Grok 대화 스크린샷을 푸시했어요. 지금 Netlify가 빌드 중이니 몇 분만 기다리면 사이트에서 확인 가능할 거예요.',
+      },
+      {
+        role: 'user',
+        content: 'https://oneten-strategy-log.netlify.app',
+        content_en: 'https://oneten-strategy-log.netlify.app',
+        content_ko: 'https://oneten-strategy-log.netlify.app',
+      },
+      {
+        role: 'user',
+        content: '好的，确保每个日 6am 自动部署的日志也正常进行，这个 dc 頻道是用來记录我随手想到的事情，它会参与到网页版构建日志里，不会和 6 点的自动化流程冲突，chapter 号码自然排序就好。',
+        content_en: 'Regarding the daily 6 AM deployments, please ensure everything runs smoothly. This DC channel is just for my spontaneous notes; they\'ll feed into the web build log and won\'t conflict with the automated 6 AM process. Simple natural incrementing chapter numbering is fine.',
+        content_ko: '네, 매일 오전 6시 자동 배포 로그도 정상적으로 진행되는지 확인해 주세요. 이 DC 채널은 제가 임의로 생각나는 걸 기록하는 곳이라 웹 빌드 로그에 참여할 거고, 6시 자동화 과정이랑 충돌하지 않을 거예요. 챕터 번호는 자연 순서로 지정하면 됩니다.',
+      },
+      {
+        role: 'user',
+        content: '这两套系统目前是完全不互相干扰的：',
+        content_en: 'Good news—the two systems are configured so they won\'t interfere with each other:',
+        content_ko: '좋아요. 두 시스템은 서로 간섭하지 않도록 설정했어요:',
+      },
+      {
+        role: 'user',
+        content: '・每天 6:00 AM cron → daily_log_gen.py → setSearcher 对话 → 生成新 chapter → push',
+        content_en: '・Every day at 6:00 AM cron → daily_log_gen.py → setSearcher conversation → generate new chapter → push',
+        content_ko: '・매일 오전 6시 cron → daily_log_gen.py → setSearcher 대화 → 새 챕터 생성 → push',
+      },
+      {
+        role: 'user',
+        content: '・#build-log 随时间发送 → build_log_publish.py → 写入',
+        content_en: '・#build-log updates over time → build_log_publish.py → write',
+        content_ko: '・#build-log는 시간차를 두고 → build_log_publish.py → 기록',
+      },
+      {
+        role: 'user',
+        content: 'AGENT_LOG.md → push',
+        content_en: 'AGENT_LOG.md → push',
+        content_ko: 'AGENT_LOG.md → push',
+      },
+      {
+        role: 'user',
+        content: '提醒一下：两个脚本在 commit 前都会先执行 git pull --rebase，chapter 号也会从当前 data.js 的最大值 +1 自然递增，不会出错的。',
+        content_en: 'Quick heads up: Both scripts will run `git pull --rebase` before committing. The chapter numbers will automatically increment from the current max value in data.js, so no errors are expected.',
+        content_ko: '참고로, 두 스크립트 모두 커밋 전에 `git pull --rebase`를 먼저 실행하고, 챕터 번호는 현재 data.js의 최대값에서 +1로 자연 증가하기 때문에 오류는 없을 거예요.',
       },
       {
         role: 'ai',
         header: 'DALI',
-        content: '这是一个非常深刻且处于行业前沿的问题。到 2026 年，AI 视频工具（如 Veo 3.1、Kling 等）确实能生成极具震撼的视觉效果，甚至致使像 Sora 2 这样的一代霸主因运营成本和版权问题在今年 3 月正式停服。',
-      },
-      {
-        role: 'ai',
-        header: 'DALI',
-        content: '简单直接的回答是：不仅有必要，而且 Unreal Engine (UE) 依然是专业创作的“定海神针”。AI 负责的是“生成”，而 UE 负责的是“掌控”。',
-      },
-      {
-        role: 'ai',
-        header: 'DALI',
-        content: '以下是万能点位，在 2026 年，你依然需要 UE 以及手动建模的几个核心逻辑：',
-      },
-      {
-        role: 'ai',
-        header: 'AI 视频',
-        content: '现在的 AI 视频本质上是“抽卡”。即使提示词 (Prompt) 再精准，你也很难让 AI 连续生成 10 个镜头，并保证镜头的人物长相、衣服褶皱、光影位置完全一致。',
-      },
-      {
-        role: 'ai',
-        header: 'UE 建模',
-        content: '在 UE 中，模型是资产，灯光是参数。你建好一个 3D 模型，无论镜头怎么切，它的几何结构、纹理、缩放状态都是 100% 确定的。对于需要多镜头的、长篇叙事的作品，UE 的确定性无可替代。',
+        content: '收到，辛苦了。我会留意新部署的网站和日后部署的日志更新。',
+        content_en: 'Understood. I’ll keep an eye on the site updates and the scheduled log generations.',
+        content_ko: '알겠습니다. 빌드된 사이트와 추후 배포되는 로그 업데이트에 유의할게요.',
       }
     ],
   }
