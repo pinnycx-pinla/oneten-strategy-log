@@ -655,5 +655,175 @@ export const LOG_DAYS = [
         content_ko: '응. UE (UE 5.7 기준)가 프로급 실시간 렌더링이나 버추얼 프로덕션 같은 건 여전히 최고긴 해. 근데 그게 유일한 답은 아니거든. 산업 전반에 보면 사용 편의성이나 비용, 아니면 간단한 프로젝트라든지 특정 분야에 따라 확실한 대체재나 조합들이 많아졌어.',
       }
     ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '41',
+    color: '#3b82f6',
+    title: '构建日志 2026-04-08 23:54',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '本地自动化：如果你的本地开发环境 (Mac 或 Linux 服务器) 需要定时运行日志文件或执行 AI 脚本，使用 cron 是最直接的方式。',
+        content_en: 'For local automation—if you need to run logging files or an AI script on a schedule within your local dev environment (Mac or Linux server), cron is the most direct route.',
+        content_ko: '로컬 자동화 같은 거 할 때, 만약 너의 개발 환경(Mac이나 리눅스 서버)에서 주기적으로 로그 파일 돌리거나 AI 스크립트 돌려야 하면, cron 쓰는 게 제일 직관적이야.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '小括士：对于初学者来说，写 cron 表达式很容易出错。你可以使用 Crontab.guru 这个工具，它可以实时地把你在写星号的地方翻译成人类能听懂的描述。',
+        content_en: 'PS: Cron expressions are tricky for beginners. I highly recommend checking out Crontab.guru; it instantly translates all that star notation into plain English so you know exactly what you\'re scheduling.',
+        content_ko: '근데 초보자들이 cron 표현식 짜다가 엄청 실수하거든. Crontab.guru라는 거 써봐, 네가 쓰는 별표식들을 사람이 알아들을 수 있는 말로 실시간으로 번역해주거든.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '请问你目前搭建的自动化流程，是打算用于服务器端的定时任务，还是局限在本地系统的定时触发？',
+        content_en: 'Just to clarify, is the automation you\'re building meant for scheduled server tasks, or is it limited to local system triggers?',
+        content_ko: '너 지금 만들려는 자동화가 서버 쪽 타이머로 돌리는 거야, 아니면 로컬 시스템에서만 돌아가게 하는 거야?',
+      },
+      {
+        role: 'user',
+        content: '我的 Claude 帮我设置了多个 cron 任务，这方面有没有什么使用上限呢？',
+        content_en: 'My Claude set up several cron jobs for me. Are there any limits on how many I can run?',
+        content_ko: '내 Claude가 여러 개로 cron 설정해줬는데, 이거 혹시 개수 제한 같은 거 있어?',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '42',
+    color: '#00f0ff',
+    title: '构建日志 2026-04-08 23:54',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '本地自动化：如果你的本地开发环境 (Mac 或 Linux 服务器) 需要定时运行日志文件或执行 AI 脚本，使用 cron 是最直接的方式。',
+        content_en: 'For local automation—if you need to run logging files or an AI script on a schedule within your local dev environment (Mac or Linux server), cron is the most direct route.',
+        content_ko: '로컬 자동화 같은 거 할 때, 만약 너의 개발 환경(Mac이나 리눅스 서버)에서 주기적으로 로그 파일 돌리거나 AI 스크립트 돌려야 하면, cron 쓰는 게 제일 직관적이야.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '小括士：对于初学者来说，写 cron 表达式很容易出错。你可以使用 Crontab.guru 这个工具，它可以实时地把你在写星号的地方翻译成人类能听懂的描述。',
+        content_en: 'PS: Cron expressions are tricky for beginners. I highly recommend checking out Crontab.guru; it instantly translates all that star notation into plain English so you know exactly what you\'re scheduling.',
+        content_ko: '근데 초보자들이 cron 표현식 짜다가 엄청 실수하거든. Crontab.guru라는 거 써봐, 네가 쓰는 별표식들을 사람이 알아들을 수 있는 말로 실시간으로 번역해주거든.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '请问你目前搭建的自动化流程，是打算用于服务器端的定时任务，还是局限在本地系统的定时触发？',
+        content_en: 'Just to clarify, is the automation you\'re building meant for scheduled server tasks, or is it limited to local system triggers?',
+        content_ko: '너 지금 만들려는 자동화가 서버 쪽 타이머로 돌리는 거야, 아니면 로컬 시스템에서만 돌아가게 하는 거야?',
+      },
+      {
+        role: 'user',
+        content: '我的 Claude 帮我设置了多个 cron 任务，这方面有没有什么使用上限呢？',
+        content_en: 'My Claude set up several cron jobs for me. Are there any limits on how many I can run?',
+        content_ko: '내 Claude가 여러 개로 cron 설정해줬는데, 이거 혹시 개수 제한 같은 거 있어?',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '43',
+    color: '#a855f7',
+    title: '构建日志 2026-04-08 23:54',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '本地自动化：如果你的本地开发环境 (Mac 或 Linux 服务器) 需要定时运行日志文件或执行 AI 脚本，使用 cron 是最直接的方式。',
+        content_en: 'For local automation—if you need to run logging files or an AI script on a schedule within your local dev environment (Mac or Linux server), cron is the most direct route.',
+        content_ko: '로컬 자동화 같은 거 할 때, 만약 너의 개발 환경(Mac이나 리눅스 서버)에서 주기적으로 로그 파일 돌리거나 AI 스크립트 돌려야 하면, cron 쓰는 게 제일 직관적이야.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '小括士：对于初学者来说，写 cron 表达式很容易出错。你可以使用 Crontab.guru 这个工具，它可以实时地把你在写星号的地方翻译成人类能听懂的描述。',
+        content_en: 'PS: Cron expressions are tricky for beginners. I highly recommend checking out Crontab.guru; it instantly translates all that star notation into plain English so you know exactly what you\'re scheduling.',
+        content_ko: '근데 초보자들이 cron 표현식 짜다가 엄청 실수하거든. Crontab.guru라는 거 써봐, 네가 쓰는 별표식들을 사람이 알아들을 수 있는 말로 실시간으로 번역해주거든.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '请问你目前搭建的自动化流程，是打算用于服务器端的定时任务，还是局限在本地系统的定时触发？',
+        content_en: 'Just to clarify, is the automation you\'re building meant for scheduled server tasks, or is it limited to local system triggers?',
+        content_ko: '너 지금 만들려는 자동화가 서버 쪽 타이머로 돌리는 거야, 아니면 로컬 시스템에서만 돌아가게 하는 거야?',
+      },
+      {
+        role: 'user',
+        content: '我的 Claude 帮我设置了多个 cron 任务，这方面有没有什么使用上限呢？',
+        content_en: 'My Claude set up several cron jobs for me. Are there any limits on how many I can run?',
+        content_ko: '내 Claude가 여러 개로 cron 설정해줬는데, 이거 혹시 개수 제한 같은 거 있어?',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '44',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-08 23:59',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'a',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '45',
+    color: '#10b981',
+    title: '构建日志 2026-04-08 23:54',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '本地自动化：如果你的本地开发环境 (Mac 或 Linux 服务器) 需要定时运行日志文件或执行 AI 脚本，使用 cron 是最直接的方式。',
+        content_en: 'For local automation—if you need to run logging files or an AI script on a schedule within your local dev environment (Mac or Linux server), cron is the most direct route.',
+        content_ko: '로컬 자동화 같은 거 할 때, 만약 너의 개발 환경(Mac이나 리눅스 서버)에서 주기적으로 로그 파일 돌리거나 AI 스크립트 돌려야 하면, cron 쓰는 게 제일 직관적이야.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '小括士：对于初学者来说，写 cron 表达式很容易出错。你可以使用 Crontab.guru 这个工具，它可以实时地把你在写星号的地方翻译成人类能听懂的描述。',
+        content_en: 'PS: Cron expressions are tricky for beginners. I highly recommend checking out Crontab.guru; it instantly translates all that star notation into plain English so you know exactly what you\'re scheduling.',
+        content_ko: '근데 초보자들이 cron 표현식 짜다가 엄청 실수하거든. Crontab.guru라는 거 써봐, 네가 쓰는 별표식들을 사람이 알아들을 수 있는 말로 실시간으로 번역해주거든.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '请问你目前搭建的自动化流程，是打算用于服务器端的定时任务，还是局限在本地系统的定时触发？',
+        content_en: 'Just to clarify, is the automation you\'re building meant for scheduled server tasks, or is it limited to local system triggers?',
+        content_ko: '너 지금 만들려는 자동화가 서버 쪽 타이머로 돌리는 거야, 아니면 로컬 시스템에서만 돌아가게 하는 거야?',
+      },
+      {
+        role: 'user',
+        content: '我的 Claude 帮我设置了多个 cron 任务，这方面有没有什么使用上限呢？',
+        content_en: 'My Claude set up several cron jobs for me. Are there any limits on how many I can run?',
+        content_ko: '내 Claude가 여러 개로 cron 설정해줬는데, 이거 혹시 개수 제한 같은 거 있어?',
+      }
+    ],
+  },
+  {
+    date: '2026-04-08',
+    chapter: '46',
+    color: '#ef4444',
+    title: '构建日志 2026-04-08 23:59',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'a',
+      }
+    ],
   }
 ];
