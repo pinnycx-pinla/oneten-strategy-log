@@ -673,8 +673,42 @@ export const LOG_DAYS = [
     messages: [
       {
         role: 'user',
-        content: '![Screenshot_2026-04-09_at_11.57.32_PM.png](build_log_assets/Screenshot_2026-04-09_at_11.57.32_PM.png)',
-      }
+        content: '发现 Gemma 把技术讨论（藤真模板搭建过程）硬套进 VN 对话格式——源材料是元讨论，不是剧情对话，Gemma 不知道怎么处理就直接转了。',
+      },
+      {
+        role: 'ai',
+        content: '问题根源：Gemma 识别不出"元讨论"类内容，全部套 VN 化。方案：① 让 Gemma 识别元讨论跳过 VN 化，直接纯文字发布；② 给 Gemma 加提示词，遇到工具/模板讨论时换一种摘要格式；③ 手动标记哪些对话可以转 VN，哪些不行。',
+        content_en: 'Root cause: Gemma can\'t distinguish "meta-discussion" content and applies VN formatting to everything. Fix options: ① Tag meta-discussions so Gemma skips VN conversion and publishes as plain text; ② Add prompt instructions for Gemma to use a summary format when processing tool/template discussions; ③ Manually flag which conversations can be converted to VN format.',
+      },
     ],
-  }
+  },
+  {
+    date: '2026-04-10',
+    chapter: '46',
+    color: '#6366f1',
+    title: '构建日志 2026-04-10',
+    subtitle: 'Motion Graphics · Remotion · Accio Work',
+    messages: [
+      {
+        role: 'user',
+        content: '搜 GitHub 有没有现成的 motion graphic 工作流可以用——想要那种有角色头像+气泡的聊天界面动画，跟八神工具差不多但要动态的。',
+        content_en: 'Searched GitHub for ready-made motion graphic workflows — specifically chat interface animations with character avatars and bubbles, similar to the yasagami VN tool but dynamic.',
+      },
+      {
+        role: 'ai',
+        content: 'GitHub 上这个方向基本空白，没有现成工具。最接近的是 remotion-dev/template-prompt-to-motion-graphics-saas。决定用 Remotion（React → MP4）自己搭：头像圆形裁切、气泡滑入动效、打字机效果，输出 1080×1920 竖屏 MP4。第一版已渲染完成。',
+        content_en: 'No ready-made tools found on GitHub for this use case. Closest match: remotion-dev/template-prompt-to-motion-graphics-saas. Built our own with Remotion (React → MP4): circular avatar crops, bubble slide-in animation, typewriter effect, 1080×1920 portrait MP4. First version rendered successfully.',
+      },
+      {
+        role: 'user',
+        content: '调研网页端 motion graphic 工具（Jitter、Hera、Rive、Veed）；确认 PixVerse 有 API，适合图片/角色转动效视频；Accio Work 介绍——想用它做 One Ten 音乐宣传 + 品牌推广 + 周边销售。',
+        content_en: 'Researched web-based motion graphic tools (Jitter, Hera, Rive, Veed); confirmed PixVerse has an API for image-to-video animation; reviewed Accio Work — plan to use it for One Ten music promotion, brand marketing, and merch sales.',
+      },
+      {
+        role: 'ai',
+        content: '制定 One Ten 品牌落地计划：内容 Agent 每周从构建日志提炼素材 → 自动生成小红书/X/YouTube 内容；PixVerse API 输出角色动效短视频；Accio Work 对接 Alibaba 供应链做周边（帽子/T恤/徽章）；Shopify 管客服。晚 8 点提醒用户开始配置。',
+        content_en: 'Drafted One Ten brand execution plan: weekly content agent pulls from build logs → auto-generates content for XHS/X/YouTube; PixVerse API for character animation clips; Accio Work connects to Alibaba supply chain for merch (hats/tees/pins); Shopify handles customer service. Scheduled 8pm reminder to start setup.',
+      },
+    ],
+  },
 ];
