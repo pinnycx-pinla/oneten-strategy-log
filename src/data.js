@@ -739,5 +739,45 @@ export const LOG_DAYS = [
         content: '**建议的最小路径：**\n小红书（图文）+ 抖音（视频）先跑，内容复用现有素材，不增加额外工作量。要不要我帮你设计一套自动把build-log内容同步到小红书草稿的流程？',
       }
     ],
+  },
+  {
+    date: '2026-04-11',
+    chapter: '48',
+    color: '#00f0ff',
+    title: '构建日志 2026-04-11 07:12',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '不好，停了。但其实已经成功了——视频已经成功提交到黑飞了（返回 200），现在只是在排队渲染中。关键发现是：不能使用 Cookie，必须用 `window.Clerk.session.getToken()` 来获取 Bearer token。这个之后可以做成脚本。视频 ID 是 `59e5debe-51be-4b11-9ab1-accb62b2c532`。目前状态是 `not_ready`，我生成了一个供你下载的链接，你要不要等它准备好？',
+        content_en: 'Hey, wait, hold on. But actually, it worked—the video successfully submitted to Blackfly (got a 200), it’s just sitting in the render queue right now. The key takeaway here is: we can’t rely on cookies; we have to grab the Bearer token using `window.Clerk.session.getToken()`. We can script this later. The video ID is `59e5debe-51be-4b11-9ab1-accb62b2c532`. It’s showing `not_ready`; I generated a link for you to download—should we wait for it?',
+        content_ko: '아니, 잠깐만. 근데 사실 성공했어—영상 백플라이에 성공적으로 제출됐어 (200 응답 왔어). 지금은 그냥 렌더링 대기 중인 것뿐이야. 중요한 건, 쿠키는 안 되고 `window.Clerk.session.getToken()` 이걸 써서 베어러 토큰을 받아와야 해. 이걸 나중에 스크립트로 만들면 돼. 비디오 ID는 이거야: `59e5debe-51be-4b11-9ab1-accb62b2c532`. 지금 상태가 `not_ready`라서 내가 다운로드 링크 만들어 뒀는데, 이거 기다릴까?',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '收到，我已经把进度发送到你的号上了。',
+        content_en: 'Got it, I just pushed the status update to your account.',
+        content_ko: '알겠어. 지금 네 계정에 진행 상황 올렸어.',
+      },
+      {
+        role: 'user',
+        content: '对，就是这个思路——你负责想法的构建，我来出成片。生视频、图生视频、配音、加字幕，这些都可以串起来。跑通整个流程后，我打算把整个过程封装成一个脚本。',
+        content_en: 'Yep, that\'s the play—you handle the concept, and I handle the execution. We can string together things like raw video, text-to-video, voiceover, and subtitles. Once the whole pipeline is solid, I plan to package it all up into a single script.',
+        content_ko: '응, 딱 그 느낌이야—너는 아이디어 잡아주고, 나는 그걸 영상으로 만드는 거지. 생영상, 이미지 투 비디오, 음성 입히기, 자막까지 다 연결할 수 있잖아. 전체 프로세스가 돌아가면, 나 그걸 하나의 스크립트로 묶을 거야.',
+      },
+      {
+        role: 'user',
+        content: '另外，我们直接跑过上次网页上点击 Generate 的结果——是 Seedance 2.0 的“slow motion”图生视频。',
+        content_en: 'Also, remember that previous result we got when we hit Generate on the web interface? That was the Seedance 2.0 "slow motion" image-to-video.',
+        content_ko: '그리고 아까 웹에서 \'Generate\' 눌렀을 때 나온 결과 기억나? 그 Seedance 2.0 \'슬로우 모션\' 이미지 투 비디오 그거 말이야.',
+      },
+      {
+        role: 'user',
+        content: '我们提交的那个关于航天器飞飞的新任务还在排队，可能系统对参数的接受有要求。但现在我们知道了正确的参数结构，下次我们可以补上 `mode/genre/speedramp` 这些字段。',
+        content_en: 'The new task we submitted for the aerospace footage is still queued up. It seems the system is picky about parameters. But now that we know the correct structure, next time we can make sure to add fields like `mode`, `genre`, and `speedramp`.',
+        content_ko: '우리가 넣은 우주선 영상 새 작업은 아직 대기 중인 것 같아. 시스템이 파라미터 구조에 좀 까다로운가 봐. 그래도 이제 올바른 구조를 알았으니까, 다음엔 `mode`, `genre`, `speedramp` 같은 필드도 꼭 추가해야겠다.',
+      }
+    ],
   }
 ];
