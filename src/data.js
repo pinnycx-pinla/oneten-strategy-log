@@ -779,5 +779,99 @@ export const LOG_DAYS = [
         content_ko: '우리가 넣은 우주선 영상 새 작업은 아직 대기 중인 것 같아. 시스템이 파라미터 구조에 좀 까다로운가 봐. 그래도 이제 올바른 구조를 알았으니까, 다음엔 `mode`, `genre`, `speedramp` 같은 필드도 꼭 추가해야겠다.',
       }
     ],
+  },
+  {
+    date: '2026-04-11',
+    chapter: '49',
+    color: '#a855f7',
+    title: '构建日志 2026-04-11 16:16',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: '•    单笔风险',
+        content: '每笔最多亏总资产的1%（0DTE波动太大，1%已经够狠了）',
+        content_en: 'Max 1% of capital per trade (0DTE volatility is brutal — 1% is already aggressive)',
+        content_ko: '거래당 총 자산 1% 이하 손실 허용 (0DTE 변동성이 너무 커서 1%도 이미 공격적)',
+      },
+      {
+        role: 'ai',
+        header: '•    日内熔断',
+        content: '亏到**4%**时，强制砍掉所有仓位，彻底停手，不留半仓',
+        content_en: 'Circuit breaker at **4%** loss — force-close everything, full stop, no half-positions',
+        content_ko: '**4%** 손실 시 서킷 브레이커 — 모든 포지션 강제 청산, 완전 중단, 반 포지션도 없음',
+      },
+      {
+        role: 'ai',
+        header: '•    最大回撤',
+        content: '全天累计回撤超过**8%**就直接锁仓到第二天，不等15%',
+        content_en: 'Daily drawdown over **8%** → lock positions until next day, don\'t wait for 15%',
+        content_ko: '하루 누적 손실 **8%** 초과 시 → 다음날까지 포지션 잠금, 15% 기다리지 않음',
+      },
+      {
+        role: 'ai',
+        header: '•    仓位限制',
+        content: '单笔期权仓位不超过总资产10%，别一把梭哈',
+        content_en: 'Single options position capped at 10% of total assets — no all-in bets',
+        content_ko: '단일 옵션 포지션은 총 자산의 10% 이하 — 몰빵 금지',
+      }
+    ],
+  },
+  {
+    date: '2026-04-11',
+    chapter: '50',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-11 16:16',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: '•    单笔风险',
+        content: '每笔最多亏总资产的1%（0DTE波动太大，1%已经够狠了）',
+        content_en: 'Max 1% of capital per trade (0DTE volatility is brutal — 1% is already aggressive)',
+        content_ko: '거래당 총 자산 1% 이하 손실 허용 (0DTE 변동성이 너무 커서 1%도 이미 공격적)',
+      },
+      {
+        role: 'ai',
+        header: '•    日内熔断',
+        content: '亏到**4%**时，强制砍掉所有仓位，彻底停手，不留半仓',
+        content_en: 'Circuit breaker at **4%** loss — force-close everything, full stop, no half-positions',
+        content_ko: '**4%** 손실 시 서킷 브레이커 — 모든 포지션 강제 청산, 완전 중단, 반 포지션도 없음',
+      },
+      {
+        role: 'ai',
+        header: '•    最大回撤',
+        content: '全天累计回撤超过**8%**就直接锁仓到第二天，不等15%',
+        content_en: 'Daily drawdown over **8%** → lock positions until next day, don\'t wait for 15%',
+        content_ko: '하루 누적 손실 **8%** 초과 시 → 다음날까지 포지션 잠금, 15% 기다리지 않음',
+      },
+      {
+        role: 'ai',
+        header: '•    仓位限制',
+        content: '单笔期权仓位不超过总资产10%，别一把梭哈',
+        content_en: 'Single options position capped at 10% of total assets — no all-in bets',
+        content_ko: '단일 옵션 포지션은 총 자산의 10% 이하 — 몰빵 금지',
+      },
+      {
+        role: 'user',
+        content: 'AlphaVault 运行截图 — K线和持仓数据',
+        content_en: 'AlphaVault screenshot — K-line chart & positions',
+        content_ko: 'AlphaVault 실행 화면 — K선 차트 및 포지션 현황',
+        image: '/test_alpaca.jpg',
+      },
+    ],
+  },
+  {
+    date: '2026-04-14',
+    chapter: '51',
+    color: '#10b981',
+    title: '构建日志 2026-04-14 03:19',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '![Screenshot_2026-04-14_at_3.19.46_AM.png](build_log_assets/Screenshot_2026-04-14_at_3.19.46_AM.png)',
+      }
+    ],
   }
 ];
