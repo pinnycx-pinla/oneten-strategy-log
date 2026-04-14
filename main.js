@@ -2,6 +2,7 @@ import { LOG_DAYS, FX_DEMO } from './src/data.js';
 
 // ── Page State ────────────────────────────────────────────────────────────
 let currentPage = LOG_DAYS.length - 1; // start on latest day
+let currentLang = 'zh'; // zh | en | ko
 
 // Entrance animation styles cycling per message index
 const ENTER_STYLES = ['', 'enter-drop', 'enter-expand', 'enter-beam', 'enter-glitch'];
@@ -14,18 +15,23 @@ function renderMessage(msg, delay = 0, index = 0) {
   div.className = `message ${isUser ? 'user' : 'ai'} fade-in ${enterClass}`.trim();
   div.style.animationDelay = `${delay}s`;
 
+  const USER_NAMES = { zh: '文天', en: 'ONE TEN', ko: '문천' };
+  const userName = USER_NAMES[currentLang] || '文天';
   const avatar = `
     <div class="avatar">
       <img src="${isUser ? '/wen_tian.png' : '/dali_new_transparent.png'}"
-           alt="${isUser ? '文天' : 'DALI'}"
+           alt="${isUser ? userName : 'DALI'}"
            ${isUser ? '' : 'class="dali-3d"'}>
-      <span class="name">${isUser ? '文天' : 'DALI'}</span>
+      <span class="name">${isUser ? userName : 'DALI'}</span>
     </div>`;
 
   let bubbleInner = '';
   if (msg.header) bubbleInner += `<div class="bubble-header" data-text="${msg.header}">${msg.header}</div>`;
   if (msg.action)  bubbleInner += `<div class="bubble ai-action"><span class="play-icon">▶</span><div class="action-text"><span class="title">${msg.action}</span></div></div>`;
-  if (msg.content) bubbleInner += `<p>${msg.content}</p>`;
+  const localContent = (currentLang === 'en' && msg.content_en) ? msg.content_en
+                     : (currentLang === 'ko' && msg.content_ko) ? msg.content_ko
+                     : msg.content;
+  if (localContent) bubbleInner += `<p>${localContent}</p>`;
 
   // Single box
   if (msg.box) {
@@ -54,6 +60,15 @@ function renderMessage(msg, delay = 0, index = 0) {
       <thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead>
       <tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>
     </table></div>`;
+  }
+
+  // Screenshot / image attachment
+  if (msg.image) {
+    const imgs = Array.isArray(msg.image) ? msg.image : [msg.image];
+    const grid = imgs.length > 1 ? ' bubble-img-grid' : '';
+    bubbleInner += `<div class="bubble-images${grid}">${imgs.map(src =>
+      `<img class="bubble-img" src="${src}" alt="screenshot" loading="lazy">`
+    ).join('')}</div>`;
   }
 
   if (msg.footer) bubbleInner += `<p style="margin-top:10px;font-size:0.9em;opacity:0.8">${msg.footer}</p>`;
@@ -101,11 +116,14 @@ function renderPage(index) {
   }
 
   // Chapter divider
+  const chapterTitle = (currentLang === 'en' && day.title_en) ? day.title_en
+                     : (currentLang === 'ko' && day.title_ko) ? day.title_ko
+                     : day.title;
   const divider = document.createElement('div');
   divider.className = 'timeline-divider';
   divider.innerHTML = `
     <span class="line left-line"></span>
-    <span class="text">CHAPTER ${day.chapter} &middot; ${day.title}</span>
+    <span class="text">CHAPTER ${day.chapter} &middot; ${chapterTitle}</span>
     <span class="line right-line"></span>`;
   container.appendChild(divider);
 
@@ -223,11 +241,13 @@ effectScripts.forEach(fx => {
 const BG_CYCLE = ['nebula', 'cosmic', 'galaxy', 'vanta-NET', 'vanta-DOTS', 'vanta-BIRDS'];
 const BG_LABELS = { nebula: '✦ 星云', cosmic: '✦ 星云·蝴蝶', galaxy: '✦ 银河', 'vanta-NET': '✦ 粒子网络', 'vanta-DOTS': '✦ 量子矩阵', 'vanta-BIRDS': '✦ 数据流' };
 let bgIdx = 0;
+let currentBgMode = 'nebula';
 
 document.getElementById('fx-btn').addEventListener('click', () => {
   bgIdx = (bgIdx + 1) % BG_CYCLE.length;
   const mode = BG_CYCLE[bgIdx];
-  document.getElementById('fx-btn').textContent = BG_LABELS[mode];
+  currentBgMode = mode;
+  document.getElementById('fx-btn').textContent = (UI[currentLang]?.bgLabels[mode]) || BG_LABELS[mode];
   if (mode === 'nebula' || mode === 'cosmic' || mode === 'galaxy') {
     if (vantaEffect) { vantaEffect.destroy(); vantaEffect = null; }
     showBg(mode);
@@ -250,10 +270,51 @@ document.getElementById('btn-fontsize').addEventListener('click', () => {
 });
 
 // ── Language Selector ─────────────────────────────────────────────────────
+const LANG_MAP = { '한국어': 'ko', 'English': 'en', '中文': 'zh' };
+const HEADER_NAMES = { zh: '文天', en: 'ONE TEN', ko: '문천' };
+const HERO_TAGLINES  = { zh: '智能构建', en: 'Intelligent Build', ko: '지능형 구축' };
+const HERO_SUBTITLES = {
+  zh: '从策略到系统 · 从对话到代码 · 从代码到公司',
+  en: 'From Strategy to System · From Dialogue to Code · From Code to Company',
+  ko: '전략에서 시스템으로 · 대화에서 코드로 · 코드에서 회사로',
+};
+const UI = {
+  zh: { prev: '← 前一天', next: '后一天 →', fxDemo: '✦ 特效预览', fxBack: '← 返回日志', fxToggle: '✦ 切换特效',
+        bgLabels: { nebula: '✦ 星云', cosmic: '✦ 星云·蝴蝶', galaxy: '✦ 银河', 'vanta-NET': '✦ 粒子网络', 'vanta-DOTS': '✦ 量子矩阵', 'vanta-BIRDS': '✦ 数据流' },
+        themeLabels: ['◈ 默认', '◈ 风格 A · 3D倾斜', '◈ 风格 B · 霓虹玻璃', '◈ 风格 C · 暗面板', '◈ 风格 D · 高亮玻璃'] },
+  en: { prev: '← Prev', next: 'Next →', fxDemo: '✦ FX Preview', fxBack: '← Back to Log', fxToggle: '✦ Switch FX',
+        bgLabels: { nebula: '✦ Nebula', cosmic: '✦ Nebula·Butterfly', galaxy: '✦ Galaxy', 'vanta-NET': '✦ Particle Net', 'vanta-DOTS': '✦ Quantum Grid', 'vanta-BIRDS': '✦ Data Flow' },
+        themeLabels: ['◈ Default', '◈ Style A · 3D Tilt', '◈ Style B · Neon Glass', '◈ Style C · Dark Panel', '◈ Style D · Bright Glass'] },
+  ko: { prev: '← 이전', next: '다음 →', fxDemo: '✦ 특효 미리보기', fxBack: '← 로그로 돌아가기', fxToggle: '✦ 특효 전환',
+        bgLabels: { nebula: '✦ 성운', cosmic: '✦ 성운·나비', galaxy: '✦ 은하', 'vanta-NET': '✦ 파티클 네트', 'vanta-DOTS': '✦ 퀀텀 그리드', 'vanta-BIRDS': '✦ 데이터 흐름' },
+        themeLabels: ['◈ 기본', '◈ 스타일 A · 3D 틸트', '◈ 스타일 B · 네온 글래스', '◈ 스타일 C · 다크 패널', '◈ 스타일 D · 브라이트 글래스'] },
+};
+
+let fxDemoActive = false; // track FX demo state for correct button label on lang switch
+
+function applyLang(lang) {
+  const u = UI[lang] || UI.zh;
+  const $= id => document.getElementById(id);
+  $('header-user-name') && ($('header-user-name').textContent = HEADER_NAMES[lang] || '文天');
+  $('hero-tagline')     && ($('hero-tagline').textContent  = HERO_TAGLINES[lang]);
+  $('hero-subtitle')    && ($('hero-subtitle').textContent = HERO_SUBTITLES[lang]);
+  $('btn-prev')         && ($('btn-prev').textContent  = u.prev);
+  $('btn-next')         && ($('btn-next').textContent  = u.next);
+  $('btn-fx-demo')      && ($('btn-fx-demo').textContent = fxDemoActive ? u.fxBack : u.fxDemo);
+  $('fx-btn')           && ($('fx-btn').textContent    = u.bgLabels[currentBgMode] || u.fxToggle);
+  $('btn-theme')        && ($('btn-theme').textContent = u.themeLabels[currentTheme]);
+}
+
 document.querySelectorAll('.language-selector span').forEach(span => {
   span.addEventListener('click', e => {
     document.querySelector('.language-selector span.active')?.classList.remove('active');
     e.target.classList.add('active');
+    const lang = LANG_MAP[e.target.textContent.trim()];
+    if (lang && lang !== currentLang) {
+      currentLang = lang;
+      applyLang(lang);
+      renderPage(currentPage);
+    }
   });
 });
 
@@ -271,13 +332,15 @@ document.addEventListener('mousemove', e => {
 let showingDemo = false;
 document.getElementById('btn-fx-demo').addEventListener('click', () => {
   showingDemo = !showingDemo;
+  fxDemoActive = showingDemo;
+  const u = UI[currentLang] || UI.zh;
   if (showingDemo) {
     renderCustomPage(FX_DEMO);
-    document.getElementById('btn-fx-demo').textContent = '← 返回日志';
+    document.getElementById('btn-fx-demo').textContent = u.fxBack;
     document.getElementById('btn-fx-demo').style.opacity = '1';
   } else {
     renderPage(currentPage);
-    document.getElementById('btn-fx-demo').textContent = '✦ 特效预览';
+    document.getElementById('btn-fx-demo').textContent = u.fxDemo;
     document.getElementById('btn-fx-demo').style.opacity = '0.6';
   }
 });
@@ -305,11 +368,13 @@ function renderCustomPage(day) {
 const THEMES = [null, 'theme-tilt', 'theme-neon', 'theme-panels', 'theme-bright'];
 const THEME_LABELS = ['◈ 默认', '◈ 风格 A · 3D倾斜', '◈ 风格 B · 霓虹玻璃', '◈ 风格 C · 暗面板', '◈ 风格 D · 高亮玻璃'];
 let themeIdx = 2; // default: theme-neon
+let currentTheme = 2;
 
 function applyTheme(idx) {
   THEMES.forEach(t => t && document.body.classList.remove(t));
   if (THEMES[idx]) document.body.classList.add(THEMES[idx]);
-  document.getElementById('btn-theme').textContent = THEME_LABELS[idx];
+  currentTheme = idx;
+  document.getElementById('btn-theme').textContent = (UI[currentLang]?.themeLabels[idx]) || THEME_LABELS[idx];
 }
 
 document.getElementById('btn-theme').addEventListener('click', () => {

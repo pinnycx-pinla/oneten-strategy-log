@@ -873,5 +873,64 @@ export const LOG_DAYS = [
         content: '![Screenshot_2026-04-14_at_3.19.46_AM.png](build_log_assets/Screenshot_2026-04-14_at_3.19.46_AM.png)',
       }
     ],
+  },
+  {
+    date: '2026-04-12',
+    chapter: '52',
+    color: '#ef4444',
+    title: 'AI 图像流水线启动',
+    subtitle: 'Midjourney 机甲素材批量生成 · PINLA 视觉库建设',
+    messages: [
+      {
+        role: 'user',
+        content: '今天专注在 AI 图像生成这条线——用 Midjourney 跑了一批机甲机器人素材，Cinema Studio Image 风格，Classic Anamorphic 镜头，蓝色发光核心配金属光泽面板。这批素材是为后续视频内容和 PINLA 视觉库备用的。整体风格跑通了，下一步可以批量扩展。',
+        content_en: 'Today I focused on the AI image generation pipeline — ran a batch of mech robot assets through Midjourney. Cinema Studio Image style, Classic Anamorphic lens, blue glowing energy core with metallic panel sheen. These assets are queued for future video content and the PINLA visual library. The aesthetic direction is locked in; next step is scaling the batch.',
+        content_ko: '오늘은 AI 이미지 생성 파이프라인에 집중했어 — 미드저니로 메카 로봇 소재 한 배치 뽑았어. Cinema Studio Image 스타일, Classic Anamorphic 렌즈, 파란 발광 코어에 메탈 패널 광택. 이 소재들은 앞으로 나올 영상 콘텐츠랑 PINLA 비주얼 라이브러리용으로 쓸 거야. 전체 방향성은 잡혔고, 다음 단계는 배치 확장이야.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-13',
+    chapter: '53',
+    color: '#3b82f6',
+    title: 'PINLA 全平台部署对齐',
+    subtitle: '网站上线 · App 跑通 · NotebookLM Python 库调研',
+    messages: [
+      {
+        role: 'user',
+        content: '整理了一下今天的进度——PINLA 网站已经部署到 peppy-lokum-fefb01.netlify.app，源文件在 /tmp/pinla_site/；PINLA App 跑通了（~/workdir/pinla-app，npx expo start --tunnel），6个子页内容还没填，计划晚上推进。另外发现了 NotebookLM 的非官方 Python 库（teng-lin/notebooklm-py），可以通过 Python/CLI/AI Agent 访问 NotebookLM 全部功能，值得研究。',
+        content_en: 'Quick progress summary — PINLA site is live at peppy-lokum-fefb01.netlify.app, source at /tmp/pinla_site/. PINLA App is running (~/workdir/pinla-app, npx expo start --tunnel). Six sub-pages still need content, planning to knock those out tonight. Also found an unofficial NotebookLM Python library (teng-lin/notebooklm-py) that exposes full NotebookLM functionality via Python, CLI, and AI agents. Worth integrating.',
+        content_ko: '오늘 진행 상황 정리 — PINLA 사이트 peppy-lokum-fefb01.netlify.app에 배포 완료, 소스는 /tmp/pinla_site/. PINLA 앱 실행됨 (~/workdir/pinla-app, npx expo start --tunnel). 6개 서브 페이지 내용 아직 미작성, 오늘 밤에 채울 예정. NotebookLM 비공식 파이썬 라이브러리도 발견 (teng-lin/notebooklm-py) — Python/CLI/AI 에이전트로 NotebookLM 전체 기능 접근 가능. 연동 검토할 만해.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '收到，子页我们晚上对齐。NotebookLM 这个库有意思，可以连到我们的 Agent 管道里。',
+        content_en: 'Got it — we\'ll sync on the sub-pages tonight. That NotebookLM library is interesting; could hook it straight into our agent pipeline.',
+        content_ko: '알겠어, 서브 페이지는 오늘 밤에 맞추자. NotebookLM 라이브러리 흥미롭다, 에이전트 파이프라인에 바로 붙일 수도 있겠다.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-13',
+    chapter: '54',
+    color: '#00f0ff',
+    title: '社媒双轨自动化跑通',
+    subtitle: 'Gemma 三平台文案 · CinematicOverlay · DC 清理',
+    messages: [
+      {
+        role: 'user',
+        content: '晚上又推进了几条线——社媒 bot 跑通了：顺序用 Gemma 生成三平台文案（DC/小红书/X），已测通等验证；PINLA Studio App 加了 CinematicOverlay 特效，同时整理了 19 个 AI 视频工具页；社媒自动化策略调整成双轨：音乐线 + AI 工具线，接 FL Studio 视频素材；DC 清理了 3 个重复频道。整体比昨天更清晰了。',
+        content_en: 'Good push tonight — social bot is live: Gemma generates content sequentially for three platforms (DC / Xiaohongshu / X), tested and pending final validation. PINLA Studio App got the CinematicOverlay effect, plus cleaned up the 19-page AI video tools section. Social media automation is now dual-track: music lane plus AI-tools lane, pulling in FL Studio footage. Also cleared out 3 duplicate channels on DC. Things are a lot cleaner.',
+        content_ko: '오늘 밤 꽤 진행됐어 — 소셜 봇 작동함: Gemma로 세 플랫폼(DC/샤오홍슈/X) 순차 문안 생성, 테스트 완료 검증 대기 중. PINLA Studio 앱에 CinematicOverlay 특효 추가, AI 영상 도구 19페이지도 정리함. 소셜 자동화 전략 이중 트랙으로 조정: 음악 라인 + AI 도구 라인, FL Studio 영상 소재 연결. DC 중복 채널 3개 정리. 전체적으로 훨씬 깔끔해졌어.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '节奏对了。社媒双轨这个思路——音乐和工具分开跑，互不干扰，适合批量产出。',
+        content_en: 'That\'s the right rhythm. The dual-track social play — music and tools running in parallel without interference — is built for volume output.',
+        content_ko: '리듬 맞네. 이중 트랙 소셜 전략 — 음악이랑 도구 따로 돌리는 거, 서로 안 간섭하면서 대량 출력에 최적이야.',
+      }
+    ],
   }
 ];

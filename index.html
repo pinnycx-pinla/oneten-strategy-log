@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/main.js"></script>
 </head>
 <body>
   <!-- Vanta.js 3D Background (kept for switcher) -->
@@ -31,14 +32,14 @@
         </div>
       </div>
       <div class="title-section">
-        <h1 class="main-title">ONETEN QUANT — <span>智能构建</span></h1>
-        <p class="subtitle">从策略到系统 · 从对话到代码 · 从代码到公司</p>
+        <h1 class="main-title">ONETEN QUANT — <span id="hero-tagline">智能构建</span></h1>
+        <p class="subtitle" id="hero-subtitle">从策略到系统 · 从对话到代码 · 从代码到公司</p>
       </div>
       <div class="connection-graphic">
         <div class="avatar-wrap">
           <div class="glow-ring"></div>
           <img src="/wen_tian.png" alt="文天">
-          <span class="name">文天</span>
+          <span class="name" id="header-user-name">文天</span>
         </div>
         <div class="line-path">
           <svg preserveAspectRatio="none" viewBox="0 0 800 50">
@@ -83,6 +84,5 @@
   <button id="btn-fontsize" title="字体大小">A</button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script type="module" src="/main.js"></script>
 </body>
 </html>

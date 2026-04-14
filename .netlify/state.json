@@ -1,3 +1,21 @@
 {
-	"siteId": "5dce9a16-01dd-483b-8fa8-f2a93a4de03a"
+	"siteId": "5dce9a16-01dd-483b-8fa8-f2a93a4de03a",
+	"geolocation": {
+		"data": {
+			"city": "Queens",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "NY",
+				"name": "New York"
+			},
+			"timezone": "America/New_York",
+			"latitude": 40.7681,
+			"longitude": -73.8291,
+			"postalCode": "11354"
+		},
+		"timestamp": 1775940000757
+	}
 }
