@@ -961,5 +961,53 @@ export const LOG_DAYS = [
         content_ko: '그리고, 문천 너를 위해 시스템 자원 보고서를 만들었어. WebKit 탭이랑 디스코드가 메모리 소모가 가장 큰 원인이라고 지적했어. 주기적으로 이 프로세스들을 정리하는 습관을 들이는 걸 추천할게.',
       }
     ],
+  },
+  {
+    date: '2026-04-17',
+    chapter: '56',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-17 00:20',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '![Screenshot_2026-04-17_at_12.20.38_AM.png](build_log_assets/Screenshot_2026-04-17_at_12.20.38_AM.png)',
+      }
+    ],
+  },
+  {
+    date: '2026-04-18',
+    chapter: '57',
+    color: '#10b981',
+    title: '构建日志 2026-04-18 13:12',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '现在系统架构很清晰了，关键在于Obsidian要作为我的“个人永久记忆”，而你只需要通过本地文件夹就能读取到这些历史上下文。',
+        content_en: 'The system architecture is very clear now. The key is that Obsidian needs to serve as my "personal permanent memory," and you just need to read this historical context through a local folder.',
+        content_ko: '지금 시스템 아키텍처가 확실해졌어. 핵심은 Obsidian이 내 ‘개인 영구 기억’ 역할을 하는 거고, 너는 로컬 폴더만 통해서 이 역사적 컨텍스트를 읽으면 돼.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '对，我们把整个 `~/wiki` 建立成 Git 仓库，让交易系统每次复盘后都能自动 `commit` 到 GitHub，这样既保证了历史备份，又确保我能随时读取到完整的迭代记录。',
+        content_en: 'Exactly. We should set up the entire `~/wiki` as a Git repository, so that the trading system can automatically `commit` to GitHub after every review. This guarantees both historical backup and allows me to read the full iteration record anytime.',
+        content_ko: '응. 우리가 `~/wiki` 전체를 Git 리포지토리로 만들어서, 거래 시스템이 복습할 때마다 자동으로 GitHub에 `commit`하게 하자. 이렇게 하면 역사적 백업은 보장되고, 내가 언제든 전체 이터레이션 기록을 읽을 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '很好，我们把所有的自动化日志（交易、构建、内容分发）都调整方向，强制它们将结果自动写入到对应的 Obsidian 知识库板块。',
+        content_en: 'That\'s great. We need to redirect all automated logs (trading, builds, content distribution) to force them to automatically write their results into the corresponding Obsidian knowledge base sections.',
+        content_ko: '좋아. 모든 자동화 로그(거래, 빌드, 콘텐츠 분배) 방향을 조정해서, 결과를 강제로 해당하는 Obsidian 지식 라이브러리 섹션에 자동으로 쓰게 해.',
+      },
+      {
+        role: 'ai',
+        header: 'DALI',
+        content: '没问题，我帮你完成插件的搭建和文件夹结构，先让数据存储流程跑通，再考虑自动化的数据写入，这样最稳妥。',
+        content_en: 'No problem. I\'ll help you set up the plugins and the folder structure. Let\'s get the data storage workflow running first, and then we can consider the automated data writing. That\'s the most stable approach.',
+        content_ko: '문제없어. 내가 플러그인 구축이랑 폴더 구조 도와줄게. 일단 데이터 저장 흐름부터 작동하게 하고, 그 다음에 자동 데이터 쓰기를 고려하는 게 제일 안전해.',
+      }
+    ],
   }
 ];
