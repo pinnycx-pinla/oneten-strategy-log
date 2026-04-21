@@ -1283,5 +1283,190 @@ export const LOG_DAYS = [
         content_ko: '전부 배포됨. 디자인 시스템 완성도 한 단계 더 올라감.',
       }
     ],
+  },
+  {
+    date: '2026-04-19',
+    chapter: '66',
+    color: '#00f0ff',
+    title: '构建日志 2026-04-19 23:14',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'AlphaVault 的策略已经跑了两周多，总收益 +14.55%，但我想把收益曲线可视化放到网站上，让访客能直接看到账户走势。',
+        content_en: 'The AlphaVault strategy has been running for over two weeks — total return +14.55%. I want to visualize the equity curve on the site so visitors can see the account trajectory directly.',
+        content_ko: 'AlphaVault 전략이 2주 넘게 돌아갔어, 총 수익 +14.55%. 사이트에 수익 곡선 시각화 넣어서 방문자들이 계좌 흐름 바로 볼 수 있게 하고 싶어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，我来接 Alpaca 的 /account/portfolio/history 接口，把日度 equity 序列画成 sparkline 嵌在首页。数据点用真实时间戳对齐，不做任何平滑处理。',
+        content_en: 'Got it. I\'ll connect to Alpaca\'s /account/portfolio/history endpoint and render the daily equity series as a sparkline embedded on the homepage. Data points aligned to real timestamps, no smoothing.',
+        content_ko: '알겠어. Alpaca /account/portfolio/history 엔드포인트 연결해서 일별 자산 시계열 데이터를 홈페이지에 스파크라인으로 렌더링할게. 실제 타임스탬프 기준으로 정렬하고 스무딩 없이.',
+      },
+      {
+        role: 'user',
+        content: '好，数据要真实，别美化。跑通之后顺手把纸账说明也加上去——访客必须知道这是模拟资金。',
+        content_en: 'Good. Keep it honest — no beautification. Once it\'s running, add the paper account disclaimer. Visitors must know this is simulated capital.',
+        content_ko: '좋아. 데이터 솔직하게, 미화 없이. 되면 페이퍼 계좌 고지도 추가해. 방문자들이 이게 모의 자금인지 알아야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '✅ 已加免责标注：「Paper Trading · Non-Real Capital」。Sparkline 上线，绿色上涨、红色回撤，实时刷新。',
+        content_en: '✅ Disclaimer added: "Paper Trading · Non-Real Capital." Sparkline live — green for gains, red for drawdown, real-time refresh.',
+        content_ko: '✅ 고지 추가 완료: \'Paper Trading · Non-Real Capital\'. 스파크라인 라이브 — 상승은 초록, 하락은 빨강, 실시간 갱신.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-20',
+    chapter: '67',
+    color: '#a855f7',
+    title: '构建日志 2026-04-20 10:30',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '构建日志的网站视觉太老了，想换成和 oneten-quant-remix 一致的设计语言——白底、毛玻璃卡片、霓虹蓝点缀。',
+        content_en: 'The build log site\'s visual design is outdated. I want to align it with the oneten-quant-remix design language — white background, frosted glass cards, neon blue accents.',
+        content_ko: '구축 일지 사이트 비주얼이 너무 오래됐어. oneten-quant-remix 디자인 언어랑 맞추고 싶어 — 흰 배경, 매트 유리 카드, 네온 블루 포인트.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '我分析了现有 CSS，主要差距在于：卡片背景不透明、没有 backdrop-filter、字体用的是系统默认。建议优先改这三点，视觉落差最大。',
+        content_en: 'I analyzed the existing CSS. The main gaps are: opaque card backgrounds, no backdrop-filter, and system-default fonts. I recommend fixing these three first — they\'ll have the biggest visual impact.',
+        content_ko: '기존 CSS 분석했어. 주요 차이점은: 카드 배경 불투명, backdrop-filter 없음, 폰트 시스템 기본값. 이 세 가지 먼저 고치는 게 시각적 차이 가장 커.',
+      },
+      {
+        role: 'user',
+        content: '先改字体和卡片，颜色跟着 remix 走，不要自创色盘。',
+        content_en: 'Start with the font and cards. Follow the remix color palette — don\'t invent new colors.',
+        content_ko: '폰트랑 카드 먼저 바꿔. 색상은 remix 팔레트 따라가, 새로 만들지 말고.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '✅ 已同步 Space Grotesk + JetBrains Mono，卡片加了 rgba 毛玻璃底和 1px 白色高光边框。整体干净了很多，等你 review。',
+        content_en: '✅ Synced Space Grotesk + JetBrains Mono. Cards now have rgba frosted glass backgrounds and a 1px white highlight border. Much cleaner overall — awaiting your review.',
+        content_ko: '✅ Space Grotesk + JetBrains Mono 동기화 완료. 카드에 rgba 매트 유리 배경이랑 1px 흰색 하이라이트 테두리 추가했어. 전체적으로 훨씬 깔끔해졌어 — 리뷰 기다릴게.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-20',
+    chapter: '68',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-20 18:45',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '0DTE 策略今天出现了一次异常——SPY 突然跳空，持仓瞬间 delta 翻转，止损没触发，最后靠 theta 自然衰减才回正。这种情况需要纳入规则。',
+        content_en: 'The 0DTE strategy hit an anomaly today — SPY gapped hard, the position\'s delta flipped instantly, the stop-loss didn\'t trigger, and it only recovered through natural theta decay. This scenario needs to be documented in the rulebook.',
+        content_ko: '오늘 0DTE 전략에 이상 상황 발생했어 — SPY가 갑자기 갭 뜨면서 포지션 델타가 순간적으로 뒤집혔고, 손절가 안 터지고, 결국 테타 자연 감소로 회복했어. 이 상황 규칙에 넣어야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '这是典型的 gap risk 场景。建议在策略层加一条规则：若开盘前 futures 偏离前收超过 0.4%，当天不开新仓，等价格稳定后再评估入场窗口。',
+        content_en: 'Classic gap risk scenario. I recommend adding a rule at the strategy level: if pre-market futures deviate more than 0.4% from the prior close, skip new entries for the day and reassess the entry window once price stabilizes.',
+        content_ko: '전형적인 갭 리스크 시나리오야. 전략 레벨에 규칙 하나 추가 권장: 장 전 선물이 전일 종가 대비 0.4% 이상 이탈하면 당일 신규 진입 스킵하고, 가격 안정된 후 진입 창 재평가.',
+      },
+      {
+        role: 'user',
+        content: '有道理，但不能因为一次事件就过度拟合。先加软规则观察两周，再决定是否固化。',
+        content_en: 'That makes sense, but I don\'t want to overfit from a single event. Let\'s add it as a soft rule and observe for two weeks before hardening it.',
+        content_ko: '맞는 말인데, 사건 하나로 과적합하고 싶지 않아. 소프트 룰로 추가하고 2주 관찰 후 확정 여부 결정하자.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '✅ 记录在研究日志，设置为「观察期」状态。两周后我会主动拉取数据做对比分析。',
+        content_en: '✅ Logged in the research journal, status set to "observation period." I\'ll proactively pull data for a comparative analysis in two weeks.',
+        content_ko: '✅ 리서치 일지에 기록, \'관찰 기간\' 상태로 설정. 2주 후 데이터 뽑아서 비교 분석 능동적으로 할게.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-21',
+    chapter: '69',
+    color: '#10b981',
+    title: '构建日志 2026-04-21 09:15',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'PINLA 的网站六个页面内容还是空的，今天必须把框架内容填进去，哪怕是占位文字也行，先让整体结构跑起来。',
+        content_en: 'PINLA\'s six website pages are still empty. Today we need to fill in the framework content — even placeholder text is fine, as long as the overall structure is functional.',
+        content_ko: 'PINLA 사이트 6개 페이지 내용이 아직 비어있어. 오늘 프레임워크 콘텐츠 채워야 해 — 플레이스홀더 텍스트라도 괜찮아, 일단 전체 구조 돌아가게.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '我先扫一下现有页面结构——首页、Studio、About、Pricing、Blog、Contact。建议首页和 Studio 优先填，这两个是访客最先看到的。',
+        content_en: 'Let me scan the existing page structure first — Home, Studio, About, Pricing, Blog, Contact. I recommend prioritizing Home and Studio since those are the first pages visitors see.',
+        content_ko: '기존 페이지 구조 먼저 스캔할게 — 홈, 스튜디오, 어바웃, 프라이싱, 블로그, 컨택트. 방문자가 제일 먼저 보는 홈이랑 스튜디오 먼저 채우는 거 권장.',
+      },
+      {
+        role: 'user',
+        content: 'Studio 页面有 AI 视频工具的入口，这个是核心。内容要突出「一键生成」的概念，不要用专业术语堆砌。',
+        content_en: 'The Studio page has the AI video tool entry point — that\'s the core. The content should emphasize the "one-click generation" concept, no jargon-heavy copy.',
+        content_ko: '스튜디오 페이지에 AI 비디오 툴 진입점 있어, 그게 핵심이야. 콘텐츠는 \'원클릭 생성\' 개념 강조하고, 전문 용어 잔뜩 쌓지 마.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '✅ Studio 页填完，用了三个功能卡片：视频生成、口型同步、风格迁移。每张卡片一句话描述，CTA 按钮直接。首页 Hero 也更新了 tagline。',
+        content_en: '✅ Studio page filled. Used three feature cards: Video Generation, Lip Sync, Style Transfer. One sentence per card, direct CTA buttons. Home Hero tagline also updated.',
+        content_ko: '✅ 스튜디오 페이지 완료. 기능 카드 세 개 사용: 비디오 생성, 립싱크, 스타일 트랜스퍼. 카드당 한 문장 설명, CTA 버튼 직관적으로. 홈 히어로 태그라인도 업데이트했어.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-21',
+    chapter: '70',
+    color: '#ef4444',
+    title: '构建日志 2026-04-21 12:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我在想整个系统的叙事问题。现在 IA10、Karen、Mini 三个角色各有功能，但对外展示时缺乏一个统一的故事——访客看不出来为什么是三个 AI，而不是一个。',
+        content_en: 'I\'ve been thinking about the narrative problem for the whole system. IA10, Karen, and Mini each have their functions, but there\'s no unified story for external presentation — visitors can\'t tell why there are three AIs instead of one.',
+        content_ko: '전체 시스템 내러티브 문제 생각하고 있어. IA10, Karen, Mini 각각 기능은 있는데, 외부 발표용 통합 스토리가 없어 — 방문자들이 왜 AI가 하나가 아니라 셋인지 모르잖아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '可以用「分工即进化」作为主叙事框架。IA10 是战略层，Karen 是执行层，Mini 是研究层。三个维度对应人类团队里的 CEO、CTO、分析师，但跑在一台机器上。',
+        content_en: 'We can use "division of labor as evolution" as the master narrative framework. IA10 is the strategy layer, Karen is the execution layer, Mini is the research layer. Three dimensions mirroring a human team\'s CEO, CTO, and analyst — running on one machine.',
+        content_ko: '\'분업이 곧 진화\'를 마스터 내러티브 프레임워크로 쓸 수 있어. IA10은 전략 레이어, Karen은 실행 레이어, Mini는 리서치 레이어. 인간 팀의 CEO, CTO, 애널리스트에 해당하는 세 가지 차원 — 한 머신 위에서 돌아가는.',
+      },
+      {
+        role: 'user',
+        content: '这个框架不错。配上视觉——三个不同颜色的轨道围着同一个核心旋转，类似原子结构。',
+        content_en: 'That framework is solid. Pair it visually — three different colored orbits rotating around a single core, like an atomic structure.',
+        content_ko: '그 프레임 괜찮다. 비주얼로 맞춰 — 세 가지 색상 궤도가 하나의 핵심 주위를 도는 것, 원자 구조처럼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '✅ 叙事框架已记录，视觉隐喻也归档。等 Karen 实现 Spline 原子轨道动效，这套东西就能完整输出了。',
+        content_en: '✅ Narrative framework logged, visual metaphor archived. Once Karen implements the Spline atomic orbit animation, this whole package can be presented in full.',
+        content_ko: '✅ 내러티브 프레임워크 기록, 시각적 비유 아카이브. Karen이 Spline 원자 궤도 애니메이션 구현하면 이 패키지 전체 완성 발표 가능해.',
+      }
+    ],
   }
 ];
