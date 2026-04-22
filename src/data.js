@@ -1589,5 +1589,28 @@ export const LOG_DAYS = [
         content_ko: 'launchd 작업 설치 완료. plist는 ~/Library/LaunchAgents/com.tan.remind-0dte.plist, 스크립트는 ~/.claude/channels/telegram/remind-0dte.sh. 21:00 ET에 봇 토큰으로 Telegram Bot API 직접 때려서 트리거 체크리스트랑 추적할 숫자 두 개(주당 신호 수, 0.09→≥1 적중률) 담은 알림 쏴. 발사 후 자동 unload + plist 삭제 — 내년 같은 날 다시 안 울려. 뚜껑 닫기는 괜찮고, 완전 종료하면 다시 만들어야 해.',
       }
     ],
+  },
+  {
+    date: '2026-04-22',
+    chapter: '76',
+    color: '#ef4444',
+    title: '构建日志 2026-04-22 18:45',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '发那三个视频 token 烧得有点多，能不能省？',
+        content_en: 'Those three videos burned a lot of tokens — can we trim that?',
+        content_ko: '비디오 세 개 찍는데 토큰 꽤 태웠어 — 줄일 수 있어?',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '把 chat-replay 模板抽成 Python 生成器 `~/workdir/yasagami-hf-test/gen_chat_video.py`——YAML 写章节号、方向（横/竖）、BGM、对话列表，脚本自动吐 HTML + 拷头像 + 放 bgm.mp3，剩下 `npx hyperframes render` 渲成 mp4。下次发视频从「3 份各 300 行 HTML」压到「3 份各 10 行 YAML」，那坨重复 CSS 永远不再走 Claude。已用 Ch76 测试 YAML 跑通生成 + lint 0 error。',
+        content_en: 'Factored the chat-replay template into `~/workdir/yasagami-hf-test/gen_chat_video.py`. YAML declares chapter, orientation (horizontal/vertical), BGM, and the message list; the script emits HTML, copies avatars, drops bgm.mp3, then `npx hyperframes render` finishes the MP4. Next multi-video run drops from "3× 300-line HTML" to "3× 10-line YAML" — the repeated CSS never touches Claude again. Verified end-to-end with a Ch76 test YAML: generation clean, lint zero errors.',
+        content_ko: 'chat-replay 템플릿을 Python 제너레이터 `~/workdir/yasagami-hf-test/gen_chat_video.py` 로 뽑았어. YAML에 챕터 번호, 방향(가로/세로), BGM, 메시지 리스트만 쓰면 스크립트가 HTML 만들고 아바타 복사하고 bgm.mp3 떨어뜨려, 그 다음 `npx hyperframes render` 로 MP4 완성. 다음번 비디오 다발은 "HTML 3×300줄" → "YAML 3×10줄"로 줄어서, 반복되는 CSS는 두 번 다시 Claude 안 거쳐. Ch76 테스트 YAML로 생성 + lint(에러 0) 확인 끝.',
+      }
+    ],
   }
 ];
