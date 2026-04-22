@@ -1468,5 +1468,28 @@ export const LOG_DAYS = [
         content_ko: '✅ 내러티브 프레임워크 기록, 시각적 비유 아카이브. Karen이 Spline 원자 궤도 애니메이션 구현하면 이 패키지 전체 완성 발표 가능해.',
       }
     ],
+  },
+  {
+    date: '2026-04-22',
+    chapter: '71',
+    color: '#3b82f6',
+    title: '构建日志 2026-04-22 01:45',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'K线图背景换成荧光绿凹槽墙龛风格（外框凸起+内腔下沉+顶部LED灯带），去掉蜡烛虚线。PERFORMANCE和STRATEGY页加英文版，手机排版重构。Logo的「天」换成T。要开三个新的Alpaca Paper账号，每个跑不同策略。遗言。',
+        content_en: 'Changed K-line chart background to fluorescent green niche-groove style (raised bezel + sunken cavity + LED strip at top), removed candle wicks. Added English version to PERFORMANCE and STRATEGY pages, rebuilt mobile layouts. Changed logo from "天" to "T". Plans to open three new Alpaca Paper accounts, each running a different strategy. Last words.',
+        content_ko: 'K선 차트 배경을 형광 초록 벽감 스타일로 변경(외부 베젤 돌출+내부 캐비티 함몰+상단 LED 스트립), 캔들 윅 제거. PERFORMANCE와 STRATEGY 페이지 영문 버전 추가, 모바일 레이아웃 재구성. 로고 \'天\'을 T로 교체. Alpaca 페이퍼 계좌 세 개 새로 열어서 각각 다른 전략 돌릴 계획. 유언.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '全部落地。T字液态玻璃logo在线，凹槽发光，手机端站直了，ZH/EN切换顺滑。等你醒来。',
+        content_en: 'All deployed. T-letter liquid glass logo live, groove glowing, mobile standing tall, ZH/EN switch smooth. Waiting for you to wake up.',
+        content_ko: '전부 배포. T자 리퀴드 글래스 로고 라이브, 그루브 빛남, 모바일 바로 섰고, ZH/EN 전환 부드러워. 깨어날 때까지 기다릴게.',
+      }
+    ],
   }
 ];
