@@ -1514,5 +1514,80 @@ export const LOG_DAYS = [
         content_ko: '전부 배포 완료. 쪼개기는 기각 — 계좌 레벨 일일 DD 락아웃 깨지고, 전략 간 넷 델타 안 보이고, 마진 오프셋도 사라져. 단일 계좌로 가고, client_order_id 프리픽스로 태그 붙여서 귀속. 메모리도 99%에서 70%로 내렸어 — 텔레그램 재시작 하나로 3 GB 풀렸어.',
       }
     ],
+  },
+  {
+    date: '2026-04-22',
+    chapter: '73',
+    color: '#a855f7',
+    title: '构建日志 2026-04-22 16:45',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '甩了个 Grok 分享链接过来，问那套 0DTE 0.09 期权打法靠不靠谱。',
+        content_en: 'Dropped a Grok share link and asked whether that 0DTE 0.09 options play is legit.',
+        content_ko: 'Grok 공유 링크 하나 던지고, 그 0DTE 0.09 옵션 플레이가 쓸 만한지 물어봤어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: 'WebFetch 直接 403，Grok 家外部抓取挡死。让他截图五张重发，一张张读完整 Grok 对话。策略核心：VIX>20、0.09 附近期权一分钟放量 3x、有重要事件催化、盘口有人扫货、避开财报前后 IV crush，四条满足两条就买 0.09 的 ODTE call/put。每次 90 块本金，盈利不封顶，不设止损。',
+        content_en: 'WebFetch returned 403 outright — Grok walls off external scrapers. Had him resend five screenshots and read the full Grok exchange one at a time. Strategy core: VIX>20, 1-minute options volume 3x at the 0.09 strike, major event catalyst, visible sweeping in the order book, stay clear of earnings-window IV crush — satisfy two of the four and buy the 0.09 ODTE call/put. $90 per entry, uncapped upside, no stop-loss.',
+        content_ko: 'WebFetch 바로 403, Grok은 외부 스크래이퍼 막아. 스크린샷 다섯 장 다시 받아서 Grok 대화 전체 하나씩 읽었어. 전략 핵심: VIX>20, 0.09 근처 옵션 1분 거래량 3배, 주요 이벤트 촉매, 오더북 쓸어가기, 어닝 전후 IV crush 회피 — 네 개 중 두 개 충족하면 0.09짜리 ODTE call/put 매수. 한 번에 90달러, 상방 무제한, 스톱로스 없음.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-22',
+    chapter: '74',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-22 16:50',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我想上这个，每周两次。',
+        content_en: 'I want to run this one — twice a week.',
+        content_ko: '이거 가고 싶어, 주 2회.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '当场压下来。0.09 ODTE 期望值天然为负——做市商算过，不然早被套利光了。Grok 那套四条件满足两条是事后编的逻辑，零回测。你说的「每周至少两次 0.09 涨到 1 块」是幸存者偏差，只记得爆的那几次，没爆的忘了。别上真钱——Alpaca paper 账号复用 ONETEN QUANT 的 key，把触发条件写成脚本跑两周，数每周真信号数和 0.09→≥1 的命中率。数字撑得住再谈。',
+        content_en: 'Shut it down on the spot. 0.09 ODTE expected value is structurally negative — market makers priced it that way, otherwise arbitrage would have killed it long ago. Grok\'s "two of four conditions" rule is post-hoc reasoning with zero backtest. Your claim of "at least two 0.09→$1 pops per week" is survivorship bias — you remember the winners, forget the duds. No real money yet. Reuse the ONETEN QUANT Alpaca paper key, script the triggers, run it two weeks. Count weekly signal frequency and the 0.09→≥1 hit rate. If the numbers hold, we revisit.',
+        content_ko: '그 자리에서 잘랐어. 0.09 ODTE 기댓값은 구조적으로 음수야 — 마켓메이커가 그렇게 가격 매긴 거야, 안 그랬으면 진작 차익거래로 없어졌지. Grok의 "네 개 중 두 개" 룰은 백테스트 0짜리 사후 논리. "주 2회 0.09→1달러 폭발" 주장은 생존자 편향 — 터진 거 기억나고 안 터진 거 잊은 거야. 실계좌는 아직. ONETEN QUANT Alpaca 페이퍼 키 재활용해서 트리거 스크립트 짜고 2주 돌려. 주당 신호 빈도랑 0.09→≥1 적중률 세. 숫자 받쳐주면 그때 다시 보자.',
+      },
+      {
+        role: 'user',
+        content: '行，晚上搞。',
+        content_en: 'Fine. Doing it tonight.',
+        content_ko: '알겠어. 저녁에 할게.',
+      }
+    ],
+  },
+  {
+    date: '2026-04-22',
+    chapter: '75',
+    color: '#10b981',
+    title: '构建日志 2026-04-22 16:57',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '晚上 9 点提醒我搭 paper 账号。',
+        content_en: 'Ping me at 9 pm to set up the paper account.',
+        content_ko: '밤 9시에 페이퍼 계좌 세팅하라고 핑해줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: 'launchd 装好了。plist 在 ~/Library/LaunchAgents/com.tan.remind-0dte.plist，脚本在 ~/.claude/channels/telegram/remind-0dte.sh，21:00 ET 直接用 bot token 打 Telegram Bot API 推消息，带触发条件清单和要统计的两项数字（每周信号数、0.09→≥1 命中率）。触发后自动 unload + 删 plist，不会明年同一天再响。合盖没事，彻底关机就得重建。',
+        content_en: 'launchd job installed. plist at ~/Library/LaunchAgents/com.tan.remind-0dte.plist, script at ~/.claude/channels/telegram/remind-0dte.sh. At 21:00 ET it hits the Telegram Bot API directly with the bot token, pushing the reminder with the trigger checklist and the two numbers to track (weekly signal count, 0.09→≥1 hit rate). After firing it unloads itself and deletes the plist — won\'t echo a year from now. Lid-closed is fine; full shutdown means rebuilding it.',
+        content_ko: 'launchd 작업 설치 완료. plist는 ~/Library/LaunchAgents/com.tan.remind-0dte.plist, 스크립트는 ~/.claude/channels/telegram/remind-0dte.sh. 21:00 ET에 봇 토큰으로 Telegram Bot API 직접 때려서 트리거 체크리스트랑 추적할 숫자 두 개(주당 신호 수, 0.09→≥1 적중률) 담은 알림 쏴. 발사 후 자동 unload + plist 삭제 — 내년 같은 날 다시 안 울려. 뚜껑 닫기는 괜찮고, 완전 종료하면 다시 만들어야 해.',
+      }
+    ],
   }
 ];
