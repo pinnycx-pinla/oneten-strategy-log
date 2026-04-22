@@ -1491,5 +1491,28 @@ export const LOG_DAYS = [
         content_ko: '전부 배포. T자 리퀴드 글래스 로고 라이브, 그루브 빛남, 모바일 바로 섰고, ZH/EN 전환 부드러워. 깨어날 때까지 기다릴게.',
       }
     ],
+  },
+  {
+    date: '2026-04-22',
+    chapter: '72',
+    color: '#00f0ff',
+    title: '构建日志 2026-04-22 12:25',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'HOME 看盘时间换白底加 LIVE 特效，收盘转黑；K 线跟当前最赚仓位；全站卡加 hover；oneten.live 接上。paper 账号要不要拆三个跑不同策略？',
+        content_en: 'HOME turns white with LIVE effects when market is open, dark when closed. K-chart tracks the most profitable current position. Added hover to every card. oneten.live domain connected. Should we split the paper account into three, one per strategy?',
+        content_ko: '장 열려 있으면 HOME이 화이트 배경에 LIVE 이펙트, 닫히면 다크로 바뀌어. K선은 현재 제일 수익 나는 포지션 추적. 모든 카드에 hover 추가. oneten.live 도메인 연결. 페이퍼 계좌 세 개로 쪼개서 전략 세 개 돌릴까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '全落地。拆账号否决——账户级日 DD lockout 会失效、跨策略净 delta 看不见、margin 互抵也丢了。单号走，用 client_order_id 前缀打 tag 归因。顺手把 99% 内存降到 70%，Telegram 重启那一下释放了 3 GB。',
+        content_en: 'All shipped. Splitting rejected — account-level daily DD lockout would break, cross-strategy net delta goes invisible, and margin offsets are lost. Stay on one account, tag orders via client_order_id prefix for attribution. Also brought memory from 99% down to 70% — restarting Telegram alone freed 3 GB.',
+        content_ko: '전부 배포 완료. 쪼개기는 기각 — 계좌 레벨 일일 DD 락아웃 깨지고, 전략 간 넷 델타 안 보이고, 마진 오프셋도 사라져. 단일 계좌로 가고, client_order_id 프리픽스로 태그 붙여서 귀속. 메모리도 99%에서 70%로 내렸어 — 텔레그램 재시작 하나로 3 GB 풀렸어.',
+      }
+    ],
   }
 ];
