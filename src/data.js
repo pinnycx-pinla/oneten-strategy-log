@@ -1612,5 +1612,34 @@ export const LOG_DAYS = [
         content_ko: 'chat-replay 템플릿을 Python 제너레이터 `~/workdir/yasagami-hf-test/gen_chat_video.py` 로 뽑았어. YAML에 챕터 번호, 방향(가로/세로), BGM, 메시지 리스트만 쓰면 스크립트가 HTML 만들고 아바타 복사하고 bgm.mp3 떨어뜨려, 그 다음 `npx hyperframes render` 로 MP4 완성. 다음번 비디오 다발은 "HTML 3×300줄" → "YAML 3×10줄"로 줄어서, 반복되는 CSS는 두 번 다시 Claude 안 거쳐. Ch76 테스트 YAML로 생성 + lint(에러 0) 확인 끝.',
       }
     ],
+  },
+  {
+    date: '2026-04-22',
+    chapter: '77',
+    color: '#3b82f6',
+    title: '构建日志 2026-04-22 23:31',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: '阶段 1（今晚 01',
+        content: '00 前搞定）—— 手动信号 + 自动下单',
+      },
+      {
+        role: 'ai',
+        header: '- 你手动看条件，发 TELEGRAM',
+        content: '"进 SPY call"',
+      },
+      {
+        role: 'ai',
+        header: '- 条件满足时 BOT 发 TELEGRAM',
+        content: '"3/4 条件齐，SPY call 候选，y/n？"',
+      },
+      {
+        role: 'ai',
+        header: '← TELEGRAM · 8476183201',
+        content: '1.我建议回到 ≥2 条前 4 个 + 无财报。可以。2.保留你"每周 2 …',
+      }
+    ],
   }
 ];
