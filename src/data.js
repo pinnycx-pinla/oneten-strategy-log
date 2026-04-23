@@ -1641,5 +1641,44 @@ export const LOG_DAYS = [
         content: '1.我建议回到 ≥2 条前 4 个 + 无财报。可以。2.保留你"每周 2 …',
       }
     ],
+  },
+  {
+    date: '2026-04-23',
+    chapter: '78',
+    color: '#00f0ff',
+    title: '构建日志 2026-04-23 04:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: '- WENTIAN',
+        content: '1（锁定 wen_tian.png，不换）',
+      },
+      {
+        role: 'ai',
+        header: '- KAREN',
+        content: '6（含 5 张从 grid 里切出来的不同姿态）',
+      },
+      {
+        role: 'ai',
+        header: '- IA10',
+        content: '5（canonical + head a/b/c/d）',
+      },
+      {
+        role: 'ai',
+        header: '- MINI',
+        content: '4（canonical + v2 call/cloud/holo）',
+      },
+      {
+        role: 'ai',
+        header: '- DALI',
+        content: '12（canonical + A 到 K 全 11 款）',
+      },
+      {
+        role: 'ai',
+        header: 'CH77 起',
+        content: '你给 YAML 我跑生成器，头像挑选零太币。',
+      }
+    ],
   }
 ];
