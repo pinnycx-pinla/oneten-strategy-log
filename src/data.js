@@ -1699,5 +1699,32 @@ export const LOG_DAYS = [
         content: '//pretext-soccer.vercel.app',
       }
     ],
+  },
+  {
+    date: '2026-04-24',
+    chapter: '80',
+    color: '#f59e0b',
+    title: '构建日志 2026-04-24 00:35',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: 'SPY PUT 捕捉 $94。在 10',
+        content: '00，SPY 15min 走势回落 -0.17%。它恰好切过方向阈值。Put 从 $0.07 飙升至 $1.01，涨幅达到 +1343%。leg1 tp 接住。QQQ 两笔 call 方向正确，但 $1 目标未能达成。日内衰减持续，尾盘 flatten 时，Alpaca 拒绝了 0DTE 的尾盘报价。',
+        content_ko: '00, SPY 15분봉 흐름 하락 -0.17%. 방향 임계값을 통과했습니다. Put 옵션은 $0.07에서 $1.01로 급등하여 +1343% 상승했습니다. leg1 TP가 성공했습니다. QQQ는 두 번의 콜 포지션 방향은 맞았으나, $1 목표치에는 도달하지 못했습니다. 당일 하락세가 지속되면서, 장 마감 임박 시 Alpaca는 0DTE 장 마감 호가를 거부했습니다.',
+      },
+      {
+        role: 'ai',
+        header: '明天 CATALYST 是否修改？CONFIG 中记录 2026-04-24',
+        content: '`catalyst: false, "Quiet Fri"`。默认状态是禁入，除非 pre\\_mkt gap 超过 0.5% 自动触发。维持“默认关闭 + gap 自动触发”的设置？还是必须强制开仓收样本？',
+      },
+      {
+        role: 'ai',
+        header: '已确认的焦点',
+        content: 'OPRA 跳过（c2 volume\\_surge 保持 false）。整体入场条件需要放宽——因为认为机会很多，不应设置过高的门槛。当前状态：继续收听信息。',
+        content_en: 'OPRA Skipped (c2 volume_surge remains false). Overall entry criteria need to be loosened—because there are many opportunities, overly high thresholds should not be set. Current status: Continue listening for information.',
+        content_ko: 'OPRA는 건너뛰기(c2 volume\\_surge 유지 false). 전반적인 진입 조건은 완화되어야 한다. 기회가 많다고 판단되므로 지나치게 높은 문턱을 설정할 필요가 없다. 현재 상태: 정보 청취 지속.',
+      }
+    ],
   }
 ];
