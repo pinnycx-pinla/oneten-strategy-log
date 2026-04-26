@@ -1726,5 +1726,42 @@ export const LOG_DAYS = [
         content_ko: 'OPRA는 건너뛰기(c2 volume\\_surge 유지 false). 전반적인 진입 조건은 완화되어야 한다. 기회가 많다고 판단되므로 지나치게 높은 문턱을 설정할 필요가 없다. 현재 상태: 정보 청취 지속.',
       }
     ],
+  },
+  {
+    date: '2026-04-25',
+    chapter: '81',
+    color: '#10b981',
+    title: '构建日志 2026-04-25 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我们不能把所有任务都丢给Claude，每次跑完额度就爆了。能不能把主要的代码 refactor 和 Bug fix 的工作交给OpenAI的Codex？',
+        content_en: 'We can\'t dump all tasks onto Claude; the credits always run out. Can we give the main code refactoring and bug fixing work to OpenAI\'s Codex?',
+        content_ko: '우리가 모든 작업을 Claude에만 맡길 수는 없어. 매번 한도 다 쓰면 터질 것 같잖아. 핵심 코드 리팩터링이랑 버그픽 작업은 OpenAI의 Codex한테 맡겨도 될까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '可以的，我们得把资源分开。Codex CLI可以跑一些高强度的任务，既不占我的Claude Pro额度，也能持续运转。不过，我必须提醒您，GPT-5.5在免费层级的使用，需要通过CLI进行验证。',
+        content_en: 'Yes, we need to split the resources. The Codex CLI can run high-intensity tasks, which won\'t use up my Claude Pro credits and can operate continuously. However, I must remind you that using GPT-5.5 on the free tier requires validation via CLI.',
+        content_ko: '돼. 자원을 분산시켜야지. Codex CLI가 고강도 작업을 처리할 수 있어서, 내 Claude Pro 한도를 차지하지 않으면서도 계속 돌아갈 수 있어. 근데, 너한테 꼭 알려줘야 하는데, GPT-5.5는 무료 단계에서 사용할 때 CLI로 인증해야 돼.',
+      },
+      {
+        role: 'user',
+        content: '那我们接下来的内容规划必须彻底走世界观路线。这四个人物，和我们设定的三大内容支线，能不能全部沉淀到YouTube一个统一的IP里？',
+        content_en: 'Then our future content planning must completely follow a world-building approach. Can these four characters and the three major content storylines we\'ve established all be developed into a single, cohesive IP on YouTube?',
+        content_ko: '그럼 앞으로의 콘텐츠 기획은 무조건 세계관 루트로 가야 해. 이 네 명의 캐릭터랑 우리가 설정한 세 가지 주요 콘텐츠 서사들을 다 YouTube 하나의 통일된 IP로 만들 수 있을까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '我已经将这套完整世界观存入记忆。我们将以“oneten”的视角，搭建起“会议深度讨论”、“方格日常”和“GPT新功能尝试”三条稳定的内容流水线，形成完整的叙事链条。',
+        content_en: 'I have already stored this complete world-view in my memory. We will use the "ONE TEN" perspective to build three stable content pipelines: "Deep Discussion Meetings," "Square Daily Life," and "GPT New Feature Attempts," forming a complete narrative chain.',
+        content_ko: '이미 이 전체 세계관을 내 기억에 저장했어. 우리는 ‘oneten’의 시점으로 \'회의 깊이 토론\', \'사각일상\', 그리고 \'GPT 신기능 시도\' 세 개의 안정적인 콘텐츠 파이프라인을 구축해서 완벽한 서사 고리를 만들 거야.',
+      }
+    ],
   }
 ];
