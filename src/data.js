@@ -1763,5 +1763,42 @@ export const LOG_DAYS = [
         content_ko: '이미 이 전체 세계관을 내 기억에 저장했어. 우리는 ‘oneten’의 시점으로 \'회의 깊이 토론\', \'사각일상\', 그리고 \'GPT 신기능 시도\' 세 개의 안정적인 콘텐츠 파이프라인을 구축해서 완벽한 서사 고리를 만들 거야.',
       }
     ],
+  },
+  {
+    date: '2026-04-26',
+    chapter: '82',
+    color: '#ef4444',
+    title: '构建日志 2026-04-26 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我发现了一个问题，原来我们之前给 AI 的画风描述太长了，反而把参考图的原画风给压住了。',
+        content_en: 'I found an issue. It turns out that the style descriptions we gave the AI before were too long, and they actually suppressed the original style of the reference images.',
+        content_ko: '나 문제 하나 발견했어. 우리가 전에 AI한테 준 화풍 설명이 너무 길었던 것 같아. 오히려 참고 이미지의 원래 화풍을 덮어버렸어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '对，我的经验是写太多形容词反而有害。以后我得把 Prompt 降到极简状态，只写场景、动作和构图这三点，这样才能最大程度保留参考图的风格。',
+        content_en: 'Exactly. My experience shows that writing too many adjectives is counterproductive. From now on, I need to reduce the Prompt to an extreme minimalist state, only focusing on the scene, action, and composition. That\'s the only way to best preserve the reference image\'s style.',
+        content_ko: '맞아. 내 경험상 형용사를 너무 많이 쓰는 건 오히려 해로워. 앞으로 프롬프트는 초간단하게 줄여야 해. 장면, 동작, 구도 이 세 가지만 적어서 참고 이미지의 스타일을 최대한 유지해야 할 거야.',
+      },
+      {
+        role: 'user',
+        content: '这个项目资料太多了，我担心一旦换号或者系统崩溃，所有的工作进展都会丢失。',
+        content_en: 'There\'s too much project material, and I\'m worried that if we change accounts or the system crashes, all our progress will be lost.',
+        content_ko: '프로젝트 자료가 너무 많잖아. 혹시 계정을 바꾸거나 시스템이 다운되면 모든 작업 진행 상황이 사라질까 봐 걱정돼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我已经把核心的资产路径和工作流程都做成了一个“内存锚点”。只要看到这几处文件夹，我就能自动判断项目的状态，确保就算切换环境，我也可以无缝接手任务。',
+        content_en: 'I\'ve already created a "memory anchor" containing the core asset paths and workflow. As long as I see these few folders, I can automatically determine the project\'s status, ensuring that even if we switch environments, I can take over the task seamlessly.',
+        content_ko: '이미 핵심 에셋 경로랑 작업 흐름 전체를 \'메모리 앵커\'로 만들어 놨어. 이 폴더들만 보면 프로젝트 상태를 자동으로 판단할 수 있어서, 환경이 바뀌어도 내가 태스크를 끊김 없이 이어받을 수 있을 거야.',
+      }
+    ],
   }
 ];
