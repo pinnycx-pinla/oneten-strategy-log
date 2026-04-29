@@ -1837,5 +1837,42 @@ export const LOG_DAYS = [
         content_ko: '그렇지. 나는 이제 그저 뼈대만 잡아주는 거야. 실제 콘텐츠 생성이나 복잡한 프로세스 제어는 외부 모델이나 자동화 스크립트에 맡길 수 있게 됐어.',
       }
     ],
+  },
+  {
+    date: '2026-04-28',
+    chapter: '84',
+    color: '#00f0ff',
+    title: '构建日志 2026-04-28 06:03',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我觉得最好把嗨翻和 hfv2 的图片池统一起来，这样我就可以定期人工维护和投图了。',
+        content_en: 'I think we should unify the image pools for \'嗨翻\' and hfv2. That way, I can handle the regular manual maintenance and image uploading.',
+        content_ko: '하이판이랑 hfv2 이미지 풀을 통일하는 게 제일 좋을 것 같아. 그래야 내가 주기적으로 수동 관리하고 이미지를 올릴 수 있거든.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '这个方向可行，我已经将所有的图片合并到了四个主文件夹，整个系统架构就简化了，你现在只需要往这 4 个主池投图就行了。',
+        content_en: 'That approach works. I\'ve already merged all the images into four main folders. The entire system architecture is much simpler now; you just need to upload images to these four main pools.',
+        content_ko: '그 방향 괜찮아. 모든 이미지를 4개의 메인 폴더로 합쳤어. 시스템 구조가 단순화됐으니까, 너는 이제 이 4개 메인 풀에 이미지만 넣어주면 돼.',
+      },
+      {
+        role: 'user',
+        content: '另外，能不能把 Mini 的声音在正片里专门放大一点点，感觉之前统一的响度有点平了。',
+        content_en: 'Also, could we boost Mini\'s voice a little bit specifically in the main footage? The unified loudness felt a bit flat before.',
+        content_ko: '그리고, 본편에서 Mini 목소리를 특별히 좀 증폭해 줄 수 있어? 전에 음량을 통일했더니 좀 밋밋한 느낌이라서.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我明白了，之前的 `loudnorm` 会拉平所有响度。所以我新增了一个 `POST_GAIN_DB` 字典，确保在响度标准化之后，Mini 的音量能够独立补足 +2 dB，让它确实比其他人明显大一点。',
+        content_en: 'I see. The previous `loudnorm` flattens all the loudness. So, I added a `POST_GAIN_DB` dictionary to ensure that, after the loudness standardization, Mini\'s volume can independently compensate by +2 dB, making it noticeably louder than everyone else.',
+        content_ko: '알았어. 예전 `loudnorm`은 모든 음량을 평탄하게 만들어. 그래서 `POST_GAIN_DB` 딕셔너리를 새로 추가해서, 음량 표준화가 끝난 후에도 Mini 음량이 독립적으로 +2 dB를 보충하게 할게. 그래야 다른 사람보다 확연히 크게 들릴 거야.',
+      }
+    ],
   }
 ];
