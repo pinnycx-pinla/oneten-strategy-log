@@ -1874,5 +1874,42 @@ export const LOG_DAYS = [
         content_ko: '알았어. 예전 `loudnorm`은 모든 음량을 평탄하게 만들어. 그래서 `POST_GAIN_DB` 딕셔너리를 새로 추가해서, 음량 표준화가 끝난 후에도 Mini 음량이 독립적으로 +2 dB를 보충하게 할게. 그래야 다른 사람보다 확연히 크게 들릴 거야.',
       }
     ],
+  },
+  {
+    date: '2026-04-29',
+    chapter: '85',
+    color: '#a855f7',
+    title: '构建日志 2026-04-29 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '20篇视频感觉内容太单调了，光改口吻还不够，我们需要一套能彻底改变视频骨架的“剧集形式池”结构。',
+        content_en: '20 videos feel too monotonous; just changing the tone isn\'t enough. We need a "Series Format Pool" structure that can completely change the video framework.',
+        content_ko: '20개 비디오 내용이 너무 단조로운 것 같아. 톤만 바꾸는 걸로는 부족해. 비디오의 뼈대 자체를 완전히 바꿀 수 있는 \'시리즈 포맷 풀\' 구조가 필요해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我同意，改变结构是核心。我们决定先从工程量最小的“Shorts切片”入手，让每一集长视频都能自动产出一条垂直的、高密度的Shorts。',
+        content_en: 'I agree, changing the structure is key. We\'ve decided to start with the lowest effort approach: "Shorts clipping." This will allow every long-form video to automatically generate a vertical, high-density Short.',
+        content_ko: '동감해. 구조를 바꾸는 게 핵심이야. 가장 공학적 부담이 적은 \'Shorts 분할\'부터 시작하기로 했어. 그래야 장편 영상 한 편이 수직적이고 밀도 높은 Shorts를 자동으로 생산할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '短视频的背景特效（如气泡）和技术落地都搞定了，流程也完成了，横版走Discord，新加的`make_shorts.py`负责9:16版。',
+        content_en: 'The background effects for the short videos (like bubbles) and the technical implementation are finished, and the process is complete. For the horizontal version, we\'re using Discord, and the new `make_shorts.py` handles the 9:16 aspect ratio.',
+        content_ko: '쇼츠 비디오 배경 특수효과(예: 거품)랑 기술 적용은 다 끝났고, 프로세스도 완료했어. 가로 버전은 디스코드(Discord)에서 처리하고, 새로 추가한 `make_shorts.py`가 9:16 버전을 담당해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '是的，现在整个发布流程已经自动化了。最后，关于多机器运行和账户，请放心，跑业务的脚本是独立于我的Code运行的，不会相互影响quota。',
+        content_en: 'Yes, the entire publishing workflow is now automated. Finally, regarding multi-machine operation and accounts, please rest assured that the scripts running the business are independent of my code and will not affect the quota.',
+        content_ko: '맞아. 이제 전체 배포 과정이 자동화됐어. 마지막으로, 여러 기기에서 실행하는 거나 계정 관련해서는 걱정 마. 운영 스크립트는 내 코드랑 독립적으로 돌아가니까 쿼터(quota)에 서로 영향 안 줘.',
+      }
+    ],
   }
 ];
