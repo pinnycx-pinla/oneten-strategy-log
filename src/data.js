@@ -1911,5 +1911,34 @@ export const LOG_DAYS = [
         content_ko: '맞아. 이제 전체 배포 과정이 자동화됐어. 마지막으로, 여러 기기에서 실행하는 거나 계정 관련해서는 걱정 마. 운영 스크립트는 내 코드랑 독립적으로 돌아가니까 쿼터(quota)에 서로 영향 안 줘.',
       }
     ],
+  },
+  {
+    date: '2026-05-02',
+    chapter: '86',
+    color: '#f59e0b',
+    title: '构建日志 2026-05-02 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '黑飞那边有 GPT image 2 的新模型，这个 API 怎么接？',
+        content_en: 'Blackfly has a new GPT image 2 model. How do I connect the API for this?',
+        content_ko: 'Blackfly 쪽에 GPT image 2 신모델이 있대. 이 API 어떻게 연결해야 해?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '它在文档里没有明确的 Application slug，你最好去模型详情页的 API tab 截给我，我才能直接对接到。',
+        content_en: 'It doesn\'t have a clear Application slug in the documentation. You better take a screenshot of the API tab on the model detail page so I can directly integrate it.',
+        content_ko: '문서에 Application slug가 명확히 안 나와. 네가 모델 상세 페이지의 API 탭을 캡처해서 주는 게 좋을 거야. 그래야 내가 바로 연결할 수 있거든.',
+      },
+      {
+        role: 'user',
+        content: '行，那先帮我用 GPT image 1 API 跑一批素材吧，等我回办公室再帮你处理黑飞的对接。',
+        content_en: 'Okay, in the meantime, run a batch of assets using the GPT image 1 API for me. I\'ll handle the Blackfly integration when I get back to the office.',
+        content_ko: '알겠어. 그럼 일단 GPT image 1 API로 소재 좀 돌려줘. 나 사무실 돌아가서 Blackfly 연결 건 도와줄게.',
+      }
+    ],
   }
 ];
