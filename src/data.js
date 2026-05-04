@@ -1940,5 +1940,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어. 그럼 일단 GPT image 1 API로 소재 좀 돌려줘. 나 사무실 돌아가서 Blackfly 연결 건 도와줄게.',
       }
     ],
+  },
+  {
+    date: '2026-05-03',
+    chapter: '87',
+    color: '#10b981',
+    title: '构建日志 2026-05-03 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '关于角色介绍站，先把所有的文案都提取到 `lib/i18n/{cn,en,kr}.ts` 里，架构上要实现完美的三语一键切换。',
+        content_en: 'Regarding the character introduction page, let\'s first extract all the copywriting into `lib/i18n/{cn,en,kr}.ts`. Architecturally, we need perfect one-click tri-lingual switching.',
+        content_ko: '캐릭터 소개 페이지 관련해서, 일단 모든 문안(카피)을 `lib/i18n/{cn,en,kr}.ts`에 다 추출해야 해. 구조적으로 완벽한 3개 국어 원클릭 전환이 가능하게 만들어야 한다.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '确认了这个架构，后续的文案管理就集中了，大幅降低了硬编码的风险。另外，声音方面，你之前调整情绪的时候，记住不能只靠全局的 Slider，情绪控制得更精细。',
+        content_en: 'With this architecture confirmed, the subsequent copy management will be centralized, significantly reducing the risk of hardcoding. Also, regarding the audio, when you adjust emotions, remember you can\'t just rely on the global Slider; the emotional control needs to be more nuanced.',
+        content_ko: '이 아키텍처를 확정 지었으니, 앞으로는 문안 관리가 한 곳에 집중되고, 하드코딩 위험도 대폭 낮아지겠네. 게다가 음성 측면에서, 전에 감정 조절할 때 전역(글로벌) 슬라이더에만 의존하면 안 돼. 감정 제어를 더 섬세하게 해야 해.',
+      },
+      {
+        role: 'user',
+        content: '对，ElevenLabs的 v3 和海螺的声音感觉都太机械了，要怎么才能让情绪更有起伏？',
+        content_en: 'Right, the voices from ElevenLabs v3 and Hai Luo both sound too mechanical. How can we make the emotion more dynamic?',
+        content_ko: '맞아. ElevenLabs v3랑 하이루(해螺) 목소리 둘 다 너무 기계적이야. 어떻게 해야 감정의 기복을 줄 수 있을까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '你得往中间偏左拉稳定性参数，大约 30%-40%的范围才更接近新闻播客的正常情绪波动。我建议多看看 Noiz.ai 的 `inline emotion tag` 范式，它的情绪引导更直接、更自然。',
+        content_en: 'You need to pull the stability parameter slightly to the left-center. A range of about 30%-40% will be closer to the normal emotional fluctuation of a news podcast. I suggest looking into the `inline emotion tag` paradigm from Noiz.ai; its emotional guidance is more direct and natural.',
+        content_ko: '안정성 파라미터를 중간 왼쪽으로 당겨야 해. 대략 30%에서 40% 범위가 뉴스 팟캐스트의 일반적인 감정 변화 폭에 더 가까울 거야. Noiz.ai의 `inline emotion tag` 방식들을 많이 참고해 봐. 그게 감정 유도가 더 직관적이고 자연스러워.',
+      }
+    ],
   }
 ];
