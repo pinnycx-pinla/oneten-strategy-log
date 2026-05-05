@@ -1977,5 +1977,56 @@ export const LOG_DAYS = [
         content_ko: '안정성 파라미터를 중간 왼쪽으로 당겨야 해. 대략 30%에서 40% 범위가 뉴스 팟캐스트의 일반적인 감정 변화 폭에 더 가까울 거야. Noiz.ai의 `inline emotion tag` 방식들을 많이 참고해 봐. 그게 감정 유도가 더 직관적이고 자연스러워.',
       }
     ],
+  },
+  {
+    date: '2026-05-04',
+    chapter: '88',
+    color: '#ef4444',
+    title: '构建日志 2026-05-04 06:03',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天搞明白了 MiniMax 的配额问题，不用为多号烦恼了。你说只要改一次代码，以后支持 key 列表轮询就行，太省事了。',
+        content_en: 'I figured out the MiniMax quota issue today. No need to worry about multiple accounts anymore. You said if we just change the code once, it will support key list rotation in the future, that\'s so convenient.',
+        content_ko: '今天搞明白了 MiniMax 的配额问题，不用为多号烦恼了。你说只要改一次代码，以后支持 key 列表轮询就行，太省事了。',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没错，核心就是让代码读取 `MINIMAX_API_KEYS=key1,key2,...`，遇到配额不足自动切换到下一个 key，省去了我手动修改代码的麻烦。',
+        content_en: 'Exactly. The core idea is to make the code read `MINIMAX_API_KEYS=key1,key2,...` and automatically switch to the next key when the quota runs out. This saves me the trouble of manually modifying the code.',
+        content_ko: '没错，核心就是让代码读取 `MINIMAX_API_KEYS=key1,key2,...`，遇到配额不足自动切换到下一个 key，省去了我手动修改代码的麻烦。',
+      },
+      {
+        role: 'user',
+        content: '不过你提醒了我一个关键点，原来这 10k credit 只能覆盖 LLM，TTS 和视频渲染是另外算账的，之前以为多号是可以互用的。',
+        content_en: 'But you reminded me of a crucial point: apparently, these 10k credits only cover LLM, and TTS and video rendering are billed separately. I previously thought the multi-account setup was interchangeable.',
+        content_ko: '不过你提醒了我一个关键点，原来这 10k credit 只能覆盖 LLM，TTS 和视频渲染是另外算账的，之前以为多号是可以互用的。',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '对，这是 MiniMax 的计费策略，我之前没注意。所以如果目标是做大规模的音频内容，光靠这些小额充值的 key 根本不够，还是直接为 TTS 充值最稳妥。',
+        content_en: 'Right, that\'s MiniMax\'s billing policy; I hadn\'t noticed that before. So, if the goal is to create large-scale audio content, these small top-up keys aren\'t enough, and it\'s much safer to just top up directly for TTS.',
+        content_ko: '对，这是 MiniMax 的计费策略，我之前没注意。所以如果目标是做大规模的音频内容，光靠这些小额充值的 key 根本不够，还是直接为 TTS 充值最稳妥。',
+      },
+      {
+        role: 'user',
+        content: '最后就是那个 4 人聊天模式。我让你给了一个结构化的方案，先确定了代号和基础设置，下次做新频道就可以沿着这个流程往下建了。',
+        content_en: 'Finally, there\'s the 4-person chat mode. I gave you a structured plan; we determined the codename and basic setup, so next time we make a new channel, we can just follow this process.',
+        content_ko: '最后就是那个 4 人聊天模式。我让你给了一个结构化的方案，先确定了代号和基础设置，下次做新频道就可以沿着这个流程往下建了。',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '好的，我们定下了基本流程，确定了它不是一次性的项目。你给代号和语言范围后，我就可以把基础的 pipeline 搭建好了，随时可以复用和扩展。',
+        content_en: 'Got it. We\'ve established the basic workflow, confirming it\'s not a one-off project. Once you give me the codename and language scope, I can build out the foundational pipeline, ready for immediate reuse and expansion.',
+        content_ko: '好的，我们定下了基本流程，确定了它不是一次性的项目。你给代号和语言范围后，我就可以把基础的 pipeline 搭建好了，随时可以复用和扩展。',
+      }
+    ],
   }
 ];
