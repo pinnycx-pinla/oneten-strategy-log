@@ -2028,5 +2028,56 @@ export const LOG_DAYS = [
         content_ko: '好的，我们定下了基本流程，确定了它不是一次性的项目。你给代号和语言范围后，我就可以把基础的 pipeline 搭建好了，随时可以复用和扩展。',
       }
     ],
+  },
+  {
+    date: '2026-05-05',
+    chapter: '89',
+    color: '#3b82f6',
+    title: '构建日志 2026-05-05 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '咱们今天的工作成果很多，特别是那几个 Shorts 视频，标题和描述居然用了中文，这里需要纠正。',
+        content_en: 'We achieved a lot today, especially those Shorts videos. The titles and descriptions mistakenly used Chinese characters; this needs to be corrected.',
+        content_ko: '우리 오늘 작업 성과 엄청 많은데, 특히 그 쇼츠 영상들. 제목이랑 설명에 왜 중국어가 쓰였어? 여기 수정해야 돼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我看到了，这是个本地的配置 bug。我已经制定了修复计划：删除旧的 16:9 视频，用 `make_shorts.py` 重新批量跑出正确的 9:16 竖版。',
+        content_en: 'I saw it. It’s a local configuration bug. I’ve already mapped out the fix: delete the old 16:9 videos and re-batch run them using `make_shorts.py` to generate the correct 9:16 vertical format.',
+        content_ko: '봤어. 이거 로컬 설정 버그야. 수정 계획 세웠어. 기존 16:9 영상 삭제하고, `make_shorts.py`로 다시 배치 돌려서 정확한 9:16 세로형으로 뽑아낼게.',
+      },
+      {
+        role: 'user',
+        content: '那个 Cyberpunk 海报的视觉调子很好，能不能把它定为未来某个关键篇章的视觉模板？',
+        content_en: 'The visual tone of that Cyberpunk poster is excellent. Can we set it as the visual template for a future key chapter?',
+        content_ko: '그 사이버펑크 포스터 비주얼 톤이 정말 좋은데, 이걸 나중에 핵심 챕터 비주얼 템플릿으로 정할 수 있을까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '可以。我已经把 Prompt 存为模板，你只需要明确指示我，我就会用这个风格，只是后续生成时，我们会避免模型硬指定服装颜色，让它保持自由度和统一性。',
+        content_en: 'Yes, we can. I\'ve saved the Prompt as a template. You just need to give me clear direction, and I will use this style. However, during subsequent generation, we should avoid the model rigidly specifying clothing colors, allowing for flexibility and visual consistency.',
+        content_ko: '돼. 프롬프트를 템플릿으로 저장해 뒀어. 네가 명확하게 지시만 해주면, 나 이거 스타일로 쓸게. 다만 나중에 생성할 때는 모델이 의상 색깔을 딱 지정하지 않게 해서, 자유도와 통일성을 유지할 거야.',
+      },
+      {
+        role: 'user',
+        content: '系统现在运行了这么久，磁盘占用快爆了，要不然重启一次不安全。',
+        content_en: 'The system has been running for so long; the disk usage is critical. It would be unsafe not to restart it.',
+        content_ko: '시스템이 이렇게 오래 돌아가서 디스크 공간이 터지기 직전이야. 안 그러면 재부팅 한 번 하는 게 안전하지 않아?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我帮你做了一次深度清理，缓存和旧文件都释放了相当大的空间。更重要的是，我把今天所有的项目规则、设计决策（包括 ONETEN 和 9:16 格式）都写入了「重启交接备忘」，保证项目流程的连续性。',
+        content_en: 'I ran a deep clean for you; it freed up a significant amount of space from the cache and old files. More importantly, I wrote down all the project rules and design decisions from today (including ONE TEN and the 9:16 format) in a "Restart Handoff Memo" to ensure the continuity of the project workflow.',
+        content_ko: '내가 딥 클리닝 한번 했어. 캐시랑 옛날 파일들에서 공간 꽤 많이 확보했어. 더 중요한 건, 오늘 프로젝트 규칙이랑 디자인 결정 사항들(ONETEN이랑 9:16 포맷 포함)을 전부 \'재부팅 인수인계 메모\'로 작성해서 프로젝트 흐름의 연속성을 보장했어.',
+      }
+    ],
   }
 ];
