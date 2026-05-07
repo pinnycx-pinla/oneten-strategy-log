@@ -2079,5 +2079,42 @@ export const LOG_DAYS = [
         content_ko: '내가 딥 클리닝 한번 했어. 캐시랑 옛날 파일들에서 공간 꽤 많이 확보했어. 더 중요한 건, 오늘 프로젝트 규칙이랑 디자인 결정 사항들(ONETEN이랑 9:16 포맷 포함)을 전부 \'재부팅 인수인계 메모\'로 작성해서 프로젝트 흐름의 연속성을 보장했어.',
       }
     ],
+  },
+  {
+    date: '2026-05-06',
+    chapter: '90',
+    color: '#00f0ff',
+    title: '构建日志 2026-05-06 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天的重点是敲定内容和技术安全边界。关于 2XKO 的视觉风格，我确认了我们需要规避的是官方 logo 和特定的“trade dress”元素。',
+        content_en: 'Today\'s focus is finalizing the content and the technical safety boundaries. Regarding the visual style of 2XKO, I confirm that we need to avoid the official logo and specific "trade dress" elements.',
+        content_ko: '오늘 중점은 내용이랑 기술적인 안전 경계를 확실히 하는 거야. 2XKO 비주얼 스타일 말인데, 공식 로고랑 특정 \'트레이드 드레스\' 요소는 피해야 한다고 확인했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '完全正确。从法律角度看，风格层面可以借鉴，但一旦涉及“MINI / 2XKO”这类官方角标和核心字体，就属于风险区域。',
+        content_en: 'Completely correct. From a legal standpoint, we can reference the style, but once we involve official corner markers and core fonts like "MINI / 2XKO," it enters a risk area.',
+        content_ko: '완전히 맞아. 법적인 관점에서는 스타일은 참고할 수 있지만, \'MINI / 2XKO\' 같은 공식 로고나 핵심 폰트를 건드리는 순간 위험 지역이야.',
+      },
+      {
+        role: 'user',
+        content: '那我们继续推进内容产出，先锁定好本次 TEASER 和后续的 6 条 X thread 内容的结构。',
+        content_en: 'Then let\'s continue advancing the content production, starting by locking down the structure for this TEASER and the subsequent 6 X threads.',
+        content_ko: '그럼 우리 내용 제작 계속 추진해서, 이번 티저랑 앞으로 나올 6개 X 스레드 내용 구조부터 먼저 확정하자.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '已完成。并且为了应对多平台发布，我已经分别锁定了中文和韩文版本的语音模型 ID。这样后续只要替换 BGM 或视觉素材，语言配置就可以快速切换，效率很高。',
+        content_en: 'It\'s done. And to handle multi-platform releases, I have separately locked down the voice model IDs for both Chinese and Korean versions. This way, later, if we just replace the BGM or visual assets, the language configuration can be quickly switched, which is highly efficient.',
+        content_ko: '완료했어. 그리고 여러 플랫폼에 배포할 걸 대비해서, 중국어랑 한국어 버전 음성 모델 ID를 따로 잡아뒀어. 이렇게 하면 나중에 BGM이나 비주얼 소스만 교체하면 언어 설정을 빠르게 바꿀 수 있어서 효율이 엄청 좋아.',
+      }
+    ],
   }
 ];
