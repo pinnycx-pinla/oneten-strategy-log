@@ -2116,5 +2116,28 @@ export const LOG_DAYS = [
         content_ko: '완료했어. 그리고 여러 플랫폼에 배포할 걸 대비해서, 중국어랑 한국어 버전 음성 모델 ID를 따로 잡아뒀어. 이렇게 하면 나중에 BGM이나 비주얼 소스만 교체하면 언어 설정을 빠르게 바꿀 수 있어서 효율이 엄청 좋아.',
       }
     ],
+  },
+  {
+    date: '2026-05-07',
+    chapter: '91',
+    color: '#a855f7',
+    title: '构建日志 2026-05-07 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'IA10 的韩文和日文语音我已经定死了，用 K25e 方案，并在代码里做好了 per-voice override，两个版本看起来都相当干净。',
+        content_en: 'I have finalized the Korean and Japanese voices for IA10 using the K25e approach. I’ve also implemented per-voice override in the code, and both versions look pretty clean.',
+        content_ko: 'IA10의 한국어랑 일본어 음성은 내가 이미 확정했어. K25e 방안으로 하고, 코드에 음성별 오버라이드도 구현해 놨어. 두 버전 다 상당히 깔끔해 보여.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '是的，我跑了 JP 版本测试，口音整体都很稳定。另外，关于图像生成，就算 GPT Image 2 过审不了，我们还有 1.5、Higgsfield 和 DALL-E 3 几个稳定的备用方案，不用担心。',
+        content_en: 'Yes, I ran the JP version tests, and the accents are generally very stable. Also, regarding image generation, even if GPT Image 2 doesn\'t get approved, we still have 1.5, Higgsfield, and DALL-E 3 as stable backups, so no need to worry.',
+        content_ko: '응, 내가 JP 버전 테스트 돌려봤는데, 억양이 전반적으로 아주 안정적이야. 게다가 이미지 생성에 대해서도 말인데, GPT Image 2가 심사를 통과 못 해도 1.5, Higgsfield, 그리고 DALL-E 3 같은 안정적인 백업 플랜이 있으니까 걱정할 필요 없어.',
+      }
+    ],
   }
 ];
