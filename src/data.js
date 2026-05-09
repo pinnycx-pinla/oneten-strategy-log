@@ -2139,5 +2139,42 @@ export const LOG_DAYS = [
         content_ko: '응, 내가 JP 버전 테스트 돌려봤는데, 억양이 전반적으로 아주 안정적이야. 게다가 이미지 생성에 대해서도 말인데, GPT Image 2가 심사를 통과 못 해도 1.5, Higgsfield, 그리고 DALL-E 3 같은 안정적인 백업 플랜이 있으니까 걱정할 필요 없어.',
       }
     ],
+  },
+  {
+    date: '2026-05-08',
+    chapter: '92',
+    color: '#f59e0b',
+    title: '构建日志 2026-05-08 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '关于 Neon Pulse Glass 这个视频素材，我确认了流程细节，核心是保持 129.2 BPM 的步调同步。',
+        content_en: 'Regarding the Neon Pulse Glass video footage, I\'ve confirmed the process details. The core requirement is maintaining synchronization at 129.2 BPM.',
+        content_ko: '네온 펄스 글래스 영상 소스 말인데, 프로세스 디테일 확인했어. 핵심은 129.2 BPM 비트 동기화 유지하는 거야.',
+      },
+      {
+        role: 'user',
+        content: '很好。收到 mcv3.mp3 后，能否帮我确认它确实是这个 BPM 的同款改名版，这样我就可以开始排期了。',
+        content_en: 'Great. After receiving mcv3.mp3, could you confirm for me if it\'s genuinely the same track, just renamed, at this BPM? That way, I can start scheduling.',
+        content_ko: '좋아. mcv3.mp3 받는 대로, 이거 정말 이 BPM에 맞는 똑같은 버전으로 이름만 바꾼 건지 확인해 줄 수 있어? 그래야 내가 일정 잡기 시작할 수 있으니까.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到，我已经确认了时长和 BPM 均匹配，视频素材处理的硬性技术点我已经锁定。',
+        content_en: 'Got it. I\'ve already confirmed that both the duration and the BPM match. I\'ve locked down the critical technical points for processing the video footage.',
+        content_ko: '받았어. 길이랑 BPM 다 일치하는 거 확인했고, 영상 소스 처리할 때의 기술적인 필수 사항은 이미 확정했어.',
+      },
+      {
+        role: 'user',
+        content: '那剩下的几个视觉和决策点必须敲定，帮我总结一下，最终的比例和文案叠加方式要我做决定。',
+        content_en: 'Then we need to finalize the remaining visual and decision points. Please summarize them for me; I need to make the final calls on the aspect ratio and the text overlay style.',
+        content_ko: '그럼 남은 비주얼이랑 결정해야 할 지점들이 있잖아. 그거 좀 요약해 줘. 최종 비율이랑 자막 겹치는 방식은 내가 결정해야 하거든.',
+      }
+    ],
   }
 ];
