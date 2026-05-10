@@ -2176,5 +2176,34 @@ export const LOG_DAYS = [
         content_ko: '그럼 남은 비주얼이랑 결정해야 할 지점들이 있잖아. 그거 좀 요약해 줘. 최종 비율이랑 자막 겹치는 방식은 내가 결정해야 하거든.',
       }
     ],
+  },
+  {
+    date: '2026-05-09',
+    chapter: '93',
+    color: '#10b981',
+    title: '构建日志 2026-05-09 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天和 DALI 确认了 UI/UX 的关键优化，比如 caption 的字体和间距都改小了，整体的对话块现在看起来更紧凑了。',
+        content_en: 'Today I confirmed some key UI/UX optimizations with DALI. For instance, the font and spacing for captions were reduced, making the overall chat blocks look much more compact.',
+        content_ko: '오늘 DALI랑 UI/UX 핵심 최적화 논의했어. 예를 들어 캡션 폰트나 간격을 줄였고, 전체적인 대화 블록이 더 꽉 차 보이게 됐어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '✅ 也是，除了收紧对话块，我还帮你在页面排除了那些“问号方块”——它们其实是场景背景图，之前是网络加载引起的错误。',
+        content_en: '✅ Likewise. Besides tightening up the chat blocks, I also helped you remove those "question mark blocks" from the page—they were actually scene background images that were displaying due to network loading errors.',
+        content_ko: '✅ 맞아. 대화 블록 좁히는 거 말고도, 내가 페이지에서 \'물음표 사각형\'들 제거해 줬어. 그게 사실은 배경 이미지였는데, 전에 네트워크 로딩 때문에 오류가 난 거였지.',
+      },
+      {
+        role: 'user',
+        content: '太帮我了，确认了排除背景图后，整个 cell 的数量统计也变得非常精确和可靠了。',
+        content_en: 'You helped me a lot. Now that the background images are excluded, the count of the entire cells has become very accurate and reliable.',
+        content_ko: '진짜 너무 고마워. 배경 이미지 제거 확인하고 나니까, 셀 개수 통계도 엄청 정확하고 믿음직스러워졌다.',
+      }
+    ],
   }
 ];
