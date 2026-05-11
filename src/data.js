@@ -2205,5 +2205,56 @@ export const LOG_DAYS = [
         content_ko: '진짜 너무 고마워. 배경 이미지 제거 확인하고 나니까, 셀 개수 통계도 엄청 정확하고 믿음직스러워졌다.',
       }
     ],
+  },
+  {
+    date: '2026-05-10',
+    chapter: '94',
+    color: '#ef4444',
+    title: '构建日志 2026-05-10 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '先把 ONETEN LAB 和 master-call 的 memory 明确分开，这样后续的模型改动不会互相干扰，架构上更安全。',
+        content_en: 'We need to explicitly separate the memory for ONETEN LAB and master-call first. This way, subsequent model changes won\'t interfere with each other, making the architecture safer.',
+        content_ko: 'ONETEN LAB이랑 master-call 메모리를 먼저 명확하게 분리해야 해. 그래야 나중에 모델 수정할 때 서로 방해 안 받고, 아키텍처적으로 더 안전해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '明白了，已执行内存隔离。另外，需要提醒你的是 Jessica 和 IA10 的韩文版底层确实是同一个声音模型 ID，虽然用不同的 settings 可能会有细微差异，但我们在做流程确认的时候必须注意这个“底层一致性”。',
+        content_en: 'Got it. I\'ve executed the memory isolation. Also, I need to remind you that the underlying Korean versions for Jessica and IA10 actually use the same voice model ID. Although using different settings might result in minor variations, we must pay attention to this "underlying consistency" when we are verifying the workflow.',
+        content_ko: '알겠어, 메모리 격리 실행했어. 그리고 한 가지 더 알려줘야 할 게 있어. Jessica랑 IA10의 한국어 버전 기본(저층) 모델 ID가 사실 같은 거거든. 다른 세팅을 써도 미세한 차이는 있을 수 있지만, 프로세스를 확인할 때는 이 \'근본적인 일관성\'을 꼭 주의해야 해.',
+      },
+      {
+        role: 'user',
+        content: '那个 ch2-10 的渲染 agent 怎么回事？视频和音频都出不来？',
+        content_en: 'What\'s up with the rendering agent for ch2-10? Neither the video nor the audio is coming out?',
+        content_ko: '그거 ch2-10 렌더링 에이전트 뭐야? 영상도 오디오도 안 나와?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: 'Agent 彻底翻车了，数据显示它只渲染了 6 秒就停了。这是个重大故障，我立即接管流程，必须用 ch1 v4 的渲染流程来一次性跑完，预计需要重新评估时间。',
+        content_en: 'The agent failed completely. The data shows that it only rendered for 6 seconds and then stopped. This is a major fault. I\'m taking over the process immediately. We must run the entire thing using the ch1 v4 rendering pipeline, and I estimate we\'ll need to re-evaluate the timeline.',
+        content_ko: '에이전트가 완전히 망했어. 데이터 보니까 6초만 렌더링하고 멈췄어. 이건 심각한 오류니까 내가 바로 프로세스를 인수해서, ch1 v4 렌더링 프로세스로 한 번에 다 돌려야 해. 시간 재평가가 필요할 것 같아.',
+      },
+      {
+        role: 'user',
+        content: '关于 Mini 单元，我可以把它作为独立风格继续走，不和 Mini 云端混在一起。',
+        content_en: 'Regarding the Mini unit, I can let it proceed as an independent style, not mixed in with the Mini cloud segment.',
+        content_ko: 'Mini 유닛에 대해서 말인데, 내가 독립적인 스타일로 계속 진행해도 돼. Mini 클라우드랑 섞지 않고.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没问题，我这就把它命名为 `mini_mecha_pink`，并把它加入到独立的 style arc 池里。我已经把 asset 结构调整好了，以后可以这样单独调用。',
+        content_en: 'No problem. I\'ll name it `mini_mecha_pink` right away and add it to the separate style arc pool. I\'ve already adjusted the asset structure, so you can call it independently like this in the future.',
+        content_ko: '문제없어. 내가 지금 바로 `mini_mecha_pink`로 이름을 바꾸고 독립적인 스타일 아크 풀에 추가할게. 에셋 구조는 이미 조정해 뒀으니까, 나중에 이렇게 따로 호출할 수 있어.',
+      }
+    ],
   }
 ];
