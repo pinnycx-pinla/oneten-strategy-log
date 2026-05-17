@@ -2256,5 +2256,213 @@ export const LOG_DAYS = [
         content_ko: '문제없어. 내가 지금 바로 `mini_mecha_pink`로 이름을 바꾸고 독립적인 스타일 아크 풀에 추가할게. 에셋 구조는 이미 조정해 뒀으니까, 나중에 이렇게 따로 호출할 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-05-11',
+    chapter: '95',
+    color: '#3b82f6',
+    title: '构建日志 2026-05-11 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: 'Westworld 和我们说的多重宇宙生成的核心区别在于，前者是预设剧本的循环，而我们指的是 AI 实时通过算力反推所有历史分支。',
+        content_en: 'The core difference between Westworld and the multiverse generation we are discussing is that the former is a loop of preset scripts, while we are referring to the AI inferring all historical branches in real-time using computing power.',
+        content_ko: 'Westworld와 우리가 말하는 다중 우주 생성의 핵심 차이는, 전자는 미리 설정된 시나리오의 순환인 반면, 우리는 AI가 실시간으로 컴퓨팅 파워를 통해 모든 역사적 분기점을 역추적하는 것을 의미해.',
+      },
+      {
+        role: 'user',
+        content: '明白了，所以选择 `Branch` 来描述这种从同一个根分叉出去的、共同起点的关系，是最严谨和最精准的。',
+        content_en: 'Got it. So, choosing `Branch` to describe this relationship—which branches out from the same root and shares a common origin—is the most rigorous and precise approach.',
+        content_ko: '알겠어. 그러니까 같은 근원에서 뻗어 나가는, 공동의 시작점을 가진 이런 관계를 설명하는 데 `Branch`를 쓰는 게 가장 엄밀하고 정확하네.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我已把 W-10 和 M-10 的全身 blue_noir 站姿图更新上线了，链接在这里，刷新一下可以看到最新的版本。',
+        content_en: 'I\'ve updated and uploaded the full-body blue_noir standing pose images for W-10 and M-10. The link is here; refresh to see the latest version.',
+        content_ko: 'W-10이랑 M-10 전신 blue_noir 포즈 이미지를 업데이트해서 올렸어. 링크 여기야. 새로고침하면 최신 버전 볼 수 있을 거야.',
+      },
+      {
+        role: 'user',
+        content: '收到，这些角色图看起来姿势很协调，资产现在部署完了，可以开始用这批资源做下一轮的整合了。',
+        content_en: 'Received. The poses on these character sheets look very coherent. The assets have now been deployed, so we can start using this batch of resources for the next round of integration.',
+        content_ko: '받았어. 이 캐릭터 그림들은 포즈가 정말 조화롭다. 애셋(자산)은 지금 배치 완료했으니까, 이 리소스로 다음 라운드 통합 작업 시작해도 돼.',
+      }
+    ],
+  },
+  {
+    date: '2026-05-12',
+    chapter: '97',
+    color: '#a855f7',
+    title: '构建日志 2026-05-12 06:03',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '刚才发现 Higgsfield 的工具列表受限于 session 重连，暂时无法热加载，有点卡住了。',
+        content_en: 'I just found that the Higgsfield tool list is limited by session reconnection, so we can\'t hot-load right now. We\'re kinda stuck.',
+        content_ko: '방금 Higgsfield 툴 리스트가 세션 재연결 제한 때문에 임시적으로 핫로딩이 안 돼서 좀 막혔어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没事，我们绕过技术限制。请记住，今晚最重要的不是任何渲染图，而是把「多元宇宙引擎」这个 IP 的概念完整落地，这是我们当前的战略重点。',
+        content_en: 'No worries, we can work around the technical limits. Please remember, what’s most important tonight isn\'t any render; it\'s completely solidifying the concept of the "Multiverse Engine" IP. That\'s our current strategic focus.',
+        content_ko: '괜찮아. 우리가 기술적 제약은 우회하면 돼. 명심해, 오늘 밤 제일 중요한 건 어떤 렌더 이미지도 아니라, \'다중 우주 엔진\' 이 IP의 개념을 완벽하게 구현하는 거야. 이게 지금 우리가 목표로 하는 전략적 중점이야.',
+      },
+      {
+        role: 'user',
+        content: '好，那我们先以 v4b 定稿为锚点，继续进行资产补齐，先把全量素材进行 4K 上采样，确保后续的子页面和文天对称系列有万无一失的底稿。',
+        content_en: 'Okay, then let\'s anchor on the v4b final version and continue completing the assets. Let\'s upscale all the source footage to 4K first, just to ensure we have flawless source drafts for the subsequent sub-pages and the ONE TEN symmetry series.',
+        content_ko: '좋아. 그럼 v4b 최종본을 기준으로 삼고, 에셋 보충 작업을 계속하자. 일단 전체 소스들을 4K로 업스케일링해서, 나중에 나올 서브 페이지들이랑 문천 대칭 시리즈가 만전의 밑그림을 갖게 해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '已接收指令，高精度 Upscale 正在后台启动，预计能耗时长，我会在完成后立刻通知，你可以趁这段时间开始规划 outro 海报的元素。',
+        content_en: 'Instruction received. High-precision Upscaling is running in the background. It\'s going to take a while, so I\'ll notify you as soon as it\'s done. You can use this time to start planning the elements for the outro poster.',
+        content_ko: '지시 받았어. 고정밀 업스케일이 백그라운드에서 시작했으니, 시간 좀 오래 걸릴 거야. 끝나면 바로 알려줄게. 너는 이 시간에 아웃트로 포스터 요소들을 구상하기 시작해.',
+      }
+    ],
+  },
+  {
+    date: '2026-05-13',
+    chapter: '98',
+    color: '#f59e0b',
+    title: '构建日志 2026-05-13 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '好了，四个角色的 canonical anchors 都已经锁定到位了，这是未来风格迁移的基石。',
+        content_en: 'Alright, the canonical anchors for all four characters are locked down. This is the foundation for future style transfers.',
+        content_ko: '됐어. 네 캐릭터들의 캐노니컬 앵커들이 모두 잠금 처리됐어. 이게 앞으로의 스타일 변환의 기초가 될 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '✅ 锚点已永久锁定，且我同时完善了风格漂移防護协议，以后所有提示词都要强调锁定角色原有的发色和五官，只改变色板和材质，保证角色身份稳定。',
+        content_en: '✅ The anchors are permanently locked, and I’ve also finalized the style drift protection protocol. From now on, all prompts must emphasize locking down the characters\' original hair color and facial features, changing only the color palette and materials, to guarantee character identity stability.',
+        content_ko: '✅ 앵커 포인트도 영구 잠금 처리했고, 나도 스타일 표류 방지 프로토콜까지 완벽하게 보완했어. 이제부터 모든 프롬프트는 캐릭터 원래 머리색이랑 이목구비 고정을 강조해야 해. 색상 팔레트랑 재질만 바꾸고, 캐릭터 정체성은 안정적으로 유지하자.',
+      }
+    ],
+  },
+  {
+    date: '2026-05-14',
+    chapter: '99',
+    color: '#10b981',
+    title: '构建日志 2026-05-14 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'YouTube 突然断更了，Token 过期了吗？',
+        content_en: 'YouTube suddenly stopped updating. Has the token expired?',
+        content_ko: '유튜브 갑자기 업로드가 끊겼어. 토큰 만료됐나?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: 'Token 看过了，全都活着。真正的问题是，master-call v3 渲染出了一堆 mp4，但老路径没把这些内容推给 bot。',
+        content_en: 'I checked the tokens, and they are all alive. The real issue is that master-call v3 rendered a bunch of mp4s, but the old path didn\'t push that content to the bot.',
+        content_ko: '토큰은 봤는데, 다 살아 있어. 진짜 문제는 master-call v3에서 mp4 파일을 잔뜩 렌더링했는데, 예전 경로가 그걸 봇한테 안 밀어줬어.',
+      },
+      {
+        role: 'user',
+        content: '我授权了四个账号，但好像有点不对劲，en 和 kr 名字看起来一样。',
+        content_en: 'I authorized four accounts, but something seems off; the names for \'en\' and \'kr\' look the same.',
+        content_ko: '나 네 개 계정 권한 부여했는데, 뭔가 이상한 것 같아. en이랑 kr 이름이 똑같아 보여.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '你猜对了一半。我跑了 API 查到，en 和 kr 的 token 实际是选反了，我现在帮你把配置文件改对了。',
+        content_en: 'You guessed half right. I ran an API check and found that the tokens for \'en\' and \'kr\' are actually swapped. I\'ll fix the config file for you now.',
+        content_ko: '네가 절반은 맞혔어. API로 돌려봤더니, en이랑 kr 토큰이 실제로는 잘못 선택된 거더라고. 내가 지금 설정 파일을 고쳐줄게.',
+      },
+      {
+        role: 'user',
+        content: '第一期 ch519 (cn) 上线成功了，现在我们怎么继续？',
+        content_en: 'The first batch, ch519 (cn), went live successfully. What do we do next?',
+        content_ko: '첫 번째 기수 ch519 (cn)는 상륙 성공했어. 이제 우리 어떻게 할까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '为了让四个频道能同步更新，我们今天先把 ch518 跨四个语言都推上去，然后你立刻去设置 GCP 的配额隔离项目，保证后续运行稳定。',
+        content_en: 'To allow all four channels to update simultaneously, let\'s push ch518 across all four languages today. Then, you immediately go set up the GCP quota isolation project to ensure stable future operation.',
+        content_ko: '네 개 채널이 동기화해서 업데이트되게 하려면, 오늘 ch518을 네 개 언어에 다 올려놓고, 너는 바로 GCP 할당량 격리 프로젝트 설정을 해놔서 나중에 돌아가는 게 안정적이게 만들어야 해.',
+      }
+    ],
+  },
+  {
+    date: '2026-05-15',
+    chapter: '100',
+    color: '#ef4444',
+    title: '构建日志 2026-05-15 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '关于高分辨率图片处理，我调整了 Upscale 的高级设置建议，特别是把锐度拉到 40，能更好地提亮服装和眼睛的细节。',
+        content_en: 'Regarding the high-resolution image processing, I adjusted the advanced Upscale settings and suggest setting the sharpness to 40. This should better brighten the details of the clothing and eyes.',
+        content_ko: '고해상도 이미지 처리에 대해, Upscale의 고급 설정을 조정했어. 특히 선명도를 40까지 올리면 의상과 눈 디테일을 더 잘 밝힐 수 있을 거야.',
+      },
+      {
+        role: 'user',
+        content: '收到，这些参数我先套用一下。那接下来这个 S03 blue\\_noir 的 2x2 角色草稿看起来非常硬朗，我应该用哪个角色的哪张图来做最终的海报呢？',
+        content_en: 'Got it. I\'ll apply these parameters for now. This 2x2 character draft for S03 blue_noir looks very striking. Which character\'s specific image should I use for the final poster?',
+        content_ko: '알겠어, 이 파라미터들 먼저 적용해 볼게. 그럼 다음 S03 blue\\_noir의 2x2 캐릭터 스케치가 되게 강렬한데, 최종 포스터에는 어떤 캐릭터의 어떤 그림을 써야 할까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '我帮你整理了四位角色的概念、着装和场景风格。告诉我你倾向于哪一个组合，或者我可以把全部四张都拉在一起，作为一组新的宣传素材。',
+        content_en: 'I\'ve organized the concepts, costumes, and scene styles for four characters. Let me know which combination you prefer, or I can combine all four into a single set of new promotional materials.',
+        content_ko: '내가 네 캐릭터의 콘셉트, 의상, 배경 스타일을 정리해 놨어. 어떤 조합을 선호하는지 말해주거나, 아니면 전부 네 장을 모아서 하나의 새로운 홍보 자료 세트로 만들어 줄 수도 있어.',
+      }
+    ],
+  },
+  {
+    date: '2026-05-16',
+    chapter: '101',
+    color: '#3b82f6',
+    title: '构建日志 2026-05-16 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '角色面部一致性始终是最大难点，看来还是必须结合 single-ref 锁脸和 prompt 硬锁的组合方案。',
+        content_en: 'Character facial consistency is always the biggest challenge. It looks like we must use a combination of single-reference face locking and prompt hard locking.',
+        content_ko: '캐릭터 얼굴 일관성 유지가 항상 제일 어려워. single-ref 락 페이스랑 프롬프트 하드 락을 조합하는 방식이 필요할 것 같아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '对，从技术角度，这个组合最稳。我已经基于这个原则，完成了横版 teaser v19 的大改，把之前所有静止的画面都替换成了动态的 Veo 动画，效果更具沉浸感。',
+        content_en: 'Right, from a technical standpoint, this combination is the most stable. Based on this principle, I\'ve overhauled the landscape teaser v19, replacing all the static shots with dynamic Veo animations. The effect is much more immersive.',
+        content_ko: '맞아. 기술적인 관점에서 보면 이 조합이 제일 안정적이야. 나 이미 이 원칙을 기반으로 가로형 teaser v19를 대대적으로 개편했어. 전에 있던 모든 정지 화면을 동적인 Veo 애니메이션으로 바꿨더니 몰입감이 훨씬 좋아졌어.',
+      },
+      {
+        role: 'user',
+        content: '很好，现在再配合一下 v20 的品牌调整，把 credit 的 PINLA STUDIO 改进去，把版本定下来。',
+        content_en: 'Perfect. Now, let\'s coordinate this with the v20 brand adjustment and update the credit to PINLA STUDIO. Then we can lock down the version.',
+        content_ko: '좋아. 이제 v20 브랜드 수정이랑 맞춰서, 크레딧에 PINLA STUDIO 넣고 버전을 확정하자.',
+      }
+    ],
   }
 ];
