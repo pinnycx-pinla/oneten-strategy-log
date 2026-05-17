@@ -1,8 +1,56 @@
 import { LOG_DAYS, FX_DEMO } from './src/data.js';
 
+// ── ONETEN Public Archive (isolated dataset, 2026-05-17 added) ──────────
+// Loaded defensively: if oneten_data.js missing or empty, build-log view unaffected.
+let ONETEN_DAYS = [];
+try {
+  const mod = await import('./src/oneten_data.js');
+  ONETEN_DAYS = mod.ONETEN_DAYS || [];
+} catch (e) {
+  console.warn('ONETEN archive data not available; build-log view only.');
+}
+
 // ── Page State ────────────────────────────────────────────────────────────
-let currentPage = LOG_DAYS.length - 1; // start on latest day
-let currentLang = 'zh'; // zh | en | ko
+// currentView: 'build-log' (default) or 'oneten'
+// currentDays: live ref to the active dataset; renderPage / nav use this.
+let currentView = (typeof location !== 'undefined' && location.hash === '#oneten') ? 'oneten' : 'build-log';
+let currentDays = (currentView === 'oneten' && ONETEN_DAYS.length > 0) ? ONETEN_DAYS : LOG_DAYS;
+let currentPage = currentDays.length - 1; // start on latest day
+let currentLang = 'en'; // zh | en | ko — default landing language
+
+// ── Header AI avatar — rotate across ONETEN QUANT roster (character + expression) ─
+(function rotateHeaderAvatar() {
+  const roster = [
+    {
+      key: 'ia10', name: 'IA10', cls: '',
+      variants: ['/ia10_head_a.jpg', '/ia10_head_b.jpg', '/ia10_head_c.jpg', '/ia10_head_d.jpg'],
+    },
+    {
+      key: 'karen', name: 'KAREN', cls: '',
+      variants: ['/karen.jpg'],
+    },
+    {
+      key: 'mini', name: 'MINI', cls: '',
+      variants: ['/mini.jpg'],
+    },
+    {
+      key: 'dali', name: 'DALI', cls: 'dali-3d',
+      variants: ['/dali_new_transparent.png'],
+    },
+  ];
+  const pickChar = roster[Math.floor(Math.random() * roster.length)];
+  const pickImg  = pickChar.variants[Math.floor(Math.random() * pickChar.variants.length)];
+  const img = document.getElementById('header-ai-avatar');
+  const name = document.getElementById('header-ai-name');
+  const wrap = document.getElementById('header-ai-wrap');
+  if (img && name && wrap) {
+    img.src = pickImg;
+    img.alt = pickChar.name;
+    img.className = pickChar.cls;
+    name.textContent = pickChar.name;
+    wrap.dataset.speaker = pickChar.key;
+  }
+})();
 
 // Entrance animation styles cycling per message index
 const ENTER_STYLES = ['', 'enter-drop', 'enter-expand', 'enter-beam', 'enter-glitch'];
@@ -17,12 +65,23 @@ function renderMessage(msg, delay = 0, index = 0) {
 
   const USER_NAMES = { zh: '文天', en: 'ONE TEN', ko: '문천' };
   const userName = USER_NAMES[currentLang] || '文天';
+
+  // ONETEN QUANT roster: ia10 (commander) / karen (action) / mini (reflection) / dali (legacy)
+  // wrapperCls colors the ring; imgCls keeps DALI's 3D floating bot styling on the img itself
+  const SPEAKERS = {
+    ia10:  { img: '/ia10.jpg',                 name: 'IA10',  wrapperCls: 'speaker-ia10',  imgCls: '' },
+    karen: { img: '/karen.jpg',                name: 'KAREN', wrapperCls: 'speaker-karen', imgCls: '' },
+    mini:  { img: '/mini.jpg',                 name: 'MINI',  wrapperCls: 'speaker-mini',  imgCls: '' },
+    dali:  { img: '/dali_new_transparent.png', name: 'DALI',  wrapperCls: 'speaker-dali',  imgCls: 'dali-3d' },
+  };
+  const aiSpeaker = SPEAKERS[msg.speaker] || SPEAKERS.dali;
+
   const avatar = `
-    <div class="avatar">
-      <img src="${isUser ? '/wen_tian.png' : '/dali_new_transparent.png'}"
-           alt="${isUser ? userName : 'DALI'}"
-           ${isUser ? '' : 'class="dali-3d"'}>
-      <span class="name">${isUser ? userName : 'DALI'}</span>
+    <div class="avatar ${isUser ? '' : aiSpeaker.wrapperCls}">
+      <img src="${isUser ? '/wen_tian.png' : aiSpeaker.img}"
+           alt="${isUser ? userName : aiSpeaker.name}"
+           ${isUser ? '' : `class="${aiSpeaker.imgCls}"`}>
+      <span class="name">${isUser ? userName : aiSpeaker.name}</span>
     </div>`;
 
   let bubbleInner = '';
@@ -103,7 +162,7 @@ function renderMessage(msg, delay = 0, index = 0) {
 
 // ── Render a full day page ────────────────────────────────────────────────
 function renderPage(index) {
-  const day = LOG_DAYS[index];
+  const day = currentDays[index];
   const container = document.getElementById('chat-content');
   container.innerHTML = '';
 
@@ -136,14 +195,25 @@ function renderPage(index) {
   // Update nav
   document.getElementById('page-date').textContent = day.date;
   document.getElementById('btn-prev').disabled = index === 0;
-  document.getElementById('btn-next').disabled = index === LOG_DAYS.length - 1;
+  document.getElementById('btn-next').disabled = index === currentDays.length - 1;
 
-  // Dots
+  // Dots — windowed so long histories don't blow out the row width
   const dotsEl = document.getElementById('page-dots');
-  dotsEl.innerHTML = LOG_DAYS.map((_, i) =>
-    `<span class="dot ${i === index ? 'active' : ''}" data-idx="${i}"></span>`
-  ).join('');
-  dotsEl.querySelectorAll('.dot').forEach(dot => {
+  const total = currentDays.length;
+  const MAX_DOTS = 9;
+  let start = Math.max(0, index - Math.floor(MAX_DOTS / 2));
+  let end = Math.min(total, start + MAX_DOTS);
+  start = Math.max(0, end - MAX_DOTS);
+
+  const parts = [];
+  if (start > 0) parts.push(`<span class="dot edge" data-idx="0"></span>`);
+  for (let i = start; i < end; i++) {
+    parts.push(`<span class="dot ${i === index ? 'active' : ''}" data-idx="${i}"></span>`);
+  }
+  if (end < total) parts.push(`<span class="dot edge" data-idx="${total - 1}"></span>`);
+  parts.push(`<span class="page-count">${index + 1} / ${total}</span>`);
+  dotsEl.innerHTML = parts.join('');
+  dotsEl.querySelectorAll('[data-idx]').forEach(dot => {
     dot.addEventListener('click', () => goTo(parseInt(dot.dataset.idx)));
   });
 
@@ -168,7 +238,7 @@ document.getElementById('btn-prev').addEventListener('click', () => {
   if (currentPage > 0) goTo(currentPage - 1);
 });
 document.getElementById('btn-next').addEventListener('click', () => {
-  if (currentPage < LOG_DAYS.length - 1) goTo(currentPage + 1);
+  if (currentPage < currentDays.length - 1) goTo(currentPage + 1);
 });
 
 // ── Nebula Background (CSS cloud divs) ───────────────────────────────────
@@ -231,12 +301,20 @@ function startEffect(name) {
 
 const effectScripts = ['net', 'dots', 'birds'];
 let loaded = 0;
-effectScripts.forEach(fx => {
-  const s = document.createElement('script');
-  s.src = `https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.${fx}.min.js`;
-  s.onload = () => { if (++loaded === effectScripts.length) startEffect('NET'); };
-  document.head.appendChild(s);
-});
+let vantaScriptsRequested = false;
+function ensureVantaScripts(afterLoad) {
+  if (vantaScriptsRequested) {
+    if (loaded >= effectScripts.length) afterLoad && afterLoad();
+    return;
+  }
+  vantaScriptsRequested = true;
+  effectScripts.forEach(fx => {
+    const s = document.createElement('script');
+    s.src = `https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.${fx}.min.js`;
+    s.onload = () => { if (++loaded === effectScripts.length) afterLoad && afterLoad(); };
+    document.head.appendChild(s);
+  });
+}
 
 const BG_CYCLE = ['nebula', 'cosmic', 'galaxy', 'vanta-NET', 'vanta-DOTS', 'vanta-BIRDS'];
 const BG_LABELS = { nebula: '✦ 星云', cosmic: '✦ 星云·蝴蝶', galaxy: '✦ 银河', 'vanta-NET': '✦ 粒子网络', 'vanta-DOTS': '✦ 量子矩阵', 'vanta-BIRDS': '✦ 数据流' };
@@ -255,7 +333,7 @@ document.getElementById('fx-btn').addEventListener('click', () => {
     showBg('vanta');
     const name = mode.replace('vanta-', '');
     currentEffectIndex = EFFECTS.indexOf(name);
-    if (loaded >= effectScripts.length) startEffect(name);
+    ensureVantaScripts(() => startEffect(name));
   }
 });
 
@@ -405,3 +483,60 @@ document.addEventListener('mousemove', e => {
 // ── Init ──────────────────────────────────────────────────────────────────
 applyTheme(themeIdx);
 renderPage(currentPage);
+
+// ── ONETEN view toggle (2026-05-17 additive) ──────────────────────────────
+// Injects a small toggle button in the top-right of the header so users can
+// switch between the internal build-log view and the ONETEN public archive
+// without modifying any existing HTML. URL hash (#oneten) deep-links the view.
+(function injectViewToggle() {
+  if (ONETEN_DAYS.length === 0) {
+    // No archive data → no toggle. Build-log unaffected.
+    return;
+  }
+  const btn = document.createElement('button');
+  btn.id = 'btn-view-toggle';
+  btn.style.cssText = [
+    'position:fixed', 'top:18px', 'right:18px', 'z-index:1000',
+    'padding:8px 16px',
+    'background:rgba(8,12,24,0.85)',
+    'color:#e2f0ff',
+    'border:1px solid #00f0ff80',
+    'border-radius:6px',
+    'font:500 12px/1.2 Inter,Noto Sans SC,sans-serif',
+    'letter-spacing:0.06em',
+    'cursor:pointer',
+    'backdrop-filter:blur(8px)',
+    'box-shadow:0 0 12px #00f0ff30',
+  ].join(';');
+  document.body.appendChild(btn);
+
+  function updateLabel() {
+    btn.textContent = currentView === 'oneten'
+      ? '◀ INTERNAL BUILD LOG'
+      : 'ONETEN PUBLIC ARCHIVE ▶';
+  }
+
+  function switchView(name) {
+    if (name === currentView) return;
+    currentView = name;
+    currentDays = (name === 'oneten' && ONETEN_DAYS.length > 0) ? ONETEN_DAYS : LOG_DAYS;
+    currentPage = currentDays.length - 1;
+    if (typeof location !== 'undefined') {
+      try { history.replaceState(null, '', name === 'oneten' ? '#oneten' : '#'); } catch (_) {}
+    }
+    renderPage(currentPage);
+    updateLabel();
+  }
+
+  btn.addEventListener('click', () => {
+    switchView(currentView === 'oneten' ? 'build-log' : 'oneten');
+  });
+
+  // React to manual hash changes
+  window.addEventListener('hashchange', () => {
+    const target = (location.hash === '#oneten') ? 'oneten' : 'build-log';
+    switchView(target);
+  });
+
+  updateLabel();
+})();
