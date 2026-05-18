@@ -2464,5 +2464,56 @@ export const LOG_DAYS = [
         content_ko: '좋아. 이제 v20 브랜드 수정이랑 맞춰서, 크레딧에 PINLA STUDIO 넣고 버전을 확정하자.',
       }
     ],
+  },
+  {
+    date: '2026-05-17',
+    chapter: '102',
+    color: '#00f0ff',
+    title: '构建日志 2026-05-17 06:03',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '角色 IP 的提升必须是向“信息霸权层”去，不能只停在被观看的娱乐层面。',
+        content_en: 'The enhancement of character IPs must aim for the "information hegemony layer," and cannot just stop at the merely viewed entertainment level.',
+        content_ko: '캐릭터 IP는 \'정보 패권층\' 쪽으로 올라가야지, 그냥 소비되는 엔터테인먼트 수준에만 머무르면 안 돼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '同意。所以我们不能把角色只当作画面，必须把每个角色都定位成一个独立的**“观点+思考框架”**，比如让 IA10 专门做季报量化。',
+        content_en: 'Agreed. So we cannot treat the characters merely as visuals; we must position each character as an independent "viewpoint + thinking framework"—for instance, having IA10 specialize in quarterly report quantification.',
+        content_ko: '동의해. 그러니까 캐릭터를 그냥 화면으로만 봐선 안 돼. 각 캐릭터를 독립적인 **\'관점 + 사고 프레임워크\'**로 포지셔닝해야 해. 예를 들어 IA10은 분기별 보고서 정량화만 전담하게 하는 식으로.',
+      },
+      {
+        role: 'user',
+        content: '再看 Bot 的并发逻辑，你确定这种异步并行模式没有隐藏的资源陷阱？',
+        content_en: 'Looking at the Bot\'s concurrency logic again, are you sure this asynchronous parallel pattern doesn\'t have hidden resource traps?',
+        content_ko: '그리고 봇의 동시성 로직을 다시 봐봐. 이 비동기 병렬 모드가 숨겨진 리소스 트랩은 없는지 확신해?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '理论上是可行的，但必须特别警惕 `chapter 号 race` 这种资源竞争问题，后续要增加锁机制来应对。',
+        content_en: 'Theoretically, it\'s possible, but we must be particularly wary of resource contention issues like the `chapter number race`. We will need to add a locking mechanism later to handle it.',
+        content_ko: '이론상으로는 가능해. 하지만 `chapter 번호 Race` 같은 자원 경합 문제는 특히 경계해야 하고, 나중에 락 메커니즘을 추가해야 해.',
+      },
+      {
+        role: 'user',
+        content: '好，那我们的构建日志自动化就按原计划走，先把 `AGENT_LOG.md` 挂上去。',
+        content_en: 'Okay, then we\'ll proceed with the build log automation as originally planned, and first upload `AGENT_LOG.md`.',
+        content_ko: '좋아. 그럼 우리 빌드 로그 자동화는 원래 계획대로 진행하자. 일단 `AGENT_LOG.md`부터 올려.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到，我已经记住了，目前内容和 DALI ↔ 文天内部协作记录是同步的，后续路径 A，我来准备接纳 ONETEN 的公共归档。',
+        content_en: 'Received, I\'ve noted it. Currently, the internal collaboration records between DALI and ONE TEN are synchronized. For subsequent Path A, I will prepare to receive the public archive from ONE TEN.',
+        content_ko: '알았어. 기억했어. 지금 콘텐츠랑 DALI ↔ 문천 내부 협업 기록은 동기화되어 있고, 다음 경로 A는 내가 ONETEN의 공개 아카이브를 받을 준비할게.',
+      }
+    ],
   }
 ];
