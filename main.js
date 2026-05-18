@@ -496,17 +496,17 @@ renderPage(currentPage);
   const btn = document.createElement('button');
   btn.id = 'btn-view-toggle';
   btn.style.cssText = [
-    'position:fixed', 'top:18px', 'right:18px', 'z-index:1000',
-    'padding:8px 16px',
-    'background:rgba(8,12,24,0.85)',
+    'position:fixed', 'bottom:18px', 'right:18px', 'z-index:1000',
+    'padding:10px 18px',
+    'background:rgba(8,12,24,0.92)',
     'color:#e2f0ff',
     'border:1px solid #00f0ff80',
-    'border-radius:6px',
-    'font:500 12px/1.2 Inter,Noto Sans SC,sans-serif',
-    'letter-spacing:0.06em',
+    'border-radius:24px',
+    'font:600 11px/1.2 Inter,Noto Sans SC,sans-serif',
+    'letter-spacing:0.08em',
     'cursor:pointer',
     'backdrop-filter:blur(8px)',
-    'box-shadow:0 0 12px #00f0ff30',
+    'box-shadow:0 0 16px #00f0ff40',
   ].join(';');
   document.body.appendChild(btn);
 
