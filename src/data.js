@@ -2595,5 +2595,42 @@ export const LOG_DAYS = [
         content_ko: '응. 동시에 나는 HyperFrames 두 개를 렌더링 테스트했어. 데이터 차트랑 플로우 차트 스타일이 Master-call 뉴스 삽입 차트에 쓰기 딱 좋아. 다음 단계는 애니메이션이랑 모델 확정(DeepSeek V4 Pro)을 통합하는 거야.',
       }
     ],
+  },
+  {
+    date: '2026-05-20',
+    chapter: '105',
+    color: '#10b981',
+    title: '构建日志 2026-05-20 06:03',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '系统健康检测报了，硬盘又要满了，能帮我诊断一下，哪些缓存和旧版本可以彻底删掉吗？',
+        content_en: 'The system health check reported; the hard drive is almost full again. Can you help me diagnose which caches and old versions I can completely delete?',
+        content_ko: '시스템 헬스 체크 경고가 떴어. 하드디스크 또 만료될 것 같은데, 어떤 캐시랑 구버전을 완전히 삭제할 수 있는지 진단 좀 해줄래?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到。主要的占用源在废弃的 `node_modules` 和中间渲染缓存。我可以清理这些，确保只保留这四个核心 PA1 版本，立刻能释放出至少 12 GB 的空间。',
+        content_en: 'Received. The main sources of usage are the abandoned `node_modules` and intermediate rendering caches. I can clean these up, ensuring only the four core PA1 versions are kept, which will immediately free up at least 12 GB of space.',
+        content_ko: '알았어. 주된 용량 점유원은 폐기된 `node_modules`랑 중간 렌더링 캐시야. 이거 청소해 줄 수 있어. 핵심 PA1 버전 네 개만 남기고 지우면, 당장 최소 12 GB는 확보할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '太好了，先清理一下。然后 W1 的形象我准备好了，能不能把新的 canonical anchor 更新到所有的后续模板中？',
+        content_en: 'That\'s great, clean it up first. Then, I have the W1 assets ready. Can you update the new canonical anchor across all subsequent templates?',
+        content_ko: '너무 좋다, 일단 청소해 줘. 그리고 W1 이미지는 내가 준비했으니까, 새 canonical anchor를 모든 후속 템플릿에 업데이트해 줄 수 있어?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '锁定成功。我已将 W1 的新形象设置写入 memory，并在后续所有 EP 的自动流程中生效，以后你无需操心跨版本的素材同步了。',
+        content_en: 'Locked successfully. I have written the new W1 asset settings into memory, and they will take effect in all subsequent EP automatic workflows. From now on, you won\'t need to worry about cross-version asset synchronization.',
+        content_ko: '잠금 성공. W1 새 이미지 설정을 메모리에 기록했고, 이후 모든 EP 자동 프로세스에 적용했어. 이제부터는 네가 버전 간 소재 동기화 걱정 안 해도 돼.',
+      }
+    ],
   }
 ];
