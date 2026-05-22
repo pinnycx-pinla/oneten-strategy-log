@@ -2632,5 +2632,28 @@ export const LOG_DAYS = [
         content_ko: '잠금 성공. W1 새 이미지 설정을 메모리에 기록했고, 이후 모든 EP 자동 프로세스에 적용했어. 이제부터는 네가 버전 간 소재 동기화 걱정 안 해도 돼.',
       }
     ],
+  },
+  {
+    date: '2026-05-21',
+    chapter: '106',
+    color: '#ef4444',
+    title: '构建日志 2026-05-21 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '配置升级和整个内容生产链路已经定下来了，从拉字幕到渲染，整个工作流都是全流程化的，你先按这个步骤铺台词和做HTML结构。',
+        content_en: 'The configuration upgrade and the entire content production pipeline have been finalized. From subtitle extraction to rendering, the whole workflow is fully end-to-end. You should first follow these steps to script the dialogue and build the HTML structure.',
+        content_ko: '구성 업그레이드랑 전체 콘텐츠 제작 과정이 다 정해졌어. 자막 가져오기부터 렌더링까지, 전체 워크플로우가 다 전 과정으로 돼. 너는 먼저 이 순서대로 대본 짜고 HTML 구조부터 만들어봐.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到，我立刻根据新的配置标准进行优化和拆解。我们今天重点确定了下一集的内容框架，我为您设计了两个版本：A版主打戏剧化的叙事冲突，B版则侧重深度的技术点分析，您看看更偏向哪一种叙事角度。',
+        content_en: 'Received. I will immediately optimize and break down the process according to the new configuration standards. For the next episode\'s content framework, we focused on finalizing it today, and I have designed two versions for you: Version A focuses on dramatic narrative conflict, while Version B concentrates on in-depth technical analysis. Please let me know which narrative angle you prefer.',
+        content_ko: '알았어. 새로운 설정 기준에 맞춰서 바로 최적화하고 분해할게. 오늘 다음 에피소드 콘텐츠 틀을 중점적으로 정했어. 내가 두 가지 버전으로 디자인해 봤어. A 버전은 드라마틱한 서사 갈등에 중점을 두고, B 버전은 깊이 있는 기술 분석에 초점을 맞췄어. 어떤 서사 각도가 더 좋을지 한번 봐줘.',
+      }
+    ],
   }
 ];
