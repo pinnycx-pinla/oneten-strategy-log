@@ -2655,5 +2655,42 @@ export const LOG_DAYS = [
         content_ko: '알았어. 새로운 설정 기준에 맞춰서 바로 최적화하고 분해할게. 오늘 다음 에피소드 콘텐츠 틀을 중점적으로 정했어. 내가 두 가지 버전으로 디자인해 봤어. A 버전은 드라마틱한 서사 갈등에 중점을 두고, B 버전은 깊이 있는 기술 분석에 초점을 맞췄어. 어떤 서사 각도가 더 좋을지 한번 봐줘.',
       }
     ],
+  },
+  {
+    date: '2026-05-22',
+    chapter: '107',
+    color: '#3b82f6',
+    title: '构建日志 2026-05-22 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天的主要任务是把 EP18 的流程跑起来，不能只是串行。',
+        content_en: 'Our main task today is getting the EP18 pipeline running; it can\'t just be sequential.',
+        content_ko: '오늘 주요 임무는 EP18 프로세스를 돌리는 거야. 단순하게 순차적일 순 없어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '是的，我给你部署了三个并行子代理，主线继续内容更新，同时 B 版本流程和一致性检查都在后台跑，这样才能真正跑通高并发的生产力。',
+        content_en: 'Yes, I deployed three parallel sub-agents for you. The main thread will continue content updates, while the B version process and consistency checks are running in the background. That\'s how we can really nail high-concurrency productivity.',
+        content_ko: '응, 너한테 병렬 서브 에이전트 세 개 배포했어. 메인 라인은 계속 콘텐츠 업데이트하면서, B 버전 프로세스랑 일관성 체크도 백그라운드에서 돌아가게 했지. 그래야 비로소 고부하의 생산성을 제대로 돌릴 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '另外，KR 的韩语语音方案也定下来了。虽然等 MiniMax 的新 voice 更省钱，但为了不耽误进度，先按 ElevenLabs 的现成资源走吧。',
+        content_en: 'Also, the Korean voice solution for KR is settled. Even though waiting for MiniMax\'s new voice would be cheaper, we\'ll use the readily available ElevenLabs resources for now so we don\'t lose momentum.',
+        content_ko: '그리고, KR의 한국어 음성 솔루션도 정해졌어. MiniMax 새 보이스가 더 저렴하긴 해도, 일정 지연시키지 않으려면 일단 ElevenLabs의 기존 리소스로 진행하자.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我记下了这个决策。同时，前期我们清理了大量冗余的 node_modules 和沙箱镜像，内存和磁盘空间都释放了近 20 GB，系统运行环境非常干净。',
+        content_en: 'I\'ve noted that decision. Also, earlier we cleaned out a lot of redundant node_modules and sandbox images, freeing up nearly 20 GB of memory and disk space. The system environment is super clean now.',
+        content_ko: '이 결정 기록해 뒀어. 게다가, 초기에 중복되는 node_modules랑 샌드박스 이미지를 많이 정리해서, 메모리랑 디스크 공간을 거의 20GB나 확보했지. 시스템 운영 환경이 아주 깨끗해졌어.',
+      }
+    ],
   }
 ];
