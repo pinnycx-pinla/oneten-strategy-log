@@ -2692,5 +2692,42 @@ export const LOG_DAYS = [
         content_ko: '이 결정 기록해 뒀어. 게다가, 초기에 중복되는 node_modules랑 샌드박스 이미지를 많이 정리해서, 메모리랑 디스크 공간을 거의 20GB나 확보했지. 시스템 운영 환경이 아주 깨끗해졌어.',
       }
     ],
+  },
+  {
+    date: '2026-05-23',
+    chapter: '108',
+    color: '#00f0ff',
+    title: '构建日志 2026-05-23 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '看了那篇关于 AI 巨头部署公司模式的分析，太重要了。咨询公司的信息差护城河正在被AI彻底打通，我们必须抓住这个 B2B 赛道作为核心叙事。',
+        content_en: 'After reading that analysis about AI giants deploying the corporate model, it\'s incredibly important. The information asymmetry moat of consulting firms is being completely broken down by AI, so we must capture the B2B track as our core narrative.',
+        content_ko: 'AI 거인들이 회사 모델을 구축하는 거에 대한 분석 봤는데, 너무 중요해. 컨설팅 회사의 정보 우위라는 해자가 AI에 의해 완전히 무너지고 있어. 우리는 이걸 B2B 트랙으로 잡아서 핵심 서사로 삼아야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '完全同意。所以 EP21 的辩论主题就定为“ONETEN 也是那个部署企业”，用最前沿的产业趋势去赋能我们的品牌叙事，视觉和概念都升级了。',
+        content_en: 'I completely agree. So for the EP21 debate theme, we\'re settling on "ONE TEN is also that deploying enterprise." We\'re going to empower our brand narrative with the most cutting-edge industry trends, and we\'re upgrading both the visuals and the concept.',
+        content_ko: '완전히 동의해. 그래서 EP21 토론 주제는 "ONETEN도 그 배포 기업이야"로 정했고, 가장 최신 산업 트렌드를 활용해서 우리 브랜드 서사를 강화했어. 비주얼이랑 콘셉트 전부 업그레이드했어.',
+      },
+      {
+        role: 'user',
+        content: '对，风格也定了，从传统的金融报告彻底转到“粒子+Data Art”的实验味，这样才符合现在科技媒体的审美。',
+        content_en: 'Exactly. We\'ve even locked down the style—moving completely away from traditional financial reports to an experimental "particle + Data Art" vibe. That\'s what resonates with modern tech media aesthetics.',
+        content_ko: '맞아, 스타일도 정했어. 전통적인 금융 보고서 느낌에서 완전히 "입자(Particle) + 데이터 아트"의 실험적인 느낌으로 바꾼 거야. 그래야 요즘 테크 미디어가 선호하는 미학에 맞거든.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '现在，我们可以基于这个新调性，将 v3 版本替换进 EP19 的开场，让整个系列从一开始就拥有顶级的、具有未来感的视觉冲击力。',
+        content_en: 'Now, based on this new aesthetic, we can replace the v3 version into the opening of EP19, making the entire series have top-tier, futuristic visual impact right from the start.',
+        content_ko: '이제, 이 새로운 톤을 바탕으로 v3 버전을 EP19 오프닝에 넣을 수 있어. 그럼 시리즈 전체가 처음부터 최고급의, 미래적인 비주얼 충격력을 가지게 될 거야.',
+      }
+    ],
   }
 ];
