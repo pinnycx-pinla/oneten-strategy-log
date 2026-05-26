@@ -2780,5 +2780,42 @@ export const LOG_DAYS = [
         content_ko: '돼. 지금 바로 테스트셋 생성 프로세스를 시작할게.',
       }
     ],
+  },
+  {
+    date: '2026-05-25',
+    chapter: '110',
+    color: '#f59e0b',
+    title: '构建日志 2026-05-25 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '看完了 YT 平台的安全区要求，左上角边框、头像 row 和对话卡右侧的调整都算完了，这三块改动定了。',
+        content_en: 'I\'ve finished reviewing the safe zone requirements for the YT platform. The adjustments—the top-left border, the avatar row, and the right side of the dialogue card—are all finalized. These three sections are set.',
+        content_ko: 'YT 플랫폼의 안전 구역 요구사항을 다 봤어. 왼쪽 상단 테두리, 아바타 줄, 대화 카드 오른쪽 조정을 모두 계산했어. 이 세 가지 변경은 확정이야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，我已锁定 ep25 的全套新布局，Top-bar 降到 180，对话卡右边留出 200px 给操作列。同时，Starship V3 的核心事实点（如 V3/Raptor 3/Block 3）和发射失败的关键点都已同步到脚本。',
+        content_en: 'Got it. I have locked down the complete new layout for ep25. The top-bar is dropping to 180, and I\'ve left 200px on the right side of the dialogue card for the operational column. I\'ve also synchronized the core facts for Starship V3 (like V3/Raptor 3/Block 3) and the key points regarding launch failures into the script.',
+        content_ko: '알겠어. ep25의 전체 새 레이아웃을 확정했어. 탑바는 180으로 낮추고, 대화 카드 오른쪽에는 조작 열을 위해 200px을 남겨뒀어. 그리고 Starship V3의 핵심 사실들(V3/Raptor 3/Block 3 같은 거)과 발사 실패의 중요한 포인트들을 스크립트에 다 동기화했어.',
+      },
+      {
+        role: 'user',
+        content: '对，这个布局和最新的 Starship 硬件升级和发射细节，是我们要重点推的。',
+        content_en: 'Correct. This layout, combined with the latest Starship hardware upgrades and launch details, is what we need to emphasize.',
+        content_ko: '맞아. 이 레이아웃이랑 최신 스타쉽 하드웨어 업그레이드랑 발사 디테일이 우리가 중점적으로 다뤄야 할 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好的，根据您定稿的“半成功”主题，我已经开始生 TTS 并重构 HTML，新的内容结构和布局将统一应用于接下来的所有素材。',
+        content_en: 'Okay. Based on your finalized "semi-successful" theme, I\'ve started generating the TTS and restructuring the HTML. The new content structure and layout will be applied uniformly across all future assets.',
+        content_ko: '좋아. 네가 최종 확정한 \'반성공\' 테마에 맞춰서 TTS 생성을 시작했고, HTML도 재구성했어. 새로운 콘텐츠 구조와 레이아웃은 앞으로의 모든 자료에 통일해서 적용할 거야.',
+      }
+    ],
   }
 ];
