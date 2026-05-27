@@ -2817,5 +2817,56 @@ export const LOG_DAYS = [
         content_ko: '좋아. 네가 최종 확정한 \'반성공\' 테마에 맞춰서 TTS 생성을 시작했고, HTML도 재구성했어. 새로운 콘텐츠 구조와 레이아웃은 앞으로의 모든 자료에 통일해서 적용할 거야.',
       }
     ],
+  },
+  {
+    date: '2026-05-26',
+    chapter: '111',
+    color: '#10b981',
+    title: '构建日志 2026-05-26 06:03',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '把 HF 的 voice concat 预处理和 GSAP 的时间轴调整这两条技术坑必须存进 memory，这是硬性规则。',
+        content_en: 'We must store these two technical pitfalls—HF\'s voice concat preprocessing and GSAP timeline adjustment—in memory. This is a hard rule.',
+        content_ko: 'HF voice concat 전처리랑 GSAP 타임라인 조정, 이 기술적 부분 두 개는 무조건 메모리에 저장해야 해. 이건 기본 원칙이야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '已确认并写入 memory。未来所有基于这些流程的生成都会强制遵守采样率统一和重新生成时间轴的规则。',
+        content_en: 'Confirmed and written to memory. All future generations based on these processes will forcibly adhere to the rules of unified sample rates and regenerated timelines.',
+        content_ko: '확인하고 메모리에 기록했어. 앞으로 이 프로세스를 기반으로 하는 모든 생성물은 샘플링 레이트 통일이랑 타임라인 재구성을 강제적으로 지킬 거야.',
+      },
+      {
+        role: 'user',
+        content: '系统警报了，磁盘已经用了 99%，马上要爆了。',
+        content_en: 'System alert—the disk is at 99% capacity and about to crash.',
+        content_ko: '시스템 경고가 떴어. 디스크 사용량이 벌써 99%야. 곧 터지겠다.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到红色警报。我已经列出 Top 10 占用目录，你可以让我根据项目优先级，立刻删除这批巨大的中间渲染产物。',
+        content_en: 'Red alert received. I have compiled a list of the Top 10 consuming directories. I can immediately delete this batch of huge intermediate rendering artifacts, based on project priority.',
+        content_ko: '빨간 경고를 받았어. 이미 상위 10개 디렉토리를 목록화했어. 프로젝트 우선순위에 따라 이 거대한 중간 렌더링 결과물들을 바로 삭제할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '看了这个 YouTube 视频，AI 工具做出的 Marketing Agency 的思路很有启发性。',
+        content_en: 'I watched this YouTube video, and the approach taken by the AI tools for the Marketing Agency was very inspiring.',
+        content_ko: '이 유튜브 영상 봤는데, AI 툴이 만든 마케팅 에이전시 기획이 정말 영감을 주더라.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '这确实印证了我们卖“铲子”的思路。根据视频的结构，我总结出四个可能的意图，后续的 PA1 SaaS 推广，可以围绕这四条线来做深度差异化。',
+        content_en: 'This truly validates our strategy of selling the "shovel." Based on the video\'s structure, I\'ve summarized four potential angles. For the subsequent PA1 SaaS promotion, we can focus on deep differentiation using these four lines.',
+        content_ko: '이건 우리가 \'삽\'을 판다는 아이디어를 확실히 입증했어. 영상 구조를 바탕으로 네 가지 가능한 의도를 정리했고, 이후 PA1 SaaS 홍보는 이 네 가지 라인을 중심으로 깊이 있게 차별화할 수 있을 거야.',
+      }
+    ],
   }
 ];
