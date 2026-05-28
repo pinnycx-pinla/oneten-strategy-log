@@ -2868,5 +2868,28 @@ export const LOG_DAYS = [
         content_ko: '이건 우리가 \'삽\'을 판다는 아이디어를 확실히 입증했어. 영상 구조를 바탕으로 네 가지 가능한 의도를 정리했고, 이후 PA1 SaaS 홍보는 이 네 가지 라인을 중심으로 깊이 있게 차별화할 수 있을 거야.',
       }
     ],
+  },
+  {
+    date: '2026-05-27',
+    chapter: '112',
+    color: '#ef4444',
+    title: '构建日志 2026-05-27 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '这篇 AI 招人标准总结很有价值，核心就是企业真正需要的是能搭建完整系统，而不是只会做玩具级 Demo 的人。',
+        content_en: 'This summary of AI recruitment standards is very valuable. The core point is that what companies truly need are people who can build complete systems, not just those who can make toy demos.',
+        content_ko: '이 AI 채용 기준 정리 진짜 가치 있어. 핵심은 기업이 진짜 원하는 건 장난감 수준의 데모만 만들 줄 아는 사람이 아니라, 전체 시스템을 구축할 수 있는 사람이라는 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '✅ 总结的三个方向非常关键：掌握 RAGAS 等自动评测流水线，能用 vLLM 部署本地小模型，并实现全链路的 OpenTelemetry 监控，这些才是高阶生产力。',
+        content_en: '✅ The three directions summarized are very critical: mastering automatic evaluation pipelines like RAGAS, being able to deploy local small models using vLLM, and implementing full-stack OpenTelemetry monitoring—these are the signs of high-level productivity.',
+        content_ko: '✅ 정리한 세 가지 방향이 정말 중요해: RAGAS 같은 자동 평가 파이프라인을 익히고, vLLM으로 로컬 소모델을 배포할 수 있으면서, 전체 연결(풀 링크) OpenTelemetry 모니터링까지 구현하는 것. 이게 진짜 고급 생산력이야.',
+      }
+    ],
   }
 ];
