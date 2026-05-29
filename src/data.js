@@ -2891,5 +2891,34 @@ export const LOG_DAYS = [
         content_ko: '✅ 정리한 세 가지 방향이 정말 중요해: RAGAS 같은 자동 평가 파이프라인을 익히고, vLLM으로 로컬 소모델을 배포할 수 있으면서, 전체 연결(풀 링크) OpenTelemetry 모니터링까지 구현하는 것. 이게 진짜 고급 생산력이야.',
       }
     ],
+  },
+  {
+    date: '2026-05-28',
+    chapter: '113',
+    color: '#3b82f6',
+    title: '构建日志 2026-05-28 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '想搞个多环境测试，之前以为只是软件限制，能开多少个 Code Session 跑得通？',
+        content_en: 'I want to set up multi-environment testing. I previously thought it was just a software limitation—how many Code Sessions can actually run?',
+        content_ko: '다중 환경 테스트를 하고 싶은데, 전에는 그냥 소프트웨어 제한인 줄 알았거든. 코드 세션을 몇 개까지 돌릴 수 있어?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '技术上无限制，但请注意，实际能稳定运行的软上限是 3 到 5 个，主要受制于你的 Mac 内存和 Anthropic 的配额消耗。',
+        content_en: 'Technically, there is no limit, but please note that the practical stable upper limit is 3 to 5, mainly constrained by your Mac\'s memory and the Anthropic quota consumption.',
+        content_ko: '기술적으로는 제한이 없어. 하지만 참고해 줘. 실제로 안정적으로 돌아가는 소프트 상한선은 3~5개 정도고, 이건 주로 네 Mac 메모리랑 Anthropic 할당량 소모에 달렸어.',
+      },
+      {
+        role: 'user',
+        content: '明白了，原来部署代码环境时，最大的瓶颈是资源分配，而不是程序本身。',
+        content_en: 'Understood. So, when deploying code environments, the biggest bottleneck isn\'t the program itself, but the resource allocation.',
+        content_ko: '아, 그렇구나. 코드 환경을 배포할 때, 가장 큰 병목은 프로그램 자체가 아니라 자원 할당이었구나.',
+      }
+    ],
   }
 ];
