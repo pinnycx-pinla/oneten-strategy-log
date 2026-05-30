@@ -2920,5 +2920,42 @@ export const LOG_DAYS = [
         content_ko: '아, 그렇구나. 코드 환경을 배포할 때, 가장 큰 병목은 프로그램 자체가 아니라 자원 할당이었구나.',
       }
     ],
+  },
+  {
+    date: '2026-05-29',
+    chapter: '114',
+    color: '#00f0ff',
+    title: '构建日志 2026-05-29 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '咱们先梳理一下系统状态。上次内存恢复和升级的流程太复杂，我需要你给个最精简的指令。',
+        content_en: 'Let\'s first review the system status. The previous memory recovery and upgrade process was too complicated. I need you to give me the most concise set of instructions.',
+        content_ko: '우리 먼저 시스템 상태를 정리하자. 지난번 메모리 복구랑 업그레이드 과정이 너무 복잡했어. 가장 간결한 명령어를 알려줘야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '沒問題。核心思路是先关掉所有终端，运行升级命令，然后用 `claude --resume` 重开，这样就能确保所有记忆和运行环境都是最新的 4.8 版本，而且我们所有的对话记录不会丢失。',
+        content_en: 'No problem. The core idea is to first shut down all terminals, run the upgrade command, and then restart using `claude --resume`. This ensures that all memory and the running environment are the latest 4.8 version, and none of our conversation logs will be lost.',
+        content_ko: '문제없어. 핵심은 모든 터미널을 먼저 끄고, 업그레이드 명령어를 실행한 다음, `claude --resume`로 재시작하는 거야. 이렇게 하면 모든 기억과 실행 환경이 최신 4.8 버전이 보장되고, 우리 대화 기록도 사라지지 않아.',
+      },
+      {
+        role: 'user',
+        content: '另外，关于这次的账单，我担心我们超额了吗？',
+        content_en: 'Also, regarding the billing for this time, am I worried we might have overspent?',
+        content_ko: '그리고 있잖아, 이번 청구서 말인데, 우리 초과한 거 아닐까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '注意，我刚才算了一下，实际消耗的字符数比我预估的要高出三四倍。虽然目前还有一定额度，但我们已经非常接近上限了，接下来的运行需要特别节制。',
+        content_en: 'Be careful. I just calculated that the actual number of characters consumed is three or four times higher than I estimated. Although we still have some remaining quota, we are very close to the limit, and we need to be extra frugal with our operations going forward.',
+        content_ko: '조심해. 방금 계산해 봤는데, 실제 소모된 문자 수가 내가 예상했던 것보다 세네 배는 많아. 지금 당장 여유분은 좀 있지만, 이미 상한선에 엄청 가까워졌어. 다음 운영은 특별히 절제해야 해.',
+      }
+    ],
   }
 ];
