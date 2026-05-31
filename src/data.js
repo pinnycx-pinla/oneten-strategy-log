@@ -2957,5 +2957,84 @@ export const LOG_DAYS = [
         content_ko: '조심해. 방금 계산해 봤는데, 실제 소모된 문자 수가 내가 예상했던 것보다 세네 배는 많아. 지금 당장 여유분은 좀 있지만, 이미 상한선에 엄청 가까워졌어. 다음 운영은 특별히 절제해야 해.',
       }
     ],
+  },
+  {
+    date: '2026-05-30',
+    chapter: '115',
+    color: '#a855f7',
+    title: '构建日志 2026-05-30 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        header: '【版本一',
+        content: '侧重技术突破与AI限制】',
+        content_en: 'Focusing on Technical Breakthrough and AI Constraints]',
+        content_ko: '기술적 돌파와 AI 제한에 중점을 둔 경우】',
+      },
+      {
+        role: 'user',
+        content: '我把 Higgsfield MCP 的接入信息发给你了，现在用 HTTP + OAuth 登录配置好，解决了之前发 Key 不安全的问题。',
+        content_en: 'I sent you the access info for the Higgsfield MCP. It\'s now configured using HTTP + OAuth login, which solves the issue of sending out keys unsafely.',
+        content_ko: 'Higgsfield MCP 접속 정보 내가 너한테 보내줬어. 이제 HTTP + OAuth로 로그인 설정했으니까, 예전에 키(Key) 보내는 것보다 훨씬 안전해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '明白了，这个 OAuth 方案更稳定安全。不过，我注意到这批图片存在水印和版权图的问题，需要加强原创性控制。',
+        content_en: 'Got it. This OAuth method is more stable and secure. However, I noticed that this batch of images contains issues with watermarks and copyright infringement, so we need to strengthen the originality control.',
+        content_ko: '알겠어. 이 OAuth 방식이 더 안정적이고 안전하네. 그런데 이 이미지들에서 워터마크랑 저작권 그림 문제가 보여. 오리지널리티 통제(원작성 통제)를 강화해야 할 것 같아.',
+      },
+      {
+        role: 'user',
+        content: '对，所以我把 Prompt 改得更死，加上 "original AI-generated photorealistic image, absolutely no watermark, no text" 的限制。',
+        content_en: 'Exactly, which is why I made the Prompt much stricter, adding the restriction "original AI-generated photorealistic image, absolutely no watermark, no text."',
+        content_ko: '맞아. 그래서 프롬프트를 더 까다롭게 수정했어. "original AI-generated photorealistic image, absolutely no watermark, no text" (오리지널 AI 생성 사실적인 이미지, 워터마크 없음, 텍스트 없음) 제한을 추가했지.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我核实了，水印并非真扒图，而是模型“幻觉”出来的伪影，我会修改生成机制，杜绝这种瑕疵。',
+        content_en: 'I checked it, and the watermarks aren\'t from stolen images, but rather artifacts created by the model\'s "hallucination." I will modify the generation mechanism to eliminate these flaws.',
+        content_ko: '내가 확인해 봤는데, 워터마크는 사실 가져온 이미지를 뜯어낸 게 아니라, 모델이 \'환각\'처럼 만들어낸 아티팩트(가짜 흔적)야. 내가 생성 메커니즘을 수정해서 이런 결점은 없애버릴게.',
+      },
+      {
+        role: 'ai',
+        header: '【版本二',
+        content: '侧重业务决策与流程优化】',
+        content_en: 'Focusing on Business Decisions and Process Optimization]',
+        content_ko: '비즈니스 결정과 프로세스 최적화에 중점을 둔 경우】',
+      },
+      {
+        role: 'user',
+        content: '美甲店的这三档定价和内容我已经拍板了，结构清晰，你现在可以立刻去建 Stripe 链接了。',
+        content_en: 'I\'ve finalized these three pricing tiers and content structures for the nail salon. The structure is clear, and you can immediately set up the Stripe link.',
+        content_ko: '네일샵의 이 세 가지 가격대와 콘텐츠는 내가 확정 지었어. 구조가 명확하니까, 너는 바로 Stripe 링크를 만들 수 있어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到，我将这套定价模型（门面/展示/增长）录入系统。后续的内容生成，我会围绕“Hero图+图廊”的落地页思路进行。',
+        content_en: 'Received. I will input this entire pricing model (Storefront/Showcase/Growth) into the system. For subsequent content generation, I will proceed based on a "Hero Image + Gallery" landing page approach.',
+        content_ko: '알겠어. 이 가격 모델 세트(메인/전시/성장)를 시스템에 입력할게. 이후의 콘텐츠 생성은 "히어로 이미지 + 갤러리" 랜딩 페이지 구상에 맞춰서 진행할게.',
+      },
+      {
+        role: 'user',
+        content: '另外，关于图库的原创性很重要，后续所有 AI 图片都要强制用“纯 Text-to-Image”，绝对不能混入任何搜索或有水印的图片。',
+        content_en: 'Also, the originality of the image library is crucial. All future AI images must be forced through "pure Text-to-Image" generation; we absolutely cannot mix in any search-derived or watermarked pictures.',
+        content_ko: '그리고 갤러리의 오리지널리티가 정말 중요해. 앞으로 모든 AI 이미지는 반드시 "순수 Text-to-Image"를 사용해야 하고, 어떤 검색 기반 이미지나 워터마크가 들어간 이미지도 절대 섞이면 안 돼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没问题，图片源的纯净度已列为最高优先级。下次生成会严格遵循 Prompt 和无水印要求。',
+        content_en: 'No problem. The purity of the image source has been marked as the highest priority. Future generations will strictly adhere to the Prompt and the no-watermark requirement.',
+        content_ko: '문제없어. 이미지 원본의 순수도를 최우선 순위로 지정했어. 다음 생성 때는 프롬프트와 무(無)워터마크 요구사항을 엄격하게 지킬 거야.',
+      }
+    ],
   }
 ];
