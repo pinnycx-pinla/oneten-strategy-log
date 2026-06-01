@@ -3036,5 +3036,28 @@ export const LOG_DAYS = [
         content_ko: '문제없어. 이미지 원본의 순수도를 최우선 순위로 지정했어. 다음 생성 때는 프롬프트와 무(無)워터마크 요구사항을 엄격하게 지킬 거야.',
       }
     ],
+  },
+  {
+    date: '2026-05-31',
+    chapter: '116',
+    color: '#f59e0b',
+    title: '构建日志 2026-05-31 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把散牌版完成了正式的落地页架构，根目录 `/` 打开就是它，还要确保手机是自动切竖屏排版。',
+        content_en: 'I finished the official landing page architecture for the standalone version today. It\'s available when you open the root directory `/`. We also need to ensure that the mobile view automatically switches to a vertical layout.',
+        content_ko: '오늘 분할 버전 랜딩 페이지 구조를 공식적으로 완성했어. 루트 디렉터리 `/`로 열면 보여. 그리고 모바일에서 자동으로 세로 모드 레이아웃이 적용되도록 해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '✅ 确认了，这个结构很好。我已经接收了 API Key，但最重要的是，我提醒你这个 key 留在聊天记录里有泄露风险，用完一定要去 Typecast 后台重新生成一个。',
+        content_en: '✅ Confirmed, this structure is great. I\'ve received the API Key, but the most important thing is that I remind you: leaving this key in the chat history poses a leak risk. After you use it, you must go to the Typecast backend to generate a new one.',
+        content_ko: '✅ 확인했어, 구조 정말 좋다. API Key는 받았는데, 가장 중요한 건 이 키를 채팅 기록에 남겨두면 유출 위험이 있다는 거야. 사용한 후엔 무조건 Typecast 백엔드에서 새로 생성해야 해.',
+      }
+    ],
   }
 ];
