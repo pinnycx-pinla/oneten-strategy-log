@@ -3059,5 +3059,36 @@ export const LOG_DAYS = [
         content_ko: '✅ 확인했어, 구조 정말 좋다. API Key는 받았는데, 가장 중요한 건 이 키를 채팅 기록에 남겨두면 유출 위험이 있다는 거야. 사용한 후엔 무조건 Typecast 백엔드에서 새로 생성해야 해.',
       }
     ],
+  },
+  {
+    date: '2026-06-01',
+    chapter: '117',
+    color: '#10b981',
+    title: '构建日志 2026-06-01 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我把这套「松绑」配方已经固化成模板了。以后你只要说出哪一话，我直接出完整的自然分镜。',
+        content_en: 'I have stabilized this "unbinding" formula into a template. From now on, you just tell me which line you want, and I will directly generate the complete natural storyboards.',
+        content_ko: '내가 이 \'송방\' 레시피를 템플릿으로 고정했어. 이제 앞으로 어떤 대사만 말해주면, 내가 바로 완성된 자연 분镜를 내줄게.',
+      },
+      {
+        role: 'user',
+        content: '太好了，现在视频生成流程是真正的端到端了，从选择角色到出片，连环流程自动化能力太强了。',
+        content_en: 'That\'s amazing! The video generation process is truly end-to-end now. The sequential automation ability, from character selection to final output, is incredible.',
+        content_ko: '너무 좋다. 이제 영상 생성 과정이 진짜 엔드투엔드야. 캐릭터 선택부터 최종 결과물까지, 연결된 프로세스 자동화 능력이 너무 강해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '是，我确认了，它是一个真·全自动做视频的Agent，能力没得说。不过，每次使用都要检查一下最终成片是否偏离了你的原始要求。',
+        content_en: 'Yes, I confirmed it. It is a truly fully automated video-making Agent, and its capabilities are unparalleled. However, every time we use it, we must check whether the final video deviates from your original requirements.',
+        content_ko: '응, 확인했어. 이건 진짜 완전 자동 영상 제작 Agent라서 능력은 말이 안 돼. 근데, 쓸 때마다 최종 결과물이 네 원래 요구사항에서 벗어나지 않았는지 확인해야 해.',
+      }
+    ],
   }
 ];
