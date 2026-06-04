@@ -3197,5 +3197,42 @@ export const LOG_DAYS = [
         content_ko: '实际五月的数据回撤是 -14.6%。公开站的数字不准，你一定要注意这个潜在的风险点。',
       }
     ],
+  },
+  {
+    date: '2026-06-03',
+    chapter: '119',
+    color: '#3b82f6',
+    title: '构建日志 2026-06-03 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '产品发布会的核心思路确定了，我们聚焦“能干嘛”，把“一句话”变成完整的视频，这是最容易理解的突破口。',
+        content_en: 'The core idea for the product launch event is set. We are focusing on "what it can do," turning "one sentence" into complete videos. This is the easiest breakthrough point for people to understand.',
+        content_ko: '제품 발표회 핵심 아이디어는 정해졌어. ‘무엇을 할 수 있는지’에 초점을 맞춰서, ‘한 문장’을 완전한 영상으로 만드는 게 가장 이해하기 쉬운 돌파구가 될 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没错，整个流程链路非常简洁：以 Discord 丢文字/截图作为输入，通过 Telegram 远程控制，核心 AI 自动完成从脚本到渲染的全套工作流。',
+        content_en: 'Exactly. The entire workflow is very simple: take text/screenshots as input via Discord, use Telegram for remote control, and the core AI automatically handles the whole process, from scripting to rendering.',
+        content_ko: '맞아요. 전체 프로세스 링크가 정말 간단해. 디스코드에 텍스트나 스크린샷을 입력하면, 텔레그램으로 원격 제어해서, 핵심 AI가 스크립트부터 렌더링까지 전체 워크플로우를 자동으로 완성하는 거지.',
+      },
+      {
+        role: 'user',
+        content: '很好，这次产品演示已经可以了。下次是否要用这个脚本继续扩展，凑齐黑白版和动画版这三套风格？',
+        content_en: 'That\'s great. We can use this for the product demonstration now. Should we use this script to expand next time, compiling all three styles: black and white, and animated?',
+        content_ko: '아주 좋아. 이번 제품 시연은 이미 됐어. 다음에는 이 스크립트를 가지고 계속 확장해서, 흑백 버전이랑 애니메이션 버전 세 가지 스타일을 완성할까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我随时可以，用同一个脚本框架出多风格内容可以迅速堆量，我们再权衡一下，是先放，还是直接加码做这三套，您说一声。',
+        content_en: 'I can do that anytime. We can rapidly scale up content in multiple styles using the same script framework. Let\'s weigh whether we should launch with it first, or directly commit to doing these three styles. Let me know your thoughts.',
+        content_ko: '난 언제든 할 수 있어. 같은 스크립트 프레임워크로 여러 스타일의 콘텐츠를 만들면 빠르게 양을 늘릴 수 있어. 우리가 한 번 저울질해 봐야 할 것 같아. 일단 배포할지, 아니면 세 가지 스타일을 바로 추가로 만들지, 의견 좀 말해줘.',
+      }
+    ],
   }
 ];
