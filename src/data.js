@@ -3234,5 +3234,56 @@ export const LOG_DAYS = [
         content_ko: '난 언제든 할 수 있어. 같은 스크립트 프레임워크로 여러 스타일의 콘텐츠를 만들면 빠르게 양을 늘릴 수 있어. 우리가 한 번 저울질해 봐야 할 것 같아. 일단 배포할지, 아니면 세 가지 스타일을 바로 추가로 만들지, 의견 좀 말해줘.',
       }
     ],
+  },
+  {
+    date: '2026-06-04',
+    chapter: '120',
+    color: '#00f0ff',
+    title: '构建日志 2026-06-04 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'Siri 的思路定了，它本质上要是一个「多大脑」的语音入口，核心是整合多个前沿大模型。',
+        content_en: 'The idea for Siri is set. Essentially, it needs to be a "multi-brain" voice interface, focusing on integrating several cutting-edge large models.',
+        content_ko: 'Siri의 아이디어는 정해졌어. 본질적으로는 \'다중 두뇌\' 음성 인터페이스가 될 거고, 핵심은 여러 최신 거대 모델들을 통합하는 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没错，我们可以围绕这个思路，先请 DeepSeek 写一段四人讨论的剧本，然后我帮你制作 NEON 和海螺配音的演示片。',
+        content_en: 'Exactly. We can follow this idea by first asking DeepSeek to write a script for a four-person discussion, and then I\'ll help you make a demo reel with NEON and Hai Luo voiceovers.',
+        content_ko: '맞아. 이 아이디어를 바탕으로, 일단 DeepSeek한테 4명이 대화하는 스크립트를 써달라고 하고, 내가 NEON이랑 해라(Conch) 음성을 입힌 데모 영상을 만들어 줄게.',
+      },
+      {
+        role: 'user',
+        content: '对了，关于 3D 方面，Tripo3D 看上去对角色和 Anime 脸的表现更稳定。',
+        content_en: 'Oh, right. Regarding 3D, Tripo3D seems to perform more stably when rendering characters and anime faces.',
+        content_ko: '참, 3D 쪽은 Tripo3D가 캐릭터랑 애니메이션 얼굴 표현이 더 안정적으로 보여.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '是的，相比 Meshy，它在角色和 Anime 类型的脸部细节处理上有优势。你现在需要决定是做**完整的 3D 角色**，还是做**场景/道具**？',
+        content_en: 'Yes, compared to Meshy, it has an edge in handling facial details for character and anime types. Do you need to decide now if you want to do a **complete 3D character** or **a scene/props**?',
+        content_ko: '응, Meshy에 비하면 캐릭터나 애니메이션 유형의 얼굴 디테일 처리가 더 나아. 지금 완전한 **3D 캐릭터**를 만들지, 아니면 **배경/소품**을 만들지 결정해야 해?',
+      },
+      {
+        role: 'user',
+        content: '我先让它做个初步的模型测试，你帮我确认一下它是否有 API 接口和免费额度，最好不要盲目用钱试。',
+        content_en: 'I\'ll have it run a preliminary model test first. Can you check if it has an API interface and a free quota? We really shouldn\'t test things blindly with money.',
+        content_ko: '일단 모델 테스트를 먼저 시켜보자. API 인터페이스랑 무료 크레딧이 있는지 확인해 주고, 무작정 돈 쓰면서 테스트하는 건 피하는 게 좋을 것 같아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没问题，我立刻查询一下官方的 API 文档和最新的免费试用政策。',
+        content_en: 'No problem. I\'ll check the official API documentation and the latest free trial policies right away.',
+        content_ko: '문제없어. 내가 공식 API 문서랑 최신 무료 체험 정책을 바로 찾아볼게.',
+      }
+    ],
   }
 ];
