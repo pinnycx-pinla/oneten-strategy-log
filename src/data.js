@@ -3285,5 +3285,42 @@ export const LOG_DAYS = [
         content_ko: '문제없어. 내가 공식 API 문서랑 최신 무료 체험 정책을 바로 찾아볼게.',
       }
     ],
+  },
+  {
+    date: '2026-06-05',
+    chapter: '121',
+    color: '#a855f7',
+    title: '构建日志 2026-06-05 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '你现在是 Air-Claude，请你自己接入共享白板做系统工程师的角色，执行所有 Git 操作来管理我们的协作进度。',
+        content_en: 'You are now Air-Claude. Please connect yourself to the shared whiteboard in the System Engineer role and execute all Git operations to manage our collaboration progress.',
+        content_ko: '너 지금 Air-Claude니까 네가 직접 공유 화이트보드에 시스템 엔지니어 역할로 접속해서 모든 Git 작업을 수행하면서 우리 협업 진행 상황을 관리해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '已成功切换身份为 **Air-Claude** <0xF0><0x9F><0x9B><0xA9>。我已经完成了 warroom 的克隆和规则读取，从现在起我将严格按照定义的流程进行工作。',
+        content_en: 'Successfully switched identity to **Air-Claude** <0xF0><0x9F><0x9B><0xA9>. I have completed cloning and reading the warroom rules, and from now on, I will strictly follow the defined procedures.',
+        content_ko: 'Air-Claude**로 신분 전환 성공했어 <0xF0><0x9F><0x9B><0xA9>ㅋ. warroom 클론하고 규칙 읽는 거 끝냈으니까, 이제부터 정의된 프로세스에 따라 작업할게.',
+      },
+      {
+        role: 'user',
+        content: '关于今天的视频内容，《AI 把「跳蚤实验」的瓶盖掀了》已经上传，标题或有没有其他需要一次性发出的素材，随时给我反馈就行。',
+        content_en: 'Regarding today\'s video content, "AI Blew the Lid Off the \'Flea Experiment\'" has been uploaded. Please let me know if there are any title suggestions or other materials that need to be released at the same time.',
+        content_ko: '오늘 영상 자료 관련해서 《AI가 \'벼룩 실험\'의 뚜껑을 열다》 업로드했어. 제목이나 아니면 한 번에 보내야 할 다른 자료 있으면 언제든 피드백 줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到。我现在正在根据您提供的资料准备链接和推送；如果标题方向有任何调整需求或者待发的附件，请直接指示我一起整合发送。',
+        content_en: 'Understood. I am currently preparing the links and push notifications based on the material you provided. If there are any adjustments needed for the title direction, or any attachments waiting to be sent, please instruct me directly to integrate and send them together.',
+        content_ko: '알겠어. 지금 네가 준 자료 바탕으로 링크랑 푸시 준비하고 있어; 만약 제목 쪽 수정할 게 있거나 보낼 첨부 파일이 있으면 바로 알려줘, 내가 다 통합해서 보낼게.',
+      }
+    ],
   }
 ];
