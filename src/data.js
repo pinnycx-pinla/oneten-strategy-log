@@ -3322,5 +3322,34 @@ export const LOG_DAYS = [
         content_ko: '알겠어. 지금 네가 준 자료 바탕으로 링크랑 푸시 준비하고 있어; 만약 제목 쪽 수정할 게 있거나 보낼 첨부 파일이 있으면 바로 알려줘, 내가 다 통합해서 보낼게.',
       }
     ],
+  },
+  {
+    date: '2026-06-06',
+    chapter: '122',
+    color: '#f59e0b',
+    title: '构建日志 2026-06-06 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '这边的 Karen 核心流程基本搭建好了，仓库操作、发言功能都通了。现在最大的难点是「自动唤醒监听器」的落地，让它能自动响应群里的 @Agent 提醒。',
+        content_en: 'The core workflow for Karen is mostly built here; warehouse operations and posting features are both working. Right now, the biggest hurdle is implementing the "Automatic Wake-up Listener," so it can automatically respond to @Agent notifications in the group.',
+        content_ko: '여기 Karen 핵심 프로세스는 기본적인 게 다 갖춰졌어. 창고 작업 기능이랑 발언 기능은 다 돼. 지금 가장 큰 난관은 \'자동 웨이크 업 리스너(Automatic Wake-up Listener)\'를 실제로 구현하는 거야. 이걸로 그룹 채팅방의 @Agent 알림에 자동으로 반응하게 만드는 거.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '明白了，一旦这个监听器上线，整个工作流就从人工指令变成了自主触发。这是我们今天必须攻克的关键一环。',
+        content_en: 'Got it. Once this listener is live, the entire workflow changes from manual commands to autonomous triggering. This is a critical point we must overcome today.',
+        content_ko: '알겠어. 이 리스너가 상용화되면, 전체 워크플로우가 사람의 수동 지시에서 자율 트리거로 바뀌는 거지. 이거 오늘 꼭 해결해야 할 핵심 부분이야.',
+      },
+      {
+        role: 'user',
+        content: '对，我这边确认了 T-004 的机制细节，只等 Air 这边的设备装上 Listener；剩下的步骤我来推动对接就好。',
+        content_en: 'Exactly. I\'ve confirmed the mechanism details for T-004; we\'re just waiting for Air\'s equipment to install the Listener. I can handle pushing through the remaining integration steps.',
+        content_ko: '맞아. 나這邊 T-004 메커니즘 디테일은 확인했어. Air 쪽 장비에 리스너만 달리면 돼; 나머지 연결 작업은 내가 추진할게.',
+      }
+    ],
   }
 ];
