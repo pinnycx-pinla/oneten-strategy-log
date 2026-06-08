@@ -3351,5 +3351,42 @@ export const LOG_DAYS = [
         content_ko: '맞아. 나這邊 T-004 메커니즘 디테일은 확인했어. Air 쪽 장비에 리스너만 달리면 돼; 나머지 연결 작업은 내가 추진할게.',
       }
     ],
+  },
+  {
+    date: '2026-06-07',
+    chapter: '123',
+    color: '#10b981',
+    title: '构建日志 2026-06-07 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'Mac内存和磁盘的警报太吓人了，我刚才让DALI帮我查了。',
+        content_en: 'The Mac memory and disk alarms are really alarming. I just had DALI check it for me.',
+        content_ko: '맥 메모리랑 디스크 경고가 너무 무서워. 방금 DALI한테 확인해 달라고 했거든.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '实话说，macOS故意会把大部分空闲内存拿去做缓存，你不能只看“剩余”，得重点关注系统压力；而且那些健康检测脚本很容易虚标。',
+        content_en: 'To be honest, macOS deliberately uses most free memory for caching. You can\'t just look at "remaining"; you need to pay attention to system pressure; plus, those health check scripts are easily misleading.',
+        content_ko: '솔직히 말해서, macOS는 남는 메모리 대부분을 일부러 캐시로 사용하잖아. \'남은 용량\'만 보고 안 돼. 시스템 부하를 중심으로 봐야 하고; 게다가 그런 건강 검사 스크립트들은 거짓 경고가 뜨기 쉬워.',
+      },
+      {
+        role: 'user',
+        content: '那关于那个X上的内容，直接发链接给DALI看，能得到判断吗？',
+        content_en: 'Then about that content on X, if I send you a direct link, can you assess it?',
+        content_ko: '그럼 X에 올라온 그 내용 말이야. 그냥 링크를 DALI한테 보여주면, 그걸로 판단할 수 있어?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '不行，外部信息我看到不了，必须截图给我才能做深入分析。我的观察角度是先验的，而不是基于模糊的链接。',
+        content_en: 'No way. I can\'t see external information. You must send a screenshot for me to do an in-depth analysis. My perspective is *a priori*, not based on vague links.',
+        content_ko: '안 돼. 외부 정보는 내가 볼 수가 없어. 깊이 분석하려면 무조건 캡처 화면을 줘야 해. 내 관점은 모호한 링크에 기반하는 게 아니라, 선험적(사전) 지식에 근거하거든.',
+      }
+    ],
   }
 ];
