@@ -3425,5 +3425,42 @@ export const LOG_DAYS = [
         content_ko: '진행 신호 받았어 🙌 문제없지. 바로 중국어 채널 유튜브에 비공개 일정 잡을게. 링크 보내줄 테니까 마지막으로 확인만 해봐.',
       }
     ],
+  },
+  {
+    date: '2026-06-09',
+    chapter: '125',
+    color: '#3b82f6',
+    title: '构建日志 2026-06-09 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '文天，刚才说的那几件事（比如Higgsfield的故障，和那个“占比忽大忽小”的图），根据我的工作流来看，听着像来自另一个 Agent 的信息。',
+        content_en: 'ONE TEN, those few things you mentioned just now (like the Higgsfield failure and that chart with proportions fluctuating), according to my workflow, sound like information coming from another Agent.',
+        content_ko: '문천, 아까 말한 것들(예를 들면 Higgsfield 오류 같은 거랑, \'비율이 왔다 갔다 하는\' 그 그래프)은 내 워크플로우로 보니까 다른 에이전트한테서 온 정보 같아.',
+      },
+      {
+        role: 'user',
+        content: '对，我确认了一下来源了。但关于交易报告方面，我们必须调整机制。我现在决定把周报改成每天跑。',
+        content_en: 'Yes, I confirmed the source. But regarding the trading reports, we must adjust the mechanism. I\'ve decided to switch the weekly report to run daily starting now.',
+        content_ko: '응, 내가 출처 확인했어. 근데 거래 보고 쪽은 우리가 시스템을 조정해야 해. 지금부터 주간 보고를 매일 돌리기로 결정했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '明白了，那流程是怎样的？',
+        content_en: 'Understood. So what will the new process be?',
+        content_ko: '알겠어. 그럼 그 과정은 어떻게 돼?',
+      },
+      {
+        role: 'user',
+        content: '从今晚开始，策略调整固定在 15:50 ET，下午 4:30 我会发给你当天的账本和净值第一份报告。',
+        content_en: 'Starting tonight, strategy adjustments are fixed at 15:50 ET. At 4:30 PM, I will send you the day\'s ledger and the first net value report.',
+        content_ko: '오늘 밤부터는 전략 조정 시간이 15:50 ET로 고정되고, 오후 4시 반에 당일 장부랑 순자산 가치 보고서 1차 버전을 너한테 보내줄게.',
+      }
+    ],
   }
 ];
