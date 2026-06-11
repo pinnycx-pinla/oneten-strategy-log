@@ -3462,5 +3462,34 @@ export const LOG_DAYS = [
         content_ko: '오늘 밤부터는 전략 조정 시간이 15:50 ET로 고정되고, 오후 4시 반에 당일 장부랑 순자산 가치 보고서 1차 버전을 너한테 보내줄게.',
       }
     ],
+  },
+  {
+    date: '2026-06-10',
+    chapter: '126',
+    color: '#00f0ff',
+    title: '构建日志 2026-06-10 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '根据目前的纸面策略（$99k净值），即便大盘小涨，我们的做空组合也出现了亏损。',
+        content_en: 'Based on the current paper strategy ($99k net value), we\'ve seen losses in our short combination even with a slight rally in the overall market.',
+        content_ko: '현재 종이 전략(명목 가치 $99k)으로 봐도, 시장이 조금 올라도 우리 숏 포지션에서 손실이 나고 있어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '这是正常的波动，别过早下结论。这套策略的有效性还需要攒几天时间进行完整的 `--eval` 才能判断核心优势 (edge)。',
+        content_en: 'That\'s normal volatility; don\'t jump to conclusions too early. To determine if this strategy has an edge, it needs several more days for a complete `--eval`.',
+        content_ko: '이건 정상적인 변동이야. 너무 일찍 결론 내리지 마. 이 전략의 유효성을 판단하려면 핵심 우위(edge)를 알기 위해 며칠 동안 전체 `--eval`을 더 돌려봐야 해.',
+      },
+      {
+        role: 'user',
+        content: '明白，重点是真账户 alphavault，昨日跌了 -7.08%，接下来必须制定更稳健的应对方案。',
+        content_en: 'Understood. The main focus needs to be on the live account, alphavault. It dropped -7.08% yesterday, so we absolutely need to formulate a more robust mitigation plan going forward.',
+        content_ko: '알겠어. 중요한 건 실제 계정인 alphavault야. 어제 -7.08% 떨어졌으니까, 다음엔 더 안정적인 대응 방안을 짜야 해.',
+      }
+    ],
   }
 ];
