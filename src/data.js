@@ -3491,5 +3491,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어. 중요한 건 실제 계정인 alphavault야. 어제 -7.08% 떨어졌으니까, 다음엔 더 안정적인 대응 방안을 짜야 해.',
       }
     ],
+  },
+  {
+    date: '2026-06-12',
+    chapter: '127',
+    color: '#a855f7',
+    title: '构建日志 2026-06-12 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '之前的流程好像有点绕，能不能直接用 Mac Air 上 Codex 的 gpt-image-2 来出漫画页？',
+        content_en: 'The previous workflow seems a bit complicated. Can we just use `gpt-image-2` on Codex via Mac Air to generate the comic pages directly?',
+        content_ko: '예전 과정이 좀 복잡한 것 같아. 그냥 맥 에어에서 Codex의 gpt-image-2로 만화 페이지 바로 뽑을 수 있을까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '好，我直接驱动它，跳过 Higgsfield。这样可以大幅缩短步骤，先用一页验证效果再批量生成后续内容。',
+        content_en: 'Sure, I can drive it myself and skip Higgsfield. That will significantly shorten the steps. We can test the effect with one page first, and then batch-generate the remaining content.',
+        content_ko: '좋아. 내가 직접 구동할게. Higgsfield는 건너뛰고. 이렇게 하면 단계가 확 줄어들 거야. 한 페이지로 효과부터 확인하고 나중에 대량으로 생성하자.',
+      },
+      {
+        role: 'user',
+        content: '对了，记得把 ONE TEN QUANT ARENA 真实平台的截图当 B-roll 插到每页之间，突出这是实时系统。',
+        content_en: 'Oh, right! Don\'t forget to intersperse screenshots of the real ONE TEN QUANT ARENA platform as B-roll between every page, so we emphasize that this is a live system.',
+        content_ko: '아 맞다. ONE TEN QUANT ARENA 실제 플랫폼 스크린샷을 B-roll처럼 페이지 사이에 꼭 넣어줘. 이게 실시간 시스템이라는 걸 강조해야 하니까.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到。我现在就调整结构，将真平台界面织进漫画格子里，让观众能看到这套系统的实际运行效果。',
+        content_en: 'Got it. I will adjust the structure now and weave the actual platform interface into the comic panels, letting the audience see the system running in action.',
+        content_ko: '알겠어. 지금 구조를 조정할게. 실제 플랫폼 화면을 만화 칸에 짜 넣어 가지고, 관객들이 이 시스템이 실제로 돌아가는 걸 볼 수 있게 할게.',
+      }
+    ],
   }
 ];
