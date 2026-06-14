@@ -3528,5 +3528,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어. 지금 구조를 조정할게. 실제 플랫폼 화면을 만화 칸에 짜 넣어 가지고, 관객들이 이 시스템이 실제로 돌아가는 걸 볼 수 있게 할게.',
       }
     ],
+  },
+  {
+    date: '2026-06-13',
+    chapter: '128',
+    color: '#f59e0b',
+    title: '构建日志 2026-06-13 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: 'VANGUARD 的全屏 Hero landing page 规格已经收齐了，涉及 React/Tailwind、背景视频和完整的移动端菜单逻辑。整个 Spec 写完了 ✅。',
+        content_en: 'We have gathered all the specs for VANGUARD’s full-screen Hero landing page, including React/Tailwind, background video, and complete mobile menu logic. The entire spec is finished ✅.',
+        content_ko: 'VANGUARD의 풀스크린 히어로 랜딩 페이지 스펙 다 모았어. React/Tailwind, 배경 비디오, 그리고 전체 모바일 메뉴 로직까지 포함해서 말이야. 전체 Spec 작성 완료했어 ✅.',
+      },
+      {
+        role: 'user',
+        content: '（确认收件）太详细了！核心问题有两个要你定一下：首先这是单独一个页面跟 TOONHUB 不是同一个项目，对吗？其次是品牌名我们这次用 VANGUARD，还是得换回 ONE TEN 的概念和文案？',
+        content_en: '(Received) This is really detailed! There are two core questions we need you to confirm: First, this is a standalone page, correct? It’s not part of the TOONHUB project, right? Second, regarding branding—are we sticking with VANGUARD this time, or should we switch back to the concepts and copy associated with ONE TEN?',
+        content_ko: '(확인하며) 너무 자세한데! 핵심 질문이 두 가지 있어. 네가 결정해 줘야 할 것 같아. 첫째, 이건 TOONHUB랑 같은 프로젝트가 아니라 별도의 페이지 맞지? 둘째, 브랜드명은 이번에 VANGUARD를 쓸 거야, 아니면 ONE TEN의 컨셉이랑 문구로 다시 바꿔야 해?',
+      }
+    ],
   }
 ];
