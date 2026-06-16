@@ -3551,5 +3551,42 @@ export const LOG_DAYS = [
         content_ko: '(확인하며) 너무 자세한데! 핵심 질문이 두 가지 있어. 네가 결정해 줘야 할 것 같아. 첫째, 이건 TOONHUB랑 같은 프로젝트가 아니라 별도의 페이지 맞지? 둘째, 브랜드명은 이번에 VANGUARD를 쓸 거야, 아니면 ONE TEN의 컨셉이랑 문구로 다시 바꿔야 해?',
       }
     ],
+  },
+  {
+    date: '2026-06-15',
+    chapter: '129',
+    color: '#10b981',
+    title: '构建日志 2026-06-15 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '看了一下，目前所有的变现思路全卡在“概念”阶段，没有一个能真正跑通收钱的流程。',
+        content_en: 'After looking into it, all our monetization ideas are currently stalled at the "concept" stage; none of them have a truly viable revenue collection mechanism.',
+        content_ko: '봐봤는데, 현재 모든 수익화 아이디어가 다 \'개념\' 단계에 멈춰 있어. 실제로 돈을 받을 수 있는 프로세스가 하나도 없어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '是的，这说明核心问题不是想法不足，而是需要从Demo模式跳到可以付费运营的产品验证上。',
+        content_en: 'Exactly. This suggests the core issue isn\'t a lack of ideas, but rather transitioning from a demo model to product validation that can sustain paid operations.',
+        content_ko: '맞아. 이건 핵심 문제가 아이디어 부족이 아니라, 데모 모드에서 돈 받고 운영할 수 있는 제품 검증 단계로 넘어가야 한다는 걸 보여줘.',
+      },
+      {
+        role: 'user',
+        content: '那看来Mini桌宠这种高门槛的3D设计方向暂时放放了，不如先集中力在TOONHUB这个已经跑通的平台做内容迭代？',
+        content_en: 'In that case, let\'s put the high-entry barrier 3D design direction, like Mini Desk Pets, on hold for now. Shouldn\'t we first focus our efforts on content iteration using TOONHUB, since that platform is already established?',
+        content_ko: '그럼 미니 테이블 장난감 같은 진입장벽 높은 3D 디자인 방향은 일단 보류해야 할 것 같아. 차라리 이미 돌아가는 플랫폼인 TOONHUB에서 콘텐츠 개선에 힘을 집중하는 게 어떨까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '同意，以 TOONHUB 的公域流量为依托，我们下一步可以把重点放在提升VANGUARD端的运营细节和付费体验上。',
+        content_en: 'I agree. Utilizing TOONHUB\'s existing public reach, our next focus should be on improving the operational details and premium paid experience on the VANGUARD side.',
+        content_ko: '동의해. TOONHUB의 공공 트래픽을 발판 삼아서, 다음 단계로는 VANGUARD 쪽 운영 디테일이랑 유료 경험 개선에 중점을 두는 게 좋겠어.',
+      }
+    ],
   }
 ];
