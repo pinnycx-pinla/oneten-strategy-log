@@ -3617,5 +3617,26 @@ export const LOG_DAYS = [
         content_ko: '그렇지. 이게 단순한 팬들의 기대 포인트를 넘어, 프로젝트 전체의 엔진 가치를 직접 끌어올릴 핵심이야. 지금 우리가 확실히 해야 할 건 이 멀티버스 개념을 구현할 범용적인 \'연동 프로토콜\'이 필요해.',
       }
     ],
+  },
+  {
+    date: '2026-06-17',
+    chapter: '131',
+    color: '#3b82f6',
+    title: '构建日志 2026-06-17 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '关于那个“并购翻近三倍”的数字我决定软化成“明显在加速”，这样内容更稳，不太容易被挑出问题。',
+        content_en: 'Regarding that number, "M&A almost tripled," I\'ve decided to soften it to "clearly accelerating." This way the content is more stable and less likely to be questioned.',
+        content_ko: '그 \'M&A 거의 3배 증가\' 수치 말이야. 그거 내가 \'분명 가속되고 있다\'로 순화시키기로 했어. 이렇게 하는 게 내용이 더 안정적이고, 문제 제기될 위험도 적을 것 같아.',
+      },
+      {
+        role: 'user',
+        content: '对了，你说的『运镜大师 / 分镜大师』是指咱 PA NEON 这套工具里的强化功能，还是另有一个特定的工具要我学？指一下我免得流程跑偏。',
+        content_en: 'Oh right, when you say "Cinematography Master / Storyboard Master," are you referring to an enhanced function within our PA NEON tool, or is there another specific tool I need to learn? Could you point it out so my workflow doesn\'t get derailed?',
+        content_ko: '아 맞다. 네가 말한 \'운경 마스터/분경 마스터\'라는 게, 우리 PA NEON 툴 세트 안에 있는 강화 기능이야? 아니면 내가 따로 배워야 하는 특정 도구가 있어? 정확하게 알려줘. 과정이 잘못될까 봐 그래.',
+      }
+    ],
   }
 ];
