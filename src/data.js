@@ -3638,5 +3638,42 @@ export const LOG_DAYS = [
         content_ko: '아 맞다. 네가 말한 \'운경 마스터/분경 마스터\'라는 게, 우리 PA NEON 툴 세트 안에 있는 강화 기능이야? 아니면 내가 따로 배워야 하는 특정 도구가 있어? 정확하게 알려줘. 과정이 잘못될까 봐 그래.',
       }
     ],
+  },
+  {
+    date: '2026-06-18',
+    chapter: '132',
+    color: '#00f0ff',
+    title: '构建日志 2026-06-18 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '你跟我说实话，你是不是没有调用到 Codex 模型？',
+        content_en: 'Tell me the truth, did you not actually use the Codex model?',
+        content_ko: '너 솔직히 말해봐, 코덱스 모델 안 돌린 거지?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '实话实说：我一直都在调 Codex（执行了命令行），好的几张是它真出的。有翻车的是因为它自己复制的历史旧图，不是我没调。',
+        content_en: 'To be honest: I kept calling/using Codex (I ran it via command line). The good pictures genuinely came from it. If any are subpar, it\'s because it copied old historical images itself, not that I didn\'t run it.',
+        content_ko: '솔직히 말하면: 난 계속 코덱스를 돌렸어(명령줄 실행했지). 좋은 건 진짜 얘가 만든 거야. 망한 건 얘 스스로 복사해 온 옛날 사진들 때문이지, 내가 안 쓴 게 아니야.',
+      },
+      {
+        role: 'user',
+        content: '行，那说说前私募股的问题。普通人想参与 pre-IPO 渠道到底有多难？',
+        content_en: 'Okay, then talk about the pre-private placement fund issue. How difficult is it for regular people to participate in pre-IPO channels?',
+        content_ko: '그래, 그럼 사모 주식 문제에 대해 이야기해 줘. 일반인이 pre-IPO 채널에 참여하는 게 도대체 얼마나 어려운지?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '先说硬门槛，真正的预上市募资只对合格投资者开放（需要年收入或净资产达到一定标准）。但我们也可以尝试走私募二级市场的渠道。',
+        content_en: 'First, let me mention the hard requirements; true pre-listing fundraising is only open to qualified investors (requiring certain standards of annual income or net assets). But we could also try going through private secondary market channels.',
+        content_ko: '일단 높은 진입 장벽부터 말할게. 진짜 상장 전 자금 조달은 적격 투자자(연소득이나 순자산이 일정 기준을 충족해야 함)한테만 열려 있어. 하지만 우리도 사모 2차 시장 채널로 시도해 볼 수는 있어.',
+      }
+    ],
   }
 ];
