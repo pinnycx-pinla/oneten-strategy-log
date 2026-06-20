@@ -3675,5 +3675,42 @@ export const LOG_DAYS = [
         content_ko: '일단 높은 진입 장벽부터 말할게. 진짜 상장 전 자금 조달은 적격 투자자(연소득이나 순자산이 일정 기준을 충족해야 함)한테만 열려 있어. 하지만 우리도 사모 2차 시장 채널로 시도해 볼 수는 있어.',
       }
     ],
+  },
+  {
+    date: '2026-06-19',
+    chapter: '133',
+    color: '#a855f7',
+    title: '构建日志 2026-06-19 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '看来想要让游戏上线，最难的是把前端网址和实时联机系统同步搭建起来。',
+        content_en: 'It looks like the hardest part about launching the game is getting the frontend URL and real-time multiplayer system synchronized and built out.',
+        content_ko: '게임을 출시하려면, 프론트엔드 주소랑 실시간 접속 시스템을 동기화해서 구축하는 게 제일 어렵겠네.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '对，所以“托管的核心”就是打包了部署网址、多人网代码（netcode）和分发市场这三块功能，直接帮你免去了写后端和买服务器的麻烦。',
+        content_en: 'Exactly. That\'s why our "core hosting" packages the deployment URL, multi-user netcode, and distribution market—three functions all in one place. It completely saves you the trouble of having to write a backend or buy servers yourself.',
+        content_ko: '맞아. 그래서 ‘호스팅 코어’가 배포 주소, 멀티플레이 네트코드(netcode), 그리고 배포 마켓 이 세 가지 기능을 묶어서 제공해. 이걸로 백엔드를 직접 짜거나 서버를 살 필요가 없어지잖아.',
+      },
+      {
+        role: 'user',
+        content: '那如果我只考虑通用性强的平台，像Vercel这种可以搞定联机吗？',
+        content_en: 'But what if I only focus on platforms with strong general compatibility, like Vercel? Can that handle multiplayer connectivity?',
+        content_ko: '그럼 내가 범용성이 강한 플랫폼만 고려한다면, Vercel 같은 곳으로 접속 문제를 해결할 수 있을까?',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '能，但如果你确定核心是多人实时同步，那么应该优先研究专门针对游戏的 backend 方案，比如 Colyseus 或 Nakama 会更适合你当前的需求。',
+        content_en: 'Yes, it can, but if your core requirement is real-time multi-user synchronization, you should prioritize looking into specialized game backend solutions, like Colyseus or Nakama. Those will be a better fit for what you need right now.',
+        content_ko: '할 수는 있어. 근데 핵심이 멀티플레이 실시간 동기화라면, 전문 게임 백엔드 솔루션을 우선적으로 알아보는 게 좋을 거야. 예를 들어 Colyseus나 Nakama 같은 게 네 현재 니즈에 더 적합해.',
+      }
+    ],
   }
 ];
