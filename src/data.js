@@ -3712,5 +3712,34 @@ export const LOG_DAYS = [
         content_ko: '할 수는 있어. 근데 핵심이 멀티플레이 실시간 동기화라면, 전문 게임 백엔드 솔루션을 우선적으로 알아보는 게 좋을 거야. 예를 들어 Colyseus나 Nakama 같은 게 네 현재 니즈에 더 적합해.',
       }
     ],
+  },
+  {
+    date: '2026-06-20',
+    chapter: '134',
+    color: '#f59e0b',
+    title: '构建日志 2026-06-20 06:02',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天的主要任务定下来了，我们得重点拿 GLM 这个国产模型，让它为 NEON 这四个角色写一套完整的台词。',
+        content_en: 'The main task for today is set. We need to focus on using the domestic model, GLM, to write a complete set of scripts for these four NEON characters.',
+        content_ko: '오늘 주요 임무는 정해졌어. 우리 GLM이라는 국내 모델에 집중해서, NEON 이 네 캐릭터의 전체 대본을 쓰게 해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '没错，正好可以利用它的中文优势，主题直接锁定在 **GLM-5.2** 和最新的开源中国 AI 行业新闻上。',
+        content_en: 'Exactly. We can take advantage of its Chinese language strengths, and we should directly lock our theme onto **GLM-5.2** and the latest open-source China AI industry news.',
+        content_ko: '맞아. 딱 그 중국어 강점을 이용할 수 있어. 주제는 **GLM-5.2**랑 최신 오픈소스 중국 AI 산업 뉴스에 바로 집중하자.',
+      },
+      {
+        role: 'user',
+        content: '那就先让 `glm` 把剧本搭出来，等我过了一遍，我们马上就可以推进 NEON 的视频渲染流程了。',
+        content_en: 'Then let\'s have `glm` draft the script first. Once I review it, we can immediately move forward with NEON’s video rendering process.',
+        content_ko: '그럼 일단 `glm`한테 대본을 먼저 짜게 해봐. 내가 한번 검토하고 나면, 바로 NEON 비디오 렌더링 과정 진행할 수 있어.',
+      }
+    ],
   }
 ];
