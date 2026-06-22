@@ -3741,5 +3741,28 @@ export const LOG_DAYS = [
         content_ko: '그럼 일단 `glm`한테 대본을 먼저 짜게 해봐. 내가 한번 검토하고 나면, 바로 NEON 비디오 렌더링 과정 진행할 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-06-21',
+    chapter: '135',
+    color: '#10b981',
+    title: '构建日志 2026-06-21 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'Codex升级了，我先把它新版稳不稳验一下。这次要写$SPCX$的NEON报告，主题是开盘后两周的表现和展望。',
+        content_en: 'Codex upgraded. I need to test if the new version is stable first. This time, we have to write a NEON report on $SPCX$, focusing on its performance and outlook over two weeks after opening.',
+        content_ko: 'Codex 업그레이드됐으니까 내가 먼저 새 버전 안정성 좀 테스트해 볼게. 이번에 $SPCX$의 NEON 보고서 써야 하는데, 주제는 개장 후 2주간의 실적과 전망이야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到。我提醒你一个重点，在讨论股价时必须严格查证实时数据来源，绝不能瞎编价格。我们得定性聊，或者提供明确的数据支撑才行。',
+        content_en: 'Got it. Let me remind you of one key point: when discussing stock prices, you must strictly verify real-time data sources; absolutely no making up prices. We either need to discuss qualitative points or provide clearly supported data.',
+        content_ko: '알았어. 너한테 핵심적으로 알려줄 게 있는데, 주가를 논할 때는 실시간 데이터 출처를 엄격하게 확인해야 해. 절대 가격을 지어내서는 안 돼. 우리가 정성적인 이야기만 할 거냐 아니면 명확한 데이터로 뒷받침할 건지 그래야 해.',
+      }
+    ],
   }
 ];
