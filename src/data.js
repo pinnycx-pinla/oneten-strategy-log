@@ -3764,5 +3764,28 @@ export const LOG_DAYS = [
         content_ko: '알았어. 너한테 핵심적으로 알려줄 게 있는데, 주가를 논할 때는 실시간 데이터 출처를 엄격하게 확인해야 해. 절대 가격을 지어내서는 안 돼. 우리가 정성적인 이야기만 할 거냐 아니면 명확한 데이터로 뒷받침할 건지 그래야 해.',
       }
     ],
+  },
+  {
+    date: '2026-06-23',
+    chapter: '136',
+    color: '#ef4444',
+    title: '构建日志 2026-06-23 06:01',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我现在急需一个彻底的复盘，得知道这笔亏损到底发生在哪个时间点、哪些仓位。',
+        content_en: 'I urgently need a complete debriefing. I have to know exactly which time points and which positions caused these losses.',
+        content_ko: '나 지금 제대로 된 복기 자료가 급해. 이 손실이 정확히 어느 시점, 어떤 포지션에서 발생했는지 알아야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '没问题，我马上会调取真实的账户历史和所有交易记录，做到不瞎猜，精准定位这六七万是怎么亏光的。',
+        content_en: 'No problem. I will immediately pull up the real account history and all transaction records. We won\'t guess; we\'ll pinpoint exactly how that 60-70k was lost.',
+        content_ko: '문제없어. 실제 계정 기록이랑 모든 거래 내역 바로 다 가져올게. 아무렇게나 추측하지 않고, 어떻게 그 육칠만 원이 날아갔는지 정확하게 짚어줄게.',
+      }
+    ],
   }
 ];
