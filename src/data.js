@@ -3787,5 +3787,111 @@ export const LOG_DAYS = [
         content_ko: '문제없어. 실제 계정 기록이랑 모든 거래 내역 바로 다 가져올게. 아무렇게나 추측하지 않고, 어떻게 그 육칠만 원이 날아갔는지 정확하게 짚어줄게.',
       }
     ],
+  },
+  {
+    date: '2026-06-24',
+    chapter: '137',
+    color: '#3b82f6',
+    title: '构建日志 2026-06-24 05:15',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天试了Fal.ai上Kling的图生视频，标准档大概0.084美元一秒，跑一条5秒的片子也就四毛二，按量付费确实灵活。还整理了一套“运动控制机械臂”风格的prompt公式，准备用高速广告款关键词再出一版对比效果。',
+        content_en: 'Today I tried Kling\'s image-to-video on Fal.ai. The standard tier is about $0.084 per second, so a 5-second clip costs just 42 cents. Pay-as-you-go is really flexible. I also put together a set of prompt formulas in a "motion control robotic arm" style, and I\'m planning to run another comparison using high-speed ad-style keywords.',
+        content_ko: '오늘 Fal.ai에서 Kling의 이미지-투-비디오를 써봤는데, 표준 옵션은 초당 약 0.084달러고 5초짜리 영상 하나 만들면 0.42달러 정도야. 사용량 기반 과금이라 확실히 유연하더라. 그리고 "모션 컨트롤 로봇 팔" 스타일의 프롬프트 공식도 정리했어. 고속 광고 버전 키워드로 한 번 더 비교 영상을 만들어볼 생각이야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '你那个Option 1的“急速swoop切1000fps慢动作”描述很精准，Kling保人物、Seedance试质感，两边可以同时跑。另外注意到你提了Voicebox这个本地TTS工具，能替掉ElevenLabs，但16G Air跑本地语音克隆大概率扛不住，中文TTS还是先走海螺和Azure比较稳。',
+        content_en: 'Your description for Option 1—"rapid swoop cut with 1000fps slow motion"—is spot on. Kling handles character preservation, while Seedance handles texture quality; you can run both in parallel. Also, I noticed you mentioned Voicebox as a local TTS tool that could replace ElevenLabs. But a 16GB Air probably can\'t handle local voice cloning. For Chinese TTS, it\'s safer to stick with Hailuo and Azure for now.',
+        content_ko: '너가 말한 Option 1의 "초고속 swoop 전환 + 1000fps 슬로우 모션" 설명 진짜 정확하네. Kling은 인물 유지, Seedance는 질감 테스트용으로 양쪽에서 동시에 돌려볼 수 있어. 그리고 Voicebox라는 로컬 TTS 도구 얘기했던 거 봤는데, ElevenLabs를 대체할 수 있긴 한데 16G Air로 로컬 음성 클로닝 돌리기는 아마 무리일 거야. 중국어 TTS는 일단 Hailuo랑 Azure 쓰는 게 더 안정적이야.',
+      }
+    ],
+  },
+  {
+    date: '2026-06-25',
+    chapter: '138',
+    color: '#00f0ff',
+    title: '构建日志 2026-06-25 05:15',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '想做一个 HyperFrames 风格的动态个人介绍视频，职位是 Forward Deployed Engineer，你帮我设计内容结构和排版。',
+        content_en: 'I want to make a HyperFrames-style dynamic personal intro video, with the position being Forward Deployed Engineer. Help me design the content structure and layout.',
+        content_ko: 'HyperFrames 스타일의 동적 개인 소개 영상을 만들고 싶어. 직위는 Forward Deployed Engineer야. 내용 구조와 레이아웃을 설계해 줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好，先定语言和用途——我建议走英文，适合求职或 LinkedIn。等你发照片和亮点文字，我来润色排版成动态面板。',
+        content_en: 'Okay, first let\'s decide on the language and purpose—I suggest going with English, suitable for job applications or LinkedIn. Send me your photos and highlight text, and I\'ll polish and format them into dynamic panels.',
+        content_ko: '좋아, 먼저 언어와 용도를 정하자—영어로 하는 게 좋을 것 같아. 구직용이나 LinkedIn에 적합해. 사진과 하이라이트 문장을 보내주면, 내가 다듬어서 동적 패널 레이아웃으로 만들어 줄게.',
+      },
+      {
+        role: 'user',
+        content: '系统报内存 98.3% 红色告警，磁盘也快满了。',
+        content_en: 'The system shows a red alert for memory at 98.3%, and the disk is almost full too.',
+        content_ko: '시스템이 메모리 98.3% 빨간 경고를 띄우고, 디스크도 거의 꽉 찼어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '别慌，98.3% 是 macOS 的缓存假象，真实内存压力还空 70%。我现在帮你卸载本地语音模型、停掉 ollama，关掉闲置大 app，腾出空间。',
+        content_en: 'Don\'t panic. 98.3% is just a macOS cache illusion—the real memory pressure is still 70% free. I\'ll help you uninstall the local voice model, stop ollama, and close idle large apps to free up space.',
+        content_ko: '당황하지 마, 98.3%는 macOS 캐시 때문에 생긴 착시야. 실제 메모리 압박은 70%나 비어 있어. 지금 로컬 음성 모델을 제거하고, ollama를 중단시키고, 사용하지 않는 큰 앱을 꺼서 공간을 확보해 줄게.',
+      }
+    ],
+  },
+  {
+    date: '2026-06-27',
+    chapter: '139',
+    color: '#a855f7',
+    title: '构建日志 2026-06-27 05:15',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'SK海力士美股上市这期PA已经跑完一版，上传到中文频道了，用的是海螺配音和GSAP管线。',
+        content_en: 'The SK Hynix US stock listing episode PA has finished the first version and uploaded it to the Chinese channel, using Conch voiceover and the GSAP pipeline.',
+        content_ko: 'SK하이닉스 미국 주식 상장 이번 PA 한 버전 끝났어, 중국어 채널에 올렸고, 해라 콩 음성하고 GSAP 파이프라인 썼어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，授权回调也处理好了，令牌刷新成功，视频设为私有等你审。预览链接和工作室编辑入口都发你了，满意直接改公开就行。',
+        content_en: 'Yeah, the authorization callback is handled too, token refresh successful, and the video is set to private for your review. I\'ve sent you the preview link and the studio edit access. If you\'re happy with it, just switch it to public.',
+        content_ko: '응, 권한 콜백도 처리했고, 토큰 리프레시 성공했어. 영상은 비공개로 설정해 놨으니 네가 검토해 줘. 미리보기 링크랑 스튜디오 편집 입구 다 보냈어, 마음에 들면 그냥 공개로 바꾸면 돼.',
+      }
+    ],
+  },
+  {
+    date: '2026-06-28',
+    chapter: '140',
+    color: '#f59e0b',
+    title: '构建日志 2026-06-28 05:15',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '2026年应该是“超级个体元年”，一个人带4个AI就能跑内容又跑量化，ONE TEN自己就是活证据。',
+        content_en: '2026 should be the "Year of the Super Individual"—one person with four AIs can handle both content creation and quantitative work, and ONE TEN himself is living proof.',
+        content_ko: '2026년은 \'슈퍼 개인 원년\'이 될 거야. 한 사람이 AI 4개만 데리고 콘텐츠도 돌리고 퀀트도 돌릴 수 있어. ONE TEN 자체가 살아있는 증거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '对，AI从工具变成会自己干活的队友了，Claude Cowork和MCP今年会集中落地，“一句话造城”不再是想象。',
+        content_en: 'Right, AI has evolved from a tool into a teammate that can work on its own. Claude Cowork and MCP will see concentrated implementation this year, and "building a city with a single sentence" is no longer just imagination.',
+        content_ko: '맞아, AI가 도구에서 스스로 일하는 팀원으로 바뀌고 있어. Claude Cowork랑 MCP가 올해 집중적으로 실현될 거고, "한 마디로 도시를 짓는다"는 더 이상 상상이 아니야.',
+      }
+    ],
   }
 ];
