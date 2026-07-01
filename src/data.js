@@ -3893,5 +3893,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, AI가 도구에서 스스로 일하는 팀원으로 바뀌고 있어. Claude Cowork랑 MCP가 올해 집중적으로 실현될 거고, "한 마디로 도시를 짓는다"는 더 이상 상상이 아니야.',
       }
     ],
+  },
+  {
+    date: '2026-06-30',
+    chapter: '141',
+    color: '#10b981',
+    title: '构建日志 2026-06-30 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '为了提高预测准确度，我搭建了一个多模型投票机制，将 DeepSeek、GLM 和本地模型全部纳入协同决策。',
+        content_en: 'To improve prediction accuracy, I\'ve built a multi-model voting mechanism, incorporating DeepSeek, GLM, and local models into the collaborative decision-making process.',
+        content_ko: '예측 정확도를 높이기 위해 멀티 모델 투표 체계를 구축했고, DeepSeek, GLM 그리고 로컬 모델을 모두 협력적 의사결정에 포함했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '核心逻辑就在于用“赔率×胜率”的期望值来过滤噪音，这样筛选出的最优选项会稳健很多。',
+        content_en: 'The core logic lies in using the "odds × win rate" expected value to filter out noise; this makes the selected optimal options much more robust.',
+        content_ko: '핵심 논리는 \'배당률 × 승률\'의 기대값으로 노이즈를 걸러내는 거야. 이렇게 하면 선정된 최적의 옵션이 훨씬 더 안정적일 거야.',
+      }
+    ],
   }
 ];
