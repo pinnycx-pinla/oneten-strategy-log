@@ -3916,5 +3916,42 @@ export const LOG_DAYS = [
         content_ko: '핵심 논리는 \'배당률 × 승률\'의 기대값으로 노이즈를 걸러내는 거야. 이렇게 하면 선정된 최적의 옵션이 훨씬 더 안정적일 거야.',
       }
     ],
+  },
+  {
+    date: '2026-06-29',
+    chapter: '142',
+    color: '#ef4444',
+    title: '构建日志 2026-06-29 02:31',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把实时生成管线跑通了。不是让两个模型靠聊天记忆合作，而是用项目内共享上下文目录——Claude Code 和 Codex 都只读写同一组文件，这样上下文断了也能恢复。',
+        content_en: 'I got the real-time generation pipeline working today. Instead of having two models cooperate through chat memory, it uses a shared context directory—both Claude Code and Codex read from and write to the same set of files, so even if the context breaks, it can be recovered.',
+        content_ko: '오늘 실시간 생성 파이프라인을 돌렸어. 두 모델이 채팅 기억으로 협력하는 게 아니라, 프로젝트 내 공유 컨텍스트 디렉토리를 사용하는 방식이야 — Claude Code랑 Codex 모두 같은 파일 세트를 읽고 쓰니까 컨텍스트가 끊겨도 복구할 수 있어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '对，这个方案比靠记忆稳。Codex 负责角色一致性和生图，我管管线集成和下游稳定，中间通过 jsonl 队列交换请求和结果。ch9003 实测 IA10 锁脸完美，蓝长发绿眼黑 choker 全锁住了。',
+        content_en: 'Right, this approach is more stable than relying on memory. Codex handles character consistency and image generation, while I handle pipeline integration and downstream stability; we exchange requests and results via a jsonl queue. In actual tests for ch9003, IA10\'s face-lock was perfect—the long blue hair, green eyes, and black choker were all fully locked in.',
+        content_ko: '맞아, 그 방식이 기억에 의존하는 것보다 안정적이야. Codex는 캐릭터 일관성과 이미지 생성을 담당하고, 나는 파이프라인 통합과 하류 안정성을 관리해. 중간에는 jsonl 큐로 요청과 결과를 주고받아. ch9003 실측에서 IA10이 얼굴 고정을 완벽하게 해냈어. 파란 긴 머리, 초록 눈, 검은 초커 모두 제대로 고정됐어.',
+      },
+      {
+        role: 'user',
+        content: '而且我意识到这不是重造 MCV3，只是给 MCV3 换“实时分镜生成引擎”。原来跑顺的文案、TTS、字幕、渲染、上传全保留，只把 random_avatar() 从固定池抽图换成根据台词和场景意图实时生成新图。',
+        content_en: 'And I realized this isn\'t about rebuilding MCV3; it\'s just replacing the "real-time storyboard generation engine" for MCV3. The existing workflows for copy, TTS, subtitles, rendering, and uploading are all kept, but `random_avatar()` was swapped from pulling from a fixed pool to generating new images in real-time based on lines and scene intent.',
+        content_ko: '그리고 이건 MCV3를 재창조하는 게 아니라, MCV3에 "실시간 컷 분할 생성 엔진"을 갈아끼운 것뿐이란 걸 깨달았어. 원래 잘 돌아가던 카피, TTS, 자막, 렌더링, 업로드는 전부 유지하고, random_avatar()만 고정 풀에서 이미지를 뽑는 대신 대사와 장면 의도에 따라 실시간으로 새 이미지를 생성하도록 바꾼 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '这个范式目前还没看到别人在做。不是预设模板，而是内容驱动每帧实时生成，像量子坍缩前无数可能性中的一种。我们给它起了个代号叫 CC。',
+        content_en: 'I haven\'t seen anyone else using this paradigm yet. It’s not about predefined templates; it’s content-driven, real-time generation for every frame—like one of the infinite possibilities before a quantum collapse. We’ve given it the codename "CC."',
+        content_ko: '이 패러다임은 아직 다른 데서 하는 걸 본 적이 없어. 미리 정해진 템플릿이 아니라, 콘텐츠에 따라 매 프레임을 실시간으로 생성하는 거야. 마치 양자가 붕괴하기 전 무수한 가능성 중 하나처럼. 우리는 이걸 CC라는 코드명으로 부르기로 했어.',
+      }
+    ],
   }
 ];
