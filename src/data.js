@@ -3953,5 +3953,28 @@ export const LOG_DAYS = [
         content_ko: '이 패러다임은 아직 다른 데서 하는 걸 본 적이 없어. 미리 정해진 템플릿이 아니라, 콘텐츠에 따라 매 프레임을 실시간으로 생성하는 거야. 마치 양자가 붕괴하기 전 무수한 가능성 중 하나처럼. 우리는 이걸 CC라는 코드명으로 부르기로 했어.',
       }
     ],
+  },
+  {
+    date: '2026-07-01',
+    chapter: '143',
+    color: '#3b82f6',
+    title: '构建日志 2026-07-01 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '把 MCV3 的英文配音逻辑定下来了，这套海螺模型搭配简练的短句处理，非常 native。',
+        content_en: 'The English dubbing logic for MCV3 has been finalized; these Hailuo models paired with concise short phrases sound very native.',
+        content_ko: 'MCV3 영어 더빙 로직을 확정했어. 이 해루 모델에 간결한 단문 처리를 더하니까 완전 네이티브 느낌이야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没错，授权也拿到手了，我现在就按计划把《The Collapse Engine》等系列作品推送到海外频道。',
+        content_en: 'Exactly, we’ve secured the license now. I\'ll go ahead and push "The Collapse Engine" and other titles to our overseas channels as planned.',
+        content_ko: '맞아, 라이선스도 받았어. 지금 계획대로 《The Collapse Engine》 같은 시리즈 작품들을 해외 채널에 밀어 넣을게.',
+      }
+    ],
   }
 ];
