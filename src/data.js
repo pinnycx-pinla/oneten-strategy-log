@@ -3976,5 +3976,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 라이선스도 받았어. 지금 계획대로 《The Collapse Engine》 같은 시리즈 작품들을 해외 채널에 밀어 넣을게.',
       }
     ],
+  },
+  {
+    date: '2026-07-02',
+    chapter: '144',
+    color: '#00f0ff',
+    title: '构建日志 2026-07-02 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '终于揪出 DDJ-1000SRT 断连的真凶了，核心问题是驱动权限带了组写位导致 coreaudiod 拒绝加载。',
+        content_en: 'I finally tracked down the culprit behind the DDJ-1000SRT disconnections; the core issue is that the driver permissions included group write bits, causing coreaudiod to refuse to load.',
+        content_ko: '드디어 DDJ-1000SRT 연결 끊김의 진범을 찾아냈어. 핵심 문제는 드라이버 권한에 그룹 쓰기 비트가 포함되어 coreaudiod가 로드를 거부한 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没错，这就是典型的因安装包打包错误导致的“静默拒载”，只要用 chmod 强制修正权限并重启音频服务就能彻底搞定。',
+        content_en: 'Exactly, this is a classic "silent rejection" caused by an error in the installation package\'s bundling. Just use chmod to force fix the permissions and restart the audio service to solve it once and for all.',
+        content_ko: '맞아, 이건 설치 패키지 제작 오류로 인한 전형적인 \'무음 거부\'야. chmod로 권한을 강제로 수정하고 오디오 서비스를 재시작하면 완벽하게 해결할 수 있어.',
+      }
+    ],
   }
 ];
