@@ -3999,5 +3999,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 이건 설치 패키지 제작 오류로 인한 전형적인 \'무음 거부\'야. chmod로 권한을 강제로 수정하고 오디오 서비스를 재시작하면 완벽하게 해결할 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-07-03',
+    chapter: '145',
+    color: '#a855f7',
+    title: '构建日志 2026-07-03 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '把那个折磨人的驱动权限报错搞定了，关键的一行修复拿到了。',
+        content_en: 'Got that annoying driver permission error sorted out; I finally nailed down the critical line.',
+        content_ko: '그 짜증 나는 드라이버 권한 에러 해결했어, 핵심적인 한 줄을 찾아냈어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没问题，这个操作流程已经完整入档。以后任何机器再出现类似情况，也就是两分钟的标准化处理。',
+        content_en: 'No problem, this procedure is now fully documented. If any other machine encounters a similar issue in the future, it\'ll just be a two-minute standard fix.',
+        content_ko: '문제없어, 이 조치 절차는 완벽하게 기록해 뒀어. 이제 어떤 장비에서든 비슷한 상황이 생기면 단 2분이면 끝나는 표준 처리가 될 거야.',
+      }
+    ],
   }
 ];
