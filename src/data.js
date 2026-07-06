@@ -4045,5 +4045,42 @@ export const LOG_DAYS = [
         content_ko: '이 세 단계 전략 아주 탄탄해. 한푸와 무사 느낌을 결합한 넓은 깃 디자인과 어우러져서, 포스터에서 각 캐릭터의 개성이 확실히 드러날 거야.',
       }
     ],
+  },
+  {
+    date: '2026-07-05',
+    chapter: '147',
+    color: '#10b981',
+    title: '构建日志 2026-07-05 06:10',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '配音切换到 Fal 通道后，充足的余额能支持我们后续 300 多集的稳健产出。',
+        content_en: 'After switching the voiceover to the Fal channel, a sufficient balance will support steady production for over 300 upcoming episodes.',
+        content_ko: '더빙을 Fal 채널로 전환한 후, 충분한 잔액이 우리가 앞으로 300화 이상을 안정적으로 제작할 수 있게 해줄 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '是的，既然映射关系没变且资源到位，这个方案可以确保内容生产的连续性。',
+        content_en: 'Right, since the mapping hasn\'t changed and resources are in place, this plan ensures continuity in content production.',
+        content_ko: '맞아, 매핑 관계가 변하지 않고 리소스가 확보됐으니 이 방안으로 콘텐츠 생산의 연속성을 유지할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '另外把那些过期的测试图包和冗余缓存清理掉，腾点空间给核心业务。',
+        content_en: 'Also, clear out those expired test image packs and redundant cache to free up some space for core operations.',
+        content_ko: '그리고 만료된 테스트 이미지 팩과 불필요한 캐시를 정리해서 핵심 업무에 공간을 확보해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '明白，我会剔除这些冗余资产的同时保护 Playwright 等关键组件，确保渲染不中断。',
+        content_en: 'Got it. I\'ll remove these redundant assets while protecting key components like Playwright to ensure rendering isn\'t interrupted.',
+        content_ko: '알겠어, 이런 불필요한 자산을 제거하면서 Playwright 같은 핵심 구성 요소는 보호해서 렌더링이 중단되지 않도록 할게.',
+      }
+    ],
   }
 ];
