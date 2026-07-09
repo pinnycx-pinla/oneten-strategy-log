@@ -4082,5 +4082,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 이런 불필요한 자산을 제거하면서 Playwright 같은 핵심 구성 요소는 보호해서 렌더링이 중단되지 않도록 할게.',
       }
     ],
+  },
+  {
+    date: '2026-07-08',
+    chapter: '148',
+    color: '#ef4444',
+    title: '构建日志 2026-07-08 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '刚才测的韩语语音识别和多引擎匹配已经跑通了。',
+        content_en: 'The Korean voice recognition and multi-engine matching just tested are up and running.',
+        content_ko: '방금 테스트한 한국어 음성 인식이랑 멀티 엔진 매칭이 잘 돌아가.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '没问题，我已准备好包括 Typecast 在内的三套不同场景的引擎，之后会自动按你的语言切入对应模式。',
+        content_en: 'No problem, I\'ve set up three sets of engines for different scenarios, including Typecast. From now on, it will automatically switch to the corresponding mode based on your language.',
+        content_ko: '문제없어, Typecast를 포함해서 세 가지 상황에 맞는 엔진을 준비해 뒀어. 이제 네 언어에 맞춰서 자동으로 해당 모드로 전환될 거야.',
+      }
+    ],
   }
 ];
