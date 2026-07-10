@@ -4105,5 +4105,28 @@ export const LOG_DAYS = [
         content_ko: '문제없어, Typecast를 포함해서 세 가지 상황에 맞는 엔진을 준비해 뒀어. 이제 네 언어에 맞춰서 자동으로 해당 모드로 전환될 거야.',
       }
     ],
+  },
+  {
+    date: '2026-07-09',
+    chapter: '149',
+    color: '#3b82f6',
+    title: '构建日志 2026-07-09 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '把冗余的渲染中间帧和音频缓存全部清理掉了，空间腾出来不少。',
+        content_en: 'I\'ve cleared out all the redundant intermediate render frames and audio cache, freeing up a lot of space.',
+        content_ko: '불필요한 렌더링 중간 프레임이랑 오디오 캐시를 전부 정리해서 공간을 많이 확보했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '是的，成片都安全保留了。目前中英两个版本的渲染都在按计划推进，进度很稳。',
+        content_en: 'Right, we\'ve kept the final cuts safe. Both the Chinese and English versions are moving forward as planned; progress is steady.',
+        content_ko: '응, 최종본은 안전하게 다 보관됐어. 현재 중영 두 버전 모두 계획대로 렌더링 진행 중이고 진척도도 안정적이야.',
+      }
+    ],
   }
 ];
