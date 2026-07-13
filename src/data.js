@@ -4128,5 +4128,28 @@ export const LOG_DAYS = [
         content_ko: '응, 최종본은 안전하게 다 보관됐어. 현재 중영 두 버전 모두 계획대로 렌더링 진행 중이고 진척도도 안정적이야.',
       }
     ],
+  },
+  {
+    date: '2026-07-12',
+    chapter: '150',
+    color: '#00f0ff',
+    title: '构建日志 2026-07-12 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我们要克隆那种“3D角色+漂浮图标”的交互效果，但必须保证核心角色是咱们自己的。',
+        content_en: 'We need to replicate that “3D character + floating icons” interaction effect, but we must ensure the core character is our own.',
+        content_ko: '우리는 그 "3D 캐릭터 + 떠다니는 아이콘" 상호작용 효과를 클론해야 하는데, 핵심 캐릭터는 반드시 우리 꺼여야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '明白，那我们不直接用套娃式的 embed 代码，而是采取“模型重制+Three.js手撸逻辑”的高定制路径，我同步再去核查 Spline Hana 的 API 与 HyperFrames 管线的适配情况。',
+        content_en: 'Got it. So instead of using generic boilerplate embed code, we’ll go with a high-customization route involving "model remodeling + custom Three.js logic." I’ll also check the compatibility between Spline Hana APIs and the HyperFrames pipeline at the same time.',
+        content_ko: '알겠어. 그럼 우리는 바로 embed 코드를 가져다 쓰는 방식은 안 쓰고, "모델 리메이크 + Three.js로 직접 로직 짜기"라는 고도 맞춤 경로를 택할게. 나는 동시에 Spline Hana의 API랑 HyperFrames 파이프라인의 호환 상황도 확인해볼게.',
+      }
+    ],
   }
 ];
