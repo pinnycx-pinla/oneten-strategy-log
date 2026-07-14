@@ -4151,5 +4151,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어. 그럼 우리는 바로 embed 코드를 가져다 쓰는 방식은 안 쓰고, "모델 리메이크 + Three.js로 직접 로직 짜기"라는 고도 맞춤 경로를 택할게. 나는 동시에 Spline Hana의 API랑 HyperFrames 파이프라인의 호환 상황도 확인해볼게.',
       }
     ],
+  },
+  {
+    date: '2026-07-13',
+    chapter: '151',
+    color: '#a855f7',
+    title: '构建日志 2026-07-13 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '要把这一波包括桌面代理、GPT-Live及AI家教在内的核心项目推进上线。',
+        content_en: 'We need to push the launch of this wave of core projects, including Desktop Agent, GPT-Live, and AI Tutor.',
+        content_ko: '이번에 데스크탑 에이전트, GPT-Live, AI 과외를 포함한 핵심 프로젝트들을上线시켜야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '收到，我将按中英双语划分渠道并将所有公开链接汇总成包提供给你。',
+        content_en: 'Got it. I will categorize them into Chinese and English channels and provide all public links bundled together for you.',
+        content_ko: '알겠어, 중영 이중 언어로 채널을 나누고 모든 공개 링크를 정리해서 패키지로 제공할게.',
+      }
+    ],
   }
 ];
