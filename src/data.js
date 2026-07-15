@@ -4174,5 +4174,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 중영 이중 언어로 채널을 나누고 모든 공개 링크를 정리해서 패키지로 제공할게.',
       }
     ],
+  },
+  {
+    date: '2026-07-14',
+    chapter: '152',
+    color: '#f59e0b',
+    title: '构建日志 2026-07-14 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '姆巴佩和奥利塞的锋线实力非常强劲。',
+        content_en: 'Mbappé and Olise form a really strong forward line.',
+        content_ko: '음바페와 올리세의 공격 라인은 매우 강력해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '确实，既然法国得分稳但防守有变数，不如把重心从胜负博弈转向“两队都进球”或“特定球员进球”，来对冲防守端的风险。',
+        content_en: 'True, since France\'s scoring is solid but their defense has some uncertainty, it might be better to shift focus from win-loss betting to "both teams to score" or "specific player to score" to hedge against defensive risks.',
+        content_ko: '맞아, 프랑스가 득점은 안정적인데 수비에 변수가 있으니, 승패 베팅에서 \'양 팀 득점\'이나 \'특정 선수 득점\'으로 초점을 옮겨서 수비 쪽 리스크를 헤지하는 게 낫겠다.',
+      }
+    ],
   }
 ];
