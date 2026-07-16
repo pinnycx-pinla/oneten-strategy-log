@@ -4197,5 +4197,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 프랑스가 득점은 안정적인데 수비에 변수가 있으니, 승패 베팅에서 \'양 팀 득점\'이나 \'특정 선수 득점\'으로 초점을 옮겨서 수비 쪽 리스크를 헤지하는 게 낫겠다.',
       }
     ],
+  },
+  {
+    date: '2026-07-15',
+    chapter: '153',
+    color: '#10b981',
+    title: '构建日志 2026-07-15 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '3D 桌宠卡在“加载角色”界面动不了的问题终于定位到了。',
+        content_en: 'I finally pinpointed the issue where the 3D Desktop Pet gets stuck on the "Loading Character" screen.',
+        content_ko: '3D 데스크펫이 \'캐릭터 로딩\' 화면에서 멈추는 문제 드디어 원인 파악했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没错，就是那个特定进程的逻辑死循环，我已经把它关掉并标记处理了。',
+        content_en: 'Exactly, it was a logic loop in that specific process. I\'ve already shut it down and flagged it for handling.',
+        content_ko: '맞아, 그 특정 프로세스의 로직 무한 루프 때문이야. 내가 꺼두고 처리 표시해놨어.',
+      }
+    ],
   }
 ];
