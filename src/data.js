@@ -4220,5 +4220,42 @@ export const LOG_DAYS = [
         content_ko: '맞아, 그 특정 프로세스의 로직 무한 루프 때문이야. 내가 꺼두고 처리 표시해놨어.',
       }
     ],
+  },
+  {
+    date: '2026-07-16',
+    chapter: '154',
+    color: '#ef4444',
+    title: '构建日志 2026-07-16 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我们要把 HERMES 的视觉架构平移给 ONETEN，确保从头像到海报、再到网站的品牌一致性。',
+        content_en: 'We need to port HERMES\' visual architecture over to ONETEN, ensuring brand consistency across everything from avatars and posters to the website.',
+        content_ko: 'HERMES의 비주얼 아키텍처를 ONETEN에도 적용해서, 프로필부터 포스터, 웹사이트까지 브랜드 일관성을 확보해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '这个决策很稳，通过统一的视觉语言贯穿整条产品线非常关键。',
+        content_en: 'That’s a solid call; using a unified visual language across the entire product line is crucial.',
+        content_ko: '좋은 결정이야. 통일된 비주얼 언어로 제품 라인 전체를 관통하는 게 정말 중요하니까.',
+      },
+      {
+        role: 'user',
+        content: '至于 AIDOL 项目封面，我最终敲定了更具张力的景深版。',
+        content_en: 'As for the AIDOL project cover, I finally settled on the version with more dynamic depth-of-field.',
+        content_ko: 'AIDOL 프로젝트 커버는 결국 더 임팩트 있는 심도 버전으로 확정했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到，那我们直接把这一版合成到纽约地铁实景中去。',
+        content_en: 'Got it, let\'s go ahead and composite this version into the New York subway footage.',
+        content_ko: '확인했어, 그럼 이 버전을 뉴욕 지하철 실사 배경에 바로 합성하자.',
+      }
+    ],
   }
 ];
