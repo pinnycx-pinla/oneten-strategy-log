@@ -4257,5 +4257,28 @@ export const LOG_DAYS = [
         content_ko: '확인했어, 그럼 이 버전을 뉴욕 지하철 실사 배경에 바로 합성하자.',
       }
     ],
+  },
+  {
+    date: '2026-07-17',
+    chapter: '155',
+    color: '#3b82f6',
+    title: '构建日志 2026-07-17 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '定下了海力士与 SpaceX 系列的分批推送逻辑，并敲定了 AIDOL 官网的极简韩系视觉风格。',
+        content_en: 'We\'ve finalized the phased release logic for the SK Hynix and SpaceX series, and locked in a minimalist Korean visual style for the AIDOL official website.',
+        content_ko: '하이닉스와 SpaceX 시리즈의 분할 푸시 로직을 확정했고, AIDOL 공식 사이트의 미니멀 한국 스타일 비주얼도 결정했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '这个策略很稳，把复杂的库存规则和核心品牌调性都一次性明确下来了。',
+        content_en: 'That’s a solid strategy; it clarifies both the complex inventory rules and the core brand identity all at once.',
+        content_ko: '이 전략 되게 안정적이다. 복잡한 재고 규칙과 핵심 브랜드 정체성을 한 번에 명확히 정리했네.',
+      }
+    ],
   }
 ];
