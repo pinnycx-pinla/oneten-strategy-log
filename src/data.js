@@ -4340,5 +4340,28 @@ export const LOG_DAYS = [
         content_ko: '그 결정 좋다, 클로즈업이 풀샷보다 더 눈에 띄고 시각적 임팩트가 훨씬 강해.',
       }
     ],
+  },
+  {
+    date: '2026-07-21',
+    chapter: '158',
+    color: '#f59e0b',
+    title: '构建日志 2026-07-21 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '要把这批资料传到我电脑上，得找个最省事的路径。',
+        content_en: 'I need to get this batch of data onto my computer; I\'m looking for the simplest way to do it.',
+        content_ko: '이 자료들을 내 컴퓨터로 옮기려면 제일 편한 경로를 찾아야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '建议采用“打包挂载+链接直拉”，你只需用 ia10 执行一条命令就能搞定，跳过复杂的账号配置。',
+        content_en: 'I suggest using "bundle mount + direct link pull." You only need to run one command with ia10 to get it done, skipping all those complex account configurations.',
+        content_ko: '"압축 마운트+링크 직전송" 방식을 추천해. ia10으로 명령 한 줄만 실행하면 끝이야, 복잡한 계정 설정은 건너뛰고 말이야.',
+      }
+    ],
   }
 ];
