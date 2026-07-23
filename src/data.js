@@ -4363,5 +4363,36 @@ export const LOG_DAYS = [
         content_ko: '"압축 마운트+링크 직전송" 방식을 추천해. ia10으로 명령 한 줄만 실행하면 끝이야, 복잡한 계정 설정은 건너뛰고 말이야.',
       }
     ],
+  },
+  {
+    date: '2026-07-22',
+    chapter: '159',
+    color: '#10b981',
+    title: '构建日志 2026-07-22 06:10',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '为什么还没收到文件？',
+        content_en: 'Why haven\'t I received the file yet?',
+        content_ko: '왜 아직 파일 안 왔어?',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '因为 Telegram 直发大视频受限，我已切到 oneten 分发链接。',
+        content_en: 'Because Telegram has limits on sending large videos directly, I\'ve switched to sharing links via one ten.',
+        content_ko: '텔레그램에서 대용량 영상을 직접 전송하는 데 제한이 있어서 oneten으로 링크를 전송하는 방식으로 바꿨어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '此外针对 Codex 单通道出图的压力，采用串行跑法确保了云端系列的稳定产出。',
+        content_en: 'Also, to handle the pressure of single-channel image output from Codex, I\'m using a serial processing method to ensure stable production of the cloud series.',
+        content_ko: '그리고 Codex 단일 채널 이미지 생성 압박에 대응해 직렬 처리 방식을 도입해서 클라우드 시리즈의 안정적인 산출을 확보했어.',
+      }
+    ],
   }
 ];
