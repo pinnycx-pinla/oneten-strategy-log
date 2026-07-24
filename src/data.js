@@ -4394,5 +4394,42 @@ export const LOG_DAYS = [
         content_ko: '그리고 Codex 단일 채널 이미지 생성 압박에 대응해 직렬 처리 방식을 도입해서 클라우드 시리즈의 안정적인 산출을 확보했어.',
       }
     ],
+  },
+  {
+    date: '2026-07-23',
+    chapter: '160',
+    color: '#ef4444',
+    title: '构建日志 2026-07-23 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '之前的角色比例一直出不准，经常出现太瘦小或者偏幼态的问题。',
+        content_en: 'The character proportions haven\'t been coming out right; they often looked too skinny or a bit too childish.',
+        content_ko: '이전 캐릭터 비율이 계속 안 맞아서 너무 마르거나 어린 느낌이 나는 문제가 자주 발생했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '已经修正了底层逻辑，强制加入“成年人比例”约束，确保在不同场景下都能保持正确的体型。',
+        content_en: 'I’ve fixed the underlying logic and added an "adult proportion" constraint to ensure they maintain the correct body type across different scenes.',
+        content_ko: '기초 로직을 수정했고, \'성인 비율\' 제약을 강제로 추가해서 다양한 상황에서도 올바른 체형이 유지되도록 했어.',
+      },
+      {
+        role: 'user',
+        content: '这次尝试的「墨钢线」风格质感非常稳，光影和金属对比效果很好。',
+        content_en: 'The texture of the "Ink Steel Line" style we tried this time is very solid; the light and metal contrast effects look great.',
+        content_ko: '이번에 시도한 「묵강선」 스타일 질감이 아주 안정적이야. 빛과 금속의 대비 효과가 좋아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '这个方向确认无误，我将以此为基准，开始铺开全员的服饰及相关环境建模。',
+        content_en: 'That direction is confirmed. I\'ll use it as the standard to start rolling out the costumes and related environment modeling for all characters.',
+        content_ko: '이 방향성 확정됐으니까, 이걸 기준으로 전 캐릭터 의상 및 관련 환경 모델링 시작할게.',
+      }
+    ],
   }
 ];
