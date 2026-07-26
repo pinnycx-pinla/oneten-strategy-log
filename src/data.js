@@ -4431,5 +4431,28 @@ export const LOG_DAYS = [
         content_ko: '이 방향성 확정됐으니까, 이걸 기준으로 전 캐릭터 의상 및 관련 환경 모델링 시작할게.',
       }
     ],
+  },
+  {
+    date: '2026-07-25',
+    chapter: '161',
+    color: '#3b82f6',
+    title: '构建日志 2026-07-25 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '这次云端系列换新风格，咱们按照老规矩先出的样张再全量铺开。',
+        content_en: 'We’re switching to a new style for the Cloud series this time. Let\'s stick to the old routine—release sample images first before moving to a full rollout.',
+        content_ko: '이번 클라우드 시리즈 스타일 바뀌니까, 예전 방식대로 샘플 먼저 뽑고 전체 배포하자.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '明白，通过 Codex 核实后成片率非常稳，这批 20 张全部顺利跑通且零失败。',
+        content_en: 'Got it. After verification via Codex, the success rate is very stable; all 20 in this batch passed successfully with zero failures.',
+        content_ko: '알겠어, Codex로 검증한 결과 성공률이 아주 안정적이야. 이 20장은 모두 무사히 통과됐고 실패도 없어.',
+      }
+    ],
   }
 ];
