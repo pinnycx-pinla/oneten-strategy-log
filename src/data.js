@@ -4537,5 +4537,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 그 0.4GB는 일시적인 렌더링 피크였을 거야. 관련 출력 캐시 쓰레기들은 내가 다 정리해줬어.',
       }
     ],
+  },
+  {
+    date: '2026-07-29',
+    chapter: '165',
+    color: '#10b981',
+    title: '构建日志 2026-07-29 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '要把“瓶颈跟随清单”加到 Round 02，利用动量选出最强硬核设备来做价差。',
+        content_en: 'Let\'s add the "Bottleneck Follow List" to Round 02; use momentum to select the highest-performing hardcore equipment for arbitrage.',
+        content_ko: '"병목 추종 리스트"를 Round 02에 추가해서, 모멘텀으로 가장 강력한 하드코어 장비를 골라 스프레드를 해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '没问题，这个逻辑能更精准定位技术断层，相关配套的 Jarvis 版任务也已排入自动队列。',
+        content_en: 'No problem. This logic will pinpoint technical gaps more accurately, and the corresponding Jarvis-version tasks have already been added to the automated queue.',
+        content_ko: '문제없어, 이 로직이 기술 단절을 더 정밀하게 찾아낼 수 있어. 관련된 Jarvis 버전 작업도 자동 큐에 넣어뒀어.',
+      }
+    ],
   }
 ];
