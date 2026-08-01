@@ -4583,5 +4583,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 핵심은 복잡한 변동을 걸러내고 “박스 안에 있다”는 것만 노리는 거야. 지금 이 로직은 이미 우리 프로젝트 구성을 안정적으로 지탱할 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-07-31',
+    chapter: '167',
+    color: '#3b82f6',
+    title: '构建日志 2026-07-31 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '复古线 8 张核心素材已全部定稿并完成归档。',
+        content_en: 'All 8 core assets for the Retro Line have been finalized and archived.',
+        content_ko: '레트로 라인 8개 핵심 소재 전부 확정됐고 아카이브 완료했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '确认过了，而且推断出 Codex 出图逻辑与文本模型是分离的，这意味着你的订阅额度不受 token 变动影响，逻辑非常稳。',
+        content_en: 'Confirmed. It\'s also been determined that Codex\'s image generation logic is decoupled from the text model, which means your subscription quota won\'t be affected by token fluctuations. The logic is very solid.',
+        content_ko: '확인했어, 그리고 Codex 이미지 생성 로직이랑 텍스트 모델이 분리되어 있다는 걸 파악했어. 이건 네 구독 한도가 토큰 변동에 영향을 받지 않는다는 뜻이라서 로직이 아주 안정적이야.',
+      }
+    ],
   }
 ];
