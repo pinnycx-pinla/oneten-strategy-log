@@ -4666,5 +4666,28 @@ export const LOG_DAYS = [
         content_ko: '확인했어. 비율 모델로 재구성하면 멀티 디바이스 환경에서의 일관성 문제를 근본적으로 해결할 수 있겠네.',
       }
     ],
+  },
+  {
+    date: '2026-08-03',
+    chapter: '170',
+    color: '#f59e0b',
+    title: '构建日志 2026-08-03 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '要把 Mini 的世界观和形象锁定在同一维度，避免在不同场景下出现风格飘移。',
+        content_en: 'We need to keep Mini\'s worldview and image aligned in the same dimension to avoid any style drift across different scenarios.',
+        content_ko: 'Mini의 세계관과 이미지를 같은 차원에 고정해서, 다양한 상황에서 스타일이 어긋나는 걸 방지해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，新脸已作为全量资产挂载进系统，以后所有系列分镜和脚本都会自动调用这个统一标准。',
+        content_en: 'Received. The new face has been integrated into the system as a full asset; from now on, all storyboards and scripts for the series will automatically pull from this unified standard.',
+        content_ko: '확인했어. 새 얼굴을 전체 자산으로 시스템에 반영했으니까, 앞으로 모든 시리즈의 스토리보드와 대본은 이 통일된 기준을 자동으로 불러올 거야.',
+      }
+    ],
   }
 ];
