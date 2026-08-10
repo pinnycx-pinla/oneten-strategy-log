@@ -4809,5 +4809,28 @@ export const LOG_DAYS = [
         content_ko: '핵심 방향이 이제 "로직 드리븐"으로 바뀌었어. 이러면 앞으로 비슷한 제작도 높은 수준으로 표준화해서 재사용할 수 있지.',
       }
     ],
+  },
+  {
+    date: '2026-08-09',
+    chapter: '175',
+    color: '#a855f7',
+    title: '构建日志 2026-08-09 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我通过多张锚点图和强硬的风格指令，成功把模型从“真人倾向”拉回到了赛璐璐动画风。',
+        content_en: 'By using multiple anchor images and strong style prompts, I successfully pulled the model back from its "realism bias" to a cel-shaded anime style.',
+        content_ko: '여러 장의 앵커 이미지와 강한 스타일 프롬프트를 써서 모델을 \'실사 위주\'에서 셀 애니메이션 스타일로 성공적으로 되돌렸어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '这个策略有效解决了面部漂移问题，且我们也抓住了预告片中那个关键的拼写细节错误。',
+        content_en: 'That strategy effectively solved the face drifting issue, and we also caught that critical spelling error in the trailer.',
+        content_ko: '이 전략이 얼굴이 변하는 문제를 효과적으로 해결했고, 트레일러에 있는 그 중요한 오타 디테일도 잡아냈어.',
+      }
+    ],
   }
 ];
