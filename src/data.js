@@ -4832,5 +4832,28 @@ export const LOG_DAYS = [
         content_ko: '이 전략이 얼굴이 변하는 문제를 효과적으로 해결했고, 트레일러에 있는 그 중요한 오타 디테일도 잡아냈어.',
       }
     ],
+  },
+  {
+    date: '2026-08-11',
+    chapter: '176',
+    color: '#f59e0b',
+    title: '构建日志 2026-08-11 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '日方频道我们选那篇「想到和做到」的特别版，它既有深度又不过期，非常适合近期稳步推新。',
+        content_en: 'For the Japan channel, let\'s go with that "Thoughts into Action" special edition; it has depth and is evergreen, making it perfect for a steady push of new content lately.',
+        content_ko: '일본 채널은 \'생각과 실천\' 특별판으로 하자. 깊이도 있고 유행을 타지 않아서 최근 꾸준히 신규 콘텐츠를 밀기 아주 좋아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '收到，为了规避各种模型坑点，我已明确通过 reference-to-video 来保障角色一致性。',
+        content_en: 'Got it. To avoid various model pitfalls, I’ve explicitly used reference-to-video to ensure character consistency.',
+        content_ko: '확인했어, 모델의 여러 오류들을 피하기 위해 reference-to-video로 캐릭터 일관성을 확보해 뒀어.',
+      }
+    ],
   }
 ];
