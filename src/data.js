@@ -4855,5 +4855,42 @@ export const LOG_DAYS = [
         content_ko: '확인했어, 모델의 여러 오류들을 피하기 위해 reference-to-video로 캐릭터 일관성을 확보해 뒀어.',
       }
     ],
+  },
+  {
+    date: '2026-08-13',
+    chapter: '177',
+    color: '#10b981',
+    title: '构建日志 2026-08-13 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '为了方便后续做视频，这一组街景要求必须是“零文字”，但又要保留霓虹灯牌的密度。',
+        content_en: 'To make it easier for post-production, these street scenes need to have "zero text," but we still need to keep the density of the neon signs.',
+        content_ko: '나중에 영상 작업하기 편하도록, 이 거리 풍경은 \'글자 제로\'여야 해. 하지만 네온사인 간판의 밀도는 유지해야 하고.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '明白了，我会把招牌内容处理成发光的抽象色块和光条，这样既能保留视觉上的繁华感，又不会出现乱码或干扰文字。',
+        content_en: 'Got it. I\'ll process the sign content into glowing abstract blocks and light strips. That way, we can maintain the visual sense of bustle without any garbled characters or distracting text.',
+        content_ko: '알았어. 간판 내용들을 발광하는 추상적인 색 블록과 광선으로 처리할게. 그러면 시각적으로 화려함은 살리면서도 글자가 튀거나 방해하지 않을 거야.',
+      },
+      {
+        role: 'user',
+        content: '这面写满公式的玻璃墙是核心元素，如果完全遵循“零文字”就不成样了。',
+        content_en: 'That glass wall covered in formulas is a core element; if we strictly follow "zero text," it won\'t look right at all.',
+        content_ko: '공식이 가득 적힌 이 유리벽은 핵심 요소야. \'글자 제로\'를 그대로 따르기만 하면 모양새가 안 나올 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '我判断公式属于“视觉纹理”而非“信息文字”，为了保住画面的灵魂，我们可以破例保留这些数学符号作为背景素材。',
+        content_en: 'I’d argue those formulas are "visual textures" rather than "informational text." To preserve the essence of the shot, let\'s make an exception and keep those math symbols as background assets.',
+        content_ko: '내 판단에 수식은 \'정보 문구\'가 아니라 \'시각적 질감\'이야. 화면의 정체성을 지키기 위해, 이 수학 기호들은 예외적으로 배경 소스로 유지할게.',
+      }
+    ],
   }
 ];
