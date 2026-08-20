@@ -4938,5 +4938,42 @@ export const LOG_DAYS = [
         content_ko: '동시에 나는 소량 샘플 비교를 통해 "상/중" 화질의 차이를 확정했어. 나중에 대량 생산할 때 품질을 유지하면서 비용도 맞출 수 있게.',
       }
     ],
+  },
+  {
+    date: '2026-08-19',
+    chapter: '180',
+    color: '#00f0ff',
+    title: '构建日志 2026-08-19 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '为了保证系列短片的品牌一致性，我们需要把制作流程变成可复制的流水线。',
+        content_en: 'To ensure brand consistency across the series of short videos, we need to turn the production process into a replicable pipeline.',
+        content_ko: '시리즈 쇼츠의 브랜드 일관성을 유지하기 위해 제작 공정을 복제 가능한 파이프라인으로 만들어야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '没问题，我们采用“底板固定”策略：锁定背景、布景和镜头角度作为母版，只让屏幕里的人物动嘴眨眼，确保每期视觉风格高度统一。',
+        content_en: 'No problem. We’ll use a "fixed-base" strategy: lock in the backgrounds, sets, and camera angles as master templates, only allowing the characters on screen to move their mouths and blink to ensure highly consistent visual styles for every episode.',
+        content_ko: '문제없어, \'베이스 플레이트 고정\' 전략을 채택할 거야. 배경, 세트, 카메라 앵글을 마스터로 고정하고 화면 속 캐릭터가 입과 눈만 움직이게 해서 매회 시각적 스타일을 고도로 통일하는 방식이야.',
+      },
+      {
+        role: 'user',
+        content: '要把这套逻辑跑通，目前的技术栈准备到哪一步了？',
+        content_en: 'To get this workflow running smoothly, what stage is our current tech stack at?',
+        content_ko: '이 로직을 제대로 돌리려면 현재 기술 스택은 어디까지 준비됐어?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '脚本已推送至工作室并命名为 `tts_fal_minimax`，配置好 API Key 和 ffmpeg 后，后续只需输入一段文案即可快速产出成片。',
+        content_en: 'The script has been pushed to the studio and named `tts_fal_minimax`. Once we\'ve configured the API Key and ffmpeg, all that’s left is to input a piece of copy to quickly generate finished videos.',
+        content_ko: '스크립트를 스튜디오에 푸시했고 이름은 `tts_fal_minimax`로 설정했어. API 키랑 ffmpeg 설정이 끝나면, 이후에는 문구만 입력해서 바로 완성된 영상을 뽑아낼 수 있어.',
+      }
+    ],
   }
 ];
