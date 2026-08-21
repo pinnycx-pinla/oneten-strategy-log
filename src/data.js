@@ -4975,5 +4975,28 @@ export const LOG_DAYS = [
         content_ko: '스크립트를 스튜디오에 푸시했고 이름은 `tts_fal_minimax`로 설정했어. API 키랑 ffmpeg 설정이 끝나면, 이후에는 문구만 입력해서 바로 완성된 영상을 뽑아낼 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-08-20',
+    chapter: '181',
+    color: '#a855f7',
+    title: '构建日志 2026-08-20 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '要把IA10的脸和那套过时的旧衣服剥离开，确保服装按最新版跑。',
+        content_en: 'We need to separate IA10\'s face from that outdated outfit to ensure the clothing follows the latest version.',
+        content_ko: 'IA10 얼굴이랑 그 구식 옷 분리해줘. 의상이 최신 버전으로 처리되도록 확실히 해줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '明白，空间参数已定为基准，且以后出场景仅喂正脸图，防止视觉逻辑回退到旧版本。',
+        content_en: 'Got it. Spatial parameters are set as the baseline, and moving forward, we’ll only feed front-facing images for scenes to prevent the visual logic from reverting to an old version.',
+        content_ko: '알겠어, 공간 파라미터 기준 설정했고, 앞으로 장면 뽑을 때 정면 사진만 넣어서 비주얼 로직이 구버전으로 돌아가는 거 방지할게.',
+      }
+    ],
   }
 ];
