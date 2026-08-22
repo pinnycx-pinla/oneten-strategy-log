@@ -4998,5 +4998,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 공간 파라미터 기준 설정했고, 앞으로 장면 뽑을 때 정면 사진만 넣어서 비주얼 로직이 구버전으로 돌아가는 거 방지할게.',
       }
     ],
+  },
+  {
+    date: '2026-08-21',
+    chapter: '182',
+    color: '#f59e0b',
+    title: '构建日志 2026-08-21 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '搞清楚了，`ECONNRESET` 并不是全网断开，而是仅仅针对 Anthropic 接口的特定通道中断了。',
+        content_en: 'I figured it out; `ECONNRESET` isn\'t a total network disconnect, but rather an interruption of the specific channel for the Anthropic API.',
+        content_ko: '알아냈어, `ECONNRESET`은 전체 네트워크 단절이 아니라 Anthropic 인터페이스의 특정 채널만 끊긴 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没错，正是因为两个服务走的路由不同，这说明你的代理或防火墙只在特定路径上出了故障。',
+        content_en: 'Exactly. Since the two services use different routes, this shows that your proxy or firewall is only failing on that specific path.',
+        content_ko: '맞아, 두 서비스가 사용하는 경로가 달라서 네 프록시나 방화벽이 특정 경로에서만 문제가 발생한 거야.',
+      }
+    ],
   }
 ];
