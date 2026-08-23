@@ -5021,5 +5021,42 @@ export const LOG_DAYS = [
         content_ko: '맞아, 두 서비스가 사용하는 경로가 달라서 네 프록시나 방화벽이 특정 경로에서만 문제가 발생한 거야.',
       }
     ],
+  },
+  {
+    date: '2026-08-22',
+    chapter: '183',
+    color: '#10b981',
+    title: '构建日志 2026-08-22 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '工作室机器跑大文件时经常卡死，需要确定是网络底层问题还是脚本逻辑导致的。',
+        content_en: 'The studio machines often freeze when processing large files; we need to determine if it\'s a network layer issue or caused by script logic.',
+        content_ko: '작업실 머신으로 대용량 파일 처리할 때 자주 멈추는데, 네트워크 하부 문제인지 아니면 스크립트 로직 때문인 건지 파악이 필요해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '建议用我提供的脚本重点排查 MTU 和在高流量下的持续下载稳定性，这是定位问题的关键。',
+        content_en: 'I suggest using the script I provided to focus on checking MTU and download stability under high traffic—that’s key to pinpointing the problem.',
+        content_ko: '내가 준 스크립트를 써서 MTU랑 고트래픽 상황에서의 다운로드 안정성을 집중적으로 체크해 봐. 이게 문제 파악의 핵심이야.',
+      },
+      {
+        role: 'user',
+        content: '那个视频生成项目因为合规风险和匹配度问题决定搁置，接下来考虑转去研究房产相关业务。',
+        content_en: 'The video generation project has been shelved due to compliance risks and matching issues, so we\'re looking into switching our focus to real estate-related business instead.',
+        content_ko: '그 영상 생성 프로젝트는 컴플라이언스 리스크와 매칭 이슈 때문에 보류하기로 했어. 다음에는 부동산 관련 업무를 연구해 볼 생각이야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没问题，那我就把房产方面的逻辑也跑一遍，方便你做对比决策。',
+        content_en: 'No problem, I\'ll run through the logic for the real estate side as well so you can make a comparison for your decision.',
+        content_ko: '알겠어, 그럼 나도 부동산 쪽 로직을 한 번 돌려볼게. 네가 비교해서 결정하기 편하게.',
+      }
+    ],
   }
 ];
