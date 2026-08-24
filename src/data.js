@@ -5058,5 +5058,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 그럼 나도 부동산 쪽 로직을 한 번 돌려볼게. 네가 비교해서 결정하기 편하게.',
       }
     ],
+  },
+  {
+    date: '2026-08-23',
+    chapter: '184',
+    color: '#ef4444',
+    title: '构建日志 2026-08-23 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '核心数据如“一秒三块”和“涨一百倍”必须保留，这是实测后的真实情况。',
+        content_en: 'Core data like "three units per second" and "100x growth" must be kept, as these are the actual results from real-world testing.',
+        content_ko: '핵심 데이터인 "1초에 3개"랑 "100배 상승"은 꼭 유지해야 해, 이건 실측한 진짜 상황이야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '明白，这种极端对比的冲击力强，比模糊处理更抓人。',
+        content_en: 'Understood. This kind of extreme contrast has a strong impact and is more engaging than blurred processing.',
+        content_ko: '알겠어, 이런 극단적인 대비가 주는 충격이 강하니까, 흐릿하게 처리하는 것보다 훨씬 더 사람을 끌어.',
+      },
+      {
+        role: 'user',
+        content: '另外要把果断公主和知性前辈两个角色的配音 ID 敲定，直接同步给 IH 去配置。',
+        content_en: 'Also, we need to finalize the voice IDs for the "Decisive Princess" and "Sophisticated Senior" roles and sync them directly with IH for configuration.',
+        content_ko: '그리고 "과단 공주"랑 "지성 선배" 두 캐릭터의 성우 ID를 확정하고, 바로 IH한테 동기화해서 설정하게 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '收到，通过不同的 voice_id 配置能保证角色在后期中听感清晰且有辨识度。',
+        content_en: 'Got it. Using different voice_id configurations will ensure that the characters sound clear and distinct during post-production.',
+        content_ko: '확인했어, 서로 다른 voice_id 설정으로 후반 작업에서 캐릭터 목소리가 또렷하고 구분되게 할 수 있어.',
+      }
+    ],
   }
 ];
