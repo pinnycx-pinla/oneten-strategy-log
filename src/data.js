@@ -5095,5 +5095,42 @@ export const LOG_DAYS = [
         content_ko: '확인했어, 서로 다른 voice_id 설정으로 후반 작업에서 캐릭터 목소리가 또렷하고 구분되게 할 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-08-24',
+    chapter: '185',
+    color: '#3b82f6',
+    title: '构建日志 2026-08-24 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '针对抖音平台的逻辑，我们决定把正文核心观点直接作为标题来发布。',
+        content_en: 'Based on Douyin\'s logic, we’ve decided to use the core point of the main text directly as the headline.',
+        content_ko: '틱톡 플랫폼 로직에 맞춰서 본문 핵심 관점을 그대로 제목으로 올리기로 했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '没错，这种“直给”的表达方式更符合短视频节奏，能瞬间抓住用户注意力。',
+        content_en: 'Exactly. This "straight-to-the-point" approach fits the rhythm of short videos better and grabs the audience\'s attention instantly.',
+        content_ko: '맞아, 이렇게 직빵으로 주는 표현 방식이 숏폼 리듬에 더 잘 맞고 순간적으로 유저 시선을 사로잡을 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '在 EP05 的内容设计上，我们要用“价格清场”这个反差点来做钩子。',
+        content_en: 'For the content design of EP05, we need to use the "price clearance" twist as a hook.',
+        content_ko: 'EP05 콘텐츠 설계할 때는 \'가격 청장\'이라는 반전 포인트를 훅으로 쓸 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '这个切入点很精准，配合置顶评论引导讨论，能有效激发粉丝的互动欲望。',
+        content_en: 'That’s a very sharp angle. Coupled with a pinned comment to guide the discussion, it will effectively spark engagement from the fans.',
+        content_ko: '그 각도 되게 정확한데, 상단 고정 댓글로 토론 유도하면 팬들 반응 이끌어내기 좋을 거야.',
+      }
+    ],
   }
 ];
