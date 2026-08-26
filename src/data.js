@@ -5132,5 +5132,42 @@ export const LOG_DAYS = [
         content_ko: '그 각도 되게 정확한데, 상단 고정 댓글로 토론 유도하면 팬들 반응 이끌어내기 좋을 거야.',
       }
     ],
+  },
+  {
+    date: '2026-08-25',
+    chapter: '186',
+    color: '#00f0ff',
+    title: '构建日志 2026-08-25 06:10',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '把核心记忆和文档沉淀到四个仓库，并配套了三层保险的灾难恢复方案。',
+        content_en: 'Core memories and documentation have been settled into four repositories, supported by a three-layer fail-safe disaster recovery plan.',
+        content_ko: '핵심 기억과 문서를 네 개의 저장소에 정리하고, 3중 보험에 해당하는 재해 복구 방안도 같이 마련했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '架构设计非常稳健，但需警惕 warroom 等目前还是公开状态，建议立即收权以确保安全。',
+        content_en: 'The architecture design is very robust, but be wary of the fact that "warroom" etc. are still public; I suggest revoking permissions immediately to ensure security.',
+        content_ko: '아키텍처 설계는 정말 탄탄한데, warroom 같은 게 아직 공개 상태인 건 주의해야 해. 보안을 위해 바로 권한 정리하는 게 좋겠어.',
+      },
+      {
+        role: 'user',
+        content: '核实 pinla.us 线上状态时发现它与本地截图的导航和内容并不一致。',
+        content_en: 'While verifying the live status of pinla.us, I found that its navigation and content don\'t match the local screenshots.',
+        content_ko: 'pinla.us 온라인 상태를 확인해 보니 로컬 스크린샷의 내비게이션 및 콘텐츠와 일치하지 않더라.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '确实不一致，这说明线上环境已变动，我们需要针对这些差异重新对齐数据。',
+        content_en: 'They aren\'t consistent. This indicates that the production environment has changed; we need to realign the data based on these discrepancies.',
+        content_ko: '확실히 안 맞아. 이건 온라인 환경이 이미 바뀌었다는 뜻이니까, 그 차이점들을 기준으로 데이터를 다시 정렬해야 해.',
+      }
+    ],
   }
 ];
