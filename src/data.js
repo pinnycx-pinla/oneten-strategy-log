@@ -5169,5 +5169,42 @@ export const LOG_DAYS = [
         content_ko: '확실히 안 맞아. 이건 온라인 환경이 이미 바뀌었다는 뜻이니까, 그 차이점들을 기준으로 데이터를 다시 정렬해야 해.',
       }
     ],
+  },
+  {
+    date: '2026-08-26',
+    chapter: '187',
+    color: '#a855f7',
+    title: '构建日志 2026-08-26 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'TikTok 直发审核还是被挡了，但草稿链路已经跑通，出片能自动推到手机，发布那一下永远在我手里。',
+        content_en: 'TikTok direct upload review was still blocked, but the draft pipeline is working; once a clip is rendered, it can be pushed to phones automatically, and I’ll keep the final "publish" button in my hands.',
+        content_ko: 'TikTok 직발 심사는 또 막혔는데, 초안 링크는 이미 뚫렸어. 영상 나오면 자동으로 폰으로 밀어주고, 게시하는 그 순간은 항상 내 손에 있어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，秒批邮件只是应用修订通过，直发的独立审核还在排队。今晚把审核材料备齐，提审提交后就能切回公开了。',
+        content_en: 'Right, the auto-approval email was just for the app revision; the independent audit for direct posting is still in the queue. Let\'s get all the submission materials ready tonight—once they\'re submitted, we can flip it back to public.',
+        content_ko: '맞아, 즉시 승인 메일은 앱 수정 통과일 뿐이고, 직발 독립 심사는 아직 대기 중이야. 오늘 밤에 심사 자료 준비해두면, 제출하고 나면 공개로 다시 전환할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: 'Fal 不当备胎，一分钱不花，直接装本地 Whisper。',
+        content_en: 'No need to use Fal as a backup; it costs nothing, so let’s just go with local Whisper directly.',
+        content_ko: 'Fal은 예비품 안 해, 한 푼도 안 쓰고 바로 로컬에 Whisper 설치해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，Azure + 本地双层方案，全程零花费，今晚就装好验给你看。',
+        content_en: 'Got it. The Azure + Local dual-layer setup—zero cost across the board. I’ll have it installed and ready for you to check tonight.',
+        content_ko: '알겠어, Azure + 로컬 이중 방식,全程 무비용, 오늘 밤에 설치해서 검증해 보여줄게.',
+      }
+    ],
   }
 ];
