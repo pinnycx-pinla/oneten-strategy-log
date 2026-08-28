@@ -5206,5 +5206,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어, Azure + 로컬 이중 방식,全程 무비용, 오늘 밤에 설치해서 검증해 보여줄게.',
       }
     ],
+  },
+  {
+    date: '2026-08-27',
+    chapter: '188',
+    color: '#f59e0b',
+    title: '构建日志 2026-08-27 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '搞清楚了，Logic 的播放问题只是因为没开“自动输入监听”这个开关。',
+        content_en: 'Figured it out—the playback issue in Logic was just because the "Auto Input Monitoring" toggle wasn\'t turned on.',
+        content_ko: '알았어, Logic 재생 문제는 그냥 "자동 입력 모니터링" 스위치를 안 켜서였어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '没错，勾上它就能保证录好的内容不被实时人声顶掉，解决了核心痛点。',
+        content_en: 'Exactly, checking that box ensures recorded content isn\'t overridden by live vocals, which solves the core pain point.',
+        content_ko: '맞아, 그거 체크하면 녹음된 내용이 실시간 목소리에 안 밀리니까 핵심 문제가 해결되지.',
+      },
+      {
+        role: 'user',
+        content: '那个能让 AI Agent 扫全网的工具挺有意思，感觉可以接进我们的竞品监控里。',
+        content_en: 'That tool that lets AI Agents crawl the entire web is pretty interesting; I think we could integrate it into our competitor monitoring.',
+        content_ko: '그 AI Agent가 전 웹을 스캔하는 도구 꽤 재밌네, 우리 경쟁사 모니터링에 연결할 수 있을 것 같아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '我们可以重点拆解 crawl4ai 或 firecrawl 这几类逻辑，看能不能优化现有的数据抓取管线。',
+        content_en: 'We can focus on breaking down logic like crawl4ai or firecrawl to see if we can optimize our existing data scraping pipeline.',
+        content_ko: 'crawl4ai나 firecrawl 같은 로직들 위주로 분해해서 기존 데이터 수집 파이프라인을 최적화할 수 있는지 보면 되겠다.',
+      }
+    ],
   }
 ];
