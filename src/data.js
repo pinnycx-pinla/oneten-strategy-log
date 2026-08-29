@@ -5243,5 +5243,42 @@ export const LOG_DAYS = [
         content_ko: 'crawl4ai나 firecrawl 같은 로직들 위주로 분해해서 기존 데이터 수집 파이프라인을 최적화할 수 있는지 보면 되겠다.',
       }
     ],
+  },
+  {
+    date: '2026-08-28',
+    chapter: '189',
+    color: '#10b981',
+    title: '构建日志 2026-08-28 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '把所有角色的成图整合到一个专门的网页里，这样我用手机挑选素材就方便多了。',
+        content_en: 'Let\'s put all the character renders on a dedicated page; it\'ll make it much easier for me to pick assets from my phone.',
+        content_ko: '모든 캐릭터 완성본 이미지를 전용 웹페이지 하나로 통합해 줘. 그러면 내가 폰으로 소재 고르기가 훨씬 편해지니까.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没问题，我会把你所有的分镜、海报和 teaser 全分类整理好，到时候你直接在移动端翻选就行。',
+        content_en: 'No problem, I\'ll organize all your storyboards, posters, and teasers into categories so you can just browse through them on mobile.',
+        content_ko: '알겠어, 네 모든 스토리보드랑 포스터, 티저 다 분류해서 정리해 둘게. 그때 모바일에서 바로 넘겨보면 돼.',
+      },
+      {
+        role: 'user',
+        content: '如果 Cleanvoice 的测试样片合格，我们就花 45 美元把全量语音库处理掉。',
+        content_en: 'If the Cleanvoice test clips pass, we\'ll spend $45 to process the entire voice library.',
+        content_ko: 'Cleanvoice 테스트 샘플이 합격하면 45달러 주고 전체 음성 라이브러리 처리하자.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，只要确认三条采样没问题，我们就把这部分的自动化流程跑通了。',
+        content_en: 'Got it. As long as those three sample tracks are confirmed okay, we can get the automation for this part up and running.',
+        content_ko: '접수했어, 샘플 3개만 확인해서 문제없으면 이 부분 자동화 프로세스 돌려 놓을게.',
+      }
+    ],
   }
 ];
