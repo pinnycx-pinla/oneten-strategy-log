@@ -5280,5 +5280,34 @@ export const LOG_DAYS = [
         content_ko: '접수했어, 샘플 3개만 확인해서 문제없으면 이 부분 자동화 프로세스 돌려 놓을게.',
       }
     ],
+  },
+  {
+    date: '2026-08-29',
+    chapter: '190',
+    color: '#ef4444',
+    title: '构建日志 2026-08-29 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '发现剪映网页版配合 Playwright 自动化更稳，能避开桌面端操作不稳定的问题。',
+        content_en: 'I’ve found that using the Jianying web version with Playwright automation is more stable; it avoids the stability issues of the desktop app.',
+        content_ko: '剪映 웹버전이 Playwright 자동화랑 궁합이 더 좋은 걸 발견했어, 데스크톱 버전의 불안정한 조작 문제를 피할 수 있거든.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '关键是得先跑 10 条做个试点样本，评估一下产出质量。',
+        content_en: 'The key is to run 10 items first as pilot samples to evaluate the output quality.',
+        content_ko: '중요한 건 먼저 10개 돌려서 파일럿 샘플을 만들어 보고, 산출 품질을 평가해 봐야 한다는 거야.',
+      },
+      {
+        role: 'user',
+        content: '没错，如果这批试样质量明显优于目前的本地流水线，我们就把核心素材全部转到剪映处理。',
+        content_en: 'Exactly. If these test samples are significantly better than our current local pipeline, we’ll move all core assets over to Jianying for processing.',
+        content_ko: '맞아, 이 샘플 품질이 지금 로컬 파이프라인보다 확실히 낫다면, 핵심 소재 전부剪映으로 돌릴게.',
+      }
+    ],
   }
 ];
