@@ -5309,5 +5309,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 이 샘플 품질이 지금 로컬 파이프라인보다 확실히 낫다면, 핵심 소재 전부剪映으로 돌릴게.',
       }
     ],
+  },
+  {
+    date: '2026-08-30',
+    chapter: '191',
+    color: '#3b82f6',
+    title: '构建日志 2026-08-30 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '打算把 YouTube 的获利和税务路径转到韩国，想确认这是否会动到现有的粉丝和数据。',
+        content_en: 'I\'m planning to move my YouTube monetization and tax setup to Korea, and I want to confirm if this will affect my current subscribers and data.',
+        content_ko: 'YouTube 수익 창출이랑 세무 경로를 한국으로 옮기려고 하는데, 이게 기존 팬이나 데이터에 영향이 있을지 확인하고 싶어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '关键在于更换新的 AdSense 账号并填报 W-8BEN 表格，这样能完整保留订阅量，同时利用韩美税收协定降低预扣成本。',
+        content_en: 'The key is switching to a new AdSense account and filing the W-8BEN form; that way, you can keep your total subscriber count while using the Korea-US tax treaty to lower withholding costs.',
+        content_ko: '핵심은 새로운 애드센스 계정으로 바꾸고 W-8BEN 양식을 제출하는 거야. 그렇게 하면 구독자 수를 그대로 유지하면서 한미 조세 협정을 활용해 원천징수 비용을 낮출 수 있어.',
+      }
+    ],
   }
 ];
