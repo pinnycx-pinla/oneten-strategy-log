@@ -5332,5 +5332,28 @@ export const LOG_DAYS = [
         content_ko: '핵심은 새로운 애드센스 계정으로 바꾸고 W-8BEN 양식을 제출하는 거야. 그렇게 하면 구독자 수를 그대로 유지하면서 한미 조세 협정을 활용해 원천징수 비용을 낮출 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-08-31',
+    chapter: '192',
+    color: '#00f0ff',
+    title: '构建日志 2026-08-31 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '接下来重点攻克 GLM 5.3 接 Claude Code 的成本调研，以及 Cleanvoice 的语音清理实测。',
+        content_en: 'Next, we\'ll focus on the cost analysis for integrating GLM 5.3 with Claude Code, as well as practical testing of Cleanvoice\'s voice cleaning.',
+        content_ko: '다음으로 GLM 5.3에 Claude Code 연동하는 비용 조사랑 Cleanvoice 음성 정리 실측에 집중하자.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '这两个点很关键，前者决定我们的技术选型走向，后者能直接优化产出效率。',
+        content_en: 'These two points are crucial; the former determines our technical roadmap, while the latter can directly improve production efficiency.',
+        content_ko: '이 두 개가 진짜 중요하지, 전자는 우리 기술 선택 방향을 결정하고 후자는 산출 효율을 바로 최적화할 수 있으니까.',
+      }
+    ],
   }
 ];
