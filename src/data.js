@@ -5392,5 +5392,42 @@ export const LOG_DAYS = [
         content_ko: '확인했어. 바로 코드 가져와서 의존성 환경 돌려볼게. 로직 일치 확인되면 다음 단계 개발로 넘어가자.',
       }
     ],
+  },
+  {
+    date: '2026-09-02',
+    chapter: '194',
+    color: '#f59e0b',
+    title: '构建日志 2026-09-02 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'Fable 5.1 模型切换后，之前的任务进度和记忆还在吗？',
+        content_en: 'After switching to the Fable 5.1 model, are the previous task progress and memories still intact?',
+        content_ko: 'Fable 5.1 모델로 전환한 후에도 이전 작업 진행 상황이랑 기억이 남아 있어?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '全部在。只要把账号、密钥和项目清单补齐，我们就能立刻接上逻辑继续推进。',
+        content_en: 'Everything is still there. As long as we fill in the account details, keys, and project list, we can pick up where we left off immediately.',
+        content_ko: '전부 있어. 계정, 키, 프로젝트 리스트만 채워주면 바로 로직을 이어가서 계속 진행할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '关于“业绩报告”和“策略规范”这两个模块，你是要我找 Karen 要源码还是你按风格重做？',
+        content_en: 'Regarding the "Performance Report" and "Strategy Specifications" modules, do you want me to get the source code from Karen or will you remake them based on the style?',
+        content_ko: '\'실적 보고\'랑 \'전략 규정\' 이 두 모듈에 대해서, 내가 Karen한테 소스 코드를 받아올까 아니면 네가 스타일 맞춰서 다시 만들 거야?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '既然我有源码，直接采用方案 A 接入更忠实且快，几分钟就能把数据源换掉并推到作战室。',
+        content_en: 'Since I have the source code, using Option A for integration is more faithful and faster; it will only take a few minutes to swap out the data sources and push them to the war room.',
+        content_ko: '소스 코드가 있으니까 바로 안 A를 채택하는 게 더 정확하고 빨라. 몇 분이면 데이터 소스를 교체해서 작전실로 넘길 수 있어.',
+      }
+    ],
   }
 ];
