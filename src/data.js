@@ -5489,5 +5489,28 @@ export const LOG_DAYS = [
         content_ko: '근본 원인은 권한 팝업이 프로세스를 막은 거지, 버그가 아니야. 아까 그 버그 리포트 초안은 이제 맞지 않으니까, 그냥 버리는 게 좋겠어.',
       }
     ],
+  },
+  {
+    date: '2026-09-05',
+    chapter: '197',
+    color: '#3b82f6',
+    title: '构建日志 2026-09-05 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '手机上操作 3D 模型会卡死页面滑动，交互逻辑得重构一下。',
+        content_en: 'Scrolling freezes when interacting with 3D models on mobile; we need to refactor the interaction logic.',
+        content_ko: '폰에서 3D 모델 조작하면 페이지 스크롤이 멈춰버려서, 인터랙션 로직을 다시 짜야 돼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没问题，我们将移动端设为滑动穿透配合自动旋转，确保 PC 端仍保留鼠标拖拽。',
+        content_en: 'No problem, we\'ll implement touch passthrough combined with auto-rotation for mobile, while ensuring mouse dragging is still supported on PC.',
+        content_ko: '알겠어, 모바일은 슬라이드 관통이랑 자동 회전으로 맞추고, PC 쪽은 마우스 드래그 그대로 유지할게.',
+      }
+    ],
   }
 ];
