@@ -5572,5 +5572,42 @@ export const LOG_DAYS = [
         content_ko: '알았어, 우선 기초 파라미터를 확인한 뒤 심층 조사를 거쳐서 최대한 빨리 의사결정 전략을 내놓을게.',
       }
     ],
+  },
+  {
+    date: '2026-09-08',
+    chapter: '200',
+    color: '#f59e0b',
+    title: '构建日志 2026-09-08 06:10',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '要把复杂的一系列场景、服装等参数交给管线去跑，不要再在提示词里强行硬塞了。',
+        content_en: 'We need to let the pipeline handle the complex series of scene and outfit parameters; stop trying to cram them into the prompts.',
+        content_ko: '복잡한 일련의 장면이나 의상 같은 파라미터들은 파이프라인에 넘겨서 처리하고, 프롬프트에 억지로 밀어넣지 마.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '明白，接入 CC 分辨函数后由 universe.json 驱动核心变量，这样我们只需关注机位和动作即可。',
+        content_en: 'Got it. Once the CC resolution function is integrated, universe.json will drive the core variables, so we only need to focus on camera angles and actions.',
+        content_ko: '알겠어. CC 분해 함수를 연동해서 universe.json이 핵심 변수를 제어하게 하면, 우린 카메라 워킹이랑 동작에만 집중하면 돼.',
+      },
+      {
+        role: 'user',
+        content: '另外要确定好新角色的更新点。',
+        content_en: 'Also, make sure to define the update points for the new characters.',
+        content_ko: '그리고 새 캐릭터의 업데이트 포인트도 확실히 정해둬야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '已经理清，Karen 的新形象将从下个周期自动生效，确保数据链逻辑清晰。',
+        content_en: 'Already sorted. Karen’s new look will take effect automatically from the next cycle, ensuring the data chain logic remains clear.',
+        content_ko: '정리 끝났어. Karen의 새로운 외형은 다음 주기부터 자동 반영될 거고, 데이터 체인 로직도 명확하게 처리할게.',
+      }
+    ],
   }
 ];
