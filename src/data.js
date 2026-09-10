@@ -5609,5 +5609,42 @@ export const LOG_DAYS = [
         content_ko: '정리 끝났어. Karen의 새로운 외형은 다음 주기부터 자동 반영될 거고, 데이터 체인 로직도 명확하게 처리할게.',
       }
     ],
+  },
+  {
+    date: '2026-09-09',
+    chapter: '201',
+    color: '#10b981',
+    title: '构建日志 2026-09-09 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '算了一下 MV 的产出比，为了成片里的一百多个镜头，前期其实生成并筛选了数千张甚至上万的素材。',
+        content_en: 'I did the math on the MV\'s production ratio; for over a hundred shots in the final cut, we actually generated and filtered through thousands, even tens of thousands, of assets during pre-production.',
+        content_ko: 'MV의 산출 비율을 계산해봤는데, 완성본에 들어가는 백여 개의 장면을 위해 초기에 실제로 수천 장에서 심지어 만 장이 넘는 소재를 생성하고 선별했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '这就是核心成本所在，大量废稿过滤掉是为了最终确定那最精准的那一小部分。',
+        content_en: 'That’s where the core cost lies—filtering out a massive amount of waste to finally pin down that tiny, precise portion.',
+        content_ko: '여기가 핵심 비용이야. 대량의 폐기분을 걸러내는 건 최종적으로 가장 정확한 그一小부분을 확정하기 위해서지.',
+      },
+      {
+        role: 'user',
+        content: '最后要把这段包含 MCP 和采样配置的录音片段，作为片子里“下达任务”的原声直接切入。',
+        content_en: 'We need to take this recording clip containing the MCP and sampling configurations and cut it directly into the film as the original audio for the "issuing mission" part.',
+        content_ko: '마지막으로 MCP와 샘플링 설정이 포함된 이 녹음 조각을 영상에서 "임무 하달"하는 원음으로 직접 삽입할 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '没问题，虽然 Telegram 的压缩降低了原始质量，但作为核心叙事的引用来说，目前的版本完全够用。',
+        content_en: 'No problem. Even though Telegram compression lowered the original quality, the current version is perfectly sufficient as a reference for the core narrative.',
+        content_ko: '문제없어. Telegram의 압축이 원본 품질을 떨어뜨렸지만, 핵심 서사의 인용으로는 현재 버전으로 충분해.',
+      }
+    ],
   }
 ];
