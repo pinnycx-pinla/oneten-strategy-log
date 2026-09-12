@@ -5683,5 +5683,42 @@ export const LOG_DAYS = [
         content_ko: '확인했어, 누락된 사운드 채워서 모든 사운드 포함된 최종 버전 뽑았어.',
       }
     ],
+  },
+  {
+    date: '2026-09-11',
+    chapter: '203',
+    color: '#3b82f6',
+    title: '构建日志 2026-09-11 06:11',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '为了防止两个品牌定位互相拉低权重，决定面向本地小老板的业务使用 NEWHI 或新名字，不要挂 ONE TEN 的牌子。',
+        content_en: 'To prevent the two brand positions from diluting each other’s weight, we have decided to use NEWHI or another name for business targeting small local owners rather than using the ONE TEN branding.',
+        content_ko: '두 브랜드 포지셔닝이 서로 가중치를 끌어내리는 걸 막기 위해, 로컬 소상공인 대상 사업은 NEWHI나 새 이름을 쓰기로 했어. ONE TEN 간판은 달지 마.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '对，这样能把高端科技与本地服务的定位彻底剥离，避免品牌核心价值被稀释。',
+        content_en: 'Correct. That way, we can completely decouple high-end technology from local services and prevent our core brand value from being diluted.',
+        content_ko: '맞아, 이렇게 하면 하이엔드 테크와 로컬 서비스의 포지셔닝을 완전히 분리할 수 있어서 브랜드 핵심 가치가 희석되는 걸 피할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '询问是否需要在 Air 机上安装 ffmpeg 来处理字幕烧制的问题。',
+        content_en: 'Asking whether it is necessary to install ffmpeg on the Air machine to handle subtitle burning issues.',
+        content_ko: 'Air 머신에 ffmpeg를 설치해서 자막 굽는 문제를 처리해야 하는지 물어봤어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '其实目前已经通过 Python 逐帧渲染并叠加图片的方法跑通了，根本不需要去动底层环境。',
+        content_en: 'Actually, we have already successfully implemented this using a method of frame-by-frame rendering and image overlay via Python; there is no need to modify the underlying environment at all.',
+        content_ko: '사실 지금 이미 Python으로 프레임별 렌더링하고 이미지를 오버레이하는 방식으로 돌아가고 있어서, 굳이 하위 환경을 건드릴 필요가 없어.',
+      }
+    ],
   }
 ];
