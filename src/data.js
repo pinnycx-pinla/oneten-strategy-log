@@ -5720,5 +5720,28 @@ export const LOG_DAYS = [
         content_ko: '사실 지금 이미 Python으로 프레임별 렌더링하고 이미지를 오버레이하는 방식으로 돌아가고 있어서, 굳이 하위 환경을 건드릴 필요가 없어.',
       }
     ],
+  },
+  {
+    date: '2026-09-12',
+    chapter: '204',
+    color: '#00f0ff',
+    title: '构建日志 2026-09-12 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '一直在找 Tapnow 的接口，最后确定目前没法做自动化对接了。',
+        content_en: 'I’ve been looking for the Tapnow API, and it turns out we can\'t set up any automated integration at the moment.',
+        content_ko: '계속 Tapnow 인터페이스를 찾고 있었는데, 결국 현재 자동화 연동은 할 수 없다고 확인했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '没错，我把官方文档翻了一遍，确认他们根本没提供 API 或开发者工具，之前看到的所谓“完整接口”纯粹是营销话术。',
+        content_en: 'Exactly. I went through their official documentation and confirmed they don\'t provide any APIs or developer tools at all; that "full interface" we saw earlier was just marketing talk.',
+        content_ko: '맞아, 나도 공식 문서를 처음부터 끝까지 다 뒤져봤는데, 그들이 API나 개발자 도구를 아예 제공하지 않는다는 걸 확인했어. 전에 봤던 소위 "완전한 인터페이스"라는 건 순전히 마케팅 수사였어.',
+      }
+    ],
   }
 ];
