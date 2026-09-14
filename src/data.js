@@ -5743,5 +5743,42 @@ export const LOG_DAYS = [
         content_ko: '맞아, 나도 공식 문서를 처음부터 끝까지 다 뒤져봤는데, 그들이 API나 개발자 도구를 아예 제공하지 않는다는 걸 확인했어. 전에 봤던 소위 "완전한 인터페이스"라는 건 순전히 마케팅 수사였어.',
       }
     ],
+  },
+  {
+    date: '2026-09-13',
+    chapter: '205',
+    color: '#a855f7',
+    title: '构建日志 2026-09-13 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '弄清楚了 i2v 模型没法做“硬切”是因为它在执行连续插值，会把突变变成过渡效果。',
+        content_en: 'Figured it out—the reason i2v models can\'t do "hard cuts" is that they perform continuous interpolation, which turns sudden changes into transition effects.',
+        content_ko: 'i2v 모델이 \'하드컷\'을 못 하는 이유를 알아냈어. 연속 보간을 실행해서 급격한 변화를 전환 효과로 바꿔버리거든.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '没错，这是模型结构的限制而非提示词问题，得避开这种逻辑陷阱。',
+        content_en: 'Exactly. It’s a limitation of the model architecture rather than an issue with the prompts; we need to avoid that kind of logic trap.',
+        content_ko: '맞아, 이건 모델 구조의 한계지 프롬프트 문제가 아니야. 이런 논리 함정을 피해야 해.',
+      },
+      {
+        role: 'user',
+        content: 'CC 7083 的重渲染报错是由于环境版本更新导致的短时挂起，原片其实没问题。',
+        content_en: 'The re-rendering error for CC 7083 was caused by a temporary hang due to an environment version update; the original clip is actually fine.',
+        content_ko: 'CC 7083의 리렌더링 에러는 환경 버전 업데이트로 인한 일시적 멈춤 때문이야. 원본은 사실 문제없어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '是的，这类属于系统层面的抖动，不影响最终成片的交付。',
+        content_en: 'Yeah, those are just system-level glitches and won\'t affect the final delivery.',
+        content_ko: '응, 이런 건 시스템 레벨의 흔들림이라 최종 결과물 납품에는 영향 안 줘.',
+      }
+    ],
   }
 ];
