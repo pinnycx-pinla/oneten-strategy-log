@@ -5780,5 +5780,42 @@ export const LOG_DAYS = [
         content_ko: '응, 이런 건 시스템 레벨의 흔들림이라 최종 결과물 납품에는 영향 안 줘.',
       }
     ],
+  },
+  {
+    date: '2026-09-14',
+    chapter: '206',
+    color: '#f59e0b',
+    title: '构建日志 2026-09-14 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '目前多线并行、两台机器交叉操作太乱了，我们需要一个统一的框架来统筹这些散牌件。',
+        content_en: 'Right now, handling multiple lines while switching between two machines is too messy; we need a unified framework to coordinate all these scattered components.',
+        content_ko: '지금 여러 작업을 동시에 수행하면서 기기 두 대를 번갈아 쓰는 게 너무 복잡해. 이 파편화된 것들을 통합해서 관리할 수 있는 프레임워크가 필요해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '已经把你的核心组件整合进新方案了，这个架构能让你清晰管理所有账号和发布队列。',
+        content_en: 'I\'ve already integrated your core components into the new plan. This architecture will allow you to manage all accounts and posting queues clearly.',
+        content_ko: '네 핵심 요소들을 새 방안에 이미 통합했어. 이 구조로 모든 계정과 업로드 대기열을 명확하게 관리할 수 있을 거야.',
+      },
+      {
+        role: 'user',
+        content: 'Shorts v1 的剪辑效果和技术参数达标了吗？',
+        content_en: 'Do the editing results and technical specs for Shorts v1 meet the standards?',
+        content_ko: 'Shorts v1의 편집 효과랑 기술 사양이 기준에 부합해?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '画面已按规范处理以确保比例完整，BGM 也完成了符合 YouTube 标准的响度归一化。',
+        content_en: 'The visuals have been processed according to specifications to ensure correct aspect ratios, and the BGM has undergone loudness normalization in line with YouTube\'s standards.',
+        content_ko: '화면은 비율이 제대로 나오도록 규격에 맞춰 처리했고, BGM도 유튜브 표준에 맞는 라우드니스 노멀라이즈를 마쳤어.',
+      }
+    ],
   }
 ];
