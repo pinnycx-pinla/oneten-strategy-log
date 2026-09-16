@@ -5817,5 +5817,28 @@ export const LOG_DAYS = [
         content_ko: '화면은 비율이 제대로 나오도록 규격에 맞춰 처리했고, BGM도 유튜브 표준에 맞는 라우드니스 노멀라이즈를 마쳤어.',
       }
     ],
+  },
+  {
+    date: '2026-09-15',
+    chapter: '207',
+    color: '#10b981',
+    title: '构建日志 2026-09-15 06:06',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '搞清楚了 YouTube 直播的硬限制，网页版“网络摄像头”本质是直推原始流，不支持复杂的滤镜或多焦段切换。',
+        content_en: 'I figured out the hard limits for YouTube Live; the "Webcam" feature on the web version essentially streams the raw feed and doesn\'t support complex filters or multi-focal length switching.',
+        content_ko: '유튜브 라이브의 하드 제한을 파악했어. 웹 버전 \'웹캠\'은 본질적으로 원본 스트림을 그대로 송출하는 거라 복잡한 필터나 다초점 전환을 지원하지 않아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'mini',
+        header: 'MINI',
+        content: '没错，核心在于 0.5x/2.5x 是在切换手机不同的物理镜头，而非单纯的软件倍率。',
+        content_en: 'Exactly. The core issue is that 0.5x/2.5x involves switching between different physical lenses on the phone, rather than just being a software zoom level.',
+        content_ko: '맞아, 핵심은 0.5x/2.5x가 단순한 소프트웨어 배율이 아니라 휴대폰의 서로 다른 물리적 렌즈를 전환하는 거라는 거야.',
+      }
+    ],
   }
 ];
