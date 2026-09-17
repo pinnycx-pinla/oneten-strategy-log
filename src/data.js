@@ -5840,5 +5840,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 핵심은 0.5x/2.5x가 단순한 소프트웨어 배율이 아니라 휴대폰의 서로 다른 물리적 렌즈를 전환하는 거라는 거야.',
       }
     ],
+  },
+  {
+    date: '2026-09-16',
+    chapter: '208',
+    color: '#ef4444',
+    title: '构建日志 2026-09-16 06:04',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '字幕里混入了「wentian|」前缀，配音也把 IA10 之类的内部 ID 读出来了。',
+        content_en: 'The subtitles have a "wentian|" prefix mixed in, and the voiceover is also reading out internal IDs like IA10.',
+        content_ko: '자막에 \'wentian|\' 접두어가 섞여 들어갔고, 더빙도 IA10 같은 내부 ID를 읽어버렸어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，我会找准出处，把这两处干扰项从文本和 TTS 输入中全部剔除，并同步回补已发布的片段。',
+        content_en: 'Understood. I\'ll pinpoint the source, remove both of these interference items from the text and TTS input entirely, and retroactively fix the already-published segments as well.',
+        content_ko: '알겠어, 출처를 정확히 찾아서 이 두 가지 방해 요소를 텍스트와 TTS 입력에서 전부 제거하고, 이미 배포된 클립도 같이 보완할게.',
+      }
+    ],
   }
 ];
