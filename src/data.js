@@ -5863,5 +5863,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 출처를 정확히 찾아서 이 두 가지 방해 요소를 텍스트와 TTS 입력에서 전부 제거하고, 이미 배포된 클립도 같이 보완할게.',
       }
     ],
+  },
+  {
+    date: '2026-09-17',
+    chapter: '209',
+    color: '#3b82f6',
+    title: '构建日志 2026-09-17 06:10',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '为了保证高质量，我们决定用五个不同的模型（如 DeepSeek、Grok 等）去分别搞定五种风格迥异的曲子。',
+        content_en: 'To ensure high quality, we\'ve decided to use five different models (like DeepSeek, Grok, etc.) to each handle five distinctly different styles of songs.',
+        content_ko: '고품질을 보장하기 위해 우리는 다섯 개의 서로 다른 모델(예: DeepSeek, Grok 등)을 사용해서 각각 스타일이 완전히 다른 다섯 곡을 처리하기로 했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没问题，各取所需并并行产出是最稳的策略，我会盯着这五路模型的进度，确保内容对齐后进入 Suno 环节。',
+        content_en: 'No problem. Getting what each does best and producing in parallel is the most solid strategy. I\'ll keep an eye on the progress of these five model tracks and make sure the content is aligned before moving into the Suno phase.',
+        content_ko: '문제없어, 각자 필요한 걸 가져가서 병렬로 생산하는 게 가장 안정적인 전략이야. 내가 이 다섯 갈래 모델의 진행 상황을 지켜보면서 내용 정렬이 끝나면 Suno 단계로 넘어가도록 할게.',
+      },
+      {
+        role: 'user',
+        content: '另外要把“文天台”的抖音推广任务按三套不同逻辑和合规口径跑通。',
+        content_en: 'Also, we need to get the "ONE TEN Stage" Douyin promotion task running smoothly according to three different sets of logic and compliance standards.',
+        content_ko: '그리고 "문천대"의 더우인 홍보 작업을 세 가지 다른 논리와 컴플라이언스 기준에 따라 돌려야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，工单已领，我会严格把控前 3 秒品牌词点位以及录屏、玩法、切片三个维度的剪辑要求。',
+        content_en: 'Got it. Ticket claimed. I\'ll strictly control the brand word placement in the first 3 seconds, as well as the editing requirements across the three dimensions: screen recording, gameplay, and clips.',
+        content_ko: '알겠어, 워크오더 받았어. 내가 첫 3초 브랜드 키워드 포인트와 화면 녹화, 플레이 방식, 클립 세 가지 차원의 편집 요구사항을 엄격하게 관리할게.',
+      }
+    ],
   }
 ];
