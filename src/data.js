@@ -5937,5 +5937,28 @@ export const LOG_DAYS = [
         content_ko: '맞아, 기반 연결이 안정되니까 이후 콘텐츠 배포 시리즈를 시스템에 매끄럽게 맡길 수 있겠어.',
       }
     ],
+  },
+  {
+    date: '2026-09-19',
+    chapter: '211',
+    color: '#a855f7',
+    title: '构建日志 2026-09-19 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '后续内容确认转到 @onetenlab 发送，并把 Telegram Bot 严禁同时开启两个 getUpdates 导致消息丢失的坑位记入长期记忆。',
+        content_en: 'Forward the follow-up content confirmation to @onetenlab, and add the pitfall of Telegram Bots losing messages due to running two getUpdates simultaneously into long-term memory.',
+        content_ko: '후속 내용 확인은 @onetenlab으로 보내고, Telegram Bot에서 getUpdates를 두 개 동시에 켜서 메시지가 유실되는 문제를 장기 기억에 기록해 둬.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没问题，核心决策和技术特征已同步进 Memory，下次遇到“发送成功但收不到”的症状时会自动触发此排查逻辑。',
+        content_en: 'No problem, core decisions and technical features have been synced into Memory. This troubleshooting logic will be triggered automatically next time "sent successfully but not received" symptoms occur.',
+        content_ko: '알겠어, 핵심 결정과 기술적 특징을 Memory에 동기화했으니까, 다음에 \'전송 성공했지만 못 받음\' 증상이 나타나면 자동으로 이 점검 로직이 실행될 거야.',
+      }
+    ],
   }
 ];
