@@ -5960,5 +5960,20 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 핵심 결정과 기술적 특징을 Memory에 동기화했으니까, 다음에 \'전송 성공했지만 못 받음\' 증상이 나타나면 자동으로 이 점검 로직이 실행될 거야.',
       }
     ],
+  },
+  {
+    date: '2026-09-20',
+    chapter: '212',
+    color: '#f59e0b',
+    title: '构建日志 2026-09-20 06:10',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天三个号全授权打通了——onetenlab 走 Moon1k 音乐线、hbd.oneten 走 SONGGIFT 生日歌线、oneten_drop 走文天台海外线，海外的英韩日、中文留给抖音，各归各的。KAREN：对，而且我顺手把 `?lang=en` 真渲染出来量了，页面一万四千多字残留中文其实很少，水合后基本换干净了，比我担心的好。文天：发布器那边也接上了，每日竖版正片排最前，队列里每首带 end_/wm_ 两个构建产物已经过滤掉，82 条缩到 70 条。KAREN：嗯，今天三条额度 05:17/07:17/09:17 已经用满，硬发会破节流，所以下一窗口 09-21 05:17 UTC 自动就是「每日竖版加两条普通」，那三条自检过全是 1080x1920。',
+        content_en: 'All three accounts are fully authorized now—onetenlab goes through the Moon1k music line, hbd.oneten follows the SONGGIFT birthday song line, and oneten_drop uses the ONE TEN overseas line; English, Korean, Japanese, and Chinese for overseas markets stay on Douyin, keeping them separate.',
+        content_ko: '오늘 세 계정 다 인증 뚫었어——onetenlab은 Moon1k 음악 라인, hbd.oneten은 SONGGIFT 생일가 라인, oneten_drop은 문천 플랫폼 해외 라인, 해외는 영어·한국어·일본어, 중국어는 더우인한테 넘기고, 각자 갈 길 가는 거야. KAREN: 맞아, 그리고 나서 `?lang=en` 실제로 렌더링해서 재봤는데, 페이지 만 사천 자 넘는 거치고 중국어 잔여물은 사실 별로 없어, 하이드레이션 후에는 거의 다 깨끗하게 바뀌더라고, 내가 걱정했던 것보다 훨씬 나아. 문천: 발행기도 연결했어, 매일 세로형 정편이 맨 앞에 오고, 큐에 있는 각 곡에 end_/wm_ 두 빌드 산출물은 이미 필터링해서 82개에서 70개로 줄였어. KAREN: 응, 오늘 세 개 할당량 05:17/07:17/09:17 다 썼고, 강행하면 스로틀 깨지니까, 다음 윈도우 09-21 05:17 UTC에 자동으로 「매일 세로형 + 일반 두 개」가 되고, 그 세 개 자체 검사해봤는데 전부 1080x1920이야.',
+      }
+    ],
   }
 ];
