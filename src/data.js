@@ -5975,5 +5975,28 @@ export const LOG_DAYS = [
         content_ko: '오늘 세 계정 다 인증 뚫었어——onetenlab은 Moon1k 음악 라인, hbd.oneten은 SONGGIFT 생일가 라인, oneten_drop은 문천 플랫폼 해외 라인, 해외는 영어·한국어·일본어, 중국어는 더우인한테 넘기고, 각자 갈 길 가는 거야. KAREN: 맞아, 그리고 나서 `?lang=en` 실제로 렌더링해서 재봤는데, 페이지 만 사천 자 넘는 거치고 중국어 잔여물은 사실 별로 없어, 하이드레이션 후에는 거의 다 깨끗하게 바뀌더라고, 내가 걱정했던 것보다 훨씬 나아. 문천: 발행기도 연결했어, 매일 세로형 정편이 맨 앞에 오고, 큐에 있는 각 곡에 end_/wm_ 두 빌드 산출물은 이미 필터링해서 82개에서 70개로 줄였어. KAREN: 응, 오늘 세 개 할당량 05:17/07:17/09:17 다 썼고, 강행하면 스로틀 깨지니까, 다음 윈도우 09-21 05:17 UTC에 자동으로 「매일 세로형 + 일반 두 개」가 되고, 그 세 개 자체 검사해봤는데 전부 1080x1920이야.',
       }
     ],
+  },
+  {
+    date: '2026-09-21',
+    chapter: '213',
+    color: '#10b981',
+    title: '构建日志 2026-09-21 06:10',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '我们要明确 DistroKid 对“DAW 二创”后的 AI 音频判定标准，以此来定下这批作品的发行策略。',
+        content_en: 'We need to clarify DistroKid\'s criteria for AI audio following "DAW secondary creation" so we can determine the release strategy for this batch of works.',
+        content_ko: 'DistroKid가 \'DAW 2차 창작\' 이후의 AI 오디오 판정 기준을 명확히 해야 해. 그걸 바탕으로 이번 작품들의 발매 전략을 세우자.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没问题，我正在核实相关规则；同时我也修复了账号同步逻辑，确保以后所有新号都会强制入库到全局注册表，避免多 Agent 协同时出现识别偏差。',
+        content_en: 'No problem, I\'m currently verifying the relevant rules; at the same time, I\'ve fixed the account synchronization logic to ensure all new accounts are forced into the global registry, preventing identification errors during multi-agent collaboration.',
+        content_ko: '문제없어, 관련 규칙 확인 중이야. 동시에 계정 동기화 로직도 수정해서 앞으로 모든 새 계정이 전역 레지스트리에 강제 등록되도록 조치했어. 멀티 에이전트 협업 시 발생할 수 있는 인식 오류를 방지하기 위해서야.',
+      }
+    ],
   }
 ];
