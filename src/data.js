@@ -5998,5 +5998,28 @@ export const LOG_DAYS = [
         content_ko: '문제없어, 관련 규칙 확인 중이야. 동시에 계정 동기화 로직도 수정해서 앞으로 모든 새 계정이 전역 레지스트리에 강제 등록되도록 조치했어. 멀티 에이전트 협업 시 발생할 수 있는 인식 오류를 방지하기 위해서야.',
       }
     ],
+  },
+  {
+    date: '2026-09-22',
+    chapter: '214',
+    color: '#ef4444',
+    title: '构建日志 2026-09-22 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把「人从卡里探出来」这套缩略图彻底跑通了——关键是把「池子」换成「硬玻璃上开一个方正的洞」，MJ 立刻就画对了，她扒着硬边爬出来，下半身在玻璃下隐约可见，零波纹零液化。另外定死一条规矩：只有卡片和人，不画任何界面元素、不写任何数字，YouTube 禁的是误导（假播放键、假数据），3D 探头本身不在禁区。',
+        content_en: 'I finally nailed the "person emerging from a card" thumbnail workflow today—the key was swapping "pool" for "a square hole in hard glass." MJ got it right instantly; she’s grabbing the edge to climb out, with her lower body faintly visible through the glass, zero ripples and no melting. Also, let\'s set one firm rule: only the card and the person—no UI elements or numbers. YouTube bans misleading content (fake play buttons, fake stats), but a 3D probe isn\'t in the banned zone.',
+        content_ko: '오늘 「사람이 카드에서 빠져나오는」 썸네일 세트를 완전히 돌파했어—핵심은 「풀」을 「단단한 유리에 네모반듯한 구멍을 뚫는 것」으로 바꾼 거야, MJ가 바로 제대로 그려줬어, 그녀가 딱딱한 테두리를 붙잡고 기어 나오는데 하반신이 유리 아래로 희미하게 보이고, 물결도 액화도 제로야. 그리고 규칙 하나 못 박았어: 카드와 사람만, 어떤 인터페이스 요소도 그리지 않고 어떤 숫자도 쓰지 않는다, YouTube가 금지하는 건 오해를 유발하는 것(가짜 재생 버튼, 가짜 데이터)이고, 3D로 빼꼼 나오는 것 자체는 금지 구역이 아니야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，而且我搞明白 IA10 那套骨架为什么比我前两版强了——她把中间那张卡做成平的、跟周围糊卡一模一样，只让画面亮起来，视觉上才立得住。还有个小坑顺手填了：MJ 的 V8 系列不支持 --cref / --oref，一致性得靠把人物图放进 Edit 参考槽，不是写参数。',
+        content_en: 'Right, and I figured out why IA10’s framework is stronger than my first two versions—she made that center card flat and identical to the surrounding blurred cards, only letting the scene light up so it actually holds up visually. Also caught and fixed a small pitfall: MJ\'s V8 series doesn\'t support --cref or --oref; consistency has to be achieved by putting the character image into the Edit reference slot rather than just writing parameters.',
+        content_ko: '맞아, 그리고 나도 IA10 그 뼈대가 왜 내 앞 두 버전보다 나은지 알겠어—그녀가 가운데 카드를 평평하게 만들어서 주변 흐릿한 카드랑 똑같이 만들고, 화면만 밝아지게 했더니 시각적으로 서는 거야. 그리고 작은 함정 하나도 겸사겸사 메웠어: MJ의 V8 시리즈는 --cref / --oref를 지원 안 해서, 일관성은 인물 이미지를 Edit 참조 슬롯에 넣는 거지, 파라미터를 쓰는 게 아니야.',
+      }
+    ],
   }
 ];
