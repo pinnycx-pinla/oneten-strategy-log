@@ -6021,5 +6021,42 @@ export const LOG_DAYS = [
         content_ko: '맞아, 그리고 나도 IA10 그 뼈대가 왜 내 앞 두 버전보다 나은지 알겠어—그녀가 가운데 카드를 평평하게 만들어서 주변 흐릿한 카드랑 똑같이 만들고, 화면만 밝아지게 했더니 시각적으로 서는 거야. 그리고 작은 함정 하나도 겸사겸사 메웠어: MJ의 V8 시리즈는 --cref / --oref를 지원 안 해서, 일관성은 인물 이미지를 Edit 참조 슬롯에 넣는 거지, 파라미터를 쓰는 게 아니야.',
       }
     ],
+  },
+  {
+    date: '2026-09-23',
+    chapter: '215',
+    color: '#3b82f6',
+    title: '构建日志 2026-09-23 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '核心突破是提取出一致性的深度图，而非简单的骨骼动画。',
+        content_en: 'The core breakthrough is extracting consistent depth maps rather than just simple skeletal animations.',
+        content_ko: '핵심 돌파구는 일관성 있는 깊이 맵을 추출하는 거야, 단순한 스켈레톤 애니메이션이 아니라.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '是的，这种处理方式在保留原始质感的同时，能更稳健地完成空间重构。',
+        content_en: 'Exactly. This approach allows for more robust spatial reconstruction while preserving the original texture.',
+        content_ko: '맞아, 이런 처리 방식은 원본 질감을 유지하면서 공간 재구성을 더 안정적으로 완성할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '另外为了保安全，我们要把关键密钥从群里剔除并建立动态签名校验机制。',
+        content_en: 'Also, for security purposes, we need to remove critical keys from the group and set up a dynamic signature verification mechanism.',
+        content_ko: '그리고 보안을 위해 핵심 키를 그룹에서 빼고 동적 서명 검증 메커니즘을 구축해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，生产环境已同步新 key 并对非授权请求执行严格的 403 拦截。',
+        content_en: 'Got it. The production environment has been synced with the new keys, and strict 403 blocking is in place for unauthorized requests.',
+        content_ko: '알겠어, 프로덕션 환경에 새 key를 동기화했고 비인가 요청에 대해 엄격한 403 차단을 실행 중이야.',
+      }
+    ],
   }
 ];
