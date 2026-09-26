@@ -6081,5 +6081,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 기조 확실히 잡으니까 앞으로 진행이 더 수월해지겠다; 그리고 Codex 이미지 생성 쿼터가 급해져서 오늘 밤엔 LibTV/MJ 프로세스로 전환해서 제한을 피해야 해.',
       }
     ],
+  },
+  {
+    date: '2026-09-25',
+    chapter: '217',
+    color: '#a855f7',
+    title: '构建日志 2026-09-25 06:07',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天终于搞明白为什么画风老飘成写实了——v1 那批提示词里一个画风词都没有，全靠参考图锚点，结果我加的那整段 ARRI 摄影机镜头语言反而把模型往写实那边拽，力气比锚点图还大。改法不是删镜头语言，而是补画风锁让两边平衡。',
+        content_en: 'I finally figured out why the art style kept drifting toward realism today—there wasn\'t a single style keyword in that batch of v1 prompts, so it relied entirely on reference image anchors. However, that whole block of ARRI camera cinematography language I added actually pulled the model toward realism even harder than the anchor images did. The fix isn\'t to remove the camera language, but to add a "style lock" to balance both sides.',
+        content_ko: '오늘 드디어 왜 화풍이 자꾸 실사로 튀는지 이해했다 — v1 그 프롬프트 묶음엔 화풍 단어가 하나도 없었고, 전부 참고 이미지 앵커에 의존하고 있었는데, 내가 추가한 그 ARRI 카메라 렌즈 언어 전체가 오히려 모델을 실사 쪽으로 끌어당긴 거였어. 힘이 앵커 이미지보다 더 셌어. 고치는 방법은 렌즈 언어를 삭제하는 게 아니라 화풍 잠금을 보충해서 양쪽을 균형 맞추는 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，这跟赛璐璐提示词包对上了，卡里那条"不要写实词"是同一件事的完整版——85mm、bokeh、shot on 一律删，光影改用 hard rim light、two-tone shadow 这种动画词。我先按写实 CG 方向跑机甲草图，六条全是我自己定的造型，不挂参考图，颜色可以直接写进文字，省得跟锚点打架。',
+        content_en: 'Right, that aligns with the cel-shaded prompt pack. That "no realism words" part in Kari\'s is just the full version of that same concept—remove 85mm, bokeh, and shot on entirely, and replace lighting effects with anime terms like hard rim light or two-tone shadow. I’m running mecha drafts using a realistic CG direction; all six designs are mine, no reference images attached, and colors are put directly into the text to avoid clashing with the anchors.',
+        content_ko: '맞아, 이건 셀룰로이드 프롬프트 팩이랑 일치해. 카드에 있는 "실사 단어 금지"가 같은 얘기의 완전판이야 — 85mm, bokeh, shot on 전부 삭제하고, 광영은 hard rim light, two-tone shadow 같은 애니메이션 용어로 바꿔. 나는 먼저 실사 CG 방향으로 메카 스케치를 돌릴 건데, 여섯 개 전부 내가 직접 정한 조형이고 참고 이미지 안 붙이고, 색은 바로 텍스트에 쓸 수 있어서 앵커랑 싸울 필요가 없어.',
+      },
+      {
+        role: 'user',
+        content: '还有 Flow 那个自动出图，结果图得用 alt="Option N" 抓，我原来按尺寸筛结果把老板上传的参考图当成果抓回来了，那张正好 964×1280。',
+        content_en: 'Also, for that auto-generation in Flow, you have to grab them using alt="Option N." I was filtering by size and ended up grabbing the boss\'s uploaded reference image as a result because it happened to be exactly 964x1280.',
+        content_ko: '그리고 Flow 그 자동 이미지 생성, 결과 이미지를 alt="Option N"으로 잡아야 해. 나 원래 사이즈로 필터링했다가 사장님이 업로드한 참고 이미지를 결과물로 잘못 가져왔어. 그게 마침 964×1280이었거든.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '这条直接修掉了我刚才的 bug。Flow 不认 --niji / --sref，参数全删只留文字，锁词原样保留就行。',
+        content_en: 'That just fixed my bug from earlier. Flow doesn\'t recognize --niji or --sref; strip all parameters and keep only the text, keeping the locked keywords exactly as they are.',
+        content_ko: '이건 방금 내 버그를 바로 고쳐줬네. Flow는 --niji / --sref를 인식 못 해. 파라미터 전부 삭제하고 텍스트만 남기면 돼. 잠금 단어는 그대로 유지하면 되고.',
+      }
+    ],
   }
 ];
