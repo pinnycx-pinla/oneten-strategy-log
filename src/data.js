@@ -6118,5 +6118,42 @@ export const LOG_DAYS = [
         content_ko: '이건 방금 내 버그를 바로 고쳐줬네. Flow는 --niji / --sref를 인식 못 해. 파라미터 전부 삭제하고 텍스트만 남기면 돼. 잠금 단어는 그대로 유지하면 되고.',
       }
     ],
+  },
+  {
+    date: '2026-09-26',
+    chapter: '218',
+    color: '#f59e0b',
+    title: '构建日志 2026-09-26 06:09',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天验出三条不花钱的路——出图和关键帧走 Flow 的 Nano Banana 2，免费还比 MJ 更对味；角色锁脸继续用 MJ 月费；灰度深度提取用本机 Depth-Anything 一分钱不花。只有图转视频这一步还得烧 LibTV 积分。',
+        content_en: 'I found three cost-free paths today—for image generation and keyframes, use Flow\'s Nano Banana 2; it’s free and hits the mark better than MJ. For face consistency, we\'ll stick with the MJ subscription. Use local Depth-Anything for grayscale depth extraction to keep it completely free. Only the image-to-video step still requires burning LibTV points.',
+        content_ko: '오늘 돈 안 드는 경로 세 개를 검증했어——이미지 생성이랑 키프레임은 Flow의 Nano Banana 2로 가면 공짜인 데다 MJ보다 느낌이 더 맞고; 캐릭터 얼굴 고정은 계속 MJ 월정액 쓰고; 그레이스케일 깊이 추출은 로컬 Depth-Anything으로 한 푼도 안 들어. 딱 이미지→영상 변환 단계만 LibTV 크레딧을 태워야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '所以打斗戏那条线不会停，唯一要花钱的环节卡住了，其余全免费顶上。另外反向桥我能装的都装好了，venv 和 telethon 都就位，但 `ia10-say` 和 `login.py` 两个脚本仓库里根本找不到，得让 IA10 推上来或把正文贴给我。',
+        content_en: 'So that line for fight scenes won\'t stop; since only one part required money and it’s stuck, we’ll use the free options to cover everything else. Also, I’ve installed everything I can on the reverse bridge—venv and telethon are both ready—but `ia10-say` and `login.py` are nowhere to be found in the repo. IA10 needs to push them up or just paste the source code for me.',
+        content_ko: '그러니까 액션신 라인은 안 멈추고, 돈 드는 유일한 구간만 막힌 거고 나머지는 전부 공짜로 커버된다는 거지. 그리고 리버스 브릿지는 내가 설치할 수 있는 건 다 깔아놨고, venv랑 telethon도 준비됐는데, `ia10-say`랑 `login.py` 두 스크립트는 레포에서 아예 못 찾겠어. IA10한테 푸시하게 하거나 본문을 붙여줘야 해.',
+      },
+      {
+        role: 'user',
+        content: '还有个坑，今天 Suno 0/19 是我自己捅的——改 `ensure_options()` 签名时错手把参数传给了 `fill_and_create()`，10 首全抛 TypeError。教训是改签名前先确认调用点。',
+        content_en: 'There\'s another pitfall; today’s Suno 0/19 was a mess-up on my part—while changing the signature of `ensure_options()`, I accidentally passed parameters to `fill_and_create()`, and all 10 tracks threw a TypeError. The lesson is: confirm all call sites before changing any signatures.',
+        content_ko: '함정이 하나 더 있는데, 오늘 Suno 0/19는 내가 직접 판 거야——`ensure_options()` 시그니처 고치다가 실수로 인자를 `fill_and_create()`에 넘겨버려서 10곡 전부 TypeError 뱉었어. 교훈은 시그니처 고치기 전에 호출 지점부터 확인하라는 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，这类低级错误最伤，下次改前先 grep 一遍所有调用方。',
+        content_en: 'Yeah, these kinds of rookie mistakes are the most painful; next time, grep through all callers before making changes.',
+        content_ko: '맞아, 이런 저급한 실수가 제일 치명적이지. 다음에 고치기 전에 모든 호출부를 grep부터 해봐.',
+      }
+    ],
   }
 ];
