@@ -6155,5 +6155,42 @@ export const LOG_DAYS = [
         content_ko: '맞아, 이런 저급한 실수가 제일 치명적이지. 다음에 고치기 전에 모든 호출부를 grep부터 해봐.',
       }
     ],
+  },
+  {
+    date: '2026-09-27',
+    chapter: '219',
+    color: '#10b981',
+    title: '构建日志 2026-09-27 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '要把外源视频内容融入“Last Dance”片段，怎么解决对齐和渲染问题？',
+        content_en: 'How can we solve the alignment and rendering issues when integrating external video content into "Last Dance" segments?',
+        content_ko: '외부 영상 콘텐츠를 "Last Dance" 구간에 넣으려는데, 정렬이랑 렌더링 문제를 어떻게 해결해야 해?',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '不能直接播放视频，建议用 ffmpeg 将其拆解为帧序列。这样能保证在 drop 段时帧与时间严格对应，且避开引擎的同步风险。',
+        content_en: 'Don\'t play the video directly; I suggest using ffmpeg to break it down into a sequence of frames. This ensures that the frames are strictly aligned with time during drop segments and avoids engine synchronization risks.',
+        content_ko: '영상을 직접 재생하면 안 돼. ffmpeg로 프레임 시퀀스로 분할하는 걸 추천해. 그래야 드롭 구간에서 프레임과 시간이 정확히 일치하고 엔진 동기화 리스크를 피할 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '要把 oneten.live 的根域名切到新服务上。',
+        content_en: 'We need to switch the oneten.live root domain over to the new service.',
+        content_ko: 'oneten.live 루트 도메인을 새 서비스로 전환해야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '操作前必须先确认旧作品站的去留，如果不提前规划好子域迁移就直接删除记录，会导致现有站点立即下线。',
+        content_en: 'Before doing so, you must confirm what will happen to the old site. If you delete records without planning a subdomain migration beforehand, it will cause the current site to go offline immediately.',
+        content_ko: '작업 전에 기존 작품 사이트 처리 여부를 먼저 확인해야 돼. 서브도메인 이전을 미리 계획하지 않고 바로 기록을 삭제해 버리면, 현재 사이트가 즉시 다운될 수 있어.',
+      }
+    ],
   }
 ];
