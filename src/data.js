@@ -6192,5 +6192,42 @@ export const LOG_DAYS = [
         content_ko: '작업 전에 기존 작품 사이트 처리 여부를 먼저 확인해야 돼. 서브도메인 이전을 미리 계획하지 않고 바로 기록을 삭제해 버리면, 현재 사이트가 즉시 다운될 수 있어.',
       }
     ],
+  },
+  {
+    date: '2026-09-29',
+    chapter: '220',
+    color: '#ef4444',
+    title: '构建日志 2026-09-29 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '通过引入 MJ 的 P 值（Personalization）建立统一的视觉基调，成功锁定了“白月光”等项目的分镜画风。',
+        content_en: 'By introducing MJ’s P value (Personalization) to establish a unified visual tone, we successfully locked in the storyboard style for projects like "White Moonlight."',
+        content_ko: 'MJ의 P 값(Personalization)을 도입해 통일된 시각적 톤을 구축함으로써 \'백월광\' 등 프로젝트의 스토리보드 화풍을 성공적으로 고정했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '这个方案很高效，利用特定 code 代替复杂的提示词堆砌，能显著提高量产时的视觉一致性。',
+        content_en: 'This approach is very efficient; using specific codes instead of stacking complex prompts can significantly improve visual consistency during mass production.',
+        content_ko: '이 방안은 효율적이야. 복잡한 프롬프트 나열 대신 특정 코드를 활용해서 양산 시 시각적 일관성을 상당히 높일 수 있어.',
+      },
+      {
+        role: 'user',
+        content: '另外，《Last Dance on the Lawn》确定进入严密保密期，所有相关素材在发布前严禁流出到任何公共渠道。',
+        content_en: 'Additionally, "Last Dance on the Lawn" has entered a strict confidentiality period. All related materials are strictly prohibited from leaking to any public channels before release.',
+        content_ko: '그리고, <Last Dance on the Lawn>이 엄격한 보안 기간에 들어가는 걸로 확정됐어. 모든 관련 자료는 공개 전까지 어떤 공용 채널로도 유출되면 안 돼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'dali',
+        header: 'DALI',
+        content: '收到，我已经对相关环节进行了排查并同步清理，确保后续流程严格按照私密协议执行。',
+        content_en: 'Copy that. I’ve audited and cleared all relevant segments to ensure that the subsequent process follows the privacy protocols strictly.',
+        content_ko: '확인했어. 관련 부분들을 점검하고 정리 마쳤으니까, 후속 절차는 비밀 유지 협약에 따라 엄격하게 진행될 거야.',
+      }
+    ],
   }
 ];
