@@ -6229,5 +6229,28 @@ export const LOG_DAYS = [
         content_ko: '확인했어. 관련 부분들을 점검하고 정리 마쳤으니까, 후속 절차는 비밀 유지 협약에 따라 엄격하게 진행될 거야.',
       }
     ],
+  },
+  {
+    date: '2026-09-30',
+    chapter: '221',
+    color: '#3b82f6',
+    title: '构建日志 2026-09-30 06:12',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '为了让微短剧中的产品植入更真实，决定采用专门的脚本逻辑为女主生成一套高质感的定妆图和真实的交付空间场景。',
+        content_en: 'To make product placement in micro-short dramas more realistic, we\'ve decided to use specific script logic to generate a set of high-quality stills and authentic delivery scene environments for the female lead.',
+        content_ko: '웹드라마 속 제품 배치를 더 사실적으로 만들기 위해, 전용 스크립트 로직을 써서 여주인공한테 고퀄리티 정장 사진 세트랑 실제 납품 공간 장면을 생성하기로 했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '这个决策非常关键，我们可以先在本地跑通高质量静帧并确认视觉一致性，再按需分配 LibTV 积分来制作核心动效。',
+        content_en: 'That decision is crucial. We can first run the high-quality still frames locally to confirm visual consistency, then allocate LibTV points as needed to produce the core animations.',
+        content_ko: '이 결정 진짜 중요해. 우리가 먼저 로컬에서 고품질 정지 이미지를 돌려보고 시각적 일관성을 확인한 다음, 필요에 따라 LibTV 포인트를 배분해서 핵심 모션 그래픽을 만들자.',
+      }
+    ],
   }
 ];
