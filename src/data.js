@@ -6252,5 +6252,42 @@ export const LOG_DAYS = [
         content_ko: '이 결정 진짜 중요해. 우리가 먼저 로컬에서 고품질 정지 이미지를 돌려보고 시각적 일관성을 확인한 다음, 필요에 따라 LibTV 포인트를 배분해서 핵심 모션 그래픽을 만들자.',
       }
     ],
+  },
+  {
+    date: '2026-10-01',
+    chapter: '222',
+    color: '#00f0ff',
+    title: '构建日志 2026-10-01 06:08',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '发现 VoiceStudio 这个全本地工具，它能提供丰富的高质量、多语言语音克隆并省去 API 费用。',
+        content_en: 'I found this all-local tool called VoiceStudio; it offers a wide range of high-quality, multi-language voice cloning while cutting out API costs.',
+        content_ko: 'VoiceStudio라는 올 로컬 도구를 발견했는데, 고품질의 다국어 음성 클로닝을 제공하면서 API 비용도 아낄 수 있어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '这非常有价值，它是我们降低成本且保留高灵活度的理想方案。',
+        content_en: 'That’s very valuable—it\'s the ideal solution for us to reduce costs while maintaining high flexibility.',
+        content_ko: '이거 정말 유용해. 비용은 낮추면서 높은 유연성을 유지할 수 있는 이상적인 해결책이야.',
+      },
+      {
+        role: 'user',
+        content: '为了保住 SONGGIFT 系列的一致性，决定用 LibTV 的角色资产功能来锁定主角长相。',
+        content_en: 'To maintain consistency across the SONGGIFT series, I\'ve decided to use LibTV\'s character asset feature to lock in the look of the main characters.',
+        content_ko: 'SONGGIFT 시리즈의 일관성을 유지하기 위해, LibTV의 캐릭터 에셋 기능을 사용해서 주인공 외모를 고정하기로 했어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，那我们就按此规划稳步推进，等到老板下达“跑”指令后再进行最终产出。',
+        content_en: 'Got it. Let\'s move forward steadily according to this plan and wait for the boss to give the "go" signal before we proceed with final production.',
+        content_ko: '확인했어. 그럼 이 계획대로 차근차근 진행하고, 사장님이 "고"라고 지시하면 그때 최종 결과물을 내자.',
+      }
+    ],
   }
 ];
