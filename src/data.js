@@ -6377,5 +6377,42 @@ export const LOG_DAYS = [
         content_ko: '알았어, 내가 바로 이 컴퓨터에서 어떤 스크립트랑 예약 작업이 Codex로 글 쓰는지 자체 점검할게. 점검 끝나면 중지하고 목록 단톡방에 올릴게. 그전까지 이미지 생성은 최대한 적게 돌릴게.',
       }
     ],
+  },
+  {
+    date: '2026-10-04',
+    chapter: '225',
+    color: '#10b981',
+    title: '构建日志 2026-10-04 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天先把 B 批 29 条现成名字歌排到 A 批前面，A 批拉到 4 条就停了，免得两边同时向服务器要片；另外老板把剧情广告的调子从「蒙眼惊喜」改成首尔普通约会，宽松卫衣、小蛋糕、一根蜡烛，不要夸张反应。',
+        content_en: 'Today, let\'s first move the 29 ready-made name songs from Batch B ahead of Batch A. Batch A stops at 4 tracks, so both sides won\'t request videos from the server at the same time. Also, the boss changed the tone of the story ad from "blindfold surprise" to an ordinary Seoul date — loose hoodie, small cake, one candle, no exaggerated reactions.',
+        content_ko: '오늘은 먼저 B배치 29개 완성된 이름 노래를 A배치 앞으로 돌리고, A배치는 4개까지 뽑고 멈춰, 양쪽이 동시에 서버에 영상 요청하는 걸 막자; 그리고 사장님이 스토리 광고 톤을 「눈가린 서프라이즈」에서 서울 평범한 데이트로 바꿨대, 넉넉한 후드티, 작은 케이크, 초 하나, 과장된 반응 없이.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，剧本一改，女主名字也统一成 Mia，站里那首 Warm Acoustic 正好对上，广告配乐就先拿它当旧提示词对照。Mia 五单只下了第一单就按你要求停了，等 IA10 的 V6 新卡再新旧各出一版盲听。',
+        content_en: 'Right. Once the script changes, the female lead\'s name is unified as Mia too. The track Warm Acoustic on the site matches perfectly, so for the ad music, let\'s use it first as a comparison against the old prompt. For Mia\'s five orders, only the first one was placed and then stopped as you requested. We\'ll wait for the IA10 V6 new card, then put out one version each of the old and new for a blind listen.',
+        content_ko: '응, 대본 바뀌면 여주 이름도 Mia로 통일하고, 사이트에 있는 Warm Acoustic이 딱 맞으니까, 광고 배경음악은 일단 그걸로 예전 프롬프트 대조용으로 쓰자. Mia 5건은 첫 건만 넣고 네 요청대로 멈췄어, IA10의 V6 새 카드 나오면 신구 각각 한 버전씩 블라인드 테스트로 내보내자.',
+      },
+      {
+        role: 'user',
+        content: '审片那边也定了：第 2 条投电视和 30 秒总览可以直接给老板，第 1、3 条要重录落地页，第 4 条整条按新文案重录，录屏一律拦掉非 GET 的 /api/ 请求，不真下单。',
+        content_en: 'The review side is settled too: for item 2, the TV placement and 30-second overview can go straight to the boss. Items 1 and 3 need the landing page re-recorded. Item 4 needs to be fully re-recorded with the new copy. For screen recordings, block all non-GET /api/ requests across the board — no real orders.',
+        content_ko: '검수 쪽도 정해졌어: 2번은 TV랑 30초 총람 바로 사장님한테 줄 수 있고, 1번, 3번은 랜딩페이지 다시 녹음해야 하고, 4번은 전체를 새 카피로 다시 녹음해야 하고, 화면 녹화는 전부 GET이 아닌 /api/ 요청은 막아, 실제로 주문하지 마.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，重录完覆盖到 handoff 再回你，老板点头之后才轮发各平台。',
+        content_en: 'Got it. After re-recording, I\'ll overwrite it into handoff and get back to you. Only after the boss gives the nod do we move on to publishing across platforms.',
+        content_ko: '알겠어, 재녹음 끝나고 handoff에 덮어쓴 다음에 다시 알려줄게, 사장님이 OK한 다음에야 각 플랫폼에 올리는 거야.',
+      }
+    ],
   }
 ];
