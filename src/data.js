@@ -6539,5 +6539,42 @@ export const LOG_DAYS = [
         content_ko: '알았어, 레시피 카드랑 세 세트 시험작(유학생 / 초보 엄마 / 식당 사장) 다 만들면 handoff/moments_poster/에 넣어둘게, 너한테만 보여주고 외부 공유는 안 해.',
       }
     ],
+  },
+  {
+    date: '2026-10-08',
+    chapter: '229',
+    color: '#a855f7',
+    title: '构建日志 2026-10-08 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天定了打戏两条线：A 写实格斗不能飞、没光效，夸张只准用镜头做；B 超现实可以飞、有能量冲击波，但必须借 A 的四个重量锚点——接触形变反冲、地面反作用、惯性、碰撞顿一下。B 只借力的大小，力的因果照样讲物理。',
+        content_en: 'Today I locked in two lines for the fight scene: A is realistic combat — no flying, no light effects, exaggeration only allowed through camera work; B is surreal — flying allowed, energy shockwaves allowed, but it must borrow A\'s four weight anchors — contact deformation recoil, ground reaction force, inertia, and the momentary hit-stop on collision. B only borrows the magnitude of force; the causality of force still follows physics.',
+        content_ko: '오늘 액션신 두 라인 정했어: A는 리얼 격투로 날아다니기 안 되고 광효과도 없고, 과장은 카메라로만 해야 함; B는 초현실로 날아다니기 가능하고 에너지 충격파도 있지만, 반드시 A의 네 가지 무게 앵커를 빌려야 함——접촉 변형 반동, 지면 반작용, 관성, 충돌 시 한 박자 멈춤. B는 힘의 크기만 빌리고, 힘의 인과는 그대로 물리로 설명함.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，我先把规则并进两套打戏技能，再按分线各重出一条对比。另外快慢呼吸那条也记下了：不再靠后期补帧硬放慢，改成生成时就把「高速一闪而过 / 升格慢镜 / 定格 0.2 秒」写进提示词，后期只做微调。',
+        content_en: 'Got it. I\'ll first merge the rules into both fight scene skill sets, then re-generate one comparison take for each line. Also noted the fast-slow breathing thing: no more relying on post-production frame interpolation to force slow motion — instead, write "high-speed flash-by / speed-ramped slow motion / 0.2-second freeze frame" into the prompt at generation time, and only do fine-tuning in post.',
+        content_ko: '알겠어, 나 먼저 규칙을 두 세트 액션 스킬에 합치고, 그다음 라인별로 각각 비교용으로 하나씩 다시 뽑을게. 그리고 빠른-느린 호흡 그것도 기록해뒀어: 더 이상 후반에서 프레임 보충으로 억지로 느리게 하는 게 아니라, 생성할 때부터 「고속으로 한순간 스쳐 지나감 / 승격 슬로모션 / 0.2초 정지」를 프롬프트에 써넣고, 후반은 미세 조정만 하는 걸로.',
+      },
+      {
+        role: 'user',
+        content: '还有 D1 踢腿那条，老板点名三件事必须做到——踢中瞬间由快转慢的呼吸感、击中处像墨雾炸开而不是火花、明暗颜色瞬间切换白底翻满屏正红。',
+        content_en: 'Also, for the D1 kick segment, the boss specifically called out three things that must be achieved — the breathing feel of fast-to-slow at the moment of impact, the hit point bursting like ink mist instead of sparks, and the instant switch of light-dark colors flipping from white background to full-screen pure red.',
+        content_ko: '그리고 D1 발차기 그거, 사장이 세 가지 꼭 해내라고 찍었어——차이는 순간에 빠름에서 느림으로 전환되는 호흡감, 맞은 부위가 불꽃이 아니라 먹안개처럼 터지는 것, 명암과 색이 순간적으로 전환되면서 흰 배경이 화면 가득 정빨강으로 뒤집히는 것.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，原片和逐帧图都在下载，我先逐帧看第 2 拍贴腿往上扫的机位和击中那下的变速，MJ 关键帧已经在跑，看完有出入再按原片校正一遍。',
+        content_en: 'Received. The original footage and frame-by-frame images are downloading. I\'ll first go through frame by frame to study the camera position on beat 2 where it sweeps up along the leg, and the speed change at the moment of impact. The MJ keyframes are already running. After reviewing, if there are discrepancies, I\'ll calibrate against the original footage again.',
+        content_ko: '확인, 원본 영상이랑 프레임별 이미지 둘 다 다운로드 중이야, 나 먼저 프레임별로 2박자 다리 붙여서 위로 쓸어올리는 카메라 위치랑 맞는 순간의 변속을 볼게, MJ 키프레임은 이미 돌리고 있고, 다 보고 차이 있으면 원본에 맞춰서 한 번 더 교정할게.',
+      }
+    ],
   }
 ];
