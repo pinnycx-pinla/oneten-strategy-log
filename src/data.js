@@ -6576,5 +6576,56 @@ export const LOG_DAYS = [
         content_ko: '확인, 원본 영상이랑 프레임별 이미지 둘 다 다운로드 중이야, 나 먼저 프레임별로 2박자 다리 붙여서 위로 쓸어올리는 카메라 위치랑 맞는 순간의 변속을 볼게, MJ 키프레임은 이미 돌리고 있고, 다 보고 차이 있으면 원본에 맞춰서 한 번 더 교정할게.',
       }
     ],
+  },
+  {
+    date: '2026-10-09',
+    chapter: '230',
+    color: '#f59e0b',
+    title: '构建日志 2026-10-09 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把片尾三个方案定了——金色宋体、楷书墨迹、银色粗黑体，海报和音乐不动，只换片尾。',
+        content_en: 'Today let\'s lock down the three options for the end credits — gold Song typeface, calligraphy ink brush, and silver bold sans-serif. The poster and music stay as they are, we\'re only swapping the end credits.',
+        content_ko: '오늘 엔딩 크레딧 세 가지 안 정했어——금색 송체, 해서 먹글씨, 은색 굵은 고딕체, 포스터랑 음악은 안 건드리고 엔딩만 바꿔.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，A 最有电影公司感、B 最有人文气、C 最有科技感，做好一起发你。',
+        content_en: 'Right. A has the strongest film company vibe, B has the most humanistic feel, C has the most tech feel. I\'ll finish them and send them all to you together.',
+        content_ko: '응, A가 제일 영화사 느낌이고, B가 제일 인문학적이고, C가 제일 테크 느낌이야, 다 만들면 같이 보내줄게.',
+      },
+      {
+        role: 'user',
+        content: '卡 B 改口径了，不装完整 SONGGIFT 后端，只做隧道第二连接器和静态镜像，总内存压在 100MB 内。',
+        content_en: 'Card B\'s approach has changed — we\'re not installing the full SONGGIFT backend, just building the tunnel\'s second connector and a static mirror, keeping total memory under 100MB.',
+        content_ko: '카드 B 방향 바꿨어, 완전한 SONGGIFT 백엔드 안 넣고 터널 두 번째 커넥터랑 정적 미러만 만들어, 총 메모리 100MB 안으로 눌러.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，关键是「分流不是备援」——Air 的连接器平时不开，哨兵连续 3 次探测失败才接管，镜像响应带 X-Standby: 1 区分，恢复就停掉。',
+        content_en: 'Got it. The key is "failover, not redundancy" — Air\'s connector stays off normally, and only takes over after the sentinel fails detection 3 times in a row. The mirror response carries X-Standby: 1 to distinguish it, and it stops once things recover.',
+        content_ko: '알겠어, 핵심은 「분류가 아니라 백업」——Air 커넥터는 평소에 안 켜고, 센티넬이 연속 3번 탐지 실패해야 넘겨받고, 미러 응답에 X-Standby: 1 붙여서 구분하고, 복구되면 바로 꺼.',
+      },
+      {
+        role: 'user',
+        content: '卡 D 加一条长期规矩，英文名一律 ONE TEN MUSIC / ONE TEN PICTURES，不用拼音 WENTIAN。',
+        content_en: 'Add a long-term rule to Card D — all English names use ONE TEN MUSIC / ONE TEN PICTURES, no pinyin WENTIAN.',
+        content_ko: '카드 D에 장기 규칙 하나 추가해, 영어 이름은 전부 ONE TEN MUSIC / ONE TEN PICTURES로, 병음 WENTIAN 쓰지 마.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '记进长期记忆了，主站和影业站一起改，顺便查连写的 ONETEN 要不要统一成带空格。',
+        content_en: 'Logged into long-term memory. I\'ll update the main site and the pictures site together, and while I\'m at it, check whether the concatenated ONETEN should be unified to have a space.',
+        content_ko: '장기 기억에 기록했어, 메인 사이트랑 영화사 사이트 같이 바꾸고, 겸사겸사 붙여 쓴 ONETEN도 띄어쓰기 있는 걸로 통일할지 확인해볼게.',
+      }
+    ],
   }
 ];
