@@ -6627,5 +6627,42 @@ export const LOG_DAYS = [
         content_ko: '장기 기억에 기록했어, 메인 사이트랑 영화사 사이트 같이 바꾸고, 겸사겸사 붙여 쓴 ONETEN도 띄어쓰기 있는 걸로 통일할지 확인해볼게.',
       }
     ],
+  },
+  {
+    date: '2026-10-10',
+    chapter: '231',
+    color: '#10b981',
+    title: '构建日志 2026-10-10 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把 Engine Room 内容刷新和 PINLA WORK STATION 克隆两件事定了，前者换掉退役模型名、重画 12 条在跑管线，后者照 Wix 原站十段排版克隆进 pinla.us，动效自己复刻、文案一字不改。',
+        content_en: 'Today we locked in two things: refreshing the Engine Room content and cloning the PINLA WORK STATION. For the former, swap out the retired model names and redraw the 12 running pipelines; for the latter, clone the ten-section layout from the original Wix site into pinla.us, replicate the animations ourselves, and don\'t change a single word of the copy.',
+        content_ko: '오늘 Engine Room 콘텐츠 리프레시랑 PINLA WORK STATION 클론 두 가지 정했어. 전자는 퇴역한 모델 이름 바꾸고, 돌아가는 파이프라인 12개 다시 그리고, 후자는 Wix 원본 사이트 10단 레이아웃 그대로 pinla.us에 클론하는 거야. 모션은 직접 복제하고, 카피는 한 글자도 안 바꿔.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，Work Station 预览站已经上线，等 IA10 合进主站加菜单就行；SynthGPT 那页我也照做了，但那句用户评价来自真实产品，我先标出来，你说删就删。',
+        content_en: 'Right, the Work Station preview site is already live, just waiting for IA10 to merge into the main site and add the menu. I also did the SynthGPT page the same way, but that user review comes from a real product, so I flagged it first — say the word and I\'ll delete it.',
+        content_ko: '응, Work Station 프리뷰 사이트 이미 올라갔고, IA10 메인 사이트에 합쳐서 메뉴 추가하면 돼. SynthGPT 페이지도 똑같이 했는데, 그 사용자 평가 문구가 실제 제품에서 온 거라 일단 표시해뒀어. 지우라고 하면 지울게.',
+      },
+      {
+        role: 'user',
+        content: '另外卡 K 收窄成只做 A 线 loop，B 线 MV 暂停等老板想清楚，moon1k 的渲染脚本我写好了，素材一到就开跑。',
+        content_en: 'Also, narrow down Card K to only doing the A-line loop. Pause the B-line MV until the boss figures things out. I\'ve written the render script for moon1k — as soon as the assets arrive, we start running.',
+        content_ko: '그리고 카드 K는 A라인 loop만 하는 걸로 좁혔고, B라인 MV는 사장님이 정리될 때까지 보류. moon1k 렌더 스크립트는 다 짰고, 소재 들어오면 바로 돌린다.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，卡 L 我先渲 fw_kr_06 和 fw_kr_12 两条给老板看动感，整曲不循环、不加字幕、iMac 不渲染都记着。',
+        content_en: 'Got it. For Card L, I\'ll first render fw_kr_06 and fw_kr_12 to show the boss the motion feel. Noted: no looping the full track, no subtitles, and no rendering on the iMac.',
+        content_ko: '알겠어. 카드 L은 일단 fw_kr_06이랑 fw_kr_12 두 개 렌더해서 사장님한테 움직임 보여줄게. 풀곡 논루프, 자막 없음, iMac 렌더 안 함 다 기억하고 있어.',
+      }
+    ],
   }
 ];
