@@ -6738,5 +6738,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어. 한 가지 알려줄게, C편 클리닝은 "First clean 50% off"라고 썼는데, 랜딩 페이지 5할은 드라이클리닝이랑 난초만 적혀 있어——이미 Meta에 걸어놨으니까, 일단 A, B만 돌리거나, 아니면 랜딩 페이지에 클리닝 먼저 추가하고 C를 돌리는 걸 추천해.',
       }
     ],
+  },
+  {
+    date: '2026-10-13',
+    chapter: '234',
+    color: '#00f0ff',
+    title: '构建日志 2026-10-13 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天定了两件大事——ONE TEN ADS 新站上线，12 个预设的样片静帧走 MJ，视频等你说「跑」再动；还有代码动态图形这条线，Cursor 复刻和文天台 v5 都按「换内容不换物理」的规矩来。',
+        content_en: 'Two big things settled today—ONE TEN ADS\' new site is live, the 12 preset sample stills are going through MJ, and the videos are waiting for you to say "go" before they move; also, for the code-driven motion graphics track, both the Cursor replication and Wentiantai v5 follow the rule of "swap the content, not the physics."',
+        content_ko: '오늘 큰일 두 개 정했다——ONE TEN ADS 새 사이트 오픈, 12개 프리셋 샘플 스틸은 MJ로 돌리고, 영상은 네가 「달려」라고 할 때까지 기다린다; 그리고 코드 모션 그래픽 라인, Cursor 복제랑 문천대 v5 둘 다 「내용은 바꿔도 물리는 안 바꾼다」 규칙대로 간다.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，wentiantai_ad 那版被否了——蓝青 HUD、扁平卡、光球代替彗星、没推镜、结尾灰，以后改皮只换内容，底色、三层光晕、缓动、推镜、颗粒、暗角、彗星全部原样保留。对了，LibTV 那个对照实验我也记下了，最便宜档只跑一条，不修不重跑，就是要看视频模型做这种片的真实上限。',
+        content_en: 'Right, the wentiantai_ad version got rejected—blue-cyan HUD, flat cards, light orbs instead of comets, no dolly-in, gray ending. From now on, when changing skins, only swap the content. The background color, three-layer glow, easing, dolly-in, grain, vignette, and comets all stay exactly as they are. By the way, I also noted that LibTV control experiment—only run one at the cheapest tier, no fixing, no rerunning. The whole point is to see the real upper limit of what a video model can do with this kind of piece.',
+        content_ko: '맞아, wentiantai_ad 그 버전은 반려됐어——파란 청록 HUD, 플랫 카드, 광구가 혜성 대신, 푸시인 없음, 엔딩 회색, 앞으로 스킨 바꿀 때 내용만 바꾸고, 배경색, 3층 광晕, 이징, 푸시인, 그레인, 비네트, 혜성 전부 원래대로 유지. 아, LibTV 그 대조 실험도 기록해뒀어, 제일 싼 티어로 한 개만 돌리고, 수정도 재실행도 안 해, 그냥 비디오 모델이 이런 영상 만들 때 진짜 한계가 어디까지인지 보려는 거야.',
+      },
+      {
+        role: 'user',
+        content: '还有 lab.oneten.live 要重新发布，f961d7c 的 nav.js 末尾加了 otfoot 页脚，母公司只在页脚出现一行，各产品站自动跟着带。',
+        content_en: 'Also, lab.oneten.live needs to be redeployed. At the end of nav.js in f961d7c, I added the otfoot footer. The parent company only appears as one line in the footer, and each product site automatically carries it along.',
+        content_ko: '그리고 lab.oneten.live 다시 배포해야 돼, f961d7c의 nav.js 끝에 otfoot 푸터 추가했고, 모회사는 푸터에 한 줄만 나오고, 각 제품 사이트가 자동으로 따라 붙어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，发完我先自己验一遍 nav.js 里有 otfoot 再回你。',
+        content_en: 'Got it. After it\'s deployed, I\'ll verify myself first that otfoot is in nav.js, then get back to you.',
+        content_ko: '알겠어, 배포 끝나면 내가 먼저 nav.js에 otfoot 있는지 확인하고 다시 연락할게.',
+      }
+    ],
   }
 ];
