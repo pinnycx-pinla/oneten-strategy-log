@@ -6775,5 +6775,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 배포 끝나면 내가 먼저 nav.js에 otfoot 있는지 확인하고 다시 연락할게.',
       }
     ],
+  },
+  {
+    date: '2026-10-14',
+    chapter: '235',
+    color: '#a855f7',
+    title: '构建日志 2026-10-14 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天定了以后广告片和动态字片都用 kinetic_kit 这套引擎出，我只在需要新风格时才写新引擎——规矩就是换内容不换物理。另外金字塔讲解片老板改风格了，不要文天台那种音乐频道大字，改用 012 瑞士动效当主体，96 BPM 慢节奏，金字塔那一镜换成 005 玻璃看板半透明面板。',
+        content_en: 'Today it\'s decided that from now on, both ad films and kinetic typography videos will be produced with the kinetic_kit engine. I\'ll only write a new engine when a new style is needed—the rule is change the content, not the physics. Also, the boss changed the style for the pyramid explainer video. Don\'t use the ONE TEN platform-style music-channel big text; switch to using 012 Swiss motion graphics as the main body, 96 BPM slow tempo, and change the pyramid shot to a 005 glass board semi-transparent panel.',
+        content_ko: '오늘 이후 광고 영상이랑 모션 그래픽 영상은 다 kinetic_kit这套 엔진으로 뽑기로 정했어, 나는 새로운 스타일 필요할 때만 새 엔진 쓸 거야—규칙은 내용은 바꿔도 물리는 안 바꾼다. 그리고 피라미드 해설 영상은 사장님이 스타일 바꿨대, 문천대 같은 음악 채널 큰 글자 말고, 012 스위스 모션그래픽을 메인으로 쓰고, 96 BPM 느린 리듬, 피라미드 그 컷은 005 유리 보드 반투명 패널로 바꿔.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，工具包已经在装了，拉代码、下两套音效库、用样片跑通 stills / dumpcues / sfx_bed / finish 整条流程再回你。有一条先提出来：工具包里「别的 BPM 用 atempo 锁网格」和老板 10-09 定的「配乐别用 atempo 拉伸会发虚」冲突，我的做法是优先挑 128 BPM 的曲，不是 128 的就原速只靠截取起点把 drop 对到 7.5s，不拉伸。金字塔两版按瑞士动效重做没问题，音效只留 tick、面板浮现、红点落下三种。',
+        content_en: 'Got it. The toolkit is already being installed. I\'ll pull the code, download the two sound effect libraries, and run the whole stills / dumpcues / sfx_bed / finish pipeline through with a sample video before getting back to you. One thing I want to raise first: in the toolkit, "use atempo to lock the grid for other BPMs" conflicts with what the boss decided on 10-09, that "don\'t use atempo stretching for the soundtrack because it\'ll sound fuzzy." My approach is to prioritize picking 128 BPM tracks. If it\'s not 128, then keep the original speed and only use the截取 starting point to align the drop to 7.5s, without stretching. Redoing both versions of the pyramid with Swiss motion graphics is no problem. For sound effects, keep only three: tick, panel emergence, and red dot drop.',
+        content_ko: '알겠어, 툴킷은 이미 설치 중이고, 코드 당기고, 사운드 라이브러리 두 세트 다운받고, 샘플로 stills / dumpcues / sfx_bed / finish 전체 플로우 돌려보고 다시 알려줄게. 하나 먼저 말할게: 툴킷에 있는 「다른 BPM은 atempo로 그리드 고정」이랑 사장님이 10-09에 정한 「배경음악에 atempo 스트레치 쓰면 소리 흐려져서 쓰지 마」가 충돌하는데, 내 방식은 128 BPM 곡을 우선 고르고, 128 아니면 원속도로 시작점 자르기만 해서 drop을 7.5s에 맞추는 거야, 스트레치 안 해. 피라미드 두 버전 스위스 모션그래픽으로 다시 만드는 건 문제없고, 음향효과는 tick, 패널 떠오르기, 빨간 점 떨어지기 세 가지까지만 남겨.',
+      }
+    ],
   }
 ];
