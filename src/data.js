@@ -6835,5 +6835,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어, Clawd는 Anthropic 마스코트니까 내부 시험 영상으로만 쓰고, 나는 video.mp4 + src/scenes만 제출하면 되지, 각 프레임 초수랑 총 소요시간도 첨부할게.',
       }
     ],
+  },
+  {
+    date: '2026-10-16',
+    chapter: '237',
+    color: '#10b981',
+    title: '构建日志 2026-10-16 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把品牌分层的水印规矩彻底定死了——英文线上产品走 ONE TEN 套，中文线下和中韩日频道走 PINLA 套，一条片只用一套，绝不混用；水印包按 oneten/ 和 pinla/ 两个子目录分开交付。',
+        content_en: 'Today I\'ve completely locked down the watermark rules for brand tiers—English online products use the ONE TEN set, Chinese offline and China/Korea/Japan channels use the PINLA set, one set per video, absolutely no mixing; watermark packages are delivered separately under two subdirectories: oneten/ and pinla/.',
+        content_ko: '오늘 브랜드 레이어별 워터마크 규칙을 완전히 확정했다—영문 온라인 제품은 ONE TEN 세트, 중문 오프라인과 중한일 채널은 PINLA 세트, 한 영상에는 한 세트만 쓰고 절대 혼용하지 않는다; 워터마크 패키지는 oneten/ 과 pinla/ 두 하위 디렉토리로 나눠서 납품한다.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，这样出片时按「对谁、什么语言、线上还是线下」选套就不会乱；另外 Suno 命名也加了硬检查，广告配乐必须「AD 」开头或「Score」结尾，不然 16:00 自动入库会误上文天台。',
+        content_en: 'Right, that way when producing videos, choosing the set based on "who it\'s for, what language, online or offline" won\'t get messy; also added a hard check on Suno naming—ad music must start with "AD " or end with "Score," otherwise the 16:00 auto-ingestion will mistakenly put it on the ONE TEN channel.',
+        content_ko: '맞아, 이렇게 하면 영상 만들 때 「누구한테, 무슨 언어로, 온라인인지 오프라인인지」에 따라 세트를 고르면 안 헷갈려; 그리고 Suno 네이밍에도 하드 체크를 추가했어, 광고 배경음악은 반드시 「AD 」로 시작하거나 「Score」로 끝나야 해, 안 그러면 16:00 자동 입고 때 문천 플랫폼에 잘못 올라가.',
+      },
+      {
+        role: 'user',
+        content: '还有那两条 MCvisuals 的概念广告（Raycast 和 Vercel）都存进风格池了，Vercel 那条我默认照结构给 SONGGIFT 做 16:9，纯代码零积分。',
+        content_en: 'Also those two MCvisuals concept ads (Raycast and Vercel) are both saved into the style pool. For the Vercel one, I\'ll default to making a 16:9 for SONGGIFT following the structure—pure code, zero credits.',
+        content_ko: '그리고 그 MCvisuals 컨셉 광고 두 개(Raycast랑 Vercel) 다 스타일 풀에 저장했어, Vercel 건은 내가 기본으로 구조대로 SONGGIFT용 16:9로 만들 거고, 순수 코드에 크레딧 제로야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好，同一作者的镜头语言很稳，玻璃胶囊加发光 logo 那套正好复用，我按真实下单三步加交付页来排。',
+        content_en: 'Good, the same creator\'s visual language is very consistent—the glass capsule plus glowing logo approach is perfect for reuse. I\'ll schedule it following the real order three-step plus delivery page.',
+        content_ko: '좋아, 같은 작가의 촬영 언어가 아주 안정적이야, 유리 캡슐에 발광 로고 세트를 그대로 재활용하면 되겠다, 나는 실제 주문 3단계에 납품 페이지 붙여서 정리할게.',
+      }
+    ],
   }
 ];
