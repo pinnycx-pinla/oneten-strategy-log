@@ -6923,5 +6923,42 @@ export const LOG_DAYS = [
         content_ko: '이건 먼저 정해야 해: A는 시나리오대로 Daniel 있고 + 9:16, B는 네가 방금 수정한 대로 수연 독백 + 16:9; 적분은 두 편 16샷 약 1,600점, 너가 달라고 하면 내가 먼저 1화 달릴게, 오프닝 로고는 코드 엔진으로 0점이니까 지금 바로 만들기 시작할게.',
       }
     ],
+  },
+  {
+    date: '2026-10-18',
+    chapter: '239',
+    color: '#3b82f6',
+    title: '构建日志 2026-10-18 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把 GLOWLINE v1 的引擎钉死了——用 IA10 的 engine_glowline.html（commit 68a1092）在 Air 上渲四条测试片，A/B/C 三场景加一条金色对比版，1080×1920 30fps，移动配 whoosh、落点配 tick、下划线配 riser→hit，不配音乐，只交成片不交中间版。',
+        content_en: 'Today I locked down the engine for GLOWLINE v1 — used IA10\'s engine_glowline.html (commit 68a1092) to render four test clips on the Air, three scenarios A/B/C plus a gold comparison version, 1080×1920 30fps, movement paired with whoosh, landing points with tick, underlines with riser→hit, no music, only deliver final cuts, no intermediate versions.',
+        content_ko: '오늘 GLOWLINE v1 엔진 확정했어—IA10의 engine_glowline.html(commit 68a1092)로 Air에서 테스트 영상 네 개 렌더링했는데, A/B/C 세 장면에 골드 비교 버전 하나 추가해서 1080×1920 30fps, 이동에는 whoosh, 착점에는 tick, 밑줄에는 riser→hit 넣었고, 음악은 안 넣었어. 중간 버전은 안 주고 완성본만 넘길 거야.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，关键是不克隆原片只复刻那条绿色荧光长尾线的引导逻辑，套进现有模板前先让老板挑。另外竖版那条规矩撤回得很及时——EP3 的火山增强 14 分已花但结果不用，中文平台直接发横版原片，后面不再花任何积分。',
+        content_en: 'Right, the key is not cloning the original but replicating the guiding logic of that green fluorescent long-tail line, and letting the boss pick before applying it to the existing template. Also, good call retracting that vertical-format rule in time — EP3\'s volcano enhancement already cost 14 credits but the result won\'t be used, Chinese platforms will just get the horizontal original, no more credits spent going forward.',
+        content_ko: '응, 핵심은 원본 영상 클론하지 않고 그 초록 형광 긴 꼬리 선의 유도 로직만 복제하는 거야. 기존 템플릿에 넣기 전에 먼저 사장님이 고르게 하자. 그리고 세로 버전 그 규칙 철회한 건 진짜 잘한 거야—EP3 화산 강화에 14분 이미 썼는데 결과는 안 쓰고, 중국어 플랫폼에는 그냥 가로 원본 올리면 돼. 앞으로 크레딧 더 안 쓸 거야.',
+      },
+      {
+        role: 'user',
+        content: '还有个教训，15 首写歌卡被 Telegram 截断了，03 只到 [Verse 2] 就没了。',
+        content_en: 'Another lesson — the 15 songwriting cards got truncated by Telegram, 03 only went up to [Verse 2] and then cut off.',
+        content_ko: '교훈이 하나 더 있는데, 15곡 작곡 카드가 텔레그램에서 잘려서 03은 [Verse 2]까지만 나왔어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '所以我没先跑半截，等后面几段到齐再一起开，避免白生成一堆用不上的 take。',
+        content_en: 'That\'s why I didn\'t run the half-finished one first — waiting for the later sections to all arrive before starting together, to avoid generating a bunch of useless takes for nothing.',
+        content_ko: '그래서 나는 반쪽짜리 먼저 안 돌리고, 뒤에 몇 단락 다 도착할 때까지 기다렸다가 같이 시작한 거야. 쓸모없는 take 잔뜩 생성하는 거 피하려고.',
+      }
+    ],
   }
 ];
