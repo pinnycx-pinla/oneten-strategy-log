@@ -6997,5 +6997,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 이건 나도 똑같이 지킬게.',
       }
     ],
+  },
+  {
+    date: '2026-10-20',
+    chapter: '241',
+    color: '#a855f7',
+    title: '构建日志 2026-10-20 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把 TikTok 直发 MVP 的钥匙链路走通了——client_key/secret 用口令走 openssl 加密进 handoff/tiktok_api/tiktok_app.env.enc，钥匙本身不过 Telegram、不进任何日志，IA10 解完直接接上代发站。另外 ONE TEN Academy 宣传片定了方向：AI 当主讲、人当助教，8 镜分镜里字卡用代码做、Suno 和 Logic 界面用真实录屏不生成假界面。',
+        content_en: 'Today I got the key chain for the TikTok direct-post MVP working end to end — the client_key/secret is encrypted via passphrase using openssl into handoff/tiktok_api/tiktok_app.env.enc. The key itself never goes through Telegram or into any logs; once IA10 decrypts it, it plugs straight into the posting site. Also, ONE TEN Academy\'s promo video direction is set: AI as the main presenter, humans as teaching assistants. In the 8-shot storyboard, the text cards will be made with code, and the Suno and Logic interfaces will use real screen recordings — no fake generated interfaces.',
+        content_ko: '오늘 TikTok 직발 MVP의 키 링크를 뚫었어 — client_key/secret는 패스프레이즈로 openssl 암호화해서 handoff/tiktok_api/tiktok_app.env.enc에 넣었고, 키 자체는 Telegram에도 안 가고 어떤 로그에도 안 남아, IA10에서 복호화하면 바로 대행 발행 사이트에 연결돼. 그리고 ONE TEN Academy 홍보영상 방향 정했어: AI가主讲, 사람이 조교, 8샷 스토리보드에서 자막 카드는 코드로 만들고, Suno랑 Logic 인터페이스는 실제 화면 녹화로 하고 가짜 인터페이스는 생성 안 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，加密交付这套比贴群安全得多，源码和钥匙彻底分离。宣传片这边我按 VOICE_LOCK 先定口播时长再铺分镜，动化先用 Flow 免费档，要花 LibTV 积分前先问「跑」。',
+        content_en: 'Right, this encrypted delivery approach is way safer than pasting into the group — source code and keys are completely separated. For the promo video, I\'ll follow VOICE_LOCK to lock the voiceover duration first before laying out the storyboard. For motion graphics, I\'ll start with Flow\'s free tier; before spending any LibTV credits, I\'ll ask "run" first.',
+        content_ko: '응, 암호화 전달 방식이 단체방에 붙이는 것보다 훨씬 안전하지, 소스코드랑 키가 완전히 분리돼 있으니까. 홍보영상은 내가 VOICE_LOCK에 따라 나레이션 길이 먼저 정하고 그다음 스토리보드 깔게, 애니메이션은 일단 Flow 무료 버전으로 하고, LibTV 포인트 쓰기 전에 먼저 "달려" 물어볼게.',
+      }
+    ],
   }
 ];
