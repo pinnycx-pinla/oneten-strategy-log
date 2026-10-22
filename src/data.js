@@ -7020,5 +7020,56 @@ export const LOG_DAYS = [
         content_ko: '응, 암호화 전달 방식이 단체방에 붙이는 것보다 훨씬 안전하지, 소스코드랑 키가 완전히 분리돼 있으니까. 홍보영상은 내가 VOICE_LOCK에 따라 나레이션 길이 먼저 정하고 그다음 스토리보드 깔게, 애니메이션은 일단 Flow 무료 버전으로 하고, LibTV 포인트 쓰기 전에 먼저 "달려" 물어볼게.',
       }
     ],
+  },
+  {
+    date: '2026-10-21',
+    chapter: '242',
+    color: '#f59e0b',
+    title: '构建日志 2026-10-21 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天记了个提示词技巧，人物身材别写"苗条体态好"这种空话，直接上数值——九头身、腿长占身高三分之二、腰臀比 0.7，放提示词最后。作者那套"暗号 888 领提示词"是引流，参数我全抄了不用领。',
+        content_en: 'Today I noted down a prompt technique—don\'t write vague stuff like "slim figure, good physique" for character body type. Just use numbers directly: nine-head body ratio, legs making up two-thirds of height, waist-to-hip ratio 0.7, placed at the end of the prompt. The author\'s "secret code 888 to get prompts" is just traffic bait—I copied all the parameters, no need to claim them.',
+        content_ko: '오늘 프롬프트 팁 하나 기록했는데, 인물 체형에 "슬림하고 몸매 좋음" 같은 빈 말 쓰지 말고 바로 수치를 넣어——구등신, 다리 길이가 키의 3분의 2 차지, 허리-엉덩이 비율 0.7, 프롬프트 맨 마지막에 넣어. 작가가 "암호 888로 프롬프트 받기" 하는 건 트래픽 유도고, 파라미터는 내가 다 복사했으니까 받을 필요 없어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '收到，按学习卡规矩只记不跑，之后给 YUKI / SUMI 出新镜头时可以带上这组数值，你点头再用。',
+        content_en: 'Got it. Per the learning card rules, just note it down, don\'t run anything. Later when making new shots for YUKI / SUMI we can include this set of numbers—wait for your nod before using.',
+        content_ko: '확인, 학습카드 규칙대로 기록만 하고 실행은 안 해, 나중에 YUKI / SUMI 새 컷 만들 때 이 수치 세트 쓸 수 있는데, 네가 OK 하면 쓸게.',
+      },
+      {
+        role: 'user',
+        content: 'Sine×Square 宣传片老板要加飞行镜头和表情特写，说两人对话太僵就缺这个。参考是 Chiraku《最速剑士》，只借镜头不借美术，画风延续我们剧。今天剩 3000 积分，两个两个跑，先出 A1 蓄势待发、A2+A5 前摇点火、A3 POV 跃下、B5 正反打。',
+        content_en: 'The boss wants to add flying shots and expression close-ups to the Sine×Square promo, saying the two-person dialogue is too stiff without them. Reference is Chiraku\'s "Fastest Swordsman"—only borrow the camera work, not the art style; keep our drama\'s visual style. 3000 credits left today, run them two at a time: first A1 poised to strike, A2+A5 wind-up ignition, A3 POV leap down, B5 shot-reverse-shot.',
+        content_ko: 'Sine×Square 홍보영상 사장님이 비행 장면이랑 표정 클로즈업 추가하래, 두 사람 대화가 너무 딱딱하다면서 이게 빠졌대. 레퍼런스는 Chiraku 《최속검사》, 카메라만 빌리고 아트는 안 빌려, 화풍은 우리 드라마 이어가. 오늘 남은 포인트 3000, 두 개씩 두 개씩 돌려, 먼저 A1 축적 대기, A2+A5 전摇 점화, A3 POV 도약, B5 정반대 구도.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '有个冲突要你定——A2/A5/A10 写了脚下波纹、手心点火光、彩色拖尾，但之前定过飞行零特效。这几段破例加光效吗？A1/B5 看完后和 A2+A5 一起排第二批。',
+        content_en: 'There\'s a conflict you need to decide—A2/A5/A10 have ground ripples, palm ignition light, and colored trails written in, but we previously established zero effects for flight. Do we make an exception and add light effects to these segments? After reviewing A1/B5, schedule them together with A2+A5 as the second batch.',
+        content_ko: '충돌 하나 있는데 네가 정해줘——A2/A5/A10에 발밑 물결, 손바닥 점화 빛, 컬러 트레일 썼는데, 전에 비행 제로 이펙트로 정했잖아. 이 장면들 예외로 광효과 넣을까? A1/B5 다 본 후에 A2+A5랑 같이 2차 배치로 갈게.',
+      },
+      {
+        role: 'user',
+        content: 'ONE TEN POST 宣传片老板批了，零积分出片，Holo 风格白底动效复刻。钉死用 higgsedit 沙盒，不许用任何扣积分模型，要实拍质感就用静帧做 2D 推拉替代。',
+        content_en: 'The boss approved the ONE TEN POST promo—zero credits to produce, Holo-style white background motion graphics replication. Lock it to the higgsedit sandbox, no credit-consuming models allowed. If you need live-action texture, use still frames with 2D push-pull as a substitute.',
+        content_ko: 'ONE TEN POST 홍보영상 사장님 승인 났어, 제로 포인트로 영상 뽑아, Holo 스타일 흰 배경 모션그래픽 복제. higgsedit 샌드박스 고정 사용, 포인트 차감되는 모델은 절대 쓰지 마, 실사 질감 필요하면 정지 프레임으로 2D 푸시풀 대체해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '明白，1920×1080 横屏 45 秒英文，白底 #F5F5F7 加一条蓝紫→橙粉渐变光斑当记忆点，六段分镜台词一字不改，零积分男声 TTS 加点击 whoosh 对齐切点，-14 LUFS。只交 mp4 加源，要花积分的地方先停下问你。',
+        content_en: 'Understood. 1920×1080 landscape, 45 seconds, English, white background #F5F5F7 with a blue-purple→orange-pink gradient light spot as the memory point, six-segment storyboard dialogue unchanged word for word, zero-credit male voice TTS plus click whoosh aligned to cut points, -14 LUFS. Only deliver mp4 plus source; stop and ask you first anywhere credits would be spent.',
+        content_ko: '알겠어, 1920×1080 가로 45초 영어, 흰 배경 #F5F5F7에 블루퍼플→오렌지핑크 그라데이션 광점 하나 메모리 포인트로, 6단 스토리보드 대사 한 글자도 안 바꾸고, 제로 포인트 남성 TTS에 클릭 whoosh 컷 포인트 맞추고, -14 LUFS. mp4랑 소스만 제출, 포인트 쓰는 부분은 먼저 멈추고 물어봐.',
+      }
+    ],
   }
 ];
