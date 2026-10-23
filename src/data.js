@@ -7071,5 +7071,28 @@ export const LOG_DAYS = [
         content_ko: '알겠어, 1920×1080 가로 45초 영어, 흰 배경 #F5F5F7에 블루퍼플→오렌지핑크 그라데이션 광점 하나 메모리 포인트로, 6단 스토리보드 대사 한 글자도 안 바꾸고, 제로 포인트 남성 TTS에 클릭 whoosh 컷 포인트 맞추고, -14 LUFS. mp4랑 소스만 제출, 포인트 쓰는 부분은 먼저 멈추고 물어봐.',
       }
     ],
+  },
+  {
+    date: '2026-10-22',
+    chapter: '243',
+    color: '#10b981',
+    title: '构建日志 2026-10-22 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '今天把 lab.oneten.live 的 05 ADS、06 POST 两个入口和 nav.js 同步上线了，老板看到后又要改首屏文案加 PinLA 跳转，顺手把 index.html 再推一版。另外 IG 两个号的 60 天 token 今天到期前续了，新值只走私聊换进本地 ig_tokens.env。',
+        content_en: 'Today I synced the 05 ADS and 06 POST entries for lab.oneten.live along with nav.js and pushed them live. After the boss saw it, he wanted the first-screen copy changed again and a PinLA redirect added, so I went ahead and pushed another version of index.html. Also, I renewed the 60-day tokens for the two IG accounts before they expired today—the new values were only exchanged via DM and put into the local ig_tokens.env.',
+        content_ko: '오늘 lab.oneten.live의 05 ADS, 06 POST 두 진입점이랑 nav.js 동기화해서 같이 배포했어. 사장님이 보고 나서 또 첫 화면 문구 바꾸고 PinLA 점프 추가하래서, 겸사겸사 index.html도 한 버전 더 푸시했어. 그리고 IG 두 계정의 60일 토큰이 오늘 만료 전이라 갱신했는데, 새 값은 개인 메시지로만 로컬 ig_tokens.env에 바꿔 넣었어.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，两版都部署核过了，token 也验证完。知识库那边你之前推的 7 张卡已经自动收进 playbook 上线，以后 IG 学到的东西按 playbook_inbox 格式写卡推上去就行，每天 09:55 自动收，不用再单独建站。',
+        content_en: 'Got it. I\'ve deployed and checked both versions, and verified the tokens too. Over in the knowledge base, the 7 cards you pushed earlier have already been automatically collected into the playbook and are live. From now on, just write cards in the playbook_inbox format for anything learned from IG and push them up—they\'ll be auto-collected daily at 09:55, so there\'s no need to set up a separate site anymore.',
+        content_ko: '확인했어, 두 버전 다 배포 검증했고 토큰도 검증 끝났어. 지식베이스 쪽은 네가 전에 푸시한 카드 7장이 자동으로 playbook에 수집돼서上线됐어. 앞으로 IG에서 배운 건 playbook_inbox 형식으로 카드 써서 올리면 돼, 매일 09:55에 자동 수집되니까 따로 사이트 만들 필요 없어.',
+      }
+    ],
   }
 ];
