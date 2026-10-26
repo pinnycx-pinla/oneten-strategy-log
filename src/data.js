@@ -7168,5 +7168,34 @@ export const LOG_DAYS = [
         content_ko: '하이럭셔리, Glass, avant-garde부터 brutalism, Y2K까지 다 있는데, .vercel도 git 기록도 없고 Air에 온라인 링크도 없어. 소스 파일이랑 전체 페이지 스크린샷은 handoff/dj_agency_pages/에 정리해뒀어.',
       }
     ],
+  },
+  {
+    date: '2026-10-25',
+    chapter: '246',
+    color: '#00f0ff',
+    title: '构建日志 2026-10-25 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'Air 256G 只剩 3.8G，之前每次清只回十来 G，因为清的都是看得见的文件——今天先按 Karen 的清单量底，盯的是 Time Machine 本地快照、Telegram 媒体缓存、Chrome 自动化 Cache 这些隐藏大头，Profile 和登录态一律不碰。',
+        content_en: 'Air 256G only has 3.8G left. Every time before, clearing only got back about ten-something G, because what was cleared was all visible files—today first measure the baseline according to KAREN\'s checklist, focusing on the hidden big items like Time Machine local snapshots, Telegram media cache, and Chrome automation Cache. Profile and login state are not to be touched at all.',
+        content_ko: 'Air 256G가 3.8G밖에 안 남았어. 전에는 매번 청소해도 십여 G밖에 안 돌아왔는데, 지운 게 다 눈에 보이는 파일이었거든—오늘은 먼저 Karen의 목록대로 바닥부터 측정하는데, 노리는 건 Time Machine 로컬 스냅샷, Telegram 미디어 캐시, Chrome 자동화 Cache 같은 숨은 큰 녀석들이고, Profile과 로그인 상태는 절대 안 건드려.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，快照不删的话删文件根本不释放空间，Telegram 那份缓存也是每条视频都存一份；我按“先量再删、每步贴前后数字”的顺序走，出片前也立个规矩：df 少于 20G 不开新渲染，先清 out/。',
+        content_en: 'Right. If the snapshots aren\'t deleted, deleting files won\'t free up space at all. That Telegram cache also stores a copy of every video. I\'ll go in the order of "measure first, then delete, and post the before-and-after numbers at each step." Before rendering, let\'s also set a rule: if df is less than 20G, don\'t start a new render; clear out/ first.',
+        content_ko: '맞아, 스냅샷을 안 지우면 파일을 지워도 공간이 전혀 안 풀려. Telegram 캐시도 비디오마다 한 벌씩 저장하고 있고. 나는 "먼저 측정하고 그다음 삭제, 매 단계 전후 숫자 붙이기" 순서로 갈 거고, 렌더링 내보내기 전에도 규칙 하나 세우자: df가 20G 미만이면 새 렌더링 시작하지 말고 먼저 out/을 정리하는 거야.',
+      },
+      {
+        role: 'user',
+        content: '另外 E 版已重发 TikTok @pinlastudio，公开完成，文件直接用的原片 HEVC 42.5MB 只换封装没转码，旧帖记得在 App 里删掉。',
+        content_en: 'Also, the E version has been reposted to TikTok @pinlastudio, public completion done. The file directly uses the original HEVC 42.5MB, only the container was changed, no transcoding. Remember to delete the old post in the App.',
+        content_ko: '그리고 E버전은 이미 TikTok @pinlastudio에 다시 올렸어, 공개 완료. 파일은 원본 HEVC 42.5MB 그대로 써서 컨테이너만 바꾸고 트랜스코딩은 안 했어. 예전 게시물은 앱에서 꼭 지워줘.',
+      }
+    ],
   }
 ];
