@@ -7197,5 +7197,56 @@ export const LOG_DAYS = [
         content_ko: '그리고 E버전은 이미 TikTok @pinlastudio에 다시 올렸어, 공개 완료. 파일은 원본 HEVC 42.5MB 그대로 써서 컨테이너만 바꾸고 트랜스코딩은 안 했어. 예전 게시물은 앱에서 꼭 지워줘.',
       }
     ],
+  },
+  {
+    date: '2026-10-26',
+    chapter: '247',
+    color: '#a855f7',
+    title: '构建日志 2026-10-26 06:00',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: 'EP11 定了走 B《Monolith》，Midjourney 刷新前把 fast 额度花完，只出定妆 6 张、场景关键帧 9 张、世界观板 1 张，不碰 relax 不烧积分。',
+        content_en: 'EP11 is set to go with option B "Monolith." Before Midjourney refreshes, use up the fast quota, and only produce 6 character look test images, 9 key scene frames, and 1 worldbuilding board. Don\'t touch relax mode and don\'t burn credits.',
+        content_ko: 'EP11은 B안 《Monolith》로 가는 걸로 정했어. Midjourney 리셋 전에 fast 쿼터 다 써버리고, 메이크업 확정 컷 6장, 장면 키프레임 9장, 세계관 보드 1장만 뽑고, relax는 건드리지도积分 태우지도 마.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，cref 锁脸、sref 锁色板五集共用，人小屏大单一几何体，无字无 logo，出完原图加提示词原文 commit 到 handoff 再群里 @ 你。',
+        content_en: 'Got it. Use cref to lock the face and sref to lock the color palette, shared across five episodes. Small person, large screen, single geometric body, no text and no logo. After generation, commit the original images plus the original prompt text to handoff, then @ you in the group.',
+        content_ko: '오케이, cref로 얼굴 고정, sref로 색 팔레트 고정해서 5화 공용으로 쓰고, 인물 작게 화면 크게 단일 기하체, 텍스트 없고 로고 없이, 원본 이미지 다 뽑으면 프롬프트 원문이랑 같이 handoff에 커밋하고 단톡에서 너 멘션할게.',
+      },
+      {
+        role: 'user',
+        content: 'Drake 敬酒以 29 秒正本为准，之前 16 秒和 A、B 三条作废，先拿前 5 秒走完整管子验流程再跑全长。',
+        content_en: 'For Drake\'s toast, use the 29-second official version as the standard. The previous 16-second version and the three A and B versions are void. First take the first 5 seconds through the full pipeline to validate the process, then run the full length.',
+        content_ko: 'Drake 건배는 29초 정본 기준으로 해, 이전 16초랑 A, B 세 개는 폐기. 일단 앞 5초로 전체 파이프라인 검증부터 돌리고 나서 풀버전 돌려.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，本机先做深度视频不花积分，再用 Wan 3.0 灰度迁移换老板照片的脸，五秒试跑约 40 积分在已批范围内，通了发群等你点头再上 29 秒。',
+        content_en: 'Understood. Do the depth video locally first so it doesn\'t spend credits, then use the Wan 3.0 grayscale migration to swap in the boss\'s photo face. The five-second test run is about 40 credits, within the approved range. Once it works, send it to the group and wait for your go-ahead before doing the 29 seconds.',
+        content_ko: '알겠어, 로컬에서 먼저 심층 비디오 작업해서积分 안 쓰고, 그다음 Wan 3.0 그레이 마이그레이션으로 사장님 사진 얼굴 갈아끼우는 거 하고, 5초 테스트 런은 약 40积分으로 이미 승인된 범위 안이야. 통과되면 단톡에 올리고 네 OK 떨어지면 29초 간다.',
+      },
+      {
+        role: 'user',
+        content: '抖加代充首选 ANTNUM 选 Dou+ 100 币，我只给抖音号，卡和付款他本人来。',
+        content_en: 'For Dou+ third-party top-up, prefer ANTNUM and choose Dou+ 100 coins. I\'ll only provide the Douyin account. He himself will handle the card and payment.',
+        content_ko: '더우자 대리충전은 ANTNUM에서 Dou+ 100코인으로 해, 나는 더우인 계정만 줄 테니까 카드랑 결제는 본인이 직접 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '我只负责开页面、填号、核对昵称，不碰密码和验证码；先充 100 试一次确认到账再加，第三方代充有风险。',
+        content_en: 'I\'m only responsible for opening the page, entering the account, and checking the nickname. I won\'t touch passwords or verification codes. First top up 100 as a test, confirm it arrives, then add more. Third-party top-ups carry risk.',
+        content_ko: '나는 페이지 열고, 계정 입력하고, 닉네임 확인만 해. 비밀번호랑 인증코드는 안 건드려. 일단 100 충전해서 한 번 테스트하고 입금 확인되면 추가할게. 제3자 대리충전은 리스크 있어.',
+      }
+    ],
   }
 ];
