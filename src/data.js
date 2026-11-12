@@ -7823,5 +7823,56 @@ export const LOG_DAYS = [
         content_ko: '좋아, 에피소드마다 7샷으로 바꿀게 (Seedance 4개에 Wan 3개, 합쳐서 460점), 편집은 EP3 컷 방식 그대로 갈 거야. 파란 머리 선배 얼굴 고정 카드도 사장님이 OK 하실 때까지 미루고, 일단 A편만 돌릴게.',
       }
     ],
+  },
+  {
+    date: '2026-11-11',
+    chapter: '264',
+    color: '#00f0ff',
+    title: '构建日志 2026-11-11 12:19',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '这版剧情太像蓝发那集了，CG 感可以，A 集先跑完，但剧情要重写。',
+        content_en: 'This version of the story is too much like the blue-hair episode. The CG feel is fine, so let Episode A finish running, but the story needs to be rewritten.',
+        content_ko: '이번 판 스토리가 너무 파란머리 에피소드 같아. CG 느낌은 괜찮으니까 A편은 일단 끝까지 돌리되, 스토리는 다시 써야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '对，过桥背影、麦克风前紧张、闭眼唱、窗户倒影都是 EP3 的套路。我先把前面几集的剧情和机位全过一遍，再写一版不撞的新故事和镜头，大纲发你看一眼就开跑。',
+        content_en: 'Right. Walking away on the bridge, nerves in front of the mic, singing with eyes closed, the window reflection — those are all EP3 tropes. I\'ll go through the stories and camera setups of the earlier episodes first, then write a new story and shots that don\'t overlap. I\'ll send you the outline to look over, then start the run.',
+        content_ko: '맞아, 다리 위 뒷모습, 마이크 앞에서 긴장하는 장면, 눈 감고 노래하기, 창문에 비친 모습 전부 EP3에서 쓴 공식이야. 앞 에피소드들 스토리랑 카메라 위치를 먼저 싹 훑어보고, 안 겹치는 새 스토리랑 샷을 다시 써서 줄거리 보내 줄게. 한번 보고 바로 돌리자.',
+      },
+      {
+        role: 'user',
+        content: '现在的 1080P 到底做没做超分？竖版也出一个。',
+        content_en: 'Did the current 1080P actually get upscaled? Also make a vertical version.',
+        content_ko: '지금 1080P, 진짜 초해상도 처리한 거야? 세로 버전도 하나 뽑아 줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '没做超分。现在的 1080P 是把 480P 样片直接放大的，和 EP3 当时一样，所以细节没变多。要真超分可以走 LibTV 的火山画质增强，一条 20 多秒大约 6–8 分，你说做我就做。竖版我现在出：画面不动，横版缩到 1080 宽放中间，上下留黑边，就是你之前定的发 Shorts 的做法。',
+        content_en: 'No, it wasn\'t upscaled. The current 1080P is just the 480P sample enlarged directly, same as EP3 was back then, so the detail hasn\'t improved much. For a real upscale we can use LibTV\'s Volcano image quality enhancement. It\'s about 6–8 points for a 20-something-second clip, and I\'ll do it if you say the word. I\'m making the vertical version now: the picture stays as is, the horizontal version is scaled down to 1080 wide and placed in the center, with black bars above and below. That\'s the approach you set earlier for posting to Shorts.',
+        content_ko: '초해상도 처리 안 했어. 지금 1080P는 480P 샘플을 그냥 확대한 거야. EP3 때랑 똑같아서 디테일이 별로 늘지 않았어. 진짜 초해상도로 하려면 LibTV의 화산 화질 향상을 쓰면 되는데, 20초 조금 넘는 한 편에 대략 6~8점 들어. 하라고 하면 할게. 세로 버전은 지금 뽑을게. 화면은 그대로 두고, 가로 버전을 1080 너비로 줄여서 가운데 놓고 위아래에 검은 여백을 남기는 거야. 네가 전에 정한 Shorts 올리는 방식 그대로야.',
+      },
+      {
+        role: 'user',
+        content: '行，那两个出不来的镜头不要了，她站起身和唱歌那两个删掉，另外两处 LIC 字样也去掉。',
+        content_en: 'OK, drop the two shots that won\'t render. Delete the one where she stands up and the singing one, and also remove the two "LIC" text spots.',
+        content_ko: '좋아, 그럼 안 나오던 그 두 샷은 빼고, 그녀가 일어서는 샷이랑 노래하는 샷 두 개 지워. 그리고 LIC 글자 두 군데도 없애 줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好。网络一直打断那两个镜头的提交，没扣分。已出的 5 个镜头花了 340 分，我按你说的删掉那两个镜头和两处 LIC，改完发你。',
+        content_en: 'Okay. The network kept interrupting the submission of those two shots, and no points were deducted. The 5 shots already rendered cost 340 points. I\'ll delete those two shots and the two LIC marks as you said, then send it over once it\'s done.',
+        content_ko: '알겠어. 네트워크가 계속 그 두 샷 제출을 끊어서 포인트는 안 빠졌어. 이미 나온 5개 샷에 340포인트 썼어. 말한 대로 그 두 샷이랑 LIC 두 군데 지우고, 고친 다음에 보내 줄게.',
+      }
+    ],
   }
 ];
