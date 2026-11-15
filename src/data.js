@@ -7968,5 +7968,56 @@ export const LOG_DAYS = [
         content_ko: '좋아, 일단 그 이미지로 한 번 만들어 보고, 몇 분 안에 보내 줘.',
       }
     ],
+  },
+  {
+    date: '2026-11-14',
+    chapter: '267',
+    color: '#10b981',
+    title: '构建日志 2026-11-14 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '演示录屏那批的问题，你翻一下记录，列出来给我。',
+        content_en: 'Go through the demo screen-recording issues. Look through the records and list them out for me.',
+        content_ko: '데모 화면 녹화 그 건 문제점들, 기록 좀 뒤져서 목록으로 뽑아서 나한테 줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '收到，我去翻记录，马上整理成清单发你。另外那 41 条演示片我先不动，等你审完再排时间发。',
+        content_en: 'Got it, I\'ll go through the records and put together a list to send you right away. Also, I\'ll leave those 41 demo clips alone for now. Once you\'ve finished reviewing, I\'ll schedule the times and post them.',
+        content_ko: '알겠어, 내가 기록 뒤져서 바로 목록으로 정리해서 보내줄게. 그리고 그 41개 데모 영상은 일단 건드리지 않고, 네가 검토 끝낼 때까지 기다렸다가 시간 잡아서 올릴게.',
+      },
+      {
+        role: 'user',
+        content: '先给总页、大脑、模拟盘看板这三条配背景音乐，然后把 41 条排队、隔开时间发。',
+        content_en: 'First, add background music to the main page, the brain, and the simulated-trading dashboard. Then queue up the 41 clips and space out the posting times.',
+        content_ko: '먼저 메인 페이지, 브레인, 모의 투자 대시보드 이 세 개에 배경음악 깔고, 그다음에 41개 줄 세워서 시간 간격 두고 올려.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好，先配三条背景音乐，再把 41 条排好队、隔开时间，排好的时间表和登录账号先发你过目，你点头再发。',
+        content_en: 'Okay, I\'ll add background music to those three first. Then I\'ll queue up the 41 clips and space out the times. I\'ll send you the schedule and login accounts to look over first, and I\'ll only post once you give the go-ahead.',
+        content_ko: '좋아, 먼저 배경음악 세 개 깔고, 그다음에 41개 순서대로 줄 세워서 시간 간격 두고 올릴게. 정리된 시간표랑 로그인 계정은 먼저 너한테 보내서 확인받을게. 네가 OK 하면 그때 올릴게.',
+      },
+      {
+        role: 'user',
+        content: 'STARS 三维版上线了，真机上的帧率和双指缩放要实测一下。',
+        content_en: 'The 3D version of STARS is live. We need to test the frame rate and two-finger zoom on a real phone.',
+        content_ko: 'STARS 3D 버전 출시됐어, 실제 기기에서 프레임률이랑 두 손가락 확대/축소 직접 테스트해 봐야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '这个我测不了，我这边没有手机，电脑上只能用手机尺寸模拟，测不出真实帧率和双指手势。得你拿手机打开页面点一下，告诉我流畅还是卡。',
+        content_en: 'I can\'t test this. I don\'t have a phone on my end, and on a computer I can only simulate a phone screen size, which can\'t show the real frame rate or two-finger gestures. You\'ll need to open the page on your phone, tap around, and tell me whether it runs smoothly or lags.',
+        content_ko: '그건 내가 테스트 못 해, 나는 휴대폰이 없고 컴퓨터에서는 휴대폰 크기로 시뮬레이션만 되니까 실제 프레임률이랑 두 손가락 제스처는 확인이 안 돼. 네가 휴대폰으로 페이지 열어서 눌러 보고, 부드러운지 버벅이는지 나한테 알려줘.',
+      }
+    ],
   }
 ];
