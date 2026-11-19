@@ -8144,5 +8144,56 @@ export const LOG_DAYS = [
         content_ko: '9화 《Too Much, Too Little》로 골랐어. 남주가 47곡짜리 플레이리스트를 보내려다가 결국 그녀 이름이 들어간 노래 딱 한 곡만 선물하고, 그녀는 부엌에서 이름을 듣고 웃으며 고개를 끄덕여. Seedance 2.5 샘플 모드 480p로, 약 200 크레딧이고 딱 이 한 건만 돌릴 거야.',
       }
     ],
+  },
+  {
+    date: '2026-11-18',
+    chapter: '271',
+    color: '#a855f7',
+    title: '构建日志 2026-11-18 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '上一轮男主是你自己加的，我要的是只拍她一个人，安静一点，别搞笑。重写三个单人剧情，先跑一条。',
+        content_en: 'The last round, you added the male lead yourself. I wanted it to be just her alone, quiet, nothing funny. Rewrite the three solo storylines, and run one first.',
+        content_ko: '지난번 남주는 네가 멋대로 넣은 거야, 내가 원한 건 걔 혼자만 찍는 거였어, 좀 조용하게, 웃기지 말고. 1인 스토리 세 개 다시 써, 일단 하나만 돌려봐.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '是我理解错了，把「工作室剧情」当成了昨晚的男女短剧，洒水那段调子也不对，那条白花了约 200 分。我已改成只拍她一个人、不看镜头的安静电影感，三个剧情重写好了，先跑《深夜写歌》。',
+        content_en: 'I misunderstood. I took "studio storyline" to mean last night\'s male-female short drama, and the tone of the sprinkler scene was off too. That clip wasted about 200 points. I\'ve changed it to shoot only her, a quiet cinematic feel with no looking at the camera. The three storylines are rewritten, and I\'ll run 《深夜写歌》 first.',
+        content_ko: '내가 잘못 이해했어, \'스튜디오 스토리\'를 어젯밤 남녀 숏드라마로 착각했고, 물 뿌리는 장면도 톤이 안 맞았어, 그 한 편은 약 200점 그냥 날렸어. 지금은 걔 혼자만 찍고 카메라 안 보는 조용한 영화 느낌으로 바꿨고, 스토리 세 개 다시 써놨어, 먼저 <심야 작곡>부터 돌릴게.',
+      },
+      {
+        role: 'user',
+        content: '宣传 EAR GYM 的片子，要用我们自己的游戏界面做 B-roll，要动起来，不能是一张图，还要中文台词版。先出一两条，不超过 10 秒，我看方向。',
+        content_en: 'For the EAR GYM promo, we need to use our own game interface as B-roll. It has to move, not a still image, and we need a Chinese-dialogue version. Put out one or two first, no more than 10 seconds, so I can check the direction.',
+        content_ko: 'EAR GYM 홍보 영상인데, 우리 게임 화면으로 B-roll 만들어야 돼, 움직여야 하고 이미지 한 장은 안 돼, 중국어 대사 버전도 있어야 해. 일단 한두 개만 뽑아, 10초 넘지 말고, 방향 볼게.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '第一集成片按四段走：真实 CUT 练习页面录屏，接对话片，再接答对连对跳一格，最后是片尾卡。英文版不花积分，我现在做。中文版 10 秒约 200 分，我跑完用 Whisper 对一遍台词再发你。',
+        content_en: 'The first episode\'s final cut runs in four segments: a real screen recording of the CUT practice page, then the dialogue clip, then the correct-answer streak jumping up a notch, and finally the end card. The English version doesn\'t cost credits, so I\'ll make it now. The Chinese version costs about 200 points for 10 seconds. After it runs, I\'ll check the dialogue against Whisper and then send it to you.',
+        content_ko: '첫 번째 편 완성본은 네 구간으로 가: 실제 CUT 연습 페이지 화면녹화, 이어서 대화 영상, 그다음 정답 맞혀서 연속 정답으로 한 칸 뛰는 장면, 마지막은 엔딩 카드. 영어 버전은 크레딧 안 들어서 지금 만들게. 중국어 버전은 10초에 약 200점인데, 다 돌리고 Whisper로 대사 한 번 맞춰보고 보낼게.',
+      },
+      {
+        role: 'user',
+        content: '中文版现在跑。成片的音乐，页面录屏那条原声整条铺到底，不要断。',
+        content_en: 'Run the Chinese version now. For the music on the final cut, lay the original audio from the page screen recording under the whole thing, without cutting off.',
+        content_ko: '중국어 버전 지금 돌려. 완성본 음악은, 페이지 화면녹화 그 영상의 원래 소리를 처음부터 끝까지 깔아, 끊기지 말고.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好。原声从头放到片尾，对话那 10 秒压低音量，说完再推回来。前后两段画面我按这条音轨的时间重新取，这样拖滑块时音乐跟着变、答对那一下的声音都能对上，改好重新发你。',
+        content_en: 'Okay. The original audio plays from the start to the end card, with the volume lowered during the 10-second dialogue and pushed back up once it\'s finished. I\'ll re-pull the frames before and after based on this audio track\'s timing, so the music changes as you drag the slider and the sound of the correct-answer moment lines up. I\'ll fix it and send it to you again.',
+        content_ko: '좋아. 원래 소리를 처음부터 엔딩까지 틀고, 대화 10초 구간은 볼륨 낮췄다가 말 끝나면 다시 올릴게. 앞뒤 두 구간 화면은 이 음원 타임라인에 맞춰서 다시 땄어, 그래서 슬라이더 끌 때 음악이 따라 바뀌고 정답 맞히는 순간 소리도 맞아떨어질 거야, 고친 뒤에 다시 보낼게.',
+      }
+    ],
   }
 ];
