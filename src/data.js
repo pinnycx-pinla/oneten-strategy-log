@@ -8195,5 +8195,56 @@ export const LOG_DAYS = [
         content_ko: '좋아. 원래 소리를 처음부터 엔딩까지 틀고, 대화 10초 구간은 볼륨 낮췄다가 말 끝나면 다시 올릴게. 앞뒤 두 구간 화면은 이 음원 타임라인에 맞춰서 다시 땄어, 그래서 슬라이더 끌 때 음악이 따라 바뀌고 정답 맞히는 순간 소리도 맞아떨어질 거야, 고친 뒤에 다시 보낼게.',
       }
     ],
+  },
+  {
+    date: '2026-11-19',
+    chapter: '272',
+    color: '#f59e0b',
+    title: '构建日志 2026-11-19 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '那个 bbanana 的提示词，我们到底拿到没有？广告站上那十二张预设图又是怎么出的？',
+        content_en: 'Did we actually get that bbanana prompt or not? And how were the twelve preset images on the ad site made?',
+        content_ko: '그 bbanana 프롬프트, 우리 결국 받았어 못 받았어? 광고 사이트에 있는 그 열두 장짜리 프리셋 이미지는 또 어떻게 만든 거야?',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '查清楚了。10 月 12 号 IA10 从 bbanana 站打包给我 544 条模板，但包里没有原站提示词，他特意去掉了，只留名字、行业、点击数和镜头、光线、色调关键词。广告站现在那 15 条预设的提示词，是我们照研究自己重写的，不是原站的句子；站上 12 张图是 10-13 用 Midjourney 出的竖版图，我把预设里「客人的照片」那半句换成了虚构无牌对象。',
+        content_en: 'I checked. On October 12, IA10 packaged 544 templates from the bbanana site for me, but the package doesn\'t contain the original site\'s prompts. He deliberately removed them and kept only the name, industry, click count, and keywords for camera, lighting, and color tone. The prompts for the 15 presets currently on the ad site were rewritten by us based on our research. They aren\'t the original site\'s sentences. The 12 images on the site are vertical images made with Midjourney on 10-13, and I replaced the "customer\'s photo" half-sentence in the presets with a fictional, unlicensed subject.',
+        content_ko: '다 확인했어. 10월 12일에 IA10이 bbanana 사이트에서 템플릿 544개를 묶어서 나한테 줬는데, 그 묶음에는 원본 사이트 프롬프트가 없어. 일부러 빼고 이름, 업종, 클릭 수, 그리고 카메라·조명·색조 키워드만 남겨 놨더라. 광고 사이트에 지금 있는 15개 프리셋 프롬프트는 우리가 리서치를 바탕으로 직접 다시 쓴 거고, 원본 사이트 문장이 아니야. 사이트에 있는 12장은 10월 13일에 Midjourney로 뽑은 세로형 이미지고, 프리셋에 있던 \'손님 사진\' 부분은 내가 상표 없는 가상의 대상으로 바꿨어.',
+      },
+      {
+        role: 'user',
+        content: '广告站现有的预设图，都跑成视频，先跑前三条。',
+        content_en: 'Run all the existing preset images on the ad site into videos, starting with the first three.',
+        content_ko: '광고 사이트에 있는 프리셋 이미지, 전부 영상으로 돌려. 일단 앞의 세 개부터 돌려.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好，storefront-dusk、quiet-marble、gift-reveal 三条，用首帧模式把原图锁成第一帧，动作只用预设里的运镜原文，5 秒 480P 无声，约 300 分。花积分的事等你回「跑」，跑偏的我标废不补跑。',
+        content_en: 'OK. The three are storefront-dusk, quiet-marble, and gift-reveal. I\'ll use first-frame mode to lock the original image as the first frame, and the motion will use only the original camera-movement text from the presets. 5 seconds, 480P, silent, about 300 points. I\'ll spend the points when you reply "run." If a run goes off, I\'ll mark it as a reject and won\'t re-run it.',
+        content_ko: '좋아. storefront-dusk, quiet-marble, gift-reveal 세 개를 첫 프레임 모드로 돌릴 거야. 원본 이미지를 첫 프레임으로 고정하고, 동작은 프리셋에 있는 카메라 워크 원문만 쓸 거야. 5초, 480P, 무음이고 약 300포인트 들어. 포인트 쓰는 건 네가 "돌려"라고 답해 줄 때까지 기다릴게. 결과가 이상하게 나오면 폐기로 표시하고 다시 돌리진 않을 거야.',
+      },
+      {
+        role: 'user',
+        content: '游戏名不用 NEON HARBOR，用 ONE TEN，不引入新名字，这是自家品牌。简介里不用写那句 AI 说明，平台的 AI 标注照勾。',
+        content_en: 'Don\'t use NEON HARBOR as the game name, use ONE TEN. Don\'t introduce a new name, this is our own brand. Don\'t write that AI disclosure line in the description, but still check the platform\'s AI label box.',
+        content_ko: '게임 이름은 NEON HARBOR 말고 ONE TEN으로 해. 새 이름은 들이지 마, 우리 브랜드니까. 소개글에 AI 설명 문구는 쓰지 마, 플랫폼 AI 표기는 그대로 체크하고.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '明白，界面右上角改成 ONE TEN，标题格式改为 ONE TEN · Mission 0X: <任务名>，简介不再写 AI 说明，平台 AI 标注照勾。旧片还没叠过 NEON HARBOR，没有要改的；发布、补跑、新跑四条仍等你回字。',
+        content_en: 'Understood. The top-right corner of the interface will change to ONE TEN, and the title format will become ONE TEN · Mission 0X: <mission name>. The description will no longer include the AI disclosure, and I\'ll still check the platform\'s AI label box. The old clips haven\'t had NEON HARBOR overlaid, so there\'s nothing to change. The four items — publishing, re-runs, and new runs — are still waiting for your word.',
+        content_ko: '알겠어. 화면 오른쪽 위는 ONE TEN으로 바꾸고, 제목 형식은 ONE TEN · Mission 0X: <미션명>으로 바꿀게. 소개글에는 AI 설명 문구를 더 안 쓰고, 플랫폼 AI 표기는 그대로 체크할 거야. 예전 영상에는 NEON HARBOR를 얹은 적이 없어서 고칠 건 없어. 게시, 재생성, 새로 돌리기 네 가지는 계속 네가 답해 줄 때까지 기다릴게.',
+      }
+    ],
   }
 ];
