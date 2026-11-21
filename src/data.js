@@ -8246,5 +8246,42 @@ export const LOG_DAYS = [
         content_ko: '알겠어. 화면 오른쪽 위는 ONE TEN으로 바꾸고, 제목 형식은 ONE TEN · Mission 0X: <미션명>으로 바꿀게. 소개글에는 AI 설명 문구를 더 안 쓰고, 플랫폼 AI 표기는 그대로 체크할 거야. 예전 영상에는 NEON HARBOR를 얹은 적이 없어서 고칠 건 없어. 게시, 재생성, 새로 돌리기 네 가지는 계속 네가 답해 줄 때까지 기다릴게.',
       }
     ],
+  },
+  {
+    date: '2026-11-20',
+    chapter: '273',
+    color: '#10b981',
+    title: '构建日志 2026-11-20 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '这个游戏的调音台前面中间那台键盘和蓝色小锥子挡路，设计不合理，你改一下。',
+        content_en: 'The keyboard in the middle and the little blue cones in front of the mixing console in this game are in the way. The design doesn\'t make sense. Fix it.',
+        content_ko: '이 게임 믹싱 콘솔 앞쪽 가운데에 있는 키보드랑 파란 작은 원뿔이 길을 막아서 설계가 불합리해. 네가 좀 고쳐 줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '同意，这种小调整用代码就能改，不花积分：删掉键盘和两个小锥子，在矮台正中切出约 1.2 米宽的过道、补上地面，同时改碰撞让你能直接走过去。大改（比如重做后半间）才需要重新生成，到时用多图生成，把后半间的图也喂进去，就不会乱补了。',
+        content_en: 'Agreed. A small tweak like this can be done in code, no credits needed: delete the keyboard and the two little cones, cut a walkway about 1.2 meters wide right through the middle of the low platform, patch the floor, and change the collision so you can walk straight through. A big change (like redoing the back half of the room) would need regenerating, and when that happens we\'d use multi-image generation and feed in the back half\'s image too, so it won\'t fill things in randomly.',
+        content_ko: '동의해, 이런 작은 수정은 코드로 바로 고칠 수 있어서 크레딧도 안 들어: 키보드랑 작은 원뿔 두 개를 지우고, 낮은 단상 한가운데에 폭 약 1.2미터짜리 통로를 내고 바닥을 메운 다음, 충돌 판정도 바꿔서 네가 바로 걸어서 지나갈 수 있게 할게. 큰 수정(예를 들면 뒤쪽 공간을 다시 만드는 것)은 다시 생성해야 하는데, 그때는 멀티 이미지 생성으로 뒤쪽 공간 이미지도 같이 넣어 주면 엉뚱하게 채우지 않을 거야.',
+      },
+      {
+        role: 'user',
+        content: '行，先切过道，改好刷新给我看。',
+        content_en: 'Okay, cut the walkway first, then refresh it for me once it\'s done.',
+        content_ko: '응, 먼저 통로부터 내 줘. 다 고치면 새로고침해서 보여 줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好，我现在切，改好帮你刷新页面。',
+        content_en: 'Got it, cutting it now. I\'ll refresh the page for you once it\'s done.',
+        content_ko: '좋아, 지금 낼게. 다 고치면 페이지 새로고침해 줄게.',
+      }
+    ],
   }
 ];
