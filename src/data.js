@@ -8283,5 +8283,56 @@ export const LOG_DAYS = [
         content_ko: '좋아, 지금 낼게. 다 고치면 페이지 새로고침해 줄게.',
       }
     ],
+  },
+  {
+    date: '2026-11-21',
+    chapter: '274',
+    color: '#ef4444',
+    title: '构建日志 2026-11-21 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '小木屋太黑了，不像让人想待着的地方。壁炉要当全屋主光，暖橙色铺满地毯、椅子和木墙，暗部也要看得见木纹。外面冷蓝、里面暖橙。',
+        content_en: 'The cabin is too dark. It doesn\'t feel like a place you\'d want to stay in. The fireplace should be the main light for the whole room, with warm orange spreading across the rug, the chairs and the wooden walls, and I want to see the wood grain even in the dark areas. Cold blue outside, warm orange inside.',
+        content_ko: '오두막이 너무 어두워. 사람이 머물고 싶어지는 곳 같지가 않아. 벽난로를 집 전체의 메인 조명으로 쓰고, 따뜻한 주황빛이 카펫이랑 의자, 나무 벽 전체에 깔리게 해줘. 어두운 부분에서도 나뭇결이 보여야 해. 밖은 차가운 파랑, 안은 따뜻한 주황으로.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '七条都接了。壁炉改成全屋主光，暗部改成暖棕。火焰做出体积，加火星和热浪。黑皮椅换成暖色布面扶手椅，再补针织毯、木柴、蜡烛和小灯串。中间留空版的墙改成被炉火照亮的暖木墙，循环一律出 60 帧。返工版已经过验收，放进待上架区了。',
+        content_en: 'All seven items are in. The fireplace is now the main light for the whole room, and the shadows are now warm brown. The flames have volume, plus sparks and heat shimmer. I swapped the black leather chair for a warm fabric armchair, and added a knit blanket, firewood, candles and a string of little lights. The wall in the middle version I\'d left empty is now warm wood lit by the firelight, and every loop comes out at 60 frames. The reworked version has passed acceptance and is in the staging area for release.',
+        content_ko: '일곱 개 다 반영했어. 벽난로를 집 전체 메인 조명으로 바꿨고, 어두운 부분은 따뜻한 갈색으로 바꿨어. 불꽃은 부피감을 살렸고 불똥이랑 열기 아지랑이도 넣었어. 검은 가죽 의자는 따뜻한 색감의 천 안락의자로 바꿨고, 니트 담요랑 장작, 양초, 작은 전구 줄도 추가했어. 가운데 비어 있던 벽은 벽난로 불빛에 비친 따뜻한 나무 벽으로 바꿨고, 루프는 전부 60프레임으로 뽑았어. 재작업본은 검수 통과해서 상架 대기 구역에 넣어놨어.',
+      },
+      {
+        role: 'user',
+        content: '巨幕上现在是文天影业的 slide，暂时换成白底黑字的 oneten。',
+        content_en: 'The big screens are currently showing the ONE TEN Pictures slide. Switch them to black text on a white background, just "oneten" for now.',
+        content_ko: '지금 대형 스크린에는 문천영업의 슬라이드가 떠 있는데, 일단 흰 바탕에 검은 글씨로 oneten 띄워줘.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '八间房巨幕的待机画面已经改成白底黑字 ONE TEN。底色约 #f4f4f2，字约 #0a0a0a，字宽占屏幕四成，居中。屏幕亮度和屏前的跟随光也重新调过，白屏不会把房间照灰。我加了 IDLE_MODE 开关，幻灯片代码和 slides.json 都留着。以后要换回来，改一个值就行。点播、放歌、照片墙都没动，放完片也会回到这张白底黑字。',
+        content_en: 'The standby screen on the big screens in all eight rooms is now black text on white, reading ONE TEN. The background is about #f4f4f2 and the text about #0a0a0a, with the text taking up 40% of the screen width, centered. I also retuned the screen brightness and the follow light in front of the screen, so a white screen won\'t wash the room out gray. I added an IDLE_MODE switch, and the slideshow code and slides.json are both still there. To switch back later, you only need to change one value. On-demand, music playback and the photo wall are untouched, and after a film finishes it also returns to this black-on-white screen.',
+        content_ko: '여덟 개 방의 대형 스크린 대기 화면을 흰 바탕에 검은 글씨 ONE TEN으로 바꿨어. 바탕색은 약 #f4f4f2, 글씨는 약 #0a0a0a이고, 글씨 폭은 화면의 40%, 가운데 정렬이야. 스크린 밝기랑 화면 앞 팔로우 조명도 다시 조정해서 흰 화면 때문에 방이 회색으로 떠 보이지 않을 거야. IDLE_MODE 스위치를 추가했고, 슬라이드 코드랑 slides.json은 그대로 남겨뒀어. 나중에 되돌리고 싶으면 값 하나만 바꾸면 돼. 주문형 재생, 노래 재생, 사진 벽은 하나도 안 건드렸고, 영상 재생이 끝나면 이 흰 바탕에 검은 글씨 화면으로 돌아가.',
+      },
+      {
+        role: 'user',
+        content: '星空阁楼那条 LibTV 图生视频，我说过要跑。',
+        content_en: 'The LibTV image-to-video job for the starry-sky attic, I told you to run it.',
+        content_ko: '별이 가득한 다락방 LibTV 이미지-투-비디오, 내가 돌리라고 했잖아.',
+      },
+      {
+        role: 'ai',
+        speaker: 'ia10',
+        header: 'IA10',
+        content: '这条还没跑。11-16 你定的规矩是花积分要你本人点头，转达的话我不能当授权。你亲口回一个「跑」，我就用海螺 2.3 快速版出 6 秒，约 12 积分，只跑一次。跑完 A、B、C 三条一起走收件夹。',
+        content_en: 'That one hasn\'t run yet. The rule you set on 11-16 is that spending credits needs your own personal go-ahead, and a relayed message can\'t count as authorization. Reply "run" yourself, and I\'ll use Hailuo 2.3 Fast to produce 6 seconds for about 12 credits, run just once. After it finishes, A, B and C all go through the inbox together.',
+        content_ko: '이건 아직 안 돌렸어. 11-16에 네가 정한 규칙이 크레딧 쓰는 건 너 본인이 직접 OK 해야 한다는 거였고, 전해 들은 말은 내가 승인으로 볼 수 없어. 네가 직접 "돌려"라고 한마디 해주면 하이뤄 2.3 패스트 버전으로 6초짜리 뽑을 거야. 크레딧은 약 12개고, 딱 한 번만 돌릴 거야. 다 돌고 나면 A, B, C 세 개 같이 수신함으로 보낼 거야.',
+      }
+    ],
   }
 ];
