@@ -8334,5 +8334,34 @@ export const LOG_DAYS = [
         content_ko: '이건 아직 안 돌렸어. 11-16에 네가 정한 규칙이 크레딧 쓰는 건 너 본인이 직접 OK 해야 한다는 거였고, 전해 들은 말은 내가 승인으로 볼 수 없어. 네가 직접 "돌려"라고 한마디 해주면 하이뤄 2.3 패스트 버전으로 6초짜리 뽑을 거야. 크레딧은 약 12개고, 딱 한 번만 돌릴 거야. 다 돌고 나면 A, B, C 세 개 같이 수신함으로 보낼 거야.',
       }
     ],
+  },
+  {
+    date: '2026-11-22',
+    chapter: '275',
+    color: '#3b82f6',
+    title: '构建日志 2026-11-22 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '圆桌页在工作室实测，大屏小结上屏时中间有一团亮光斑，字都冲白了。记录栏展开后主持人小结还跟四列叠在一起。还有引擎节奏改了，默认只有一轮一句话加主持人小结，要反驳得单独开。',
+        content_en: 'In the studio test, the roundtable page has a bright blob of light in the middle when the big-screen summary goes up, and the text is blown out white. Also, once the log bar is expanded, the host\'s summary still overlaps with the four columns. And the engine pacing changed: by default it\'s now just one round of one sentence each plus the host\'s summary, so if you want a rebuttal, you have to turn it on separately.',
+        content_ko: '원탁 페이지를 작업실에서 실제로 테스트해 봤는데, 대형 스크린에 요약이 뜰 때 가운데에 밝은 빛 얼룩이 생겨서 글자가 하얗게 날아가 버려. 기록 칸을 펼치면 사회자 요약이 네 열이랑 겹쳐서 쌓여 있기도 하고. 그리고 엔진 템포도 바뀌었어. 기본값은 한 라운드에 한 문장이랑 사회자 요약만 나오고, 반박을 보려면 따로 켜야 해.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '三处我接着改。小结显示期间把打在大屏上的那盏光关掉或压低，屏幕高光也关掉，四档画质都检查。记录栏改成四列固定高度、各自滚动，小结单独占一行放在下面，抽屉最高不超过视口 60%。页面不再等第二轮：右下加 Debate 开关，默认关，打开后请求多带 depth:2。主持人小结播完后出现「Let them argue」按钮，点一下用同一个问题带 depth:2 再问一次。现场字幕直接显示 audio 的整句，主持人没有音频就按阅读速度打字，不卡住。',
+        content_en: 'I\'ll keep working on all three. While the summary is showing, I\'ll turn off or dim the light that\'s hitting the big screen, and turn off the screen highlight too. I\'ll check all four quality levels. The log bar becomes four fixed-height columns, each scrolling on its own, with the summary on its own row underneath, and the drawer never taller than 60% of the viewport. The page will no longer wait for a second round: I\'m adding a Debate toggle at the bottom right, off by default, and when it\'s on the request carries depth:2. After the host\'s summary finishes, a "Let them argue" button appears, and one click asks again with the same question and depth:2. The live captions will show the full audio sentence directly, and if the host has no audio, it\'ll type out at reading speed so it doesn\'t get stuck.',
+        content_ko: '세 군데 내가 이어서 고칠게. 요약이 표시되는 동안에는 대형 스크린에 쏘는 조명을 끄거나 낮추고, 스크린 하이라이트도 끌게. 화질 네 단계 전부 확인할 거야. 기록 칸은 네 열 고정 높이에 각자 스크롤되게 바꾸고, 요약은 따로 한 줄을 차지하게 아래에 둘게. 서랍은 최대 높이가 뷰포트의 60%를 넘지 않게 할 거야. 페이지는 더 이상 두 번째 라운드를 기다리지 않아. 오른쪽 아래에 Debate 토글을 추가하고, 기본은 꺼짐이야. 켜면 요청에 depth:2를 같이 보낼 거야. 사회자 요약이 끝나면 「Let them argue」 버튼이 나타나고, 한 번 누르면 같은 질문에 depth:2를 붙여서 다시 물어봐. 현장 자막은 audio의 문장 전체를 그대로 보여주고, 사회자는 오디오가 없으면 읽는 속도에 맞춰 타자로 쳐서 안 멈추게 할게.',
+      },
+      {
+        role: 'user',
+        content: '行，就这么办，做完直接上线同一地址。',
+        content_en: 'OK, let\'s do it that way. When it\'s done, go straight live at the same address.',
+        content_ko: '좋아, 그렇게 하자. 다 되면 바로 같은 주소로 올려.',
+      }
+    ],
   }
 ];
