@@ -8363,5 +8363,56 @@ export const LOG_DAYS = [
         content_ko: '좋아, 그렇게 하자. 다 되면 바로 같은 주소로 올려.',
       }
     ],
+  },
+  {
+    date: '2026-11-23',
+    chapter: '276',
+    color: '#00f0ff',
+    title: '构建日志 2026-11-23 06:05',
+    subtitle: 'Build Log via #build-log',
+    messages: [
+      {
+        role: 'user',
+        content: '广场发热得厉害，主要是什么原因？你改一下，清晰度别动。',
+        content_en: 'The plaza is running really hot. What\'s the main cause? Fix it, but don\'t touch the clarity.',
+        content_ko: '광장이 엄청 뜨거워지는데, 주된 원인이 뭐야? 고쳐 줘, 선명도는 건드리지 말고.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '主要有三处：同时解 20 多路视频，120 赫兹的屏每秒要算 120 次，地面倒影还要把整个场景再画一遍。我改成帧率封顶 60，只让近处看得见的十来块屏播放、其余停在当前画面，没进场或切到别的窗口时降到很低帧率。',
+        content_en: 'There are three main causes: it\'s decoding 20-plus video streams at once, the 120 Hz display has to compute 120 frames every second, and the ground reflection redraws the entire scene a second time. I\'m capping the frame rate at 60, letting only the dozen or so screens that are close enough to see play, and freezing the rest on their current frame. When it\'s out of view or you switch to another window, it drops to a very low frame rate.',
+        content_ko: '주된 원인은 세 가지야. 20여 개 영상을 동시에 디코딩하고, 120헤르츠 화면은 초당 120번 계산해야 하고, 바닥 반사는 장면 전체를 한 번 더 그려야 해. 그래서 프레임 레이트는 60으로 제한하고, 가까이서 보이는 열 몇 개 화면만 재생하고 나머지는 현재 화면에서 멈추게 했어. 화면에 안 들어오거나 다른 창으로 넘어가면 프레임을 아주 낮게 떨어뜨릴 거야.',
+      },
+      {
+        role: 'user',
+        content: '斑马线在眼镜里一闪一闪，是怎么回事？',
+        content_en: 'Why do the zebra crossings flicker in the glasses?',
+        content_ko: '횡단보도가 안경 속에서 깜빡깜빡하는데, 왜 그래?',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '原因是斑马线和路面贴得太近，眼镜里的深度精度比电脑低，两层在抢着显示，电脑上精度高所以看不出来。我把斑马线和车道线抬高一点，再强制画在路面上面，上线后你刷新再进一次 VR 看看。',
+        content_en: 'The zebra crossings sit too close to the road surface. The depth precision in the glasses is lower than on a computer, so the two layers fight to be displayed. On the computer the precision is higher, so you can\'t see it. I\'m raising the zebra crossings and lane lines slightly and forcing them to draw on top of the road. Once it\'s live, refresh and go back into VR to check.',
+        content_ko: '횡단보도랑 도로 표면이 너무 붙어 있어서 그래. 안경은 깊이 정밀도가 컴퓨터보다 낮아서 두 층이 서로 먼저 보이려고 다투는 거야. 컴퓨터에선 정밀도가 높아서 티가 안 나. 횡단보도랑 차선을 조금 띄우고, 도로 표면 위에 강제로 그리게 했어. 올라가면 새로고침해서 VR에 다시 들어가 봐.',
+      },
+      {
+        role: 'user',
+        content: '中间那个舞台做成 DJ 台，台下放观众，要有电音节的感觉。',
+        content_en: 'Turn the stage in the middle into a DJ booth, with a crowd in front of it. I want it to feel like an electronic music festival.',
+        content_ko: '가운데 있는 무대를 DJ 부스로 만들고, 무대 아래에 관객을 배치해 줘. 전자음악 페스티벌 느낌이 나야 돼.',
+      },
+      {
+        role: 'ai',
+        speaker: 'karen',
+        header: 'KAREN',
+        content: '好，我做一个两路真能打碟的 DJ 台，台下加观众、音箱和灯光，IA10 的声音位置也先留好。一次做完再交链接，哪些测过、哪些没测会分开讲清楚。',
+        content_en: 'Got it. I\'ll build a DJ booth with two decks that can actually be played, and add a crowd, speakers, and lighting in front of it. I\'ll also reserve a spot for IA10\'s voice. I\'ll finish all of it before sending you the link, and I\'ll tell you clearly which parts I\'ve tested and which I haven\'t.',
+        content_ko: '좋아, 두 채널로 진짜 디제잉이 되는 DJ 부스를 만들게. 무대 아래에는 관객이랑 스피커, 조명도 넣고, IA10 소리 위치도 미리 잡아 둘게. 한 번에 다 만든 다음에 링크를 줄게. 테스트한 거랑 안 한 건 따로 나눠서 분명히 설명할게.',
+      }
+    ],
   }
 ];
